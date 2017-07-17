@@ -1,0 +1,28 @@
+name: Drupal 8 ISU Theme
+description: Drupal 8 theme for Iowa State University websites
+type: theme
+core: 8.x
+libraries: 
+  - d8iastate/global-css
+  - d8iastate/global-js
+  - d8iastate/font-awesome
+stylesheets-remove:
+  - core/assets/vendor/normalize-css/normalize.normalize
+  - core/modules/system/css/system.module.css
+  - core/modules/system/css/system.theme.css
+  - core/modules/system/css/view.modules.css
+regions:
+  header_first: "Header First"
+  header_second: "Header Second"
+  menu_navbar: 'Menu Navbar'
+  post_nav: 'Post Nav'
+  highlighted: 'Highlighted'
+  breadcrumbs: 'Breadcrumbs'
+  content: 'Page Content'
+  sidebar_first: 'Sidebar First'
+  sidebar_second: 'Sidebar Second'
+  footer_first: 'Footer First'
+  footer_second: 'Footer Second'
+  footer_third: 'Footer Third'
+  footer_fourth: 'Footer Fourth'
+  sign_off: 'Sign Off'

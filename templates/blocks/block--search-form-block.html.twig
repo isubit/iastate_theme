@@ -1,0 +1,18 @@
+{#
+/**
+ * @file
+ * Theme override to display a block.
+ *
+ */
+#}
+
+<div class="isu-sitenav__search" >
+	<form class="form-inline" action="{{element['#action']}}" method="GET" role="search">
+		<label for="search-input" class="sr-only">Search</label>
+		<input class="form-control isu-sitenav__search-field" title="Enter the terms you wish to search for." placeholder="Search" type="text" name="search_block_form" value="" size="15" maxlength="128">
+		<button class="btn isu-sitenav__search-btn" type="submit">
+			<i class="fa fa-search"></i>
+			<span class="sr-only">Submit search</span>
+		</button>
+	</form>
+</div>

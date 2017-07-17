@@ -1,0 +1,28 @@
+{#
+/**
+ * @file
+ * Parital template to include the main menu.
+ *
+ * Regions:
+ *  parts/menu-navbar.html.twig
+ *  - page.menu_navbar: Primary site navigation
+ * 
+ * Template for the menu itself is in navigation/menu--main.html.twig
+ *
+ */
+#}
+
+<div>
+  <nav class="navbar navbar-toggleable-md isu-menu-navbar" role="navigation">
+    <div class="container isu-menu-navbar_container">
+      <button class="navbar-toggler isu-menu-navbar_toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon isu-menu-navbar_toggler-icon"></span>
+        <span class="isu-menu-navbar_toggler-label">Main Menu</span>
+      </button>
+
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        {{ page.menu_navbar }}
+      </div>
+    </div>
+  </nav>
+</div>

@@ -1,0 +1,27 @@
+{#
+/**
+ * @file
+ * Parital template to include the branded ISU header and its regions.
+ *
+ * Regions:
+ *  parts/site-navbar.html.twig
+ *  - page.header_first: First half of headery, typically for site branding.
+ *  - page.header_second: Second half of header, typically for search and 
+ *    site links.
+ *
+ */
+#}
+
+<header class="isu-header" role="banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-md">
+        {{ page.header_first }}
+      </div>
+
+      <div class="col-md">
+        {{ page.header_second }}
+      </div>
+    </div>
+  </div>
+</header>

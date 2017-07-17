@@ -1,0 +1,19 @@
+/**
+ * @file
+ * Base CSS styles for the ISU theme
+ */
+
+/* --------------------------------------  */
+/* ## TYPOGRAPHY
+/* --------------------------------------  */
+
+a { /* Overrides Bootstrap 4 */
+  color: #cc0000; /* ISU brand standard */
+  text-decoration: underline; /* WCAG A standard */
+  transition: color 300ms ease;
+}
+a.btn,
+a.badge,
+a.nav-link { /* Some links to not need underlines. */
+  text-decoration: none;
+}

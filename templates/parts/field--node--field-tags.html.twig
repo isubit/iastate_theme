@@ -1,0 +1,19 @@
+{#
+/**
+ * @file
+ * Theme override to display node tags.
+ * 
+ * Requires Font Awesome.
+ */
+#}
+
+<div{{ attributes.addClass('field_tags') }}>
+  {% if not label_hidden %}
+    <h2 class="h6 d-inline"><i class="fa fa-tags"></i> {{ label }}:</h2>
+  {% endif %}
+  <ul class="list-inline d-inline">
+    {% for item in items %}
+      <li{{ item.attributes.addClass('list-inline-item') }}><a href="{{ item.content['#url']|render }}" class="badge badge-default">{{ item.content['#title'] }}</a></li>
+    {% endfor %}
+  </ul>
+</div>

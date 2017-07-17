@@ -1,0 +1,29 @@
+global-css:
+  css:
+    theme:
+      css/bootstrap/bootstrap-reboot.min.css: {}
+      css/bootstrap/bootstrap-grid.min.css: {}
+      css/bootstrap/bootstrap.min.css: {}
+      css/isu-navbar.css: {}
+      css/base.css: {}
+      css/layout.css: {}
+      css/component.css: {}
+      css/isu-social.css: {}
+
+global-js:
+  js:
+    js/isu-navbar.js: {}
+  dependencies: 
+    - core/jquery
+
+# Font Awesome Icons
+font-awesome:
+  remote: https://fortawesome.github.io/Font-Awesome/
+  version: 4.5.0
+  license:
+    name: MIT
+    url: https://fortawesome.github.io/Font-Awesome/license/
+    gpl-compatible: true
+  css:
+    theme:
+      'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css': { type: external, minified: true }
