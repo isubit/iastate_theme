@@ -56,8 +56,10 @@
  */
 #}
 
-{# The ISU Navbar is optional and may be disabled in theme settings #}
-{% include '@d8iastate/parts/isu-navbar.html.twig' %}
+{# The ISU Navbar may be disabled in theme settings #}
+{% if isu_navbar %}
+  {% include '@d8iastate/parts/isu-navbar.html.twig' %}
+{% endif %}
 
 {# site-navbar.html.twig contains branded ISU header #}
 {% include '@d8iastate/parts/site-navbar.html.twig' %}

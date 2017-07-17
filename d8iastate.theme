@@ -49,3 +49,8 @@ function d8iastate_preprocess(&$variables, $hook) {
   // Ensure the cache varies correctly (new in Drupal 8.3).
   $variables['#cache']['contexts'][] = 'url.path.is_front';
 }
+
+/* Be able to toggle the ISU Navbar */
+function d8iastate_preprocess_page(&$variables) {
+  $variables['isu_navbar'] = theme_get_setting('isu_navbar');
+}
