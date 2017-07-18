@@ -30,9 +30,11 @@
  * @see template_preprocess_forum_list()
  */
 #}
-<table>
+
+<table class="table table-bordered table-striped mt-3">
   <thead>
     <tr>
+      <th>{{ 'New'|t }}</th>
       <th>{{ 'Forum'|t }}</th>
       <th>{{ 'Topics'|t }}</th>
       <th>{{ 'Posts'|t }}</th>
@@ -40,34 +42,49 @@
     </tr>
   </thead>
   <tbody>
-  {% for child_id, forum in forums %}
-    <tr>
-      <td{% if forum.is_container == true %} colspan="4"{% endif %}>
-        {#
-          Enclose the contents of this cell with X divs, where X is the
-          depth this forum resides at. This will allow us to use CSS
-          left-margin for indenting.
-        #}
-        {% for i in 1..forum.depth if forum.depth > 0 %}<div class="indent">{% endfor %}
-          <div title="{{ forum.icon_title }}">
-            <span class="visually-hidden">{{ forum.icon_title }}</span>
-          </div>
-          <div><a href="{{ forum.link }}">{{ forum.label }}</a></div>
-          {% if forum.description.value %}
-            <div>{{ forum.description.value }}</div>
-          {% endif %}
-        {% for i in 1..forum.depth if forum.depth > 0 %}</div>{% endfor %}
+    {% for child_id, forum in forums %}
+
+    <tr{% if forum.new_topics == true %} class="table-success"{% endif %}>
+
+      {# First Column - New Posts #}
+      <td>
+        <div class="text-center">
+        {% if forum.new_topics == true %}
+          <a href="{{ forum.new_url }}">
+            <i class="fa fa-comment"></i>
+            <span class="visually-hidden">{{ forum.new_text }}</span>
+          </a>
+        {% else %}
+          <i class="fa fa-comment-o"></i>
+        {% endif %}
+      </div>
+
       </td>
+
+      {# Second Column - Board Name #}
+      <td{% if forum.is_container == true %} colspan="4"{% endif %}>
+      
+      {% for i in 1..forum.depth if forum.depth > 0 %}
+        <div class="indented">
+      {% endfor %}
+        <div><a href="{{ forum.link }}">{{ forum.label }}</a></div>
+      
+      {% if forum.description.value %}
+        <div>{{ forum.description.value }}</div>
+      {% endif %} 
+      </td>
+
       {% if forum.is_container == false %}
-        <td>
-          {{ forum.num_topics }}
-          {% if forum.new_topics == true %}
-            <br />
-            <a href="{{ forum.new_url }}">{{ forum.new_text }}</a>
-          {% endif %}
-        </td>
-        <td>{{ forum.num_posts }}</td>
+
+        {# Third Column - Topic Count #}
+        <td class="text-center">{{ forum.num_topics }}</td>
+
+        {# Fourth Column - Post Count #}
+        <td class="text-center">{{ forum.num_posts }}</td>
+
+        {# Fifth Column - Last Reply #}
         <td>{{ forum.last_reply }}</td>
+
       {% endif %}
     </tr>
   {% endfor %}
