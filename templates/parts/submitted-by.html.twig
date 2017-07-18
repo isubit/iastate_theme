@@ -1,0 +1,23 @@
+{#
+/**
+ * @file
+ * Parital template for a re-usable component to display 'submitted by' content.
+ *
+ */
+#}
+
+<footer class="card mb-3">
+  <div class="card-header">
+    <div class="d-flex">
+      <div class="mr-3">
+        {{ author_picture }}
+      </div>
+      <div>{% trans %}Submitted by {{ author_name }} <br><small> on {{ date }} {% endtrans %}
+        {% if content.taxonomy_forums|render is not empty %}
+          {% trans %}in <div class="d-inline-block">{{ content.taxonomy_forums }}</div>{% endtrans %}
+        {% endif %}
+        </small>
+      </div>
+    </div>
+  </div>
+</footer>
