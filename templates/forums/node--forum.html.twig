@@ -81,23 +81,7 @@
   {{ title_suffix }}
 
   {% if display_submitted %}
-
-    <footer class="card mb-3">
-      <div class="card-header">
-        <div class="d-flex">
-          <div class="mr-3">
-            {{ author_picture }}
-          </div>
-          <div>
-            
-              Submitted by {{ author_name }} <br>
-              <small> on {{ date }} in <div class="d-inline-block">{{ content.taxonomy_forums }}</div> </small>
-            
-          </div>
-        </div>
-      </div>
-    </footer>
-
+    {% include '@d8iastate/parts/submitted-by.html.twig' %}
   {% endif %}
 
   <div{{ content_attributes.addClass('isu-forum-post') }}>
