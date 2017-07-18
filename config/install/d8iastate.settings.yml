@@ -1,1 +1,4 @@
 isu_navbar: 1
+favicon:
+  use_default: false
+  path: 'themes/d8iastate/favicon.png'
