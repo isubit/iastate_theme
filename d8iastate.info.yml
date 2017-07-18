@@ -5,6 +5,7 @@ core: 8.x
 libraries: 
   - d8iastate/global-css
   - d8iastate/global-js
+  - d8iastate/fonts
   - d8iastate/font-awesome
 stylesheets-remove:
   - core/assets/vendor/normalize-css/normalize.normalize

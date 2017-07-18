@@ -16,6 +16,12 @@ global-js:
   dependencies: 
     - core/jquery
 
+# Nimbus Sans
+fonts:
+  css:
+    theme:
+      '//cdn.theme.iastate.edu/nimbus-sans/css/nimbus-sans.css': { type: external }
+
 # Font Awesome Icons
 font-awesome:
   remote: https://fortawesome.github.io/Font-Awesome/
