@@ -97,11 +97,14 @@
  */
 
 .isu-sitelinks {
+  display: flex;
+  justify-content: flex-end;
   margin-top: 0.5rem;
   margin-bottom: 0;
   text-align: right;
 }
 .isu-sitelinks-link {
+  margin-left: 0.5rem;
   color: #ffffff;
 }
   .isu-sitelinks-link:hover {
