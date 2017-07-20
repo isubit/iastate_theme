@@ -32,10 +32,11 @@
   ]
 %}
 
-<div{{ attributes.addClasses('block_classes') }}>
+<div{{ attributes.addClass(block_classes) }}>
   {{ title_prefix }}
   {% if label %}
-    <h2{{ title_attributes.addClass('isu-block-title h5') }}>{{ label }}</h2> 
+    {% set block_title_classes = ['isu_block_title', 'h5'] %}
+    <h2{{ title_attributes.addClass(block_title_classes) }}>{{ label }}</h2> 
   {% endif %}
   {{ title_suffix }}
   {% block content %}
