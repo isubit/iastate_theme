@@ -29,13 +29,14 @@
 {%
   set block_classes = [
     is_front ? 'isu-block-front' : '',
+    'isu-block'
   ]
 %}
 
 <div{{ attributes.addClass(block_classes) }}>
   {{ title_prefix }}
   {% if label %}
-    {% set block_title_classes = ['isu_block_title', 'h5'] %}
+    {% set block_title_classes = ['isu-block-title'] %}
     <h2{{ title_attributes.addClass(block_title_classes) }}>{{ label }}</h2> 
   {% endif %}
   {{ title_suffix }}
