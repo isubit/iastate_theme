@@ -7,7 +7,16 @@
 /* ## TYPOGRAPHY
 /* --------------------------------------  */
 
-a { /* Overrides Bootstrap 4 */
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: 'Nimbus Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-osx-font-smoothing: grayscale;
+  background-color: #ffffff;
+}
+
+a { /* Overrides bootstrap.min.css */
   color: #cc0000; /* ISU brand standard */
   text-decoration: underline; /* WCAG A standard */
   transition: color 300ms ease;
@@ -18,11 +27,6 @@ a.nav-link { /* Some links to not need underlines. */
   text-decoration: none;
 }
 
-body {
-  font-size: 1rem;
-  line-height: 1.5;
-  font-family: 'Nimbus Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -webkit-osx-font-smoothing: grayscale;
-  background-color: #ffffff;
+dl, ol, ul { /* Overrides bootstrap-reboot.min.css */
+  padding-left: 2rem;
 }
