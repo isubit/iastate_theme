@@ -26,6 +26,9 @@ a.badge,
 a.nav-link { /* Some links to not need underlines. */
   text-decoration: none;
 }
+button.btn {
+  cursor: pointer;
+}
 
 dl, ol, ul { /* Overrides bootstrap-reboot.min.css */
   padding-left: 2rem;

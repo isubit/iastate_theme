@@ -96,12 +96,11 @@
   border-radius: 0.25rem 0 0 0.25rem;
 }
 
-.isu-search__search-btn {
+.isu-search__search-btn,
+.search-page-form #edit-submit {
   height: 2.5rem;
   font-size: 1.15rem;
   line-height: 0;
-  color: #777;
-  background-color: #fff;
   border-radius: 0 0.25rem 0.25rem 0;
 }
 
@@ -129,6 +128,8 @@
 .isu-site-navbar .isu-search__search-btn {
   width: 2.5rem;
   padding: 0;
+  color: #777;
+  background-color: #fff;
 }
 
 .isu-site-navbar .isu-search__search-btn-text {
@@ -159,12 +160,13 @@
   margin-bottom: 0;
 }
 
-.search-page-form  .isu-search__search-btn {
+.search-page-form .isu-search__search-btn,
+.search-page-form #edit-submit {
   margin-left: -3px;
   border: 1px solid #d8d8d8;
 }
 
-.search-page-form  .isu-search__search-btn-text {
+.search-page-form #edit-submit {
   font-size: 1rem;
 }
 

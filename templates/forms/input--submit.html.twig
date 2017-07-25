@@ -11,9 +11,17 @@
  */
 #}
 
-{% set search_submit_classes = ['btn', 'isu-search__search-btn'] %}
+{% if attributes.hasClass('isu-search__search-btn') %}
 
-<button{{ attributes.addClass(search_submit_classes) }}>
-  <i class="fa fa-search"></i>
-  <span class="isu-search__search-btn-text">Submit search</span>
-</button>
+  <button{{ attributes.addClass('btn') }}>
+    <i class="fa fa-search"></i>
+    <span class="isu-search__search-btn-text">Submit search</span>
+  </button>
+
+{% else %}
+
+  {% set submit_classes = ['btn', 'btn-secondary'] %}
+  <button{{ attributes.addClass(submit_classes) }}>{{ attributes.value }}
+  </button>
+
+{% endif %}
