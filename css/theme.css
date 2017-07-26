@@ -37,14 +37,71 @@
  */
 
 .isu-site-navbar {
-  padding: 1rem 0;
+  padding: 0;
   background-color: #cc0000;
   border-bottom: 9px solid #f1be48;
 }
 
+.isu-row-site-navbar {
+  align-items: center;
+}
+
+.isu-col-header-first {
+  flex: 1 0 0;
+  text-align: center;
+}
+
+.isu-col-header-second {
+  width: 100%;
+  padding: 0;
+}
+
+.isu-region_header-second {
+  padding: 1rem;
+}
+
+/* --- ## Menu Navbar Toggle --- */
+
+.isu-menu-navbar_toggler {
+  width: auto;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  border: 0;
+  border-radius: 0;
+}
+
+.isu-menu-navbar_toggler-icon {
+  display: block;
+  width: auto;
+  /* Borrowed from Bootstrap 4 */
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.isu-menu-navbar_toggler-label {
+  display: block;
+  color: #fff;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
 /* Large */
 @media screen and (min-width: 992px) {
-  .isu-site-navbar { padding: 2rem 0; }
+  .isu-site-navbar { 
+    padding: 2rem 0; 
+  }
+  .isu-menu-navbar_toggler { 
+    display: none; 
+  }
+  .isu-col-header-first { 
+    text-align: left; 
+  }
+  .isu-region_header-second {
+    padding: 0;
+  }
+  .isu-col-header-second {
+    padding: 0 15px; /* Back to Bootstrap 4 default */
+  }
 }
 
 /* --- ## ISU WORDMARK --- */
@@ -65,14 +122,25 @@
   }
 .isu-wordmark-logo {
   height: 1.85rem;
-  width: auto;
-  max-width: 100%;
-  margin-bottom: 0.5rem;
+  width: 100%;
+  max-width: 250px;
 }
 .isu-wordmark-sitename {
-  font-size: 1.15rem;
+  font-size: 1rem;
   font-weight: 500;
   color: #ffffff;
+}
+
+/* Large */
+@media screen and (min-width: 992px) {
+  .isu-wordmark-logo { 
+    width: auto;
+    max-width: 100%;
+    margin-bottom: 0.5rem; 
+  }
+  .isu-wordmark-sitename {
+    font-size: 1.15rem;
+  }
 }
 
 /* --- ## SEARCH --- */
@@ -117,15 +185,49 @@
 
 /* Specific to Site Navbar search */
 
+.isu-search {
+  margin-top: 0;
+}
+
+.isu-search_toggler {
+  display: block;
+  padding: 1rem;
+  text-align: center;
+}
+
+.isu-search_toggler-icon {
+  display: block;
+  color: #ffffff;
+  font-size: 1.25rem;
+}
+
+.isu-search_toggler-label {
+  display: block;
+  color: #fff;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* Large */
+@media screen and (min-width: 992px) {
+  .isu-search_toggler {
+    display: none;
+  }
+}
+
 .isu-site-navbar .form-group { /* .form-group via Bootstrap 4 */
+  width: 100%;
   margin-bottom: 0;
 }
 
 .isu-site-navbar .isu-search__search-field {
   border: 0;
+  border-radius: 0.25rem;
 }
 
 .isu-site-navbar .isu-search__search-btn {
+  display: none;
   width: 2.5rem;
   padding: 0;
   color: #777;
@@ -142,6 +244,20 @@
   overflow: hidden;
   clip: rect(0,0,0,0);
   border: 0;
+}
+
+/* Large */
+@media screen and (min-width: 992px) {
+
+  .isu-site-navbar .form-group {
+    width: auto;
+  }
+  .isu-site-navbar .isu-search__search-field  {
+    border-radius: 0.25rem 0 0 0.25rem;
+  }
+  .isu-site-navbar .isu-search__search-btn {
+    display: inline-block;
+  }
 }
 
 /* Specific to search page search */
@@ -186,30 +302,36 @@
     margin-top: 1rem;
 }
 
-
 /* --- ## SITE LINKS MENU --- */
 /* Markup found in menu--site-links.html.twig 
  * Show/hide/rearrange menu in Drupal 8 Structure > Menus.
  */
 
 .isu-sitelinks {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 0.5rem;
-  margin-bottom: 0;
-  text-align: right;
+  display: none;
 }
-.isu-sitelinks-link {
-  margin-left: 0.5rem;
-  color: #ffffff;
-}
-  .isu-sitelinks-link:hover {
-    color: white;
-    background: rgba(0, 0, 0, 0.25);
+
+/* Large */
+@media screen and (min-width: 992px) {
+  .isu-sitelinks {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    text-align: right;
   }
-  .isu-sitelinks-link:focus {
+  .isu-sitelinks-link {
+    margin-left: 0.5rem;
     color: #ffffff;
   }
+    .isu-sitelinks-link:hover {
+      color: white;
+      background: rgba(0, 0, 0, 0.25);
+    }
+    .isu-sitelinks-link:focus {
+      color: #ffffff;
+    }
+}
 
 /* --------------------------------------  */
 /* ## ISU MENU NAVBAR
@@ -224,24 +346,6 @@
   .isu-menu-navbar {
     display: block;
   }
-}
-
-.isu-menu-navbar_toggler {
-  width: 100%;
-  padding: 0.75rem 1rem;
-  text-align: left;
-  border: 0;
-  border-radius: 0;
-}
-
-.isu-menu-navbar_toggler-icon {
-  /* Borrowed from Bootstrap 4 */
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
-
-.isu-menu-navbar_toggler-label {
-  color: #777;
-  font-size: 1rem;
 }
 
 .isu-nav-link {
