@@ -7,7 +7,7 @@ global-css:
       css/isu-navbar.css: {}
       css/base.css: {}
       css/layout.css: {}
-      css/component.css: {}
+      css/theme.css: {}
       css/isu-social.css: {}
 
 global-js:
