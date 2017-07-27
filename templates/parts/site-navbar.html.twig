@@ -25,12 +25,20 @@
         {{ page.header_first }}
       </div>
 
-      <div class="isu-search_toggler">
-        <i class="fa fa-search isu-search_toggler-icon"></i>
-        <span class="isu-search_toggler-label">Search</span>
-      </div>
+      {# Only show search toggle if Search is present #}
+      {% if page.header_second.d8iastate_search %}
+        <div class="isu-search_toggler">
+          <i class="fa fa-search isu-search_toggler-icon"></i>
+          <span class="isu-search_toggler-label">Search</span>
+        </div>
+      {% endif %}
 
+      {# Allow different styling if Search is present #}
+      {% if page.header_second.d8iastate_search %}
+      <div class="col-lg isu-col-header-second isu-col-header-second_has-search">
+      {% else %}
       <div class="col-lg isu-col-header-second">
+      {% endif %}
         {{ page.header_second }}
       </div>
 
