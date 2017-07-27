@@ -376,6 +376,7 @@
 }
 
 .isu-page-link {
+  height: 100%;
   text-decoration: none;
 }
 
@@ -476,6 +477,7 @@ details {
 
 .isu-form-control {
   width: auto;
+  max-width: 100%;
 }
 
 .isu-fieldset {
@@ -509,6 +511,13 @@ details {
 .form-checkboxes .form-group { 
   /* .form-checkboxes from Drupal 8, .form-group from Bootstrap 4 */
   margin-bottom: 0;
+}
+
+/* Buttons */
+
+.form-submit.btn:not(.isu-search__search-btn) {
+  /* Intended to catch form submit buttons that are NOT search */
+  margin-top: 0.5rem;
 }
 
 /* --------------------------------------  */
@@ -575,4 +584,32 @@ details {
 
 .isu-region:not(.isu-region_content) .isu-book-tree-title {
   font-size: 1.75rem; /* Same as .isu-block-title */
+}
+
+/* --------------------------------------  */
+/* ## FORUM
+/* --------------------------------------  */
+
+.isu-forum_indented {
+  margin-left: 2rem;
+}
+
+/* Small and below */
+@media screen and (max-width: 576px) {
+  .isu-forum {
+    overflow-x: scroll 
+  }
+
+  .isu-forum-table {
+    font-size: 0.9rem;
+  }
+
+  .isu-forum-table th,
+  .isu-forum-table td {
+    padding: 0.25rem;
+  }
+
+  .isu-forum_last-reply {
+    min-width: 5rem;
+  }
 }

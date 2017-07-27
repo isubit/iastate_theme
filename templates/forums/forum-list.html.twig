@@ -31,62 +31,64 @@
  */
 #}
 
-<table class="table table-bordered table-striped mt-3">
-  <thead>
-    <tr>
-      <th>{{ 'New'|t }}</th>
-      <th>{{ 'Forum'|t }}</th>
-      <th>{{ 'Topics'|t }}</th>
-      <th>{{ 'Posts'|t }}</th>
-      <th>{{ 'Last post'|t }}</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% for child_id, forum in forums %}
+<div class="isu-forum">
+  <table class="table table-bordered table-striped mt-3 isu-forum-table">
+    <thead>
+      <tr>
+        <th>{{ 'New'|t }}</th>
+        <th>{{ 'Forum'|t }}</th>
+        <th>{{ 'Topics'|t }}</th>
+        <th>{{ 'Posts'|t }}</th>
+        <th>{{ 'Last post'|t }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for child_id, forum in forums %}
 
-    <tr{% if forum.new_topics == true %} class="table-success"{% endif %}>
+      <tr{% if forum.new_topics == true %} class="table-success"{% endif %}>
 
-      {# First Column - New Posts #}
-      <td>
-        <div class="text-center">
-        {% if forum.new_topics == true %}
-          <a href="{{ forum.new_url }}">
-            <i class="fa fa-comment"></i>
-            <span class="visually-hidden">{{ forum.new_text }}</span>
-          </a>
-        {% else %}
-          <i class="fa fa-comment-o"></i>
+        {# First Column - New Posts #}
+        <td>
+          <div class="text-center">
+          {% if forum.new_topics == true %}
+            <a href="{{ forum.new_url }}">
+              <i class="fa fa-comment"></i>
+              <span class="visually-hidden">{{ forum.new_text }}</span>
+            </a>
+          {% else %}
+            <i class="fa fa-comment-o"></i>
+          {% endif %}
+        </div>
+
+        </td>
+
+        {# Second Column - Board Name #}
+        <td{% if forum.is_container == true %} colspan="4"{% endif %}>
+        
+        {% for i in 1..forum.depth if forum.depth > 0 %}
+          <div class="isu-forum_indented">
+        {% endfor %}
+          <div><a href="{{ forum.link }}">{{ forum.label }}</a></div>
+        
+        {% if forum.description.value %}
+          <div>{{ forum.description.value }}</div>
+        {% endif %} 
+        </td>
+
+        {% if forum.is_container == false %}
+
+          {# Third Column - Topic Count #}
+          <td class="text-center">{{ forum.num_topics }}</td>
+
+          {# Fourth Column - Post Count #}
+          <td class="text-center">{{ forum.num_posts }}</td>
+
+          {# Fifth Column - Last Reply #}
+          <td class="isu-forum_last-reply">{{ forum.last_reply }}</td>
+
         {% endif %}
-      </div>
-
-      </td>
-
-      {# Second Column - Board Name #}
-      <td{% if forum.is_container == true %} colspan="4"{% endif %}>
-      
-      {% for i in 1..forum.depth if forum.depth > 0 %}
-        <div class="indented">
-      {% endfor %}
-        <div><a href="{{ forum.link }}">{{ forum.label }}</a></div>
-      
-      {% if forum.description.value %}
-        <div>{{ forum.description.value }}</div>
-      {% endif %} 
-      </td>
-
-      {% if forum.is_container == false %}
-
-        {# Third Column - Topic Count #}
-        <td class="text-center">{{ forum.num_topics }}</td>
-
-        {# Fourth Column - Post Count #}
-        <td class="text-center">{{ forum.num_posts }}</td>
-
-        {# Fifth Column - Last Reply #}
-        <td>{{ forum.last_reply }}</td>
-
-      {% endif %}
-    </tr>
-  {% endfor %}
-  </tbody>
-</table>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</div>

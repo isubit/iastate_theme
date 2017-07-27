@@ -40,8 +40,9 @@
  */
 #}
 
-{% set forum_classes = ['table', 'table-bordered', 'table-striped', 'mt-3'] %}
-<table{{ attributes.addClass(forum_classes) }}>
+{% set forum_classes = ['table', 'table-bordered', 'table-striped', 'mt-3', 'isu-forum-table'] %}
+<div class="isu-forum">
+  <table{{ attributes.addClass(forum_classes) }}>
   {% if caption %}
     <caption>{{ caption }}</caption>
   {% endif %}
@@ -102,4 +103,5 @@
       {% endfor %}
     </tfoot>
   {% endif %}
-</table>
+  </table>
+</div>
