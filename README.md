@@ -1,2 +1,2 @@
-# d8iastate
-Drupal 8 Theme for Iowa State
+# iastate_theme
+Drupal 8 Theme for Iowa State University

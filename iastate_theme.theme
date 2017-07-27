@@ -2,7 +2,7 @@
 
 /* Add Bootstrap 4 classes to links in tabs */
 
-function d8iastate_preprocess_menu_local_task(&$variables) {
+function iastate_theme_preprocess_menu_local_task(&$variables) {
   $variables['link']['#attributes']['class'][] = 'nav-link';
   if (!empty($variables['element']['#active'])) {
     $variables['link']['#attributes']['class'][] = 'active';
@@ -11,13 +11,13 @@ function d8iastate_preprocess_menu_local_task(&$variables) {
 
 /* Add Bootstrap 4 classes to views buttons */
 
-function d8iastate_preprocess_views_view(&$variables) {
+function iastate_theme_preprocess_views_view(&$variables) {
   $variables['more']['#options']['attributes']['class'] = array('btn', 'btn-sm', 'btn-secondary');
 }
 
 /* Add Bootstrap 4 classes to local actions */
 
-function d8iastate_preprocess_menu_local_action(&$variables) {
+function iastate_theme_preprocess_menu_local_action(&$variables) {
   $variables['link']['#options']['attributes']['class'][] = 'btn';
   $variables['link']['#options']['attributes']['class'][] = 'btn-sm';
   $variables['link']['#options']['attributes']['class'][] = 'btn-secondary';
@@ -25,7 +25,7 @@ function d8iastate_preprocess_menu_local_action(&$variables) {
 
 /* Add Bootstrap 4 classes to Read More and Comments links */
 
-function d8iastate_preprocess_links(&$variables) {
+function iastate_theme_preprocess_links(&$variables) {
   $variables['links']['node-readmore']['link']['#options']['attributes']['class'][] = 'btn btn-sm btn-secondary';
   $variables['links']['comment-comments']['link']['#options']['attributes']['class'][] = 'btn btn-sm btn-secondary';
   $variables['links']['comment-add']['link']['#options']['attributes']['class'][] = 'btn btn-sm btn-secondary';
@@ -41,7 +41,7 @@ function d8iastate_preprocess_links(&$variables) {
 
 use Drupal\Core\Form\FormStateInterface;
 
-function d8iastate_form_alter(array &$form, FormStateInterface $form_state, $form_id) {
+function iastate_theme_form_alter(array &$form, FormStateInterface $form_state, $form_id) {
   if( $form_id == 'search_block_form') {
     $form['actions']['submit']['#attributes']['class'][] = 'isu-search__search-btn';
   }
@@ -49,7 +49,7 @@ function d8iastate_form_alter(array &$form, FormStateInterface $form_state, $for
 
 /* Allow is_front to be used on other templates */
 
-function d8iastate_preprocess(&$variables, $hook) {
+function iastate_theme_preprocess(&$variables, $hook) {
   try {
     $variables['is_front'] = \Drupal::service('path.matcher')->isFrontPage();
   }
@@ -62,6 +62,6 @@ function d8iastate_preprocess(&$variables, $hook) {
 
 /* Be able to toggle the ISU Navbar */
 
-function d8iastate_preprocess_page(&$variables) {
+function iastate_theme_preprocess_page(&$variables) {
   $variables['isu_navbar'] = theme_get_setting('isu_navbar');
 }

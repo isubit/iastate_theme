@@ -21,20 +21,20 @@
  * @param $form_state
  *   A keyed array containing the current state of the form.
  */
-function d8iastate_form_system_theme_settings_alter(&$form, &$form_state) {
+function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
 
   // Create a section for ISU theme settings
-  $form['d8iastate_settings'] = array(
+  $form['iastate_theme_settings'] = array(
     '#type'         => 'details',
-    '#title'        => t('ISU Theme Settings'),
-    '#description'  => t('Configure ISU theme options'),
+    '#title'        => t('IASTATE Theme Settings'),
+    '#description'  => t('Configure IASTATE Theme options'),
     '#weight' => -1000,
     '#open' => TRUE,
   );
 
   // Set up the checkbox to include/not include
   // $form['WHICH_SECTION']['OPTION_NAME']
-  $form['d8iastate_settings']['isu_navbar'] = array(
+  $form['iastate_theme_settings']['isu_navbar'] = array(
     '#type'         => 'checkbox',
     '#title'        => t('Show ISU navbar'),
     '#default_value' => theme_get_setting('isu_navbar'),
