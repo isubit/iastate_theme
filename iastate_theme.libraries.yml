@@ -13,8 +13,10 @@ global-css:
 global-js:
   js:
     js/isu-navbar.js: {}
+    js/iastate_theme.js: {}
   dependencies: 
     - core/jquery
+    - core/drupal
 
 # Nimbus Sans
 fonts:

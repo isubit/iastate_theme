@@ -3,6 +3,8 @@
  * jQuery the ISU Navbar. Includes keyboard navigable functionality.
  */
 
+ (function ($, Drupal) {
+
 $(document).ready(function() {
   
   // Allow navigation with left and right arrow keys
@@ -106,4 +108,6 @@ $(document).ready(function() {
       }
     }, 100 );
   })
-});
+})
+
+})(jQuery, Drupal);
