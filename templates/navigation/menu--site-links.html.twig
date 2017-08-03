@@ -31,14 +31,16 @@
 {% macro menu_links(items, attributes, menu_level) %}
   {% import _self as menus %}
   {% if items %}
-  	{% set classes = ['isu-sitelinks', 'list-inline'] %}
-      <ul{{ attributes.addClass(classes) }}>
-    {% for item in items %}
-      <li{{ item.attributes }}>
-      {% set classes = ['isu-sitelinks-link', 'btn', 'btn-sm'] %}
-        {{ link(item.title, item.url, {'class': classes}) }}
-      </li>
-    {% endfor %}
-    </ul>
+    <div id="isu-sitelinks_collapse" class="isu-sitelinks_collapse">
+    	{% set classes = ['isu-sitelinks', 'list-inline'] %}
+        <ul{{ attributes.addClass(classes) }}>
+      {% for item in items %}
+        <li{{ item.attributes }}>
+        {% set classes = ['isu-sitelinks-link', 'btn', 'btn-sm'] %}
+          {{ link(item.title, item.url, {'class': classes}) }}
+        </li>
+      {% endfor %}
+      </ul>
+  </div>
   {% endif %}
 {% endmacro %}
