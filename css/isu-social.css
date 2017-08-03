@@ -1,4 +1,8 @@
-/* Supplemental CSS for the ISU Theme's social icons */
+/**
+ * @file
+ * Supplemental CSS for the ISU Theme's social icons
+ */
+
 
 .isu-social-menu  a:before {
     border-radius: 0;
