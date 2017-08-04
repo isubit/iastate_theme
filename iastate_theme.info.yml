@@ -7,6 +7,9 @@ libraries:
   - iastate_theme/global-js
   - iastate_theme/fonts
   - iastate_theme/font-awesome
+ckeditor_stylesheets:
+  - css/bootstrap/bootstrap.min.css
+  - css/base.css
 stylesheets-remove:
   - core/assets/vendor/normalize-css/normalize.normalize
   - core/modules/system/css/system.module.css

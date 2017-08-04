@@ -393,13 +393,77 @@
   max-height: 100vh;
 }
 
-.isu-nav-link {
+.isu-nav-link.nav-link { 
+ /* .nav-link via Bootstrap 4.
+  * Present for specificity
+  */
+  padding-right: 1em;
+  padding-left: 1em;
   color: #333;
 }
   .isu-nav-link:hover {
     color: #333;
     background: #d8d8d8;
   }
+
+.show .isu-nav-link { /* .show via Bootstrap 4 */
+  color: #333;
+  background: #d8d8d8;
+}
+
+/* Duplicate of Bootstrap 4 dropdown-toggle, recreated here because
+ * dropdown-toggle removes focus
+ */
+.isu-dropdown-toggle::after {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 0.3em;
+  vertical-align: middle;
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-left: 0.3em solid transparent;
+}
+
+/* Override of Bootstrap 4 dropdown-menu, recreated here
+ * to re-style mobile dropdown */
+.isu-dropdown-menu {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: #e5e5e5;
+}
+
+@media screen and (min-width: 576px) {
+
+}
+
+.isu-dropdown-item {
+  padding: 0;
+}
+  .isu-dropdown-item:focus,
+  .isu-dropdown-item:hover,
+  .isu-dropdown-item.active,
+  .isu-dropdown-item:active  {
+    background-color:transparent;
+  }
+
+.isu-dropdown-item a {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: #333;
+  text-decoration: none;
+}
+
+  .isu-dropdown-item a:focus,
+  .isu-dropdown-item a:hover,
+  .isu-dropdown-item a.active,
+  .isu-dropdown-item a:active {
+    background: #dedede;
+  }
+
 
 @media screen and (max-width: 575px) {
   .isu-menu-navbar {
@@ -426,6 +490,17 @@
 
 .isu-page-title {
   margin-bottom: 2rem;
+}
+
+/* --- ## Submitted By --- */
+/* Also found in Comments */
+
+.isu-submitted-by_card .card-header { /* .card-header via Bootstrap 4 */
+  padding: 0.5rem;
+}
+
+.isu-submitted-by_date {
+  font-size: 0.85rem;
 }
 
 /* --- ## PAGINAION --- */
@@ -494,6 +569,25 @@
   color: #777;
 }
 
+/* --- ## Summary Unformatted --- */
+/* As seen in Glossary */
+
+.isu-unformatted-summary_row {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.isu-row-separator {
+  display: none;
+}
+
+.isu-row-count-badge {
+  position: relative;
+  top: -1.15rem;
+  left: -0.75rem;
+  margin-right: -0.75rem;
+}
+
 /* --------------------------------------  */
 /* ## FIELDS
 /* --------------------------------------  */
@@ -513,9 +607,16 @@
   border-top: 1px solid #d8d8d8;
 }
 
-.isu-comments_title {
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
+.isu-comment .card-header { /* .card-header via Bootstrap 4 */
+  padding: 0.5rem;
+}
+
+.isu-comment_title {
+  font-size: 1.15rem;
+}
+
+.isu-comment_submitted {
+  font-size: 0.85rem;
 }
 
 .indented { 

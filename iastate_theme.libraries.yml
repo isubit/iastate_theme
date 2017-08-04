@@ -14,6 +14,7 @@ global-js:
   js:
     js/isu-navbar.js: {}
     js/iastate_theme.js: {}
+    js/bootstrap/bootstrap.min.js: {}
   dependencies: 
     - core/jquery
     - core/drupal
