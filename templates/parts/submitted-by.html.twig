@@ -6,13 +6,16 @@
  */
 #}
 
-<footer class="card mb-3">
+<footer class="card mb-3 isu-submitted-by_card">
   <div class="card-header">
     <div class="d-flex">
       <div class="mr-3">
         {{ author_picture }}
       </div>
-      <div>{% trans %}Submitted by {{ author_name }} <br><small> on {{ date }} {% endtrans %}
+      <div>
+        <span class="isu-submitted-by_name">{% trans %}Submitted by {{ author_name }} </span>
+          <br>
+        <span class="isu-submitted-by_date"> on {{ date }}{% endtrans %}</span>
         {% if content.taxonomy_forums|render is not empty %}
           {% trans %}in <div class="d-inline-block">{{ content.taxonomy_forums }}</div>{% endtrans %}
         {% endif %}

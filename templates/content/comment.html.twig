@@ -69,7 +69,7 @@
 
   <mark class="hidden badge badge-success" data-comment-timestamp="{{ new_indicator_timestamp }}"></mark>
 
-  <div class="card mb-3">
+  <div class="card isu-comment mb-3">
     <div class="card-header">
       <header class="d-flex">
         <div class="mr-3">
@@ -79,10 +79,10 @@
         <div>
           {% if title %}
             {{ title_prefix }}
-            <h3{{ title_attributes }} class="h5">{{title}}</h3>
+            <h3{{ title_attributes }} class="isu-comment_title">{{title}}</h3>
             {{ title_suffix }}
           {% endif %}
-          <small>{{ submitted }}</small>
+          <span class="isu-comment_submitted">{{ submitted }}</span>
         </div>
       </header>
     </div>
