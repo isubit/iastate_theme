@@ -46,8 +46,8 @@
     </div>
   {% else %}
     {% for item in items %}
-      {% set forum_post_classes = ['mt-4', 'mb-4'] %}
-      <div{{ attributes.addClass(forum_post_classes) }}>{{ item.content }}</div>
+      {% set classes = ['mt-4', 'mb-4', 'isu-body'] %}
+      <div{{ attributes.addClass(classes) }}>{{ item.content }}</div>
     {% endfor %}
   {% endif %}
 {% else %}
@@ -57,8 +57,8 @@
       <div>
     {% endif %}
     {% for item in items %}
-      {% set forum_post_classes = ['mt-4', 'mb-4'] %}
-      <div{{ item.attributes.addClass(forum_post_classes) }}>{{ item.content }}</div>
+      {% set post_classes = ['mt-4', 'mb-4', 'isu-body'] %}
+      <div{{ item.attributes.addClass(classes) }}>{{ item.content }}</div>
     {% endfor %}
     {% if multiple %}
       </div>

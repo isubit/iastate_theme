@@ -26,6 +26,8 @@
  *    - Social Media Menu
  *    - Legal Menu
  * 11 BOOK
+ * 12 FORUM
+ * 13 CONTENT
  *
  */
 
@@ -350,6 +352,8 @@
 
 .isu-sitelinks_collapse {
   max-height: 0;
+  padding-bottom: 3px; /* Make room for :focus outline */
+  padding-right: 3px; /* Make room for :focus outline */
   overflow: hidden;
   transition: max-height 500ms ease;
 }
@@ -624,6 +628,11 @@
   margin-left: 4rem;
 }
 
+/* Drupal class, Bootstrap 4 class */
+.field--name-comment-body .form-group {
+  margin-bottom: 0;
+}
+
 /* --------------------------------------  */
 /* ## FORMS
 /* --------------------------------------  */
@@ -773,3 +782,31 @@ details {
     min-width: 5rem;
   }
 }
+
+/* --------------------------------------  */
+/* ## CONTENT
+/* --------------------------------------  */
+
+/* --- Figures and Captions --- */
+
+.isu-body figure {
+  display: table;
+}
+
+.isu-body figure img {
+  max-width: 100%;
+  display: block;
+  margin: 0;
+}
+
+.isu-body figure figcaption {
+  display: table-caption;
+  caption-side: bottom;
+
+  /* Caption styles */
+  padding: 0.5rem;
+  color: #333;
+  font-size: 0.9rem;
+  background: #eee;
+}
+
