@@ -42,7 +42,7 @@
   {%- endif -%}
 
 
-  {% set classes = ['list-inline', 'mt-3'] %}
+  {% set classes = ['list-inline'] %}
   <ul{{ attributes.addClass(classes) }}>
     {%- for item in links -%}
       <li{{ item.attributes.addClass('list-inline-item') }}>
