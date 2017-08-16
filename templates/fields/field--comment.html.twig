@@ -26,17 +26,23 @@
  * @see comment_preprocess_field()
  */
 #}
+
+{% set comments_classes = [
+  'isu-comments_title',
+  'h3'
+  ]
+%}
 <section{{ attributes.addClass('isu-comments-section') }}>
   {% if comments and not label_hidden %}
     {{ title_prefix }}
-    <h2{{ title_attributes.addClass('isu-comments_title') }}>{{ label }}</h2>
+    <h2{{ title_attributes.addClass(comments_classes) }}>{{ label }}</h2>
     {{ title_suffix }}
   {% endif %}
 
   {{ comments }}
 
   {% if comment_form %}
-    <h2{{ content_attributes.addClass('isu-comments_title') }}>{{ 'Add new comment'|t }}</h2>
+    <h2{{ content_attributes.addClass(comments_classes) }}>{{ 'Add new comment'|t }}</h2>
     {{ comment_form }}
   {% endif %}
 
