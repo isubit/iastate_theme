@@ -17,9 +17,3 @@
  .isu-main {
   flex-grow: 1;
  }
-
-/* --- Homepage block spacing --- */
-/* block.html.twig adds this class for blocks on <front> */
-.isu-main .isu-block-front { 
-  margin-bottom: 3rem;
-}
