@@ -26,7 +26,7 @@
       </div>
 
       {# Only show search toggle if Search is present #}
-      {% if page.header_second.iastate_theme_search %}
+      {% if page.header_second.iastate_theme_searchform %}
         <div class="isu-search_toggler" id="isu-search_toggler">
           <i class="fa fa-search isu-search_toggler-icon"></i>
           <span class="isu-search_toggler-label">Search</span>
@@ -34,7 +34,7 @@
       {% endif %}
 
       {# Allow different styling if Search is present #}
-      {% if page.header_second.iastate_theme_search %}
+      {% if page.header_second.iastate_theme_searchform %}
       <div class="col-lg isu-col-header-second isu-col-header-second_has-search">
       {% else %}
       <div class="col-lg isu-col-header-second">
