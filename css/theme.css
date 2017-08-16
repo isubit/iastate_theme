@@ -18,16 +18,17 @@
  *    - ISU List View
  * 06 FIELDS
  *    - Tags
- * 07 COMMENTS
- * 08 FORMS
- * 09 SEARCH RESULTS
- * 10 FOOTER
+ * 07 COMPONENTS
+ * 08 COMMENTS
+ * 09 FORMS
+ * 10 SEARCH RESULTS
+ * 11 FOOTER
  *    - Associates Menu
  *    - Social Media Menu
  *    - Legal Menu
- * 11 BOOK
- * 12 FORUM
- * 13 CONTENT
+ * 12 BOOK
+ * 13 FORUM
+ * 14 CONTENT
  *
  */
 
@@ -345,7 +346,6 @@
 .isu-sitelinks {
   display: flex;
   justify-content: flex-end;
-  margin-top: 1rem;
   margin-bottom: 1rem;
   text-align: right;
 }
@@ -602,6 +602,15 @@
 }
 
 /* --------------------------------------  */
+/* ## COMPONENTS
+/* --------------------------------------  */
+
+.isu-links .comment-forbidden {
+  /* .comment-forbidden via Drupal 8 */
+  margin-top: 1rem;
+}
+
+/* --------------------------------------  */
 /* ## COMMENTS
 /* --------------------------------------  */
 
@@ -609,6 +618,10 @@
   margin-top: 1rem;
   padding-top: 1rem;
   border-top: 1px solid #d8d8d8;
+}
+
+.isu-comments_title {
+  margin-bottom: 1rem;
 }
 
 .isu-comment .card-header { /* .card-header via Bootstrap 4 */
