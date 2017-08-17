@@ -4,16 +4,26 @@
  */
 
 /* --- Push the footer down --- */
- html,
- body {
+html,
+body {
   height: 100%; 
- }
+}
 
- body {
+body {
   display: flex;
   flex-direction: column;
- }
+}
 
- .isu-main {
+.isu-site-navbar {
+  flex-shrink: 0;
+}
+
+.isu-main {
   flex-grow: 1;
- }
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+
+.isu-footer {
+  flex-shrink: 0;
+}
