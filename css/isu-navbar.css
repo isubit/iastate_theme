@@ -66,14 +66,17 @@
     .isu-navbar_container { width: 1140px; }
   }
 
-.isu-navbar_menu--left,
-.isu-navbar_alpha,
-.isu-navbar_menu--right {
-  list-style: none;
-  display: flex;
-  padding: 0;
-  margin: 0;
+/* Forces list items to break */
+.isu-navbar_break {
+  width: 100%;
 }
+
+  @media screen and (min-width: 576px) {
+    .isu-navbar_break {
+      width: 0px;
+      flex-grow: 1;
+    }
+  }
 
 .isu-navbar_dropdown {
   position: relative;
