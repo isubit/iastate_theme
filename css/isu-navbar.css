@@ -39,7 +39,6 @@
   }
 
 .isu-navbar_container {
-  width: 1140px;
   max-width: 100%;
   margin-right: auto;
   margin-left: auto;
@@ -48,9 +47,24 @@
   padding-left: 15px;
 
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+
+  list-style-type: none;
 }
+
+  /* Breakpoints mimic Bootstrap 4 */
+  @media (min-width: 576px) {
+    .isu-navbar_container { width: 540px; }
+  }
+  @media (min-width: 768px) {
+    .isu-navbar_container { width: 720px; }
+  }
+  @media (min-width: 992px) {
+    .isu-navbar_container { width: 960px; }
+  }
+  @media (min-width: 1200px) {
+    .isu-navbar_container { width: 1140px; }
+  }
 
 .isu-navbar_menu--left,
 .isu-navbar_alpha,
