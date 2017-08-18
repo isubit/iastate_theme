@@ -102,10 +102,24 @@
   display: flex;
 }
 
+.isu-navbar_dropdown-menu a:hover,
+.isu-navbar_dropdown-menu a:focus,
+.isu-navbar_dropdown-menu.has-focus {
+  background-color: #757575;
+}
+
 /* -------------------------------------- */
 /* Dropdown menus                    */
 /* -------------------------------------- */
 
 .isu-navbar_dropdown[aria-expanded='false'] .isu-navbar_dropdown-menu {
   display: none;
+}
+
+.isu-navbar_dropdown_alpha:hover > .isu-navbar_alpha {
+  display: flex;
+}
+
+.isu-navbar_dropdown_signons:hover > .isu-navbar_signons {
+  display: block;
 }
