@@ -107,15 +107,7 @@
   z-index: 9999;
 }
 
-.isu-navbar_dropdown-menu-index {
-  display: flex;
-}
-
-.isu-navbar_dropdown-menu-alpha {
-  display: block;
-}
-
-.isu-navbar_alpha li {
+.isu-navbar_alpha {
   display: flex;
 }
 
