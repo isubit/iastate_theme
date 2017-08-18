@@ -116,10 +116,13 @@
   display: none;
 }
 
-.isu-navbar_dropdown_alpha:hover > .isu-navbar_alpha {
-  display: flex;
-}
+@media (min-width: 992px) {
 
-.isu-navbar_dropdown_signons:hover > .isu-navbar_signons {
-  display: block;
+  .isu-navbar_dropdown_alpha:hover > .isu-navbar_alpha {
+    display: flex;
+  }
+
+  .isu-navbar_dropdown_signons:hover > .isu-navbar_signons {
+    display: block;
+  }
 }
