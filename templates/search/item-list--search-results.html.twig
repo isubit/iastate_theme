@@ -24,7 +24,7 @@
 {% endif %}
 {% if items or empty %}
   {%- if title is not empty -%}
-    <h3>{{ title }}</h3>
+    <h2 class="h4">{{ title }}</h2>
   {%- endif -%}
 
 <div class="isu-search-results">
@@ -36,7 +36,7 @@
       {%- endfor -%}
     </{{ list_type }}>
   {%- else -%}
-    {{- empty -}}
+    <div class="alert alert-danger">{{- "Your search yielded no results." -}}</div>
   {%- endif -%}
 </div>
 {%- endif %}
