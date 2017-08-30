@@ -44,3 +44,8 @@ blockquote { /* Duplicates Bootstrap 4's .blockquote */
 body.cke_editable {
   margin: 1rem;
 }
+
+.form-control:focus { 
+  /* Overrides bootstrap.min.css which removed focus style */
+  outline: #5cb3fd auto 5px;
+}
