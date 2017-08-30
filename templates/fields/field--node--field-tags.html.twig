@@ -9,7 +9,7 @@
 
 <div{{ attributes.addClass('field_tags') }}>
   {% if not label_hidden %}
-    <h2 class="h6 d-inline"><i class="fa fa-tags"></i> {{ label }}:</h2>
+    <h2 class="h6 d-inline"><span class="fa fa-tags" aria-hidden="true"></span> {{ label }}:</h2>
   {% endif %}
   <ul class="list-inline d-inline">
     {% for item in items %}
