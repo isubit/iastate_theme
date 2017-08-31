@@ -1,0 +1,26 @@
+{#
+/**
+ * @file
+ * Theme override for a filter caption.
+ *
+ * Returns HTML for a captioned image, audio, video or other tag.
+ *
+ * Available variables
+ * - string node: The complete HTML tag whose contents are being captioned.
+ * - string tag: The name of the HTML tag whose contents are being captioned.
+ * - string caption: The caption text.
+ * - string classes: The classes of the captioned HTML tag.
+ *
+ * IASTATE theme note: The only reason we reproduced this template was 
+ * to add role="group" and aria-labelled by
+ */
+#}
+
+
+{% set figid = random() %}
+
+<figure role="group" class="caption caption-{{ tag }}{%- if classes %} {{ classes }}{%- endif %}" aria-labelledby="{{ figid }}">
+  {{ node }}
+  <figcaption id="{{ figid }}">{{ caption }}</figcaption>
+</figure>
+
