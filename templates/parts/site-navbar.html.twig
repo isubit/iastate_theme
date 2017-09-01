@@ -12,11 +12,11 @@
  */
 #}
 
-<header class="isu-site-navbar" role="banner">
+<header class="isu-site-navbar" role="banner" aria-label="Site header">
   <div class="container">
     <div class="row isu-row-site-navbar">
 
-      <button class="navbar-toggler isu-menu-navbar_toggler" type="button" data-toggle="collapse" id="isu-menu-navbar_toggler" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler isu-menu-navbar_toggler" type="button" data-toggle="collapse" id="isu-menu-navbar_toggler" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon isu-menu-navbar_toggler-icon"></span>
         <span class="isu-menu-navbar_toggler-label">Menu</span>
       </button>
@@ -28,7 +28,7 @@
       {# Only show search toggle if Search is present #}
       {% if page.header_second.iastate_theme_searchform %}
         <div class="isu-search_toggler" id="isu-search_toggler">
-          <i class="fa fa-search isu-search_toggler-icon"></i>
+          <span class="fa fa-search isu-search_toggler-icon" aria-hidden="true"></span>
           <span class="isu-search_toggler-label">Search</span>
         </div>
       {% endif %}

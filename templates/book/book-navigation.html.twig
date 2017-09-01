@@ -32,11 +32,11 @@
   <nav role="navigation" aria-labelledby="book-label-{{ book_id }}">
     {{ tree }}
     {% if has_links %}
-      <h2 class="isu-book-navigation-title h5">{{ 'Navigate this book'|t }}</h2>
+      <h2 id="book-label-{{ book_id}}" class="isu-book-navigation-title h5">{{ 'Navigate this book'|t }}</h2>
       <ul class="pagination">
       {% if prev_url %}
         <li class="page-item">
-          <a class="page-link isu-page-link" href="{{ prev_url }}" rel="prev" title="{{ 'Go to previous page'|t }}"><b>{{ '‹'|t }}</b> {{ prev_title }}</a>
+          <a class="page-link isu-page-link" href="{{ prev_url }}" rel="prev" title="{{ 'Go to previous page'|t }}"><span class="isu-book-navigation_caret">{{ '‹'|t }}</span> {{ prev_title }}</a>
         </li>
       {% endif %}
       {% if parent_url %}
@@ -46,7 +46,7 @@
       {% endif %}
       {% if next_url %}
         <li class="page-item">
-          <a class="page-link isu-page-link" href="{{ next_url }}" rel="next" title="{{ 'Go to next page'|t }}">{{ next_title }} <b>{{ '›'|t }}</b></a>
+          <a class="page-link isu-page-link" href="{{ next_url }}" rel="next" title="{{ 'Go to next page'|t }}">{{ next_title }} <span class="isu-book-navigation_caret">{{ '›'|t }}</span></a>
         </li>
       {% endif %}
     </ul>

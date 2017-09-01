@@ -52,11 +52,11 @@
           <div class="text-center">
           {% if forum.new_topics == true %}
             <a href="{{ forum.new_url }}">
-              <i class="fa fa-comment"></i>
+              <span class="fa fa-comment" aria-hidden="true"></span>
               <span class="visually-hidden">{{ forum.new_text }}</span>
             </a>
           {% else %}
-            <i class="fa fa-comment-o"></i>
+            <span class="fa fa-comment-o" aria-hidden="true"></span>
           {% endif %}
         </div>
 

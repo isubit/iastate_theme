@@ -32,7 +32,7 @@
   'h3'
   ]
 %}
-<section{{ attributes.addClass('isu-comments-section') }}>
+<section{{ attributes.addClass('isu-comments-section') }} aria-label="Comments">
   {% if comments and not label_hidden %}
     {{ title_prefix }}
     <h2{{ title_attributes.addClass(comments_classes) }}>{{ label }}</h2>
