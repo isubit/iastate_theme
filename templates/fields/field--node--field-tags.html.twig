@@ -13,7 +13,7 @@
   {% endif %}
   <ul class="list-inline d-inline">
     {% for item in items %}
-      <li{{ item.attributes.addClass('list-inline-item') }}><a href="{{ item.content['#url']|render }}" class="badge badge-default">{{ item.content['#title'] }}</a></li>
+      <li{{ item.attributes.addClass('list-inline-item') }}><a href="{{ item.content['#url']|render }}" class="badge badge-dark">{{ item.content['#title'] }}</a></li>
     {% endfor %}
   </ul>
 </div>
