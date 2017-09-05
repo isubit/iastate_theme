@@ -21,14 +21,26 @@ a { /* Overrides bootstrap.min.css */
   text-decoration: underline; /* WCAG A standard */
   transition: color 300ms ease;
 }
+
 a.btn,
 a.badge,
 a.nav-link { /* Some links to not need underlines. */
   text-decoration: none;
 }
+
 button.btn {
   cursor: pointer;
 }
+
+.btn-outline-primary { /* Overrides bootstrap.min.css */
+  color: #cc0000; /* ISU brand standard */
+  background-color: #ffffff;
+  border-color: #cc0000;
+}
+  .btn-outline-primary:hover {
+    background-color: #cc0000;
+    border-color: #cc0000
+  }
 
 dl, ol, ul { /* Overrides bootstrap-reboot.min.css */
   padding-left: 2rem;
