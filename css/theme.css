@@ -84,6 +84,10 @@
   font-weight: 700;
 }
 
+.isu-menu-navbar_wrap {
+  width: 100%;
+}
+
 /* Large */
 @media screen and (min-width: 992px) {
   .isu-site-navbar { 
