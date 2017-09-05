@@ -84,6 +84,10 @@
   font-weight: 700;
 }
 
+.isu-menu-navbar_wrap {
+  width: 100%;
+}
+
 /* Large */
 @media screen and (min-width: 992px) {
   .isu-site-navbar { 
@@ -413,21 +417,6 @@
 .show .isu-nav-link { /* .show via Bootstrap 4 */
   color: #333;
   background: #d8d8d8;
-}
-
-/* Duplicate of Bootstrap 4 dropdown-toggle, recreated here because
- * dropdown-toggle removes focus
- */
-.isu-dropdown-toggle::after {
-  content: '';
-  display: inline-block;
-  width: 0;
-  height: 0;
-  margin-left: 0.3em;
-  vertical-align: middle;
-  border-top: 0.3em solid;
-  border-right: 0.3em solid transparent;
-  border-left: 0.3em solid transparent;
 }
 
 /* Override of Bootstrap 4 dropdown-menu, recreated here

@@ -28,14 +28,14 @@
     row.active ? 'active',
     'btn',
     'btn-sm',
-    'btn-secondary',
+    'btn-outline-primary',
     'isu-unformatted-summary_row'
     ] 
   %}
 
   <a href="{{ row.url }}"{{ row.attributes.addClass(rowClasses) }}>{{ row.link }}</a>
   {% if options.count %}
-    <span class="badge badge-default badge-pill isu-row-count-badge">{{ row.count }}</span>
+    <span class="badge badge-dark badge-pill isu-row-count-badge">{{ row.count }}</span>
   {% endif %}
   {{ options.inline ? '</span>' : '</div>' }}
 {% endfor %}
