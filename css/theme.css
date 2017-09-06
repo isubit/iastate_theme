@@ -639,6 +639,12 @@
 /* ## FORMS
 /* --------------------------------------  */
 
+.form-required:after { /* .form-required from Drupal 8 */
+  content: '*';
+  margin-left: 0.25rem;
+  color: #cc0000;
+}
+
 details {
   margin-bottom: 1rem;
   padding: 0.5rem 1rem;
