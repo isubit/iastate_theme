@@ -20,7 +20,6 @@ regions:
   header_second: "Header Second"
   menu_navbar: 'Menu Navbar'
   post_nav: 'Post Nav'
-  highlighted: 'Highlighted'
   breadcrumbs: 'Breadcrumbs'
   content: 'Page Content'
   sidebar_first: 'Sidebar First'
