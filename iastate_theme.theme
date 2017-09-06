@@ -49,7 +49,7 @@ function iastate_theme_form_alter(array &$form, FormStateInterface $form_state, 
 
 
 /*
- * Implements function template_preprocess_field_multiple_value_form().
+ * Implements template_preprocess_field_multiple_value_form().
  */
 function iastate_theme_preprocess_field_multiple_value_form(&$variables) {
   if ($variables['table']['#header'][0]['data']['#prefix'] == "<h4 class=\"label\">") {
