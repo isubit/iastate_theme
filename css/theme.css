@@ -751,6 +751,16 @@ details {
 
 .filter-wrapper { margin-bottom: 1.5rem; }
 
+/* --- File or image upload --- */
+
+.isu-form-type_managed-file {
+  /* Like .isu-fieldset */
+  margin: 0.5rem 0 1rem;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  border: 1px solid #d8d8d8;
+}
+
 /* --- ## Submit Buttons --- */
 
 .isu-form-submit { margin-top: 2rem; }
