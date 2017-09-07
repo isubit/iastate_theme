@@ -724,10 +724,15 @@ details {
   padding: 0;
 }
 
-/* Checkboxes */
+/* --- ## Checkboxes --- */
 
-.form-checkboxes .form-group { 
-  /* .form-checkboxes from Drupal 8, .form-group from Bootstrap 4 */
+.isu-form-type_checkbox.isu-form-group {
+  margin-bottom: 0;
+}
+
+/* --- ## Radios --- */
+
+.isu-form-type_radio.isu-form-group {
   margin-bottom: 0;
 }
 
