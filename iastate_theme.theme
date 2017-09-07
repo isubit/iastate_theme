@@ -47,6 +47,26 @@ function iastate_theme_form_alter(array &$form, FormStateInterface $form_state, 
   }
 }
 
+
+/*
+ * Implements template_preprocess_field_multiple_value_form().
+ */
+function iastate_theme_preprocess_field_multiple_value_form(&$variables) {
+   $variables['table']['#attributes']['class'][] = 'table table-bordered isu-multiple-value-form-table';
+   
+  if ($variables['table']['#header'][0]['data']['#prefix'] == "<h4 class=\"label\">") {
+    unset($variables['table']['#header'][0]['data']['#prefix'], $variables['table']['#header'][0]['data']['#suffix']);
+  }
+}
+
+/*
+ * Implements template_preprocess_file_widget_multiple().
+ */
+
+function iastate_theme_preprocess_file_widget_multiple(&$variables) {
+  $variables['table']['#attributes']['class'][] = 'table table-bordered isu-file-widget-multiple-table';
+}
+
 /* Allow is_front to be used on other templates */
 
 function iastate_theme_preprocess(&$variables, $hook) {
