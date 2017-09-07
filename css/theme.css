@@ -599,6 +599,37 @@
   margin-top: 1rem;
 }
 
+/* --- ## Unsaved changes alerts --- */
+/* Commonly found when re-ordering multiple inputs */
+/* Mimics Bootstrap 4 .alert.alert-warning */
+
+.tabledrag-changed-warning {
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+
+  color: #856404;
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+}
+
+abbr[title].tabledrag-changed {
+  padding: 0.25rem;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+
+  color: #856404;
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  text-decoration: none;
+}
+
 /* --------------------------------------  */
 /* ## COMMENTS
 /* --------------------------------------  */
