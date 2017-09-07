@@ -688,6 +688,10 @@ details {
   max-width: 100%;
 }
 
+.isu-form-control.error { /* .error via Drupal 8 */
+  border: 1px solid #cc0000;
+}
+
 .isu-fieldset {
   margin: 0.5rem 0;
   padding: 1rem;
