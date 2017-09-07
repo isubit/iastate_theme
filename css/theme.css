@@ -742,6 +742,15 @@ details {
   width: auto;
 }
 
+/* --- ## Text fields with text format filter --- */
+/* .js-text-format-wrapper and .filter-wrapper via Drupal 8 */
+
+.js-text-format-wrapper .isu-form-group { margin-bottom: 0; }
+
+.js-text-format-wrapper .isu-form-control { width: 100%; }
+
+.filter-wrapper { margin-bottom: 1.5rem; }
+
 /* --- ## Submit Buttons --- */
 
 .isu-form-submit { margin-top: 2rem; }
