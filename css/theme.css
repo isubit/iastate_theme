@@ -742,12 +742,13 @@ details {
   width: auto;
 }
 
-/* Buttons */
+/* --- ## Submit Buttons --- */
 
-.form-submit.btn:not(.isu-search__search-btn) {
-  /* Intended to catch form submit buttons that are NOT search */
-  margin-top: 0.5rem;
-}
+.isu-form-submit { margin-top: 2rem; }
+
+.isu-search__search-btn,
+.isu-add-another-item-button,
+.isu-remove-button { margin-top: 0; }
 
 /* --------------------------------------  */
 /* ## SEARCH RESULTS
