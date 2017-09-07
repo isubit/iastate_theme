@@ -57,6 +57,14 @@ function iastate_theme_preprocess_field_multiple_value_form(&$variables) {
   }
 }
 
+/*
+ * Implements template_preprocess_file_widget_multiple().
+ */
+
+function iastate_theme_preprocess_file_widget_multiple(&$variables) {
+  $variables['table']['#attributes']['class'][] = 'table table-bordered isu-file-widget-multiple-table';
+}
+
 /* Allow is_front to be used on other templates */
 
 function iastate_theme_preprocess(&$variables, $hook) {
