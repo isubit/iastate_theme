@@ -44,9 +44,12 @@
  * @see template_preprocess_form_element()
  */
 #}
+
 {%
   set classes = [
-    'form-group',
+    'form-group', 
+    'isu-form-group',
+    'isu-form-type_' ~ type|clean_class,
     'js-form-item',
     'form-item',
     'js-form-type-' ~ type|clean_class,
@@ -60,6 +63,7 @@
 {%
   set description_classes = [
     'description',
+    'isu-form-element-description',
     description_display == 'invisible' ? 'visually-hidden',
   ]
 %}
