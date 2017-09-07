@@ -736,6 +736,12 @@ details {
   margin-bottom: 0;
 }
 
+/* --- ## Date --- */
+
+.isu-form-control_date {
+  width: auto;
+}
+
 /* Buttons */
 
 .form-submit.btn:not(.isu-search__search-btn) {
