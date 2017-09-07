@@ -692,6 +692,12 @@ details {
   border: 1px solid #cc0000;
 }
 
+.isu-form-element-description {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: #666666;
+}
+
 .isu-fieldset {
   margin: 0.5rem 0;
   padding: 1rem;
