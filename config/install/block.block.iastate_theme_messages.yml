@@ -8,7 +8,7 @@ dependencies:
 id: iastate_theme_messages
 theme: iastate_theme
 region: content
-weight: -1
+weight: -5
 provider: null
 plugin: system_messages_block
 settings:
