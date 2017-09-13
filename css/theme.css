@@ -492,7 +492,14 @@
   padding: 0.5rem;
 }
 
-.isu-submitted-by_date {
+/* If there is a user picture */
+
+.isu-user ~ div > .isu-submitted-by_name,
+.isu-user ~ div > .isu-submitted-by_date {
+  display: block;
+}
+
+.isu-user ~ div > .isu-submitted-by_date {
   font-size: 0.85rem;
 }
 
