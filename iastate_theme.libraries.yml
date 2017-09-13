@@ -5,6 +5,7 @@ global-css:
       css/bootstrap/bootstrap-grid.min.css: {}
       css/bootstrap/bootstrap.min.css: {}
       css/isu-navbar.css: {}
+      css/isu-responsivetables.css: {}
       css/base.css: {}
       css/layout.css: {}
       css/theme.css: {}
@@ -14,6 +15,7 @@ global-js:
   js:
     js/isu-navbar.js: {}
     js/iastate_theme.js: {}
+    js/isu-responsivetables.js: {}
     js/bootstrap/popper.min.js: {}
     js/bootstrap/util.js: {}
     js/bootstrap/dropdown.js: {}

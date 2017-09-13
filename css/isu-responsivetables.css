@@ -1,0 +1,183 @@
+/**
+ * @file
+ * CSS for responsive tables. Table styling comes from the 
+ * Bootstrap 4 table classes.
+ */
+
+/* -------------------- */
+/* Images in responsive tables */
+
+.isu-responsive-table img {
+    height: auto !important;
+}
+
+@media (min-width: 801px) {
+
+    .isu-responsive-table img {
+        /* Prevents images from shrinking to nothing 
+           before responsive table-breaking kicks in. */
+        max-width: none;
+    }
+}
+
+/* -------------------- */
+/* If javascript is not enabled */
+
+    
+    article table {
+        display: block;
+        max-width: 100%;
+        overflow: hidden;
+        overflow-x: auto;
+    }
+    
+    article table tr {
+        width: 100%;
+    }
+    
+    article table::-webkit-scrollbar {
+        -webkit-appearance: none;
+    }
+    
+    article table::-webkit-scrollbar:horizontal {
+        height: 11px;
+    }
+    
+    article table::-webkit-scrollbar-thumb {
+        border-radius: 8px;
+        border: 2px solid white;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    
+    article table::-webkit-scrollbar-track {
+        background-color: #fff;
+        border-radius: 8px;
+    }
+    
+@media (min-width: 801px) {
+    .isu-row-header { display: none; }
+    .isu-both-row-header { display: none; }
+}
+
+@media (max-width: 800px) {
+
+/* -------------------- */
+/* No headers (none) */
+    
+    .isu-responsive-table.isu-table-none { display: table; min-width: 75%; }
+    
+    .isu-responsive-table.isu-table-none tr { border-bottom: 3px solid #bbb; }
+    .isu-responsive-table.isu-table-none td { 
+        border-bottom: 1px solid #ddd; 
+        border-right: 1px solid #ddd;
+        display: block; 
+    }
+    
+    .isu-responsive-table.isu-table-none td:last-of-type { border-bottom: none; }
+
+/* -------------------- */
+/* Headers in first row */
+    
+    .isu-responsive-table.isu-table-row { display: table; min-width: 75%; }
+    
+    .isu-responsive-table.isu-table-row th { display: none; }
+    
+    .isu-responsive-table.isu-table-row tr {
+        display: block;
+        border-bottom: 3px solid #bbb;
+    }
+    
+    .isu-responsive-table.isu-table-row tr:first-of-type { border-bottom: 0; }
+    
+    .isu-responsive-table.isu-table-row td { 
+        display: flex; 
+        padding: 0;
+            border-bottom: 1px solid #ddd; 
+        border-right: 1px solid #ddd;
+    }
+    
+    .isu-responsive-table.isu-table-row td:last-of-type { border-bottom: none; }
+    
+    .isu-cell-content { 
+        display: block; 
+        flex: 1 1 50%;
+        padding: 0.5rem 0.75rem;
+    }
+    
+    .isu-row-header {
+        display: block;
+        flex: 0 1 45%;
+        padding: 0.5rem 0.75rem;
+        font-weight: 500;
+        background: #eee;
+    }
+    
+    .isu-table-row tr { border-bottom: 3px solid #bbb; }
+
+/* -------------------- */
+/* Headers in first column */
+    
+    .isu-responsive-table.isu-table-col { display: table; min-width: 75%; }
+    
+    .isu-responsive-table.isu-table-col th,
+    .isu-responsive-table.isu-table-col td { display: block; }
+    
+    .isu-responsive-table.isu-table-col th { border-bottom: 1px solid #bbb; }
+
+    .isu-responsive-table.isu-table-col tr {
+        display: block;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    .isu-responsive-table.isu-table-col td { 
+        border-bottom: 1px solid #ddd; 
+        border-right: 1px solid #ddd;
+        display: block; 
+    }
+    
+    .isu-responsive-table.isu-table-col td:last-of-type { border-bottom: none; }
+
+/* -------------------- */
+/* Headers in both first row and first column */
+    
+    .isu-responsive-table.isu-table-both { display: table; min-width: 75%; }
+
+    .isu-responsive-table.isu-table-both th,
+    .isu-responsive-table.isu-table-both td { display: block; }
+
+    .isu-responsive-table.isu-table-both th { border-bottom: 1px solid #bbb; }
+
+    .isu-responsive-table.isu-table-both tr {
+        display: block;
+        border-bottom: 3px solid #bbb;
+    }
+    
+    .isu-responsive-table.isu-table-both tr:first-of-type { display: none; }
+    
+    .isu-responsive-table.isu-table-both tr:first-of-type th:first-of-type { display: none; }
+    
+    .isu-responsive-table.isu-table-both tr:nth-of-type(2) { border-top: 1px solid #ddd; }
+    
+    .isu-responsive-table.isu-table-both td { 
+        display: flex; 
+        padding: 0;
+        border-bottom: 1px solid #ddd; 
+        border-right: 1px solid #ddd;
+    }
+    
+    .isu-responsive-table.isu-table-both td:last-of-type { border-bottom: none; }
+
+    .isu-both-cell-content { 
+        display: block; 
+        flex: 1 1 50%;
+        padding: 0.5rem 0.75rem;
+    }
+    
+    .isu-both-row-header {
+        display: block;
+        flex: 0 1 45%;
+        padding: 0.5rem 0.75rem;
+        font-weight: 500;
+        background: #eee;
+    }
+}
