@@ -40,4 +40,41 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
     '#default_value' => theme_get_setting('isu_navbar'),
     '#description'  => t('Check this option if you\'d like to show the ISU navbar.'),
   );
+
+  // Create a section for footer content
+  $form['iastate_footer_settings'] = array(
+    '#type'         => 'details',
+    '#title'        => t('IASTATE Footer Settings'),
+    '#description'  => t('This information will be displayed in the footer'),
+    '#weight'       => -999,
+    '#open'         => TRUE,
+    );
+
+  // Textarea for contact address
+  $form['iastate_footer_settings']['iastate_contact_address'] = array(
+    '#type'           => 'textarea',
+    '#title'          => t('Contact address'),
+    '#default_value'  => theme_get_setting('iastate_contact_address'),
+    );
+
+  // Email
+  $form['iastate_footer_settings']['iastate_contact_email'] = array(
+    '#type'           => 'email',
+    '#title'          => t('Contact email'),
+    '#default_value'  => theme_get_setting('iastate_contact_email'),
+    );
+
+  // Phone
+  $form['iastate_footer_settings']['iastate_contact_phone'] = array(
+    '#type'           => 'textfield',
+    '#title'          => t('Contact phone'),
+    '#default_value'  => theme_get_setting('iastate_contact_phone'),
+    );
+
+  // Fax
+  $form['iastate_footer_settings']['iastate_contact_fax'] = array(
+    '#type'           => 'textfield',
+    '#title'          => t('Contact fax'),
+    '#default_value'  => theme_get_setting('iastate_contact_fax'),
+    );
 }

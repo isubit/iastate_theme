@@ -84,4 +84,8 @@ function iastate_theme_preprocess(&$variables, $hook) {
 
 function iastate_theme_preprocess_page(&$variables) {
   $variables['isu_navbar'] = theme_get_setting('isu_navbar');
+  $variables['iastate_contact_address'] = theme_get_setting('iastate_contact_address');
+  $variables['iastate_contact_email'] = theme_get_setting('iastate_contact_email');
+  $variables['iastate_contact_phone'] = theme_get_setting('iastate_contact_phone');
+  $variables['iastate_contact_fax'] = theme_get_setting('iastate_contact_fax');
 }

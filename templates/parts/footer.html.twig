@@ -16,29 +16,58 @@
 <footer role="contentinfo" class="isu-footer" aria-label="Footer">
   <div class="container">
     <div class="row">
-      {% if page.footer_first %}
-        <div class="col-sm-6 col-md-6 col-lg-3">
-          {{ page.footer_first }}
-        </div>
-      {% endif %}
 
-      {% if page.footer_second %}
-        <div class="col-sm-6 col-md-6 col-lg-3">
-          {{ page.footer_second }}
-        </div>
-      {% endif %}
+      <div class="col-sm-6 col-md-6 col-lg-3">
+        <a href="http://www.iastate.edu">
+          <img class="isu-footer-logo" src="//cdn.theme.iastate.edu/img/isu-stacked.svg" class="wordmark-isu" alt="Iowa State University">
+        </a>
 
-      {% if page.footer_third %}
-        <div class="col-sm-6 col-md-6 col-lg-3">
-          {{ page.footer_third }}
-        </div>
-      {% endif %}
+        {{ page.footer_first }}
 
-      {% if page.footer_fourth %}
-        <div class="col-sm-6 col-md-6 col-lg-3">
-          {{ page.footer_fourth }}
-        </div>
-      {% endif %}
+      </div>
+
+      <div class="col-sm-6 col-md-6 col-lg-3">
+        {% if iastate_contact_address %}
+          <div class="isu-footer_contact-address">
+            {{ iastate_contact_address|nl2br }}
+          </div>
+        {% endif %}
+
+        {% if iastate_contact_email %}
+          <div class="isu-footer_contact-email">
+            <a href="{{ iastate_contact_email }}">{{ iastate_contact_email }}</a>
+          </div>
+        {% endif %}
+
+        {% if iastate_contact_phone %}
+          <div class="isu-footer_contact-phone">
+            <span>phone: {{ iastate_contact_phone }}</span>
+          </div>
+        {% endif %}
+
+        {% if iastate_contact_fax %}
+          <div class="isu-footer_contact-fax">
+            <span>fax: {{ iastate_contact_fax }}</span>
+          </div>
+        {% endif %}
+
+        {{ page.footer_second }}
+      </div>
+
+      <div class="col-sm-6 col-md-6 col-lg-3">
+        {{ page.footer_third }}
+      </div>
+
+      <div class="col-sm-6 col-md-6 col-lg-3">
+        <p class="isu-copyright">Copyright © 1995-<script>document.write(new Date().getFullYear())</script><br>Iowa State University<br>of Science and Technology<br>All rights reserved.</p>
+        <ul class="isu-legal-menu">
+          <li><a href="http://www.policy.iastate.edu/policy/discrimination">Non-discrimination Policy</a></li>
+          <li><a href="http://www.policy.iastate.edu/electronicprivacy">Privacy Policy</a></li>
+          <li><a href="http://digitalaccess.iastate.edu">Digital Access &amp; Accessibility</a></li>
+        </ul>
+
+        {{ page.footer_fourth }}
+      </div>
     </div>
 
     {% if page.sign_off %}
