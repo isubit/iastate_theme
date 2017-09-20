@@ -80,12 +80,46 @@ function iastate_theme_preprocess(&$variables, $hook) {
   $variables['#cache']['contexts'][] = 'url.path.is_front';
 }
 
-/* Be able to toggle the ISU Navbar */
+/*
+ * Implements theme_preprocess_page().
+ *
+ * Make theme settings available in templates
+ */
 
 function iastate_theme_preprocess_page(&$variables) {
   $variables['isu_navbar'] = theme_get_setting('isu_navbar');
+
+  $variables['iastate_contact_title'] = theme_get_setting('iastate_contact_title');
   $variables['iastate_contact_address'] = theme_get_setting('iastate_contact_address');
   $variables['iastate_contact_email'] = theme_get_setting('iastate_contact_email');
   $variables['iastate_contact_phone'] = theme_get_setting('iastate_contact_phone');
   $variables['iastate_contact_fax'] = theme_get_setting('iastate_contact_fax');
+
+  $variables['iastate_associate1_title'] = theme_get_setting('iastate_associate1_title');
+  $variables['iastate_associate1_url'] = theme_get_setting('iastate_associate1_url');
+  $variables['iastate_associate2_title'] = theme_get_setting('iastate_associate2_title');
+  $variables['iastate_associate2_url'] = theme_get_setting('iastate_associate2_url');
+  $variables['iastate_associate3_title'] = theme_get_setting('iastate_associate3_title');
+  $variables['iastate_associate3_url'] = theme_get_setting('iastate_associate3_url');
+  $variables['iastate_associate4_title'] = theme_get_setting('iastate_associate4_title');
+  $variables['iastate_associate4_url'] = theme_get_setting('iastate_associate4_url');
+  $variables['iastate_associate5_title'] = theme_get_setting('iastate_associate5_title');
+  $variables['iastate_associate5_url'] = theme_get_setting('iastate_associate5_url');
+  $variables['iastate_associate6_title'] = theme_get_setting('iastate_associate6_title');
+  $variables['iastate_associate6_url'] = theme_get_setting('iastate_associate6_url');
+
+  $variables['iastate_social1_title'] = theme_get_setting('iastate_social1_title');
+  $variables['iastate_social1_url'] = theme_get_setting('iastate_social1_url');
+  $variables['iastate_social2_title'] = theme_get_setting('iastate_social2_title');
+  $variables['iastate_social2_url'] = theme_get_setting('iastate_social2_url');
+  $variables['iastate_social3_title'] = theme_get_setting('iastate_social3_title');
+  $variables['iastate_social3_url'] = theme_get_setting('iastate_social3_url');
+  $variables['iastate_social4_title'] = theme_get_setting('iastate_social4_title');
+  $variables['iastate_social4_url'] = theme_get_setting('iastate_social4_url');
+  $variables['iastate_social5_title'] = theme_get_setting('iastate_social5_title');
+  $variables['iastate_social5_url'] = theme_get_setting('iastate_social5_url');
+  $variables['iastate_social6_title'] = theme_get_setting('iastate_social6_title');
+  $variables['iastate_social6_url'] = theme_get_setting('iastate_social6_url');
+  $variables['iastate_social7_title'] = theme_get_setting('iastate_social7_title');
+  $variables['iastate_social7_url'] = theme_get_setting('iastate_social7_url');
 }
