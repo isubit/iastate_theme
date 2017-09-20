@@ -601,9 +601,19 @@
 /* ## COMPONENTS
 /* --------------------------------------  */
 
+.isu-links {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
 .isu-links .comment-forbidden {
   /* .comment-forbidden via Drupal 8 */
   margin-top: 1rem;
+}
+
+.isu-links.contextual-links li {
+  /* .contextual-links via Drupal 8 */
+  display: block;
 }
 
 /* --- ## Unsaved changes alerts --- */

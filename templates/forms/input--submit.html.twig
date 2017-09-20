@@ -21,22 +21,22 @@
 
 {% elseif attributes.value == 'Add another item' %}
 
-  {% set submit_classes = ['btn', 'btn-secondary', 'btn-sm', 'isu-add-another-item-button', 'isu-form-submit'] %}
+  {% set submit_classes = ['btn', 'btn-sm', 'btn-outline-secondary', 'btn-sm', 'isu-add-another-item-button', 'isu-form-submit'] %}
   <button{{ attributes.addClass(submit_classes) }}>{{ attributes.value }}</button>
 
 {% elseif attributes.value == 'Remove' %}
 
-  {% set submit_classes = ['btn', 'btn-secondary', 'btn-sm', 'isu-remove-button', 'isu-form-submit'] %}
+  {% set submit_classes = ['btn', 'btn-sm', 'btn-outline-secondary', 'btn-sm', 'isu-remove-button', 'isu-form-submit'] %}
   <button{{ attributes.addClass(submit_classes) }}>{{ attributes.value }}</button>
 
 {% elseif attributes.value == 'Preview' %}
 
-  {% set submit_classes = ['btn', 'btn-secondary', 'isu-preview-button', 'isu-form-submit' ] %}
+  {% set submit_classes = ['btn', 'btn-sm', 'btn-outline-secondary', 'isu-preview-button', 'isu-form-submit' ] %}
   <button{{ attributes.addClass(submit_classes) }}>{{ attributes.value }}</button>
 
 {% else %}
 
-  {% set submit_classes = ['btn', 'btn-primary', 'isu-form-submit'] %}
+  {% set submit_classes = ['btn', 'btn-sm', 'btn-outline-primary', 'isu-form-submit'] %}
   <button{{ attributes.addClass(submit_classes) }}>{{ attributes.value }}
   </button>
 

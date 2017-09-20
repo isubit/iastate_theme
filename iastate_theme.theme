@@ -1,6 +1,10 @@
 <?php
 
-/* Add Bootstrap 4 classes to links in tabs */
+/*
+ * Implements template_preprocess_menu_local_task().
+ *
+ * Add Bootstrap 4 classes to links in tabs 
+ */
 
 function iastate_theme_preprocess_menu_local_task(&$variables) {
   $variables['link']['#attributes']['class'][] = 'nav-link';
@@ -9,13 +13,21 @@ function iastate_theme_preprocess_menu_local_task(&$variables) {
   }
 }
 
-/* Add Bootstrap 4 classes to views buttons */
+/*
+ * Implements template_preprocess_views_view().
+ *
+ * Add Bootstrap 4 classes to views buttons 
+ */
 
 function iastate_theme_preprocess_views_view(&$variables) {
   $variables['more']['#options']['attributes']['class'] = array('btn', 'btn-sm', 'btn-outline-primary');
 }
 
-/* Add Bootstrap 4 classes to local actions */
+/*
+ * Implements template_preprocess_menu_local_action().
+ *
+ * Add Bootstrap 4 classes to local actions 
+ */
 
 function iastate_theme_preprocess_menu_local_action(&$variables) {
   $variables['link']['#options']['attributes']['class'][] = 'btn';
@@ -23,15 +35,18 @@ function iastate_theme_preprocess_menu_local_action(&$variables) {
   $variables['link']['#options']['attributes']['class'][] = 'btn-outline-primary';
 }
 
-/* Add Bootstrap 4 classes to Read More and Comments links */
+/*
+ * Implements template_preprocess_links().
+ *
+ * Add Bootstrap 4 classes to Read More and Comments links */
 
 function iastate_theme_preprocess_links(&$variables) {
   $variables['links']['node-readmore']['link']['#options']['attributes']['class'][] = 'btn btn-sm btn-outline-primary';
   $variables['links']['comment-comments']['link']['#options']['attributes']['class'][] = 'btn btn-sm btn-outline-primary';
   $variables['links']['comment-add']['link']['#options']['attributes']['class'][] = 'btn btn-sm btn-outline-primary';
-  $variables['links']['comment-delete']['link']['#options']['attributes']['class'][] = 'btn btn-sm btn-outline-primary';
-  $variables['links']['comment-edit']['link']['#options']['attributes']['class'][] = 'btn btn-sm btn-outline-primary';
-  $variables['links']['comment-reply']['link']['#options']['attributes']['class'][] = 'btn btn-sm btn-secondary';
+  $variables['links']['comment-delete']['link']['#options']['attributes']['class'][] = 'btn btn-sm btn-outline-secondary';
+  $variables['links']['comment-edit']['link']['#options']['attributes']['class'][] = 'btn btn-sm btn-outline-secondary';
+  $variables['links']['comment-reply']['link']['#options']['attributes']['class'][] = 'btn btn-sm btn-outline-primary';
   /* Book */
   $variables['links']['book_printer']['link']['#options']['attributes']['class'][] = 'btn btn-sm btn-outline-primary';
   $variables['links']['book_add_child']['link']['#options']['attributes']['class'][] = 'btn btn-sm btn-outline-primary';
