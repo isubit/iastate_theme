@@ -852,6 +852,13 @@ details {
   padding: 0;
 }
 
+.isu-associates-menu a {
+  display: block;
+  padding: 0.25rem 0;
+  line-height: 1.25;
+  text-decoration: none;
+}
+
 /* --- ## SOCIAL MEDIA MENU --- */
 /* Icon styles found in isu-social.css
  * Template in templates/navigation/menu--social.html.twig
@@ -875,6 +882,13 @@ details {
 .isu-legal-menu {
   list-style-type: none;
   padding: 0;
+}
+
+.isu-associates-menu a {
+  display: block;
+  padding: 0.25rem 0;
+  line-height: 1.25;
+  text-decoration: none;
 }
 
 /* --------------------------------------  */
