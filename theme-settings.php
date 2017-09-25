@@ -76,6 +76,7 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
   $form['iastate_footer_contact']['iastate_contact_phone'] = array(
     '#type'           => 'textfield',
     '#title'          => t('Phone'),
+    '#description'    => t('Please use xxx-xxx-xxxx format.'),
     '#default_value'  => theme_get_setting('iastate_contact_phone'),
     );
 
@@ -83,6 +84,7 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
   $form['iastate_footer_contact']['iastate_contact_fax'] = array(
     '#type'           => 'textfield',
     '#title'          => t('Fax'),
+    '#description'    => t('Please use xxx-xxx-xxxx format.'),
     '#default_value'  => theme_get_setting('iastate_contact_fax'),
     );
 
