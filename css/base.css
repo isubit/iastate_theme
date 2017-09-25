@@ -1,6 +1,7 @@
 /**
  * @file
- * Base CSS styles for the ISU theme
+ * Base CSS styles for the ISU theme, primarily for directly overriding
+ * styles from Drupal 8 core or Bootstrap 4.
  */
 
 /* --------------------------------------  */
@@ -51,6 +52,10 @@ blockquote { /* Duplicates Bootstrap 4's .blockquote */
   margin-bottom: 1rem;
   font-size: 1.25rem;
   border-left: .25rem solid #eceeef;
+}
+
+hr { /* Overrides Bootstrap 4's hr style */
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
 }
 
 body.cke_editable {
