@@ -18,6 +18,11 @@
     <div class="row">
 
       <div class="col-sm-6 col-md-6 col-lg-3">
+
+        {% if page.footer_first %}
+          {{ page.footer_first }}
+        {% endif %}
+
         <a href="http://www.iastate.edu">
           <img class="isu-footer-logo" src="//cdn.theme.iastate.edu/img/isu-stacked.svg" class="wordmark-isu" alt="Iowa State University">
         </a>
@@ -43,11 +48,14 @@
             {% endif %}
           </ul>
 
-        {{ page.footer_first }}
-
       </div>
 
       <div class="col-sm-6 col-md-6 col-lg-3">
+
+        {% if page.footer_second %}
+          {{ page.footer_second }}
+        {% endif %}
+
         {% if iastate_contact_title %}
           <h2 class="isu-footer_contact-title h5">
             {{ iastate_contact_title|nl2br }}
@@ -61,7 +69,7 @@
 
         {% if iastate_contact_email %}
           <div class="isu-footer_contact-email">
-            <a href="{{ iastate_contact_email }}">{{ iastate_contact_email }}</a>
+            <a href="mailto:{{ iastate_contact_email }}">{{ iastate_contact_email }}</a>
           </div>
         {% endif %}
 
@@ -77,10 +85,13 @@
           </div>
         {% endif %}
 
-        {{ page.footer_second }}
       </div>
 
       <div class="col-sm-6 col-md-6 col-lg-3">
+
+        {% if page.footer_third %}
+          {{ page.footer_third }}
+        {% endif %}
 
           <ul class="isu-social-menu">
             {% if iastate_social1_title %}
@@ -103,10 +114,14 @@
             {% endif %}
           </ul>
 
-        {{ page.footer_third }}
       </div>
 
       <div class="col-sm-6 col-md-6 col-lg-3">
+
+        {% if page.footer_fourth %}
+          {{ page.footer_fourth }}
+        {% endif %}
+
         <p class="isu-copyright">Copyright © 1995-<script>document.write(new Date().getFullYear())</script><br>Iowa State University<br>of Science and Technology<br>All rights reserved.</p>
         <ul class="isu-legal-menu">
           <li><a href="http://www.policy.iastate.edu/policy/discrimination">Non-discrimination Policy</a></li>
@@ -114,7 +129,6 @@
           <li><a href="http://digitalaccess.iastate.edu">Digital Access &amp; Accessibility</a></li>
         </ul>
 
-        {{ page.footer_fourth }}
       </div>
     </div>
 
