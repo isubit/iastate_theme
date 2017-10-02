@@ -824,6 +824,12 @@ details {
 .isu-add-another-item-button,
 .isu-remove-button { margin-top: 0; }
 
+/* --- ## Vertical Tabs --- */
+/* Overrides vertical-tabs.module.css */
+
+.vertical-tabs__menu-item a { color: #212529; }
+.vertical-tabs__pane { padding: 1.5rem; }
+
 /* --------------------------------------  */
 /* ## SEARCH RESULTS
 /* --------------------------------------  */
