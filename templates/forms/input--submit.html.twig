@@ -31,8 +31,17 @@
 
 {% elseif attributes.value == 'Preview' %}
 
-  {% set submit_classes = ['btn', 'btn-sm', 'btn-outline-secondary', 'isu-preview-button', 'isu-form-submit' ] %}
+  {% set submit_classes = ['btn', 'btn-outline-secondary', 'isu-preview-button', 'isu-form-submit' ] %}
   <button{{ attributes.addClass(submit_classes) }}>{{ attributes.value }}</button>
+
+{% elseif attributes.value == 'Save and publish' or 'Save and keep published' %}
+
+  {% set submit_classes = ['btn', 'btn-primary', 'isu-form-submit'] %}
+  <button{{ attributes.addClass(submit_classes) }}>{{ attributes.value }}</button>
+
+{% elseif attributes.value == 'Save as unpublished' or 'Save and unpublish' %}
+
+  <button{{ attributes }}>{{ attributes.value }}</button>
 
 {% else %}
 
