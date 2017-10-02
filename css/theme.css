@@ -790,6 +790,11 @@ details {
 
 /* --- ## Date --- */
 
+.isu-form-type_date {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
 .isu-form-control_date {
   width: auto;
 }
