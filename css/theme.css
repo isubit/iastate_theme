@@ -802,11 +802,15 @@ details {
 /* --- ## Text fields with text format filter --- */
 /* .js-text-format-wrapper and .filter-wrapper via Drupal 8 */
 
-.js-text-format-wrapper .isu-form-group { margin-bottom: 0; }
+.js-text-format-wrapper .isu-form-group.isu-form-type_textarea { 
+  margin-bottom: 0; 
+}
 
-.js-text-format-wrapper .isu-form-control { width: 100%; }
+.js-text-format-wrapper .isu-form-type_textarea .isu-form-control { width: 100%; }
 
 .filter-wrapper { margin-bottom: 1.5rem; }
+
+.filter-wrapper .isu-form-group { margin-bottom: 1rem; }
 
 /* --- File or image upload --- */
 
