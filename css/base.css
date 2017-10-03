@@ -109,3 +109,14 @@ body.cke_editable {
   /* Overrides bootstrap.min.css which removed focus style */
   outline: #5cb3fd auto 5px;
 }
+
+.dropdown-toggle:after {
+  /* Overrides Bootstrap 4 */
+  width: 7px;
+  height: 7px;
+  margin-left: 0.5rem;
+  border: 1px solid;
+  border-top: 0;
+  border-left: 0;
+  transform: rotate(45deg);
+}
