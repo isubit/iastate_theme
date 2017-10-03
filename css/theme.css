@@ -505,11 +505,20 @@
 /* --- ## Submitted By --- */
 /* Also found in Comments */
 
+.isu-submitted-by_card {
+  color: #676767;
+}
+
 .isu-submitted-by_card .card-header { /* .card-header via Bootstrap 4 */
   padding: 0.5rem;
 }
 
 /* If there is a user picture */
+
+.isu-user img {
+  max-width: 50px;
+  max-height: 50px;
+}
 
 .isu-user ~ div > .isu-submitted-by_name,
 .isu-user ~ div > .isu-submitted-by_date {
@@ -701,6 +710,7 @@ abbr[title].tabledrag-changed { /* Class via Drupal 8 */
 }
 
 .isu-comment_title {
+  margin-bottom: 0;
   font-size: 1.15rem;
 }
 
