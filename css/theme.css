@@ -135,9 +135,10 @@
     color: #ffffff;
   }
 .isu-wordmark-logo {
-  height: 1.85rem;
   width: 100%;
   max-width: 250px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 .isu-wordmark-sitename {
   font-size: 1rem;
@@ -149,8 +150,8 @@
 @media screen and (min-width: 992px) {
   .isu-wordmark-logo { 
     width: auto;
-    max-width: 100%;
-    margin-bottom: 0.5rem; 
+    max-width: 400px;
+    margin-top: 0;
   }
   .isu-wordmark-sitename {
     font-size: 1.15rem;
