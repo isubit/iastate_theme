@@ -976,6 +976,11 @@ a.tabledrag-handle .handle {
   margin-top: 2rem;
 }
 
+.isu-search-results > ol {
+  list-style-type: none;
+  padding-left: 0;
+}
+
 /* --------------------------------------  */
 /* ## FOOTER
 /* --------------------------------------  */
