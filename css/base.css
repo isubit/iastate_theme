@@ -23,10 +23,6 @@ a { /* Overrides bootstrap.min.css */
   transition: color 300ms ease;
 }
 
-a:hover { /* Overrides bootstrap.min.css */
-  color: #006BA6; /* ISU brand standard */
-}
-
 a.btn,
 a.badge,
 a.nav-link { /* Some links to not need underlines. */
@@ -35,15 +31,6 @@ a.nav-link { /* Some links to not need underlines. */
 
 button.btn {
   cursor: pointer;
-}
-
-.btn-link:hover { /* Overrides bootstrap.min.css */
-  color: #006BA6; /* ISU brand standard */
-}
-
-.page-link:focus,
-.page-link:hover { /* Overrides bootstrap.min.css */
-  color: #006BA6; /* ISU brand standard */
 }
 
 .btn-primary { /* Overrides bootstrap.min.css */
