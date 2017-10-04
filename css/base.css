@@ -101,10 +101,6 @@ hr { /* Overrides Bootstrap 4's hr style */
   border-top: 1px solid rgba(0, 0, 0, 0.25);
 }
 
-body.cke_editable {
-  margin: 1rem;
-}
-
 .form-control:focus { 
   /* Overrides bootstrap.min.css which removed focus style */
   outline: #5cb3fd auto 5px;
@@ -119,4 +115,44 @@ body.cke_editable {
   border-top: 0;
   border-left: 0;
   transform: rotate(45deg);
+}
+
+/* --------------------------------------  */
+/* ## CONTENT EDITING
+/* --------------------------------------  */
+
+body.cke_editable {
+  margin: 1rem;
+}
+
+textarea.cke_source {
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Some of these styles are partially duplicated from the live content
+ * versions from theme.css.
+ */
+
+body.cke_editable .align-left {
+  margin: 1rem 1rem 1rem 0;
+}
+
+body.cke_editable .align-right {
+  margin: 1rem 0 1rem 1rem;
+}
+
+body.cke_editable figure {
+  border: 1px solid #eee;
+}
+
+body.cke_editable figure figcaption {
+  display: table-caption;
+  caption-side: bottom;
+
+  /* Caption styles */
+  padding: 0.5rem;
+  color: #333;
+  font-size: 0.9rem;
+  background: #eee;
 }
