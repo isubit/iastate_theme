@@ -40,6 +40,7 @@
  * 13 BOOK
  * 14 FORUM
  * 15 CONTENT
+ * 16 CONTENT EDITING
  *
  */
 
@@ -1085,6 +1086,26 @@ a.tabledrag-handle .handle {
 /* ## CONTENT
 /* --------------------------------------  */
 
+/* --- Pull quote --- */
+/* Available in the Styles dropdown when applied to a blockquote */
+
+blockquote.isu-pull-quote {
+  padding: 0 2rem;
+  font-size: 1.275rem;
+  font-weight: 400;
+  border: 0;
+}
+
+@media (min-width: 768px) {
+  blockquote.isu-pull-quote {
+    float: left;
+    max-width: 300px;
+    margin: 1rem 1rem 1rem 0;
+    padding: 0;
+    border-right: 4px solid #eceeef;
+  }
+}
+
 /* --- Figures and Captions --- */
 
 .isu-body figure {
@@ -1108,3 +1129,36 @@ a.tabledrag-handle .handle {
   background: #eee;
 }
 
+.isu-body figure.align-left {
+  margin: 1rem 1rem 1rem 0;
+}
+
+.isu-body figure.align-right {
+  margin: 1rem 0 1rem 1rem;
+}
+
+@media (max-width: 576px) {
+  .isu-body figure.align-left,
+  .isu-body figure.align-right {
+    float: none;
+    margin: 1rem 0;
+  }
+}
+
+/* --- Images --- */
+
+.isu-body img.align-left {
+  margin: 1rem 1rem 1rem 0;
+}
+
+.isu-body img.align-right {
+  margin: 1rem 0 1rem 1rem;
+}
+
+@media (max-width: 576px) {
+  .isu-body img.align-left,
+  .isu-body img.align-right {
+    float: none;
+    margin: 1rem 0;
+  }
+}
