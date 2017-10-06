@@ -101,6 +101,17 @@ hr { /* Overrides Bootstrap 4's hr style */
   border-top: 1px solid rgba(0, 0, 0, 0.25);
 }
 
+/* --- Images --- */
+
+img {
+  max-width: 100%;
+  height: auto !important;
+}
+
+table img {
+  max-width: none; /* Prevents images from shrinking in tables */
+}
+
 .form-control:focus { 
   /* Overrides bootstrap.min.css which removed focus style */
   outline: #5cb3fd auto 5px;
