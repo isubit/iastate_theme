@@ -53,7 +53,7 @@ structure and assign classes.
       thRowFreeze.removeClass(responsiveClasses);
 
   /* --- All Responsive Tables --- */
-  table.addClass('isu-responsive-table');
+  table.addClass('isu-responsive-table table');
 
 /* --------------------- 
 Now apply any jQuery needed

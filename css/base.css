@@ -101,6 +101,34 @@ hr { /* Overrides Bootstrap 4's hr style */
   border-top: 1px solid rgba(0, 0, 0, 0.25);
 }
 
+/* --- Tables --- */
+/* Overrides botstrap.min.css */
+
+.table tbody {
+  border-bottom: 1px solid #ccc;
+}
+
+.table thead th,
+.table th {
+  background: #eee;
+}
+
+.table thead th {
+  border-bottom: 2px solid #ccc;
+}
+
+.table th,
+.table td {
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+}
+
+caption {
+  color: #676767;
+  border-bottom: 1px solid #ccc;
+}
+
 .form-control:focus { 
   /* Overrides bootstrap.min.css which removed focus style */
   outline: #5cb3fd auto 5px;
