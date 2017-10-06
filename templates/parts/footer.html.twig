@@ -16,29 +16,120 @@
 <footer role="contentinfo" class="isu-footer" aria-label="Footer">
   <div class="container">
     <div class="row">
-      {% if page.footer_first %}
-        <div class="col-sm-6 col-md-6 col-lg-3">
+
+      <div class="col-sm-6 col-md-6 col-lg-3">
+
+        {% if page.footer_first %}
           {{ page.footer_first }}
-        </div>
-      {% endif %}
+        {% endif %}
 
-      {% if page.footer_second %}
-        <div class="col-sm-6 col-md-6 col-lg-3">
+        <a href="http://www.iastate.edu">
+          <img class="isu-footer-logo" src="//cdn.theme.iastate.edu/img/isu-stacked.svg" class="wordmark-isu" alt="Iowa State University">
+        </a>
+
+          <ul class="isu-associates-menu">
+            {% if iastate_associate1_title %}
+              <li><a href="{{ iastate_associate1_url }}">{{ iastate_associate1_title }}</a></li>
+            {% endif %}
+            {% if iastate_associate2_title %}
+              <li><a href="{{ iastate_associate2_url }}">{{ iastate_associate2_title }}</a></li>
+            {% endif %}
+            {% if iastate_associate3_title %}
+              <li><a href="{{ iastate_associate3_url }}">{{ iastate_associate3_title }}</a></li>
+            {% endif %}
+            {% if iastate_associate4_title %}
+              <li><a href="{{ iastate_associate4_url }}">{{ iastate_associate4_title }}</a></li>
+            {% endif %}
+            {% if iastate_associate5_title %}
+              <li><a href="{{ iastate_associate5_url }}">{{ iastate_associate5_title }}</a></li>
+            {% endif %}
+            {% if iastate_associate6_title %}
+              <li><a href="{{ iastate_associate6_url }}">{{ iastate_associate6_title }}</a></li>
+            {% endif %}
+          </ul>
+
+      </div>
+
+      <div class="col-sm-6 col-md-6 col-lg-3">
+
+        {% if page.footer_second %}
           {{ page.footer_second }}
-        </div>
-      {% endif %}
+        {% endif %}
 
-      {% if page.footer_third %}
-        <div class="col-sm-6 col-md-6 col-lg-3">
+        {% if iastate_contact_title %}
+          <h2 class="isu-footer_contact-title h5">
+            {{ iastate_contact_title|nl2br }}
+          </h2>
+        {% endif %}
+        {% if iastate_contact_address %}
+          <div class="isu-footer_contact-address">
+            {{ iastate_contact_address|nl2br }}
+          </div>
+        {% endif %}
+
+        {% if iastate_contact_email %}
+          <div class="isu-footer_contact-email">
+            <a href="mailto:{{ iastate_contact_email }}">{{ iastate_contact_email }}</a>
+          </div>
+        {% endif %}
+
+        {% if iastate_contact_phone %}
+          <div class="isu-footer_contact-phone">
+            <span>phone: {{ iastate_contact_phone }}</span>
+          </div>
+        {% endif %}
+
+        {% if iastate_contact_fax %}
+          <div class="isu-footer_contact-fax">
+            <span>fax: {{ iastate_contact_fax }}</span>
+          </div>
+        {% endif %}
+
+      </div>
+
+      <div class="col-sm-6 col-md-6 col-lg-3">
+
+        {% if page.footer_third %}
           {{ page.footer_third }}
-        </div>
-      {% endif %}
+        {% endif %}
 
-      {% if page.footer_fourth %}
-        <div class="col-sm-6 col-md-6 col-lg-3">
+          <ul class="isu-social-menu">
+            {% if iastate_social1_title %}
+              <li><a href="{{ iastate_social1_url }}">{{ iastate_social1_title }}</a></li>
+            {% endif %}
+            {% if iastate_social2_title %}
+              <li><a href="{{ iastate_social2_url }}">{{ iastate_social2_title }}</a></li>
+            {% endif %}
+            {% if iastate_social3_title %}
+              <li><a href="{{ iastate_social3_url }}">{{ iastate_social3_title }}</a></li>
+            {% endif %}
+            {% if iastate_social4_title %}
+              <li><a href="{{ iastate_social4_url }}">{{ iastate_social4_title }}</a></li>
+            {% endif %}
+            {% if iastate_social5_title %}
+              <li><a href="{{ iastate_social5_url }}">{{ iastate_social5_title }}</a></li>
+            {% endif %}
+            {% if iastate_social6_title %}
+              <li><a href="{{ iastate_social6_url }}">{{ iastate_social6_title }}</a></li>
+            {% endif %}
+          </ul>
+
+      </div>
+
+      <div class="col-sm-6 col-md-6 col-lg-3">
+
+        {% if page.footer_fourth %}
           {{ page.footer_fourth }}
-        </div>
-      {% endif %}
+        {% endif %}
+
+        <p class="isu-copyright">Copyright © 1995-<script>document.write(new Date().getFullYear())</script><br>Iowa State University<br>of Science and Technology<br>All rights reserved.</p>
+        <ul class="isu-legal-menu">
+          <li><a href="http://www.policy.iastate.edu/policy/discrimination">Non-discrimination Policy</a></li>
+          <li><a href="http://www.policy.iastate.edu/electronicprivacy">Privacy Policy</a></li>
+          <li><a href="http://digitalaccess.iastate.edu">Digital Access &amp; Accessibility</a></li>
+        </ul>
+
+      </div>
     </div>
 
     {% if page.sign_off %}

@@ -1,17 +1,57 @@
 {#
 /**
  * @file
- * Theme override to display node tags.
- * 
- * Requires Font Awesome.
+ * Theme override for a field.
+ *
+ * To override output, copy the "field.html.twig" from the templates directory
+ * to your theme's directory and customize it, just like customizing other
+ * Drupal templates such as page.html.twig or node.html.twig.
+ *
+ * Instead of overriding the theming for all fields, you can also just override
+ * theming for a subset of fields using
+ * @link themeable Theme hook suggestions. @endlink For example,
+ * here are some theme hook suggestions that can be used for a field_foo field
+ * on an article node type:
+ * - field--node--field-foo--article.html.twig
+ * - field--node--field-foo.html.twig
+ * - field--node--article.html.twig
+ * - field--field-foo.html.twig
+ * - field--text-with-summary.html.twig
+ * - field.html.twig
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the containing element.
+ * - label_hidden: Whether to show the field label or not.
+ * - title_attributes: HTML attributes for the title.
+ * - label: The label for the field.
+ * - multiple: TRUE if a field can contain multiple items.
+ * - items: List of all the field items. Each item contains:
+ *   - attributes: List of HTML attributes for each item.
+ *   - content: The field item's content.
+ * - entity_type: The entity type to which the field belongs.
+ * - field_name: The name of the field.
+ * - field_type: The type of the field.
+ * - label_display: The display settings for the label.
+ *
+ * @see template_preprocess_field()
  */
 #}
 
-<div{{ attributes.addClass('field_tags') }}>
+<div{{ attributes.addClass('isu-field-tags')}}>
   {% if not label_hidden %}
-    <h2 class="h6 d-inline"><span class="fa fa-tags" aria-hidden="true"></span> {{ label }}:</h2>
+    {% set label_classes = [
+      label_display == 'inline' ? 'd-inline',
+      'h6',
+    ] %}
+    <h2{{ attributes.addClass(label_classes) }}><span class="fa fa-tags" aria-hidden="true"></span> {{ label }}:</h2>
   {% endif %}
-  <ul class="list-inline d-inline">
+
+  {% set tags_classes = [
+    label_display == 'above' ? 'isu-tags_label-above list-inline',
+    label_display == 'inline' ? 'isu-tags d-inline list-inline',
+  ] %}
+
+  <ul{{ attributes.addClass(tags_classes) }}>
     {% for item in items %}
       <li{{ item.attributes.addClass('list-inline-item') }}><a href="{{ item.content['#url']|render }}" class="badge badge-dark">{{ item.content['#title'] }}</a></li>
     {% endfor %}

@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - iastate_theme
+id: iastate_theme_messages
+theme: iastate_theme
+region: content
+weight: -5
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

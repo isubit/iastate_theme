@@ -1,0 +1,19 @@
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - iastate_theme
+id: poweredbydrupal
+theme: iastate_theme
+region: sign_off
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }
