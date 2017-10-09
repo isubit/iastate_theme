@@ -129,6 +129,17 @@ caption {
   border-bottom: 1px solid #ccc;
 }
 
+/* --- Images --- */
+
+img {
+  max-width: 100%;
+  height: auto !important;
+}
+
+table img {
+  max-width: none; /* Prevents images from shrinking in tables */
+}
+
 .form-control:focus { 
   /* Overrides bootstrap.min.css which removed focus style */
   outline: #5cb3fd auto 5px;
