@@ -32,7 +32,12 @@
 
     <{{ list_type }}{{ attributes }}>
       {%- for item in items -%}
-        <li{{ item.attributes.addClass('isu-search-item') }}>{{ item.value }}</li>
+        {% set search_item_classes = ['isu-search-item', 'card', 'mb-3'] %}
+        <li{{ item.attributes.addClass(search_item_classes) }}>
+          <div class="card-body">
+            {{ item.value }}
+          </div>
+        </li>
       {%- endfor -%}
     </{{ list_type }}>
   {%- else -%}
