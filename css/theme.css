@@ -40,6 +40,7 @@
  * 13 BOOK
  * 14 FORUM
  * 15 CONTENT
+ * 16 CONTENT EDITING
  *
  */
 
@@ -135,9 +136,10 @@
     color: #ffffff;
   }
 .isu-wordmark-logo {
-  height: 1.85rem;
   width: 100%;
   max-width: 250px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 .isu-wordmark-sitename {
   font-size: 1rem;
@@ -149,8 +151,8 @@
 @media screen and (min-width: 992px) {
   .isu-wordmark-logo { 
     width: auto;
-    max-width: 100%;
-    margin-bottom: 0.5rem; 
+    max-width: 400px;
+    margin-top: 0;
   }
   .isu-wordmark-sitename {
     font-size: 1.15rem;
@@ -505,11 +507,20 @@
 /* --- ## Submitted By --- */
 /* Also found in Comments */
 
+.isu-submitted-by_card {
+  color: #676767;
+}
+
 .isu-submitted-by_card .card-header { /* .card-header via Bootstrap 4 */
   padding: 0.5rem;
 }
 
 /* If there is a user picture */
+
+.isu-user img {
+  max-width: 50px;
+  max-height: 50px;
+}
 
 .isu-user ~ div > .isu-submitted-by_name,
 .isu-user ~ div > .isu-submitted-by_date {
@@ -701,6 +712,7 @@ abbr[title].tabledrag-changed { /* Class via Drupal 8 */
 }
 
 .isu-comment_title {
+  margin-bottom: 0;
   font-size: 1.15rem;
 }
 
@@ -790,6 +802,11 @@ details {
 
 /* --- ## Date --- */
 
+.isu-form-type_date {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
 .isu-form-control_date {
   width: auto;
 }
@@ -797,11 +814,15 @@ details {
 /* --- ## Text fields with text format filter --- */
 /* .js-text-format-wrapper and .filter-wrapper via Drupal 8 */
 
-.js-text-format-wrapper .isu-form-group { margin-bottom: 0; }
+.js-text-format-wrapper .isu-form-group.isu-form-type_textarea { 
+  margin-bottom: 0; 
+}
 
-.js-text-format-wrapper .isu-form-control { width: 100%; }
+.js-text-format-wrapper .isu-form-type_textarea .isu-form-control { width: 100%; }
 
 .filter-wrapper { margin-bottom: 1.5rem; }
+
+.filter-wrapper .isu-form-group { margin-bottom: 1rem; }
 
 /* --- File or image upload --- */
 
@@ -813,11 +834,139 @@ details {
   border: 1px solid #d8d8d8;
 }
 
-/* --- ## Submit Buttons --- */
+/* --- ## Submit buttons --- */
 
 .isu-search__search-btn,
 .isu-add-another-item-button,
 .isu-remove-button { margin-top: 0; }
+
+.isu-add-another-item-button:before {
+  content: '\f067'; /* fa-plus */
+  font-family: FontAwesome;
+  margin-right: 0.5rem;
+}
+
+.isu-preview-button { margin-right: 0.5rem; }
+
+/* Save and publish button dropdown */
+/* Powerful CSS to manually style the Publish dropdown buttons. All classes
+ * via Drupal 8 */
+
+.form-actions:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.dropbutton-multiple {
+  margin-right: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.dropbutton-multiple .dropbutton {
+  min-width: 200px;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0 0 0.25rem 0.25rem;
+}
+
+.dropbutton-multiple .dropbutton .dropbutton-action {
+  margin-right: 0;
+}
+
+.dropbutton-multiple .dropbutton .dropbutton-action button {
+  display: block;
+  width: 100%;
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+
+.dropbutton-multiple .dropbutton .dropbutton-toggle {
+  right: 1px; /* To hide border */
+  margin-right: 0;
+  border: 1px solid #ccc;
+  border-radius: 0 0.25rem 0.25rem 0;
+}
+
+.dropbutton-multiple .dropbutton .secondary-action button {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid #ccc;
+  border-width: 0 1px 0 1px;
+  background: #fff;
+  padding: .5rem .75rem;
+  color: #212529;
+  font-size: 1rem;
+  line-height: 1.25;
+  cursor: pointer;
+}
+  .dropbutton-multiple .dropbutton .secondary-action button:hover {
+    background: #eee;
+  }
+
+.dropbutton-multiple .dropbutton .secondary-action:nth-of-type(2) button {
+  margin-top: 0.25rem;
+  border-top-width: 1px;
+  border-radius: 0.25rem 0.25rem 0 0;
+}
+
+/* --- ## Multiple values table --- */
+/* Overrides tabledrag.module.css */
+
+.draggable a.tabledrag-handle {
+  display: block;
+  margin: 0;
+}
+
+a.tabledrag-handle .handle {
+  height: 30px;
+  width: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Show row weights button */
+/* Duplicates Bootstrap 4 button classes: btn btn-sm 
+ * btn-outline-secondary. Reminder that the colors for secondary
+ * button styles have been overridden in base.css. It's a bit hacky, but I can't find a good place to add the class.
+ */
+
+.tabledrag-toggle-weight {
+  cursor: pointer;
+
+  display: inline-block;
+  font-weight: 400;
+  white-space: nowrap;
+  user-select: none;
+  border: 1px solid transparent;
+  transition: all 0.15s ease-in-out;
+
+  background-image: none;
+
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  border-radius: 0.2rem;
+
+  color: #676767;
+  background-color: #ffffff;
+  border-color: #676767;
+
+  margin-bottom: 0.5rem;
+}
+  .tabledrag-toggle-weight:hover {
+    color: #ffffff;
+    background-color: #575757;
+    border-color: #575757;
+  }
+
+/* --- ## Vertical Tabs --- */
+/* Overrides vertical-tabs.module.css */
+
+.vertical-tabs__menu-item a { color: #212529; }
+.vertical-tabs__pane { padding: 1.5rem; }
 
 /* --------------------------------------  */
 /* ## SEARCH RESULTS
@@ -826,6 +975,11 @@ details {
 
 .isu-search-results {
   margin-top: 2rem;
+}
+
+.isu-search-results > ol {
+  list-style-type: none;
+  padding-left: 0;
 }
 
 /* --------------------------------------  */
@@ -932,6 +1086,26 @@ details {
 /* ## CONTENT
 /* --------------------------------------  */
 
+/* --- Pull quote --- */
+/* Available in the Styles dropdown when applied to a blockquote */
+
+blockquote.isu-pull-quote {
+  padding: 0 2rem;
+  font-size: 1.275rem;
+  font-weight: 400;
+  border: 0;
+}
+
+@media (min-width: 768px) {
+  blockquote.isu-pull-quote {
+    float: left;
+    max-width: 300px;
+    margin: 1rem 1rem 1rem 0;
+    padding: 0;
+    border-right: 4px solid #eceeef;
+  }
+}
+
 /* --- Figures and Captions --- */
 
 .isu-body figure {
@@ -955,3 +1129,36 @@ details {
   background: #eee;
 }
 
+.isu-body figure.align-left {
+  margin: 1rem 1rem 1rem 0;
+}
+
+.isu-body figure.align-right {
+  margin: 1rem 0 1rem 1rem;
+}
+
+@media (max-width: 576px) {
+  .isu-body figure.align-left,
+  .isu-body figure.align-right {
+    float: none;
+    margin: 1rem 0;
+  }
+}
+
+/* --- Images --- */
+
+.isu-body img.align-left {
+  margin: 1rem 1rem 1rem 0;
+}
+
+.isu-body img.align-right {
+  margin: 1rem 0 1rem 1rem;
+}
+
+@media (max-width: 576px) {
+  .isu-body img.align-left,
+  .isu-body img.align-right {
+    float: none;
+    margin: 1rem 0;
+  }
+}

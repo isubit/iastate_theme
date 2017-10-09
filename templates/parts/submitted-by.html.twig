@@ -6,17 +6,13 @@
  */
 #}
 
-<footer class="card mb-3 isu-submitted-by_card" aria-label="Author">
-  <div class="card-header">
-    <div class="d-flex align-items-center">
-      {{ author_picture }}
-      <div>
-        <span class="isu-submitted-by_name">{% trans %}Submitted by {{ author_name }} </span>
-        <span class="isu-submitted-by_date"> on {{ date }}{% endtrans %}</span>
-        {% if content.taxonomy_forums|render is not empty %}
-          {% trans %}in <div class="d-inline-block">{{ content.taxonomy_forums }}</div>{% endtrans %}
-        {% endif %}
-      </div>
-    </div>
+<footer class="isu-submitted-by_card d-flex align-items-center" aria-label="Author">
+  {{ author_picture }}
+  <div>
+    <span class="isu-submitted-by_name">{% trans %}Submitted by {{ author_name }} </span>
+    <span class="isu-submitted-by_date"> on {{ date }}{% endtrans %}</span>
+    {% if content.taxonomy_forums|render is not empty %}
+      {% trans %}in <div class="d-inline-block">{{ content.taxonomy_forums }}</div>{% endtrans %}
+    {% endif %}
   </div>
 </footer>
