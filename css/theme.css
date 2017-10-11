@@ -1181,3 +1181,67 @@ blockquote.isu-pull-quote {
     margin: 1rem 0;
   }
 }
+
+/* --------------------------------------  */
+/* ## CONTENT EDITING
+/* --------------------------------------  */
+
+.node-preview-container {
+  color: #fff;
+  background: rgba(0, 107, 166, 1);
+  box-shadow: 0 2px 3px black;
+}
+
+.node-preview-container .node-preview-backlink {
+  display: block; 
+  margin-bottom: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 0.2rem;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.node-preview-container .node-preview-backlink:hover {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.node-preview-container .node-preview-backlink:before {
+  content: '\f104';
+  font-family: FontAwesome;
+  margin-right: 0.25rem;
+}
+
+.node-preview-container label {
+  font-weight: bold;
+}
+
+@media (min-width: 576px) {
+  
+  .node-preview-container form.node-preview-form-select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .node-preview-container .form-item-view-mode {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  .node-preview-container .node-preview-backlink {
+    position: absolute;
+    left: 0;
+    margin-bottom: 0;
+    background: transparent;
+  } 
+
+  .node-preview-container label {
+    margin-right: 0.5rem;
+    margin-bottom: 0;
+    font-weight: 700;
+  } 
+}
