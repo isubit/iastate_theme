@@ -1,7 +1,7 @@
 {#
 /**
  * @file
- * Theme override for an 'input' #type form element.
+ * Theme override for an 'textfield' #type form element.
  *
  * Available variables:
  * - attributes: A list of HTML attributes for the input element.
@@ -11,5 +11,5 @@
  */
 #}
 
-{% set input_classes = ['form-control', 'isu-form-control'] %}
+{% set input_classes = ['form-control', 'isu-form-control', 'isu-form-control_textfield'] %}
 <input{{ attributes.addClass(input_classes) }} />{{ children }}
