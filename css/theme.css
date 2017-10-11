@@ -26,6 +26,7 @@
  *    - Unsaved changes alerts
  * 09 COMMENTS
  * 10 FORMS
+ *    - Summary
  *    - Checkboxes
  *    - Radios
  *    - Date
@@ -756,6 +757,14 @@ details {
   border: 1px solid #cc0000;
 }
 
+/* Trying to hit the main labels in some of these fields. */
+.isu-form-type_managed-file > label,
+.isu-form-type_textarea label,
+.filter-wrapper .isu-form-type_select label { 
+  /* .filter-wrapper via Drupal 8 */
+  font-weight: 700;
+}
+
 .isu-form-element-description {
   margin-top: 0.5rem;
   font-size: 0.875rem;
@@ -786,6 +795,12 @@ details {
 
 .isu-fieldset .isu-fieldset .isu-legend {
   padding: 0;
+}
+
+/* --- ## Summary --- */
+
+.text-summary-wrapper { /* class via Drupal 8 */
+  margin-bottom: 1rem;
 }
 
 /* --- ## Checkboxes --- */
@@ -925,6 +940,10 @@ a.tabledrag-handle .handle {
   width: 30px;
   margin: 0;
   padding: 0;
+}
+
+.field-add-more-submit {
+  margin-bottom: 2rem;
 }
 
 /* Show row weights button */
