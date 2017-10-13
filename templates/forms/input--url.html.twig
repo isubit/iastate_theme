@@ -1,7 +1,7 @@
 {#
 /**
  * @file
- * Theme override for an 'search' #type form element.
+ * Theme override for a 'url' #type form element.
  *
  * Available variables:
  * - attributes: A list of HTML attributes for the input element.
@@ -11,5 +11,5 @@
  */
 #}
 
-{% set search_classes = ['form-control', 'isu-search__search-field'] %}
-<input{{ attributes.addClass(search_classes) }} />{{ children }}
+{% set input_classes = ['form-control', 'isu-form-control', 'isu-form-control_url'] %}
+<input{{ attributes.addClass(input_classes) }} />{{ children }}
