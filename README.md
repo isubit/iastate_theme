@@ -11,8 +11,8 @@ More detailed documentation can be found at this [repository's wiki](https://git
 
 # Installation
 1. Download iastate_theme with the green Clone or Download button.
-2. Add the theme to yoursite/web/themes folder
+2. Add the theme to yoursite/web/themes folder.
 3. In the Drupal UI, go to Appearance where you should see a list of themes. Find the IASTATE Theme and "Install and set as default".
 4. You can now go to the Settings for the IASTATE Theme to configure the ISU Navbar and footer content.
 
-To uninstall, be sure to Appearance and "Uninstall" the theme before removing the theme from the /themes directory.
+To uninstall, be sure to go to Appearance and "Uninstall" the theme before removing the theme from the /themes directory.
