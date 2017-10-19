@@ -7,7 +7,7 @@ This is a base theme for a Drupal 8 basic installation. Any customization should
 TODO: Provide a blank subtheme example.
 
 ## Theme Documentation
-More detailed documentation can be found at this [repository's wiki](https://github.com/isubit/iastate_theme/wiki/ISU-Navbar)
+More detailed documentation can be found at this [repository's wiki](https://github.com/isubit/iastate_theme/wiki/)
 
 # Installation
 1. Download iastate_theme with the green Clone or Download button.
