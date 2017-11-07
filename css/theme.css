@@ -569,6 +569,7 @@ article:not(.isu-user) {
 
 .isu-block-title {
   margin-bottom: 1rem;
+  line-height: 1.25;
 }
 
 /* --------------------------------------  */
