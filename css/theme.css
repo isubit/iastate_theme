@@ -678,6 +678,11 @@ article:not(.isu-user) {
   padding-left: 0;
 }
 
+div[id$="local-actions"] nav {
+  list-style-type: none;
+  margin-bottom: 1rem;
+}
+
 /* --- ## Unsaved changes alerts --- */
 /* Commonly found when re-ordering multiple inputs */
 /* Mimics Bootstrap 4 .alert.alert-warning */
@@ -1215,10 +1220,11 @@ blockquote.isu-pull-quote {
     justify-content: center;
     align-items: center;
     position: relative;
+    width: 100%;
   }
 
   .node-preview-container .form-item-view-mode {
-    display: flex;
+    display: flex !important;
     align-items: center;
     margin-bottom: 0;
   }
@@ -1293,4 +1299,22 @@ blockquote.isu-pull-quote {
 
 .views-exposed-form .isu-form-submit {
   margin-bottom: 1rem; /* To match Bootstrap 4 .form-group */
+}
+
+/* --- admin/content --- */
+
+#edit-node-bulk-form--2 {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+#edit-node-bulk-form--2 .isu-form-group {
+  display: block;
+  margin-right: 1rem;
+}
+
+#edit-node-bulk-form--2 .isu-form-submit {
+  margin-bottom: 1rem;
 }
