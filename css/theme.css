@@ -1286,3 +1286,21 @@ blockquote.isu-pull-quote {
 .views-exposed-form .isu-form-submit {
   margin-bottom: 1rem; /* To match Bootstrap 4 .form-group */
 }
+
+/* --- admin/content --- */
+
+#edit-node-bulk-form--2 {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+#edit-node-bulk-form--2 .isu-form-group {
+  display: block;
+  margin-right: 1rem;
+}
+
+#edit-node-bulk-form--2 .isu-form-submit {
+  margin-bottom: 1rem;
+}
