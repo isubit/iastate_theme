@@ -748,6 +748,11 @@ abbr[title].tabledrag-changed { /* Class via Drupal 8 */
   color: #cc0000;
 }
 
+/* If a form-group is in a table */
+td .isu-form-group {
+  margin-bottom: 0;
+}
+
 details {
   margin-bottom: 1rem;
   padding: 0.5rem 1rem;
