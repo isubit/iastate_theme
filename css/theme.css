@@ -172,7 +172,7 @@
   justify-content: flex-end;
 }
 
-.isu-search__search-field.form-control { /* .form-control from Bootstrap 4 */
+.isu-region_header-second .isu-search__search-field.form-control { /* .form-control from Bootstrap 4 */
   height: 2.5rem;
   width: 100%;
   border-radius: 0.25rem 0 0 0.25rem;
@@ -192,7 +192,7 @@
     margin-top: 0;
   }
 
-  .isu-search__search-field.form-control { /* .form-control via Bootstrap 4 */
+  .isu-region_header-second .isu-search__search-field.form-control { /* .form-control via Bootstrap 4 */
     width: 400px;
   }
 }
