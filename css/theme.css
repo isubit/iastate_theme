@@ -1212,10 +1212,11 @@ blockquote.isu-pull-quote {
     justify-content: center;
     align-items: center;
     position: relative;
+    width: 100%;
   }
 
   .node-preview-container .form-item-view-mode {
-    display: flex;
+    display: flex !important;
     align-items: center;
     margin-bottom: 0;
   }
