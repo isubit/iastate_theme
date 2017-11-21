@@ -875,8 +875,8 @@ details {
 
 .isu-preview-button { margin-right: 0.5rem; }
 
-/* Save and publish button dropdown */
-/* Powerful CSS to manually style the Publish dropdown buttons. All classes
+/* --- ## Dropbutton Widget --- */
+/* Powerful CSS to manually style the dropbuttons. All classes
  * via Drupal 8 */
 
 .form-actions:after {
@@ -885,19 +885,10 @@ details {
   content: "";
 }
 
-.dropbutton-multiple {
-  margin-right: 0.5rem;
-  margin-bottom: 2rem;
-}
-
-.dropbutton-multiple .dropbutton {
-  min-width: 200px;
-  border-bottom: 1px solid #ccc;
-  border-radius: 0 0 0.25rem 0.25rem;
-}
-
-.dropbutton-multiple .dropbutton .dropbutton-action {
-  margin-right: 0;
+.dropbutton-multiple .dropbutton-widget {
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  background-color: #ffffff;
 }
 
 .dropbutton-multiple .dropbutton .dropbutton-action button {
@@ -906,37 +897,9 @@ details {
   border-radius: 0.25rem 0 0 0.25rem;
 }
 
-.dropbutton-multiple .dropbutton .dropbutton-toggle {
-  right: 1px; /* To hide border */
-  margin-right: 0;
-  border: 1px solid #ccc;
-  border-radius: 0 0.25rem 0.25rem 0;
-}
-
-.dropbutton-multiple .dropbutton .secondary-action button {
-  display: inline-block;
-  font-weight: 400;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  user-select: none;
-  border: 1px solid #ccc;
-  border-width: 0 1px 0 1px;
-  background: #fff;
-  padding: .5rem .75rem;
-  color: #212529;
-  font-size: 1rem;
-  line-height: 1.25;
-  cursor: pointer;
-}
-  .dropbutton-multiple .dropbutton .secondary-action button:hover {
-    background: #eee;
-  }
-
-.dropbutton-multiple .dropbutton .secondary-action:nth-of-type(2) button {
-  margin-top: 0.25rem;
-  border-top-width: 1px;
-  border-radius: 0.25rem 0.25rem 0 0;
+.dropbutton-multiple .dropbutton-action a {
+  padding: 0.25rem 0.5rem;
+  text-decoration: none;
 }
 
 /* --- ## Multiple values table --- */
