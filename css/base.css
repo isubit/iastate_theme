@@ -163,13 +163,6 @@ button.btn {
   border-bottom: 2px solid #ccc;
 }
 
-.table th,
-.table td {
-  border-top: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-  border-left: 1px solid #ccc;
-}
-
 caption {
   caption-side: top;
   padding: 0.5rem 0;
