@@ -181,6 +181,12 @@ table img {
   max-width: none; /* Prevents images from shrinking in tables */
 }
 
+/* --- Forms --- */
+
+summary[aria-expanded="true"] {
+  margin-bottom: 1rem;
+}
+
 .form-control:focus { 
   /* Overrides bootstrap.min.css which removed focus style */
   outline: #5cb3fd auto 5px;
