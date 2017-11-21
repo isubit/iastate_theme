@@ -665,6 +665,11 @@ article:not(.isu-user) {
   display: block;
 }
 
+.action-links { /* .action-links via Drupal 8 */
+  list-style-type: none;
+  padding-left: 0;
+}
+
 /* --- ## Unsaved changes alerts --- */
 /* Commonly found when re-ordering multiple inputs */
 /* Mimics Bootstrap 4 .alert.alert-warning */
