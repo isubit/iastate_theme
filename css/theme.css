@@ -670,6 +670,11 @@ article:not(.isu-user) {
   padding-left: 0;
 }
 
+div[id$="local-actions"] nav {
+  list-style-type: none;
+  margin-bottom: 1rem;
+}
+
 /* --- ## Unsaved changes alerts --- */
 /* Commonly found when re-ordering multiple inputs */
 /* Mimics Bootstrap 4 .alert.alert-warning */
