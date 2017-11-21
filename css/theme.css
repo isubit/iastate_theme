@@ -962,6 +962,14 @@ a.tabledrag-handle .handle {
 .vertical-tabs__menu-item a { color: #212529; }
 .vertical-tabs__pane { padding: 1.5rem; }
 
+/* --- ## Horizontal Tabs --- */
+/* Custom modification to Bootstrap 4 .nav-tabs */
+
+.isu-nav-tabs_sm .nav-link {
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+}
+
 /* --------------------------------------  */
 /* ## SEARCH RESULTS
 /* --------------------------------------  */
