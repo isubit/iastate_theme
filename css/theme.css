@@ -22,6 +22,7 @@
  * 07 FIELDS
  *    - Tags
  * 08 COMPONENTS
+ *    - Breadcrumbs
  *    - Links
  *    - Unsaved changes alerts
  * 09 COMMENTS
@@ -645,6 +646,13 @@ article:not(.isu-user) {
 /* --------------------------------------  */
 /* ## COMPONENTS
 /* --------------------------------------  */
+
+/* --- ## Breadcrumbs --- */
+
+.isu-breadcrumb {
+  margin-bottom: 1rem;
+  background: transparent;
+}
 
 /* --- ## Links --- */
 /* Not, like, regular links, but the buttons that do stuff
