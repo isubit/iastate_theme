@@ -14,15 +14,15 @@
 .isu-navbar {
   display: block;
   font-size: 14px;
-  color: #ddd;
-  background: #333;
+  color: #dddddd;
+  background: #333333;
 }
 
 .isu-navbar a {
   position: relative;
   display: block;
   padding: 4px 8px;
-  color: #ddd;
+  color: #dddddd;
   line-height: 20px;
   font-weight: 400;
   text-decoration: none;
@@ -33,9 +33,9 @@
   .isu-navbar a:hover,
   .isu-navbar a:focus,
   .isu-navbar_dropdown.has-focus {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
-    background-color: #555;
+    background-color: #555555;
   }
 
 .isu-navbar_container {
@@ -103,7 +103,7 @@
   top: 100%; left: 0;
   margin: 0;
   padding: 0;
-  background-color: #555;
+  background-color: #555555;
   z-index: 9999;
 }
 
@@ -118,7 +118,7 @@
 }
 
 /* -------------------------------------- */
-/* Dropdown menus                    */
+/* Dropdown menus
 /* -------------------------------------- */
 
 .isu-navbar_dropdown[aria-expanded='false'] .isu-navbar_dropdown-menu {

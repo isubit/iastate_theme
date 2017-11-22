@@ -22,6 +22,7 @@
  * 07 FIELDS
  *    - Tags
  * 08 COMPONENTS
+ *    - Breadcrumbs
  *    - Links
  *    - Unsaved changes alerts
  * 09 COMMENTS
@@ -42,6 +43,7 @@
  * 14 FORUM
  * 15 CONTENT
  * 16 CONTENT EDITING
+ * 17 ADMIN
  *
  */
 
@@ -91,7 +93,7 @@
 
 .isu-menu-navbar_toggler-label {
   display: block;
-  color: #fff;
+  color: #ffffff;
   font-size: 0.75rem;
   text-transform: uppercase;
   font-weight: 700;
@@ -171,7 +173,8 @@
   justify-content: flex-end;
 }
 
-.isu-search__search-field.form-control { /* .form-control from Bootstrap 4 */
+.isu-region_header-second .isu-search__search-field.form-control { 
+  /* .form-control from Bootstrap 4 */
   height: 2.5rem;
   width: 100%;
   border-radius: 0.25rem 0 0 0.25rem;
@@ -191,7 +194,8 @@
     margin-top: 0;
   }
 
-  .isu-search__search-field.form-control { /* .form-control via Bootstrap 4 */
+  .isu-region_header-second .isu-search__search-field.form-control { 
+    /* .form-control via Bootstrap 4 */
     width: 400px;
   }
 }
@@ -225,7 +229,7 @@
 
 .isu-search_toggler-label {
   display: block;
-  color: #fff;
+  color: #ffffff;
   font-size: 0.75rem;
   text-transform: uppercase;
   font-weight: 700;
@@ -252,8 +256,8 @@
   display: none;
   width: 2.5rem;
   padding: 0;
-  color: #777;
-  background-color: #fff;
+  color: #676767;
+  background-color: #ffffff;
 }
 
 .isu-site-navbar .isu-search__search-btn-text {
@@ -331,7 +335,7 @@
 .search-page-form .isu-search__search-btn,
 .search-page-form #edit-submit {
   margin-left: -3px;
-  border: 1px solid #d8d8d8;
+  border: 1px solid #dddddd;
 }
 
 .search-page-form #edit-submit {
@@ -421,20 +425,21 @@
   */
   padding-right: 1em;
   padding-left: 1em;
-  color: #333;
+  color: #333333;
 }
   .isu-nav-link:hover {
-    color: #333;
-    background: #d8d8d8;
+    color: #333333;
+    background: #dddddd;
   }
 
 .show .isu-nav-link { /* .show via Bootstrap 4 */
-  color: #333;
-  background: #d8d8d8;
+  color: #333333;
+  background: #dddddd;
 }
 
 /* So this is an inelegant stick, but Bootstrap 4 isn't adding show
-  * to the dropdown-menu, so it's not opening. Thus: selector. */
+  * to the dropdown-menu, so it's not opening. Thus: selector. 
+  */
 .dropdown.show > .dropdown-menu {
   display: block;
 }
@@ -446,7 +451,7 @@
   padding: 0;
   border: 0;
   border-radius: 0;
-  background: #e5e5e5;
+  background: #eeeeee;
 }
 
 @media screen and (min-width: 576px) {
@@ -466,7 +471,7 @@
 .isu-dropdown-item a {
   display: block;
   padding: 0.75rem 1rem;
-  color: #333;
+  color: #333333;
   text-decoration: none;
 }
 
@@ -474,7 +479,7 @@
   .isu-dropdown-item a:hover,
   .isu-dropdown-item a.active,
   .isu-dropdown-item a:active {
-    background: #dedede;
+    background: #dddddd;
   }
 
 
@@ -497,7 +502,7 @@
 /* --------------------------------------  */
 
 .isu-page-column {
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 2rem;
 }
 
@@ -540,13 +545,13 @@
 
 .isu-page-link {
   height: 100%;
-  color: #222529;
+  color: #333333;
   text-decoration: none;
 }
 
-/* --------------------------------------  */
+/* -------------------------------------- */
 /* ## NODE
-/* --------------------------------------  */
+/* -------------------------------------- */
 /*
  * The most basic unit of content which appears all over. 
  */
@@ -559,9 +564,9 @@ article:not(.isu-user) {
   margin-bottom: 1rem;
 }
 
-/* --------------------------------------  */
+/* -------------------------------------- */
 /* ## BLOCKS
-/* --------------------------------------  */
+/* -------------------------------------- */
 
 .isu-sidebar .isu-block {
   margin-bottom: 1rem;
@@ -569,11 +574,12 @@ article:not(.isu-user) {
 
 .isu-block-title {
   margin-bottom: 1rem;
+  line-height: 1.25;
 }
 
-/* --------------------------------------  */
+/* -------------------------------------- */
 /* ## VIEWS
-/* --------------------------------------  */
+/* -------------------------------------- */
 /*
  * ISU Theme specific View styling 
  */
@@ -594,7 +600,7 @@ article:not(.isu-user) {
 .isu-list-view-item {
   margin-bottom: 1rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid #d8d8d8;
+  border-bottom: 1px solid #dddddd;
 }
 
 .isu-list-view-item .views-field-title h3 {
@@ -610,7 +616,7 @@ article:not(.isu-user) {
 }
 
 .isu-list-view-item .fa {
-  color: #777;
+  color: #676767;
 }
 
 /* --- ## Summary Unformatted --- */
@@ -632,18 +638,25 @@ article:not(.isu-user) {
   margin-right: -0.75rem;
 }
 
-/* --------------------------------------  */
+/* -------------------------------------- */
 /* ## FIELDS
-/* --------------------------------------  */
+/* -------------------------------------- */
 
 /* --- ## Tags --- */
 .views-field-field-tags {
   margin-top: 1rem;
 }
 
-/* --------------------------------------  */
+/* -------------------------------------- */
 /* ## COMPONENTS
-/* --------------------------------------  */
+/* -------------------------------------- */
+
+/* --- ## Breadcrumbs --- */
+
+.isu-breadcrumb {
+  margin-bottom: 1rem;
+  background: transparent;
+}
 
 /* --- ## Links --- */
 /* Not, like, regular links, but the buttons that do stuff
@@ -661,6 +674,16 @@ article:not(.isu-user) {
 
 .isu-links.contextual-links li { /* .contextual-links via Drupal 8 */
   display: block;
+}
+
+.action-links { /* .action-links via Drupal 8 */
+  list-style-type: none;
+  padding-left: 0;
+}
+
+div[id$="local-actions"] nav {
+  list-style-type: none;
+  margin-bottom: 1rem;
 }
 
 /* --- ## Unsaved changes alerts --- */
@@ -694,9 +717,9 @@ abbr[title].tabledrag-changed { /* Class via Drupal 8 */
   text-decoration: none;
 }
 
-/* --------------------------------------  */
+/* -------------------------------------- */
 /* ## COMMENTS
-/* --------------------------------------  */
+/* -------------------------------------- */
 
 .isu-comments-section {
   margin-top: 1rem;
@@ -741,6 +764,11 @@ abbr[title].tabledrag-changed { /* Class via Drupal 8 */
   color: #cc0000;
 }
 
+/* If a form-group is in a table */
+td .isu-form-group {
+  margin-bottom: 0;
+}
+
 details {
   margin-bottom: 1rem;
   padding: 0.5rem 1rem;
@@ -768,7 +796,7 @@ details {
 .isu-form-element-description {
   margin-top: 0.5rem;
   font-size: 0.875rem;
-  color: #666666;
+  color: #676767;
 }
 
 .isu-fieldset {
@@ -863,8 +891,8 @@ details {
 
 .isu-preview-button { margin-right: 0.5rem; }
 
-/* Save and publish button dropdown */
-/* Powerful CSS to manually style the Publish dropdown buttons. All classes
+/* --- ## Dropbutton Widget --- */
+/* Powerful CSS to manually style the dropbuttons. All classes
  * via Drupal 8 */
 
 .form-actions:after {
@@ -873,19 +901,10 @@ details {
   content: "";
 }
 
-.dropbutton-multiple {
-  margin-right: 0.5rem;
-  margin-bottom: 2rem;
-}
-
-.dropbutton-multiple .dropbutton {
-  min-width: 200px;
-  border-bottom: 1px solid #ccc;
-  border-radius: 0 0 0.25rem 0.25rem;
-}
-
-.dropbutton-multiple .dropbutton .dropbutton-action {
-  margin-right: 0;
+.dropbutton-multiple .dropbutton-widget {
+  border: 1px solid #cccccc;
+  border-radius: 0.25rem;
+  background-color: #ffffff;
 }
 
 .dropbutton-multiple .dropbutton .dropbutton-action button {
@@ -894,37 +913,9 @@ details {
   border-radius: 0.25rem 0 0 0.25rem;
 }
 
-.dropbutton-multiple .dropbutton .dropbutton-toggle {
-  right: 1px; /* To hide border */
-  margin-right: 0;
-  border: 1px solid #ccc;
-  border-radius: 0 0.25rem 0.25rem 0;
-}
-
-.dropbutton-multiple .dropbutton .secondary-action button {
-  display: inline-block;
-  font-weight: 400;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  user-select: none;
-  border: 1px solid #ccc;
-  border-width: 0 1px 0 1px;
-  background: #fff;
-  padding: .5rem .75rem;
-  color: #212529;
-  font-size: 1rem;
-  line-height: 1.25;
-  cursor: pointer;
-}
-  .dropbutton-multiple .dropbutton .secondary-action button:hover {
-    background: #eee;
-  }
-
-.dropbutton-multiple .dropbutton .secondary-action:nth-of-type(2) button {
-  margin-top: 0.25rem;
-  border-top-width: 1px;
-  border-radius: 0.25rem 0.25rem 0 0;
+.dropbutton-multiple .dropbutton-action a {
+  padding: 0.25rem 0.5rem;
+  text-decoration: none;
 }
 
 /* --- ## Multiple values table --- */
@@ -984,8 +975,16 @@ a.tabledrag-handle .handle {
 /* --- ## Vertical Tabs --- */
 /* Overrides vertical-tabs.module.css */
 
-.vertical-tabs__menu-item a { color: #212529; }
+.vertical-tabs__menu-item a { color: #333333; }
 .vertical-tabs__pane { padding: 1.5rem; }
+
+/* --- ## Horizontal Tabs --- */
+/* Custom modification to Bootstrap 4 .nav-tabs */
+
+.isu-nav-tabs_sm .nav-link {
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+}
 
 /* --------------------------------------  */
 /* ## SEARCH RESULTS
@@ -1007,7 +1006,7 @@ a.tabledrag-handle .handle {
 
 .isu-footer {
   padding: 2rem 0;
-  color: #686868;
+  color: #676767;
   background: #f3f3f3;
 }
 
@@ -1044,7 +1043,7 @@ a.tabledrag-handle .handle {
 
 .isu-social-menu a {
   display: inline-block;
-  color: #686868;
+  color: #676767;
   text-decoration: none;
 }
 
@@ -1143,9 +1142,9 @@ blockquote.isu-pull-quote {
 
   /* Caption styles */
   padding: 0.5rem;
-  color: #333;
+  color: #333333;
   font-size: 0.9rem;
-  background: #eee;
+  background: #eeeeee;
 }
 
 .isu-body figure.align-left {
@@ -1187,7 +1186,7 @@ blockquote.isu-pull-quote {
 /* --------------------------------------  */
 
 .node-preview-container {
-  color: #fff;
+  color: #ffffff;
   background: rgba(0, 107, 166, 1);
   box-shadow: 0 2px 3px black;
 }
@@ -1196,7 +1195,7 @@ blockquote.isu-pull-quote {
   display: block; 
   margin-bottom: 0.5rem;
   padding: 0.25rem 0.5rem;
-  color: #fff;
+  color: #ffffff;
   font-weight: 700;
   text-decoration: none;
   border-radius: 0.2rem;
@@ -1208,7 +1207,7 @@ blockquote.isu-pull-quote {
 }
 
 .node-preview-container .node-preview-backlink:before {
-  content: '\f104';
+  content: '\f104'; /* fa-angle-left */
   font-family: FontAwesome;
   margin-right: 0.25rem;
 }
@@ -1224,10 +1223,11 @@ blockquote.isu-pull-quote {
     justify-content: center;
     align-items: center;
     position: relative;
+    width: 100%;
   }
 
   .node-preview-container .form-item-view-mode {
-    display: flex;
+    display: flex !important;
     align-items: center;
     margin-bottom: 0;
   }
@@ -1244,4 +1244,80 @@ blockquote.isu-pull-quote {
     margin-bottom: 0;
     font-weight: 700;
   } 
+}
+
+/* --------------------------------------  */
+/* ## ADMIN
+/* --------------------------------------  */
+
+.isu-admin-description {
+  font-size: 0.875rem;
+  color: #676767;
+}
+
+.isu-block_help:before {
+  content: '\f05a'; /* fa-info-circle */
+  font-family: FontAwesome;
+  float: left;
+  margin-right: 1rem;
+}
+
+.isu-block_help p:last-of-type {
+  margin-bottom: 0
+}
+
+.container-inline { /* class via Drupal 8 */
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.container-inline label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.container-inline .isu-form-group {
+  display: block;
+  margin-right: 1rem;
+}
+
+.container-inline .isu-form-submit {
+  margin-bottom: 1rem;
+}
+
+/* --- Views exposed form --- */
+
+.views-exposed-form  {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.views-exposed-form .isu-form-group {
+  margin-right: 1rem;
+}
+
+.views-exposed-form .isu-form-submit {
+  margin-bottom: 1rem; /* To match Bootstrap 4 .form-group */
+}
+
+/* --- admin/content --- */
+
+#edit-node-bulk-form--2 {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+#edit-node-bulk-form--2 .isu-form-group {
+  display: block;
+  margin-right: 1rem;
+}
+
+#edit-node-bulk-form--2 .isu-form-submit {
+  margin-bottom: 1rem;
 }

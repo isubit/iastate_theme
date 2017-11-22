@@ -22,29 +22,53 @@
  */
 #}
 {% for type, messages in message_list %}
-  <div role="contentinfo" aria-label="{{ status_headings[type] }}"{{ attributes|without('role', 'aria-label') }}>
+
+  {# 
+    Add a class if the alert appears on the front. A function in the
+    iastate_theme base theme allows is_front to be used anywhere.
+  #}
+  {% 
+    set alert_front = [ 
+      is_front ? 'isu-alert_front' : '', 
+      'container',
+      'p-0'
+    ] 
+  %}
+
+  <div role="contentinfo" aria-label="{{ status_headings[type] }}"{{ attributes|without('role', 'aria-label').addClass(alert_front) }}>
+
     {% if type == 'status' %}
+
       <div role="alert" class="alert alert-success">
+
     {% elseif type == 'warning' %}
+
       <div role="alert" class="alert alert-warning">
+
     {% elseif type == 'error' %}
+
       <div role ="alert" class="alert alert-danger">
+
     {% else %}
+
       <div role="alert" class="alert alert-info">
+
     {% endif %}
 
-      {% if status_headings[type] %}
-        <h2 class="visually-hidden">{{ status_headings[type] }}</h2>
-      {% endif %}
-      {% if messages|length > 1 %}
-        <ul>
-          {% for message in messages %}
-            <li>{{ message }}</li>
-          {% endfor %}
-        </ul>
-      {% else %}
-        {{ messages|first }}
-      {% endif %}
-      </div>
+    {% if status_headings[type] %}
+      <h2 class="visually-hidden">{{ status_headings[type] }}</h2>
+    {% endif %}
+
+    {% if messages|length > 1 %}
+      <ul>
+        {% for message in messages %}
+          <li>{{ message }}</li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      {{ messages|first }}
+    {% endif %}
+
+    </div>
   </div>
 {% endfor %}
