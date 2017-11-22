@@ -107,14 +107,12 @@ button.btn {
   }
 
 .btn-primary.disabled,
-.btn-primary:disabled {
+.btn-primary:disabled { /* Overrides bootstrap.min.css */
   background-color: #cc0000; /* ISU brand standard */
   border-color: #cc0000;
 }
 
-/* Duplicate Bootstrap 4 btn-secondary btn-sm for .button */
-
-.button:not(.btn) {
+.button:not(.btn) { /* Duplicates Bootstrap 4 btn-secondary and btn-sm */
   display: inline-block;
   font-weight: 400;
   text-align: center;
@@ -147,11 +145,13 @@ button.btn {
     border-color: #575757;
   }
 
-/* --- Tables --- */
+/* --------------------------------------  */
+/* ## TABLES
+/* --------------------------------------  */
 /* Overrides bootstrap.min.css */
 
 .table tbody {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #cccccc;
 }
 
 .table thead th,
@@ -160,17 +160,19 @@ button.btn {
 }
 
 .table thead th {
-  border-bottom: 2px solid #ccc;
+  border-bottom: 2px solid #cccccc;
 }
 
 caption {
   caption-side: top;
   padding: 0.5rem 0;
   color: #676767;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #cccccc;
 }
 
-/* --- Images --- */
+/* --------------------------------------  */
+/* ## IMAGES
+/* --------------------------------------  */
 
 img {
   max-width: 100%;
@@ -181,7 +183,9 @@ table img {
   max-width: none; /* Prevents images from shrinking in tables */
 }
 
-/* --- Forms --- */
+/* --------------------------------------  */
+/* ## FORMS
+/* --------------------------------------  */
 
 summary[aria-expanded="true"] {
   margin-bottom: 1rem;
@@ -192,8 +196,7 @@ summary[aria-expanded="true"] {
   outline: #5cb3fd auto 5px;
 }
 
-.dropdown-toggle:after {
-  /* Overrides Bootstrap 4 */
+.dropdown-toggle:after { /* Overrides bootstrap.min.css */
   width: 7px;
   height: 7px;
   margin-left: 0.5rem;
@@ -229,7 +232,7 @@ body.cke_editable .align-right {
 }
 
 body.cke_editable figure {
-  border: 1px solid #eee;
+  border: 1px solid #eeeeee;
 }
 
 body.cke_editable figure figcaption {
@@ -238,7 +241,7 @@ body.cke_editable figure figcaption {
 
   /* Caption styles */
   padding: 0.5rem;
-  color: #333;
+  color: #333333;
   font-size: 0.9rem;
-  background: #eee;
+  background: #eeeeee;
 }

@@ -93,7 +93,7 @@
 
 .isu-menu-navbar_toggler-label {
   display: block;
-  color: #fff;
+  color: #ffffff;
   font-size: 0.75rem;
   text-transform: uppercase;
   font-weight: 700;
@@ -173,7 +173,8 @@
   justify-content: flex-end;
 }
 
-.isu-region_header-second .isu-search__search-field.form-control { /* .form-control from Bootstrap 4 */
+.isu-region_header-second .isu-search__search-field.form-control { 
+  /* .form-control from Bootstrap 4 */
   height: 2.5rem;
   width: 100%;
   border-radius: 0.25rem 0 0 0.25rem;
@@ -193,7 +194,8 @@
     margin-top: 0;
   }
 
-  .isu-region_header-second .isu-search__search-field.form-control { /* .form-control via Bootstrap 4 */
+  .isu-region_header-second .isu-search__search-field.form-control { 
+    /* .form-control via Bootstrap 4 */
     width: 400px;
   }
 }
@@ -227,7 +229,7 @@
 
 .isu-search_toggler-label {
   display: block;
-  color: #fff;
+  color: #ffffff;
   font-size: 0.75rem;
   text-transform: uppercase;
   font-weight: 700;
@@ -254,8 +256,8 @@
   display: none;
   width: 2.5rem;
   padding: 0;
-  color: #777;
-  background-color: #fff;
+  color: #676767;
+  background-color: #ffffff;
 }
 
 .isu-site-navbar .isu-search__search-btn-text {
@@ -333,7 +335,7 @@
 .search-page-form .isu-search__search-btn,
 .search-page-form #edit-submit {
   margin-left: -3px;
-  border: 1px solid #d8d8d8;
+  border: 1px solid #dddddd;
 }
 
 .search-page-form #edit-submit {
@@ -423,20 +425,21 @@
   */
   padding-right: 1em;
   padding-left: 1em;
-  color: #333;
+  color: #333333;
 }
   .isu-nav-link:hover {
-    color: #333;
-    background: #d8d8d8;
+    color: #333333;
+    background: #dddddd;
   }
 
 .show .isu-nav-link { /* .show via Bootstrap 4 */
-  color: #333;
-  background: #d8d8d8;
+  color: #333333;
+  background: #dddddd;
 }
 
 /* So this is an inelegant stick, but Bootstrap 4 isn't adding show
-  * to the dropdown-menu, so it's not opening. Thus: selector. */
+  * to the dropdown-menu, so it's not opening. Thus: selector. 
+  */
 .dropdown.show > .dropdown-menu {
   display: block;
 }
@@ -448,7 +451,7 @@
   padding: 0;
   border: 0;
   border-radius: 0;
-  background: #e5e5e5;
+  background: #eeeeee;
 }
 
 @media screen and (min-width: 576px) {
@@ -468,7 +471,7 @@
 .isu-dropdown-item a {
   display: block;
   padding: 0.75rem 1rem;
-  color: #333;
+  color: #333333;
   text-decoration: none;
 }
 
@@ -476,7 +479,7 @@
   .isu-dropdown-item a:hover,
   .isu-dropdown-item a.active,
   .isu-dropdown-item a:active {
-    background: #dedede;
+    background: #dddddd;
   }
 
 
@@ -542,13 +545,13 @@
 
 .isu-page-link {
   height: 100%;
-  color: #222529;
+  color: #333333;
   text-decoration: none;
 }
 
-/* --------------------------------------  */
+/* -------------------------------------- */
 /* ## NODE
-/* --------------------------------------  */
+/* -------------------------------------- */
 /*
  * The most basic unit of content which appears all over. 
  */
@@ -561,9 +564,9 @@ article:not(.isu-user) {
   margin-bottom: 1rem;
 }
 
-/* --------------------------------------  */
+/* -------------------------------------- */
 /* ## BLOCKS
-/* --------------------------------------  */
+/* -------------------------------------- */
 
 .isu-sidebar .isu-block {
   margin-bottom: 1rem;
@@ -574,9 +577,9 @@ article:not(.isu-user) {
   line-height: 1.25;
 }
 
-/* --------------------------------------  */
+/* -------------------------------------- */
 /* ## VIEWS
-/* --------------------------------------  */
+/* -------------------------------------- */
 /*
  * ISU Theme specific View styling 
  */
@@ -597,7 +600,7 @@ article:not(.isu-user) {
 .isu-list-view-item {
   margin-bottom: 1rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid #d8d8d8;
+  border-bottom: 1px solid #dddddd;
 }
 
 .isu-list-view-item .views-field-title h3 {
@@ -613,7 +616,7 @@ article:not(.isu-user) {
 }
 
 .isu-list-view-item .fa {
-  color: #777;
+  color: #676767;
 }
 
 /* --- ## Summary Unformatted --- */
@@ -635,18 +638,18 @@ article:not(.isu-user) {
   margin-right: -0.75rem;
 }
 
-/* --------------------------------------  */
+/* -------------------------------------- */
 /* ## FIELDS
-/* --------------------------------------  */
+/* -------------------------------------- */
 
 /* --- ## Tags --- */
 .views-field-field-tags {
   margin-top: 1rem;
 }
 
-/* --------------------------------------  */
+/* -------------------------------------- */
 /* ## COMPONENTS
-/* --------------------------------------  */
+/* -------------------------------------- */
 
 /* --- ## Breadcrumbs --- */
 
@@ -714,9 +717,9 @@ abbr[title].tabledrag-changed { /* Class via Drupal 8 */
   text-decoration: none;
 }
 
-/* --------------------------------------  */
+/* -------------------------------------- */
 /* ## COMMENTS
-/* --------------------------------------  */
+/* -------------------------------------- */
 
 .isu-comments-section {
   margin-top: 1rem;
@@ -899,7 +902,7 @@ details {
 }
 
 .dropbutton-multiple .dropbutton-widget {
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   border-radius: 0.25rem;
   background-color: #ffffff;
 }
@@ -972,7 +975,7 @@ a.tabledrag-handle .handle {
 /* --- ## Vertical Tabs --- */
 /* Overrides vertical-tabs.module.css */
 
-.vertical-tabs__menu-item a { color: #212529; }
+.vertical-tabs__menu-item a { color: #333333; }
 .vertical-tabs__pane { padding: 1.5rem; }
 
 /* --- ## Horizontal Tabs --- */
@@ -1003,7 +1006,7 @@ a.tabledrag-handle .handle {
 
 .isu-footer {
   padding: 2rem 0;
-  color: #686868;
+  color: #676767;
   background: #f3f3f3;
 }
 
@@ -1040,7 +1043,7 @@ a.tabledrag-handle .handle {
 
 .isu-social-menu a {
   display: inline-block;
-  color: #686868;
+  color: #676767;
   text-decoration: none;
 }
 
@@ -1139,9 +1142,9 @@ blockquote.isu-pull-quote {
 
   /* Caption styles */
   padding: 0.5rem;
-  color: #333;
+  color: #333333;
   font-size: 0.9rem;
-  background: #eee;
+  background: #eeeeee;
 }
 
 .isu-body figure.align-left {
@@ -1183,7 +1186,7 @@ blockquote.isu-pull-quote {
 /* --------------------------------------  */
 
 .node-preview-container {
-  color: #fff;
+  color: #ffffff;
   background: rgba(0, 107, 166, 1);
   box-shadow: 0 2px 3px black;
 }
@@ -1192,7 +1195,7 @@ blockquote.isu-pull-quote {
   display: block; 
   margin-bottom: 0.5rem;
   padding: 0.25rem 0.5rem;
-  color: #fff;
+  color: #ffffff;
   font-weight: 700;
   text-decoration: none;
   border-radius: 0.2rem;
@@ -1204,7 +1207,7 @@ blockquote.isu-pull-quote {
 }
 
 .node-preview-container .node-preview-backlink:before {
-  content: '\f104';
+  content: '\f104'; /* fa-angle-left */
   font-family: FontAwesome;
   margin-right: 0.25rem;
 }
