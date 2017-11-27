@@ -10,6 +10,7 @@ global-css:
       css/layout.css: {}
       css/theme.css: {}
       css/isu-social.css: {}
+      css/utility.css: {}
 
 global-js:
   js:
@@ -23,11 +24,12 @@ global-js:
     - core/jquery
     - core/drupal
 
-# Nimbus Sans
+# Fonts
 fonts:
   css:
     theme:
       '//cdn.theme.iastate.edu/nimbus-sans/css/nimbus-sans.css': { type: external }
+      'https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i&subset=latin-ext': { type: external }
 
 # Font Awesome Icons
 font-awesome:
