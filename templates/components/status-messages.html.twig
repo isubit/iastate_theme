@@ -22,37 +22,29 @@
  */
 #}
 {% for type, messages in message_list %}
-
   {# 
     Add a class if the alert appears on the front. A function in the
     iastate_theme base theme allows is_front to be used anywhere.
   #}
+
   {% 
-    set alert_front = [ 
+    set alert_front_classes = [ 
       is_front ? 'isu-alert_front' : '', 
       'container',
       'p-0'
     ] 
   %}
 
-  <div role="contentinfo" aria-label="{{ status_headings[type] }}"{{ attributes|without('role', 'aria-label').addClass(alert_front) }}>
+  <div role="contentinfo" aria-label="{{ status_headings[type] }}"{{ attributes|without('role', 'aria-label').addClass(alert_front_classes) }}>
 
     {% if type == 'status' %}
-
       <div role="alert" class="alert alert-success">
-
     {% elseif type == 'warning' %}
-
       <div role="alert" class="alert alert-warning">
-
     {% elseif type == 'error' %}
-
       <div role ="alert" class="alert alert-danger">
-
     {% else %}
-
       <div role="alert" class="alert alert-info">
-
     {% endif %}
 
     {% if status_headings[type] %}
@@ -69,6 +61,6 @@
       {{ messages|first }}
     {% endif %}
 
-    </div>
-  </div>
+    </div> {# Close the role="alert" #}
+  </div> {# Close container  #}
 {% endfor %}

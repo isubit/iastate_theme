@@ -46,7 +46,7 @@
 #}
 
 {%
-  set classes = [
+  set element_classes = [
     'form-group', 
     'isu-form-group',
     'isu-form-type_' ~ type|clean_class,
@@ -67,7 +67,7 @@
     description_display == 'invisible' ? 'visually-hidden',
   ]
 %}
-<div{{ attributes.addClass(classes) }}>
+<div{{ attributes.addClass(element_classes) }}>
   {% if label_display in ['before', 'invisible'] %}
     {{ label }}
   {% endif %}

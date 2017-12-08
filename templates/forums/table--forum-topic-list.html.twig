@@ -40,7 +40,16 @@
  */
 #}
 
-{% set forum_classes = ['table', 'table-bordered', 'table-striped', 'mt-3', 'isu-forum-table'] %}
+{% 
+  set forum_classes = [
+    'table', 
+    'table-bordered', 
+    'table-striped', 
+    'mt-3', 
+    'isu-forum-table'
+  ] 
+%}
+
 <div class="isu-forum">
   <table{{ attributes.addClass(forum_classes) }}>
   {% if caption %}

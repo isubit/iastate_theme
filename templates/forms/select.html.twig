@@ -11,7 +11,14 @@
  */
 #}
 {% spaceless %}
-  {% set input_classes = ['form-control', 'isu-form-control'] %}
+
+  {% 
+    set input_classes = [
+      'form-control', 
+      'isu-form-control'
+    ] 
+  %}
+  
   <select{{ attributes.addClass(input_classes) }}>
     {% for option in options %}
       {% if option.type == 'optgroup' %}

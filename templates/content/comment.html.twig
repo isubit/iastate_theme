@@ -86,14 +86,17 @@
     
     <div class="card-body">
       <div{{ content_attributes }}>
-
           {% if parent %}
-            <p><small><span class="fa fa-reply" aria-hidden="true"></span> {{ parent }}</small></p>
+            <p>
+              <small>
+                <span class="fa fa-reply" aria-hidden="true"></span> 
+                {{ parent }}
+              </small>
+            </p>
           {% endif %}
-
           {{ content }}
-      </div>
-    </div>
-  </div>
+      </div> {# Close content #}
+    </div> {# Close .card-body #}
+  </div> {# Close .card #}
 </article>
 

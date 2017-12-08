@@ -32,12 +32,26 @@
   {% import _self as menus %}
   {% if items %}
     <div id="isu-sitelinks_collapse" class="isu-sitelinks_collapse">
-    	{% set classes = ['isu-sitelinks', 'list-inline'] %}
-        <ul{{ attributes.addClass(classes) }}>
+    	{% 
+        set list_classes = [
+          'isu-sitelinks', 
+          'list-inline'
+        ] 
+      %}
+
+        <ul{{ attributes.addClass(list_classes) }}>
       {% for item in items %}
         <li{{ item.attributes }}>
-        {% set classes = ['isu-sitelinks-link', 'btn', 'btn-sm'] %}
-          {{ link(item.title, item.url, {'class': classes}) }}
+        
+        {% 
+          set link_classes = [
+            'isu-sitelinks-link', 
+            'btn', 
+            'btn-sm'
+          ] 
+        %}
+
+          {{ link(item.title, item.url, {'class': link_classes}) }}
         </li>
       {% endfor %}
       </ul>
