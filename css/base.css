@@ -170,6 +170,13 @@ img {
 table img {
   max-width: none; /* Prevents images from shrinking in tables */
 }
+.caption-img figcaption { /* Class from Drupal 8. */
+  /* Same as table caption. */
+  padding: 0.5rem;
+  color: #333333;
+  font-size: 0.9rem;
+  background: #eeeeee;
+}
 
 /* --------------------------------------  */
 /* ## FORMS
