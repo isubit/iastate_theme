@@ -10,5 +10,13 @@
  * @see template_preprocess_input()
  */
 #}
-{% set input_classes = ['form-control', 'isu-form-control', 'isu-form-control_date'] %}
+
+{% 
+  set input_classes = [
+    'form-control', 
+    'isu-form-control', 
+    'isu-form-control_date'
+  ] 
+%}
+
 <input{{ attributes.addClass(input_classes) }} />{{ children }}

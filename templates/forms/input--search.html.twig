@@ -11,5 +11,11 @@
  */
 #}
 
-{% set search_classes = ['form-control', 'isu-form-control_search', 'isu-search__search-field'] %}
+{% 
+  set search_classes = [
+    'form-control', 
+    'isu-form-control_search', 
+    'isu-search__search-field'
+  ] 
+%}
 <input{{ attributes.addClass(search_classes) }} />{{ children }}

@@ -13,13 +13,16 @@
  */
 #}
 {% if content %}
-  {% set region_classes = [
+  
+  {% 
+    set region_classes = [
     'isu-region',
     'isu-region_' ~ region|clean_class,
     'container',
     'p-0'
     ] 
   %}
+
   <div{{ attributes.addClass(region_classes) }}>
     {{ content }}
   </div>

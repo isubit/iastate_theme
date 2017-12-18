@@ -11,5 +11,12 @@
  */
 #}
 
-{% set input_classes = ['form-control', 'isu-form-control', 'isu-form-control_tel'] %}
+{% 
+  set input_classes = [
+    'form-control', 
+    'isu-form-control', 
+    'isu-form-control_tel'
+    ] 
+%}
+
 <input{{ attributes.addClass(input_classes) }} />{{ children }}
