@@ -178,6 +178,38 @@ table img {
   background: #eeeeee;
 }
 
+/* We want to respect content-editor table styles
+ * as much as possible, until we reach the responsive
+ * table breakpoint.
+ */
+
+.table[cellpadding],
+.table[cellspacing] {
+  border-collapse: inherit;
+}
+.table[border] {
+  border-bottom-color: #808080;
+}
+.table[border] th,
+.table[border] td {
+  border-collapse: inherit;
+  border-bottom-color: #808080;
+  border-top-color: #808080;
+}
+
+@media (min-width: 799px) {
+  .table[style*="width:"],
+  .table:not([style*="width:"])[border] {
+    display: table;
+  }
+}
+
+@media (max-width: 800px) {
+  .table[style*="width"] {
+    width: 100% !important;
+  }
+}
+
 /* --------------------------------------  */
 /* ## FORMS
 /* --------------------------------------  */
@@ -212,7 +244,7 @@ textarea.cke_source {
 }
 
 /*
-* Some of these styles are partially duplicated from the live content
+ * Some of these styles are partially duplicated from the live content
  * versions from theme.css.
  */
 
@@ -233,4 +265,55 @@ body.cke_editable figure figcaption {
   color: #333333;
   font-size: 0.9rem;
   background: #eeeeee;
+}
+
+/*
+ * Duplicate Bootstrap 4 styles in the ckeditor so table look as 
+ * true-to-live as possible.
+ */
+
+ body.cke_editable table {
+  max-width: 100%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+}
+
+body.cke_editable table,
+body.cke_editable tbody,
+body.cke_editable thead,
+body.cke_editable tr,
+body.cke_editable th,
+body.cke_editable td {
+  border-collapse: inherit;
+}
+
+body.cke_editable table td,
+body.cke_editable table th {
+  padding: 0.75rem;
+  border-top: 1px solid #e9ecef;
+}
+
+body.cke_editable table thead th,
+body.cke_editable table th {
+  background: #eee;
+}
+
+body.cke_editable tbody {
+  border-bottom: 1px solid #ccc;
+}
+
+body.cke_editable table[cellpadding],
+body.cke_editable table[cellspacing] {
+  border-collapse: inherit;
+}
+
+body.cke_editable table[border] {
+  border-bottom-color: #808080;
+}
+
+body.cke_editable table[border] th,
+body.cke_editable table[border] td {
+  border-collapse: inherit;
+  border-bottom-color: #808080;
+  border-top-color: #808080;
 }
