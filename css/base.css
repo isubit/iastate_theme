@@ -28,7 +28,7 @@ blockquote { /* Duplicates Bootstrap 4's .blockquote */
   padding: .5rem 1rem;
   margin-bottom: 1rem;
   font-size: 1.25rem;
-  border-left: .25rem solid #eceeef;
+  border-left: .25rem solid #dddddd;
 }
 
 hr { /* Overrides Bootstrap 4's hr style */
