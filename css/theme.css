@@ -531,6 +531,33 @@ article:not(.isu-user) {
   margin-bottom: 1rem;
 }
 
+/* --- Unpublished Nodes --- */
+/* Classes added to unpublished nodes in node.html.twig */
+
+.node--unpublished {
+  margin: -1rem;
+  padding: 1rem;
+  border: 1px dashed #bcdff1;
+  border-radius: 0.25rem;
+  background: #d9edf7;
+}
+.node--unpublished:before {
+  content: 'Unpublished';
+  display: block;
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  padding: 0.5rem;
+  font-weight: bold;
+  color: #31708f;
+  font-size: 0.9rem;
+  line-height: 1;
+  background: #d8edf7;
+  border-radius: 0.25rem 0.25rem 0 0;
+  border: 1px dashed #bcdff1;
+  border-bottom: 0;
+}
+
 /* -------------------------------------- */
 /* ## BLOCKS
 /* -------------------------------------- */
