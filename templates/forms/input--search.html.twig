@@ -18,4 +18,4 @@
     'isu-search__search-field'
   ] 
 %}
-<input{{ attributes.addClass(search_classes) }} />{{ children }}
+<input{{ attributes.addClass(search_classes).setAttribute('placeholder', 'Search') }} />{{ children }}
