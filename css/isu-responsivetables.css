@@ -1,9 +1,8 @@
 /**
  * @file
- * CSS for responsive tables. Table styling comes from the 
+ * CSS for responsive tables. Table styling comes from the
  * Bootstrap 4 table classes, unless where overriden in base.css.
  */
-
 
 /* --------------------------------------  */
 /* ## If javascript is disabled
@@ -15,39 +14,38 @@ article table {
   overflow: hidden;
   overflow-x: auto;
 }
-    
 article table tr {
   width: 100%;
 }
-
 article table::-webkit-scrollbar {
   -webkit-appearance: none;
 }
-
 article table::-webkit-scrollbar:horizontal {
   height: 11px;
 }
-
 article table::-webkit-scrollbar-thumb {
   border-radius: 8px;
   border: 2px solid white;
   background-color: rgba(0, 0, 0, 0.5);
 }
-
 article table::-webkit-scrollbar-track {
   background-color: #fff;
   border-radius: 8px;
 }
-    
+   
 @media (min-width: 801px) {
-  .isu-row-header { display: none; }
-  .isu-both-row-header { display: none; }
+  .isu-row-header {
+    display: none;
+  }
+  .isu-both-row-header {
+    display: none;
+  }
 }
 
 /* --------------------------------------  */
 /* ## If javascript is ENABLED
 /* --------------------------------------  */
-/* 
+/*
  * If javascript is enabled, table structure is detected with
  * js/isu-responsivetables.js and appropriate classes are applied.
  */
@@ -61,46 +59,49 @@ article table::-webkit-scrollbar-track {
   }
 
   /* --- No headers (none) --- */
-      
-  .isu-responsive-table.isu-table-none { display: table; min-width: 75%; }
-
-  .isu-responsive-table.isu-table-none tr { border-bottom: 3px solid #bbbbbb; }
-  .isu-responsive-table.isu-table-none td { 
-      border-bottom: 1px solid #dddddd; 
+  .isu-responsive-table.isu-table-none {
+    display: table;
+    min-width: 75%;
+  }
+  .isu-responsive-table.isu-table-none tr {
+    border-bottom: 3px solid #bbbbbb;
+  }
+  .isu-responsive-table.isu-table-none td {
+      border-bottom: 1px solid #dddddd;
       border-right: 1px solid #dddddd;
-      display: block; 
+      display: block;
+  }
+  .isu-responsive-table.isu-table-none td:last-of-type {
+    border-bottom: none;
   }
 
-  .isu-responsive-table.isu-table-none td:last-of-type { border-bottom: none; }
-
   /* --- Headers in first row --- */
-      
-  .isu-responsive-table.isu-table-row { display: table; min-width: 75%; }
-
-  .isu-responsive-table.isu-table-row th { display: none; }
-
+  .isu-responsive-table.isu-table-row { display: table; min-width: 75%;
+  }
+  .isu-responsive-table.isu-table-row th {
+    display: none;
+  }
   .isu-responsive-table.isu-table-row tr {
       display: block;
       border-bottom: 3px solid #bbbbbb;
   }
-
-  .isu-responsive-table.isu-table-row tr:first-of-type { border-bottom: 0; }
-
-  .isu-responsive-table.isu-table-row td { 
-    display: flex; 
+  .isu-responsive-table.isu-table-row tr:first-of-type {
+    border-bottom: 0;
+  }
+  .isu-responsive-table.isu-table-row td {
+    display: flex;
     padding: 0;
-    border-bottom: 1px solid #dddddd; 
+    border-bottom: 1px solid #dddddd;
     border-right: 1px solid #dddddd;
   }
-
-  .isu-responsive-table.isu-table-row td:last-of-type { border-bottom: none; }
-
-  .isu-cell-content { 
-    display: block; 
+  .isu-responsive-table.isu-table-row td:last-of-type {
+    border-bottom: none;
+  }
+  .isu-cell-content {
+    display: block;
     flex: 1 1 50%;
     padding: 0.5rem 0.75rem;
   }
-
   .isu-row-header {
     display: block;
     flex: 0 1 45%;
@@ -108,66 +109,72 @@ article table::-webkit-scrollbar-track {
     font-weight: 500;
     background: #eeeeee;
   }
-
-  .isu-table-row tr { border-bottom: 3px solid #bbbbbb; }
+  .isu-table-row tr {
+    border-bottom: 3px solid #bbbbbb;
+  }
 
   /* --- Headers in first column --- */
-      
-  .isu-responsive-table.isu-table-col { display: table; min-width: 75%; }
-
+  .isu-responsive-table.isu-table-col {
+    display: table; min-width: 75%;
+  }
   .isu-responsive-table.isu-table-col th,
-  .isu-responsive-table.isu-table-col td { display: block; }
-
-  .isu-responsive-table.isu-table-col th { border-bottom: 1px solid #bbbbbb; }
-
+  .isu-responsive-table.isu-table-col td {
+    display: block;
+  }
+  .isu-responsive-table.isu-table-col th {
+    border-bottom: 1px solid #bbbbbb;
+  }
   .isu-responsive-table.isu-table-col tr {
     display: block;
     border-bottom: 1px solid #dddddd;
   }
-
-  .isu-responsive-table.isu-table-col td { 
-    border-bottom: 1px solid #dddddd; 
+  .isu-responsive-table.isu-table-col td {
+    border-bottom: 1px solid #dddddd;
     border-right: 1px solid #dddddd;
-    display: block; 
+    display: block;
+  }
+  .isu-responsive-table.isu-table-col td:last-of-type {
+    border-bottom: none;
   }
 
-  .isu-responsive-table.isu-table-col td:last-of-type { border-bottom: none; }
-
   /* --- Headers in both first row and first column --- */
-      
-  .isu-responsive-table.isu-table-both { display: table; min-width: 75%; }
-
+  .isu-responsive-table.isu-table-both {
+    display: table; min-width: 75%;
+  }
   .isu-responsive-table.isu-table-both th,
-  .isu-responsive-table.isu-table-both td { display: block; }
-
-  .isu-responsive-table.isu-table-both th { border-bottom: 1px solid #bbbbbb; }
-
+  .isu-responsive-table.isu-table-both td {
+    display: block;
+  }
+  .isu-responsive-table.isu-table-both th {
+    border-bottom: 1px solid #bbbbbb;
+  }
   .isu-responsive-table.isu-table-both tr {
     display: block;
     border-bottom: 3px solid #bbbbbb;
   }
-
-  .isu-responsive-table.isu-table-both tr:first-of-type { display: none; }
-
-  .isu-responsive-table.isu-table-both tr:first-of-type th:first-of-type { display: none; }
-
-  .isu-responsive-table.isu-table-both tr:nth-of-type(2) { border-top: 1px solid #dddddd; }
-
-  .isu-responsive-table.isu-table-both td { 
-    display: flex; 
+  .isu-responsive-table.isu-table-both tr:first-of-type {
+    display: none;
+  }
+  .isu-responsive-table.isu-table-both tr:first-of-type th:first-of-type {
+    display: none;
+  }
+  .isu-responsive-table.isu-table-both tr:nth-of-type(2) {
+    border-top: 1px solid #dddddd;
+  }
+  .isu-responsive-table.isu-table-both td {
+    display: flex;
     padding: 0;
-    border-bottom: 1px solid #dddddd; 
+    border-bottom: 1px solid #dddddd;
     border-right: 1px solid #dddddd;
   }
-
-  .isu-responsive-table.isu-table-both td:last-of-type { border-bottom: none; }
-
-  .isu-both-cell-content { 
-    display: block; 
+  .isu-responsive-table.isu-table-both td:last-of-type {
+    border-bottom: none;
+  }
+  .isu-both-cell-content {
+    display: block;
     flex: 1 1 50%;
     padding: 0.5rem 0.75rem;
   }
-
   .isu-both-row-header {
     display: block;
     flex: 0 1 45%;

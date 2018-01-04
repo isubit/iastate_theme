@@ -42,11 +42,14 @@
   {%- endif -%}
 
 
-  {% set classes = [
-    'list-inline',
-    'isu-links'
-  ] %}
-  <ul{{ attributes.addClass(classes) }}>
+  {% 
+    set list_classes = [
+      'list-inline',
+      'isu-links'
+    ] 
+  %}
+
+  <ul{{ attributes.addClass(list_classes) }}>
     {%- for item in links -%}
       <li{{ item.attributes.addClass('list-inline-item') }}>
         {%- if item.link and item.text -%}

@@ -31,14 +31,14 @@
  */
 #}
 {%
-  set classes = [
+  set table_classes = [
     'cols-' ~ header|length,
     responsive ? 'responsive-enabled',
     sticky ? 'sticky-enabled',
     'table'
   ]
 %}
-<table{{ attributes.addClass(classes) }}>
+<table{{ attributes.addClass(table_classes) }}>
   {% if caption_needed %}
     <caption>
     {% if caption %}
@@ -63,12 +63,14 @@
       <tr>
         {% for key, column in header %}
           {% if column.default_classes %}
+
             {%
               set column_classes = [
                 'views-field',
                 'views-field-' ~ fields[key],
               ]
             %}
+            
           {% endif %}
           <th{{ column.attributes.addClass(column_classes).setAttribute('scope', 'col') }}>
             {%- if column.wrapper_element -%}
@@ -96,11 +98,13 @@
       <tr{{ row.attributes }}>
         {% for key, column in row.columns %}
           {% if column.default_classes %}
+
             {%
               set column_classes = [
                 'views-field'
               ]
             %}
+
             {% for field in column.fields %}
               {% set column_classes = column_classes|merge(['views-field-' ~ field]) %}
             {% endfor %}

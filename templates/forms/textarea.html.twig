@@ -14,7 +14,13 @@
  */
 #}
 
-{% set input_classes = ['form-control', 'isu-form-control'] %}
+{% 
+  set input_classes = [
+    'form-control', 
+    'isu-form-control'
+  ] 
+%}
+
 <div{{ wrapper_attributes }}>
   <textarea{{ attributes.addClass(input_classes) }}>{{ value }}</textarea>
 </div>

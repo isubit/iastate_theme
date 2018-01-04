@@ -1,7 +1,7 @@
 {#
 /**
  * @file
- * Theme override for a field.
+ * Theme override for the body field.
  *
  * To override output, copy the "field.html.twig" from the templates directory
  * to your theme's directory and customize it, just like customizing other
@@ -46,7 +46,15 @@
     </div>
   {% else %}
     {% for item in items %}
-      {% set classes = ['mt-4', 'mb-4', 'isu-body'] %}
+
+      {% 
+        set post_classes = [
+          'mt-4', 
+          'mb-4', 
+          'isu-body'
+        ] 
+      %}
+
       <div{{ attributes.addClass(classes) }}>{{ item.content }}</div>
     {% endfor %}
   {% endif %}
@@ -57,7 +65,15 @@
       <div>
     {% endif %}
     {% for item in items %}
-      {% set post_classes = ['mt-4', 'mb-4', 'isu-body'] %}
+
+      {% 
+        set post_classes = [
+          'mt-4', 
+          'mb-4', 
+          'isu-body'
+        ] 
+      %}
+
       <div{{ item.attributes.addClass(classes) }}>{{ item.content }}</div>
     {% endfor %}
     {% if multiple %}

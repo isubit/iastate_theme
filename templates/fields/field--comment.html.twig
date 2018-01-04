@@ -27,22 +27,24 @@
  */
 #}
 
-{% set comments_classes = [
-  'isu-comments_title',
-  'h3'
+{% 
+  set comments_title_classes = [
+    'isu-comments_title',
+    'h3'
   ]
 %}
+
 <section{{ attributes.addClass('isu-comments-section') }} aria-label="Comments">
   {% if comments and not label_hidden %}
     {{ title_prefix }}
-    <h2{{ title_attributes.addClass(comments_classes) }}>{{ label }}</h2>
+    <h2{{ title_attributes.addClass(comments_title_classes) }}>{{ label }}</h2>
     {{ title_suffix }}
   {% endif %}
 
   {{ comments }}
 
   {% if comment_form %}
-    <h2{{ content_attributes.addClass(comments_classes) }}>{{ 'Add new comment'|t }}</h2>
+    <h2{{ content_attributes.addClass(comments_title_classes) }}>{{ 'Add new comment'|t }}</h2>
     {{ comment_form }}
   {% endif %}
 

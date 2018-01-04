@@ -1,7 +1,9 @@
 /**
  * @file
  * Base CSS styles for the ISU theme, primarily for directly overriding
- * styles from Drupal 8 core or Bootstrap 4.
+ * styles from Drupal 8 core or Bootstrap 4, including replacing some
+ * Bootstrap 4 colors with ISU brand colors, and tweaking colors to meet
+ * WCAG AA color contrast guidelines.
  */
 
 /* --------------------------------------  */
@@ -11,33 +13,12 @@
 body {
   font-size: 1rem;
   line-height: 1.5;
-  font-family: 'Nimbus Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Nimbus Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -webkit-osx-font-smoothing: grayscale;
   background-color: #ffffff;
 }
 
-a { /* Overrides bootstrap.min.css */
-  color: #cc0000; /* ISU brand standard */
-  text-decoration: underline; /* WCAG A standard */
-  transition: color 300ms ease;
-}
-
-a:hover { /* Overrides bootstrap.min.css */
-  color: #006BA6; /* ISU brand standard */
-}
-
-a.btn,
-a.badge,
-a.button,
-a.nav-link { /* Some links to not need underlines. */
-  text-decoration: none;
-}
-
-.page-link:focus,
-.page-link:hover { /* Overrides bootstrap.min.css */
-  color: #006BA6; /* ISU brand standard */
-}
 
 dl, ol, ul { /* Overrides bootstrap-reboot.min.css */
   padding-left: 2rem;
@@ -47,7 +28,8 @@ blockquote { /* Duplicates Bootstrap 4's .blockquote */
   padding: .5rem 1rem;
   margin-bottom: 1rem;
   font-size: 1.25rem;
-  border-left: .25rem solid #eceeef;
+  /* Although we darkened this a bit */
+  border-left: .25rem solid #dddddd;
 }
 
 hr { /* Overrides Bootstrap 4's hr style */
@@ -55,17 +37,33 @@ hr { /* Overrides Bootstrap 4's hr style */
 }
 
 /* --------------------------------------  */
-/* ## BUTTONS
+/* ## LINKS and BUTTONS
 /* --------------------------------------  */
 
+a { /* Overrides bootstrap.min.css */
+  color: #cc0000; /* ISU brand standard */
+  text-decoration: underline; /* WCAG A standard */
+  transition: color 300ms ease;
+}
+a:hover { /* Overrides bootstrap.min.css */
+  color: #006BA6; /* ISU brand standard */
+}
+a.btn,
+a.badge,
+a.button,
+a.nav-link { /* Some links to not need underlines. */
+  text-decoration: none;
+}
+.page-link:focus,
+.page-link:hover { /* Overrides bootstrap.min.css */
+  color: #006BA6; /* ISU brand standard */
+}
 button.btn {
   cursor: pointer;
 }
-
 .btn-link:hover { /* Overrides bootstrap.min.css */
   color: #006BA6; /* ISU brand standard */
 }
-
 .btn-primary { /* Overrides bootstrap.min.css */
   background-color: #cc0000; /* ISU brand standard */
   border-color: #cc0000;
@@ -74,7 +72,6 @@ button.btn {
     background-color: #a00606;
     border-color: #a00606;
   }
-
 .btn-outline-primary { /* Overrides bootstrap.min.css */
   color: #cc0000; /* ISU brand standard */
   background-color: #ffffff;
@@ -84,7 +81,6 @@ button.btn {
     background-color: #a00606;
     border-color: #a00606;
   }
-
 .btn-secondary { /* Overrides bootstrap.min.css */
   background-color: #676767; /* ISU brand standard */
   border-color: #676767;
@@ -94,7 +90,6 @@ button.btn {
     background-color: #575757;
     border-color: #575757;
   }
-
 .btn-outline-secondary { /* Overrides bootstrap.min.css */
   color: #676767; /* Sufficient contrast with white. */
   background-color: #ffffff;
@@ -105,14 +100,13 @@ button.btn {
     background-color: #575757;
     border-color: #575757;
   }
-
 .btn-primary.disabled,
 .btn-primary:disabled { /* Overrides bootstrap.min.css */
   background-color: #cc0000; /* ISU brand standard */
   border-color: #cc0000;
 }
-
-.button:not(.btn) { /* Duplicates Bootstrap 4 btn-secondary and btn-sm */
+.button:not(.btn) { /* Duplicates Bootstrap 4 btn, btn-secondary and btn-sm */
+  /* btn */
   display: inline-block;
   font-weight: 400;
   text-align: center;
@@ -128,17 +122,16 @@ button.btn {
   line-height: 1.25;
   border-radius: .25rem;
   transition: all .15s ease-in-out;
-
+  /* btn-secondary */
   color: #ffffff;
   background-color: #676767;
   border-color: #676767;
-
+  /* btn-sm */
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
   border-radius: 0.2rem;
 }
-
   .button:not(.btn):hover {
     color: #ffffff;
     background-color: #575757;
@@ -153,16 +146,13 @@ button.btn {
 .table tbody {
   border-bottom: 1px solid #cccccc;
 }
-
 .table thead th,
 .table th {
   background: #eee;
 }
-
 .table thead th {
   border-bottom: 2px solid #cccccc;
 }
-
 caption {
   caption-side: top;
   padding: 0.5rem 0;
@@ -178,9 +168,47 @@ img {
   max-width: 100%;
   height: auto !important;
 }
-
 table img {
   max-width: none; /* Prevents images from shrinking in tables */
+}
+.caption-img figcaption { /* Class from Drupal 8. */
+  /* Same as table caption. */
+  padding: 0.5rem;
+  color: #333333;
+  font-size: 0.9rem;
+  background: #eeeeee;
+}
+
+/* We want to respect content-editor table styles
+ * as much as possible, until we reach the responsive
+ * table breakpoint.
+ */
+
+.table[cellpadding],
+.table[cellspacing] {
+  border-collapse: inherit;
+}
+.table[border] {
+  border-bottom-color: #808080;
+}
+.table[border] th,
+.table[border] td {
+  border-collapse: inherit;
+  border-bottom-color: #808080;
+  border-top-color: #808080;
+}
+
+@media (min-width: 799px) {
+  .table[style*="width:"],
+  .table:not([style*="width:"])[border] {
+    display: table;
+  }
+}
+
+@media (max-width: 800px) {
+  .table[style*="width"] {
+    width: 100% !important;
+  }
 }
 
 /* --------------------------------------  */
@@ -190,12 +218,10 @@ table img {
 summary[aria-expanded="true"] {
   margin-bottom: 1rem;
 }
-
-.form-control:focus { 
+.form-control:focus {
   /* Overrides bootstrap.min.css which removed focus style */
   outline: #5cb3fd auto 5px;
 }
-
 .dropdown-toggle:after { /* Overrides bootstrap.min.css */
   width: 7px;
   height: 7px;
@@ -213,35 +239,82 @@ summary[aria-expanded="true"] {
 body.cke_editable {
   margin: 1rem;
 }
-
 textarea.cke_source {
   padding: 1rem;
   font-size: 0.9rem;
 }
 
-/* Some of these styles are partially duplicated from the live content
+/*
+ * Some of these styles are partially duplicated from the live content
  * versions from theme.css.
  */
 
 body.cke_editable .align-left {
   margin: 1rem 1rem 1rem 0;
 }
-
 body.cke_editable .align-right {
   margin: 1rem 0 1rem 1rem;
 }
-
 body.cke_editable figure {
   border: 1px solid #eeeeee;
 }
-
 body.cke_editable figure figcaption {
   display: table-caption;
   caption-side: bottom;
-
   /* Caption styles */
   padding: 0.5rem;
   color: #333333;
   font-size: 0.9rem;
   background: #eeeeee;
+}
+
+/*
+ * Duplicate Bootstrap 4 styles in the ckeditor so table look as 
+ * true-to-live as possible.
+ */
+
+ body.cke_editable table {
+  max-width: 100%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+}
+
+body.cke_editable table,
+body.cke_editable tbody,
+body.cke_editable thead,
+body.cke_editable tr,
+body.cke_editable th,
+body.cke_editable td {
+  border-collapse: inherit;
+}
+
+body.cke_editable table td,
+body.cke_editable table th {
+  padding: 0.75rem;
+  border-top: 1px solid #e9ecef;
+}
+
+body.cke_editable table thead th,
+body.cke_editable table th {
+  background: #eee;
+}
+
+body.cke_editable tbody {
+  border-bottom: 1px solid #ccc;
+}
+
+body.cke_editable table[cellpadding],
+body.cke_editable table[cellspacing] {
+  border-collapse: inherit;
+}
+
+body.cke_editable table[border] {
+  border-bottom-color: #808080;
+}
+
+body.cke_editable table[border] th,
+body.cke_editable table[border] td {
+  border-collapse: inherit;
+  border-bottom-color: #808080;
+  border-top-color: #808080;
 }

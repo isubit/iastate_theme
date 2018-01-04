@@ -39,17 +39,23 @@
 
 <div{{ attributes.addClass('isu-field-tags')}}>
   {% if not label_hidden %}
-    {% set label_classes = [
-      label_display == 'inline' ? 'd-inline',
-      'h6',
-    ] %}
+
+    {% 
+      set label_classes = [
+        label_display == 'inline' ? 'd-inline',
+        'h6',
+      ] 
+    %}
+
     <h2{{ attributes.addClass(label_classes) }}><span class="fa fa-tags" aria-hidden="true"></span> {{ label }}:</h2>
   {% endif %}
 
-  {% set tags_classes = [
-    label_display == 'above' ? 'isu-tags_label-above list-inline',
-    label_display == 'inline' ? 'isu-tags d-inline list-inline',
-  ] %}
+  {% 
+    set tags_classes = [
+      label_display == 'above' ? 'isu-tags_label-above list-inline',
+      label_display == 'inline' ? 'isu-tags d-inline list-inline',
+    ] 
+  %}
 
   <ul{{ attributes.addClass(tags_classes) }}>
     {% for item in items %}

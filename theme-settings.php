@@ -235,6 +235,7 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
       '#default_value'  => theme_get_setting('iastate_social4_url'),
     );
 
+  // 5
   $form['iastate_footer_social']['iastate_social5_title'] = array(
       '#type'   => 'textfield',
       '#title'  => t('Social 5 Title'),
@@ -254,10 +255,10 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
       '#default_value'  => theme_get_setting('iastate_social6_title'),
     );
 
-  $form['iastate_footer_social']['iastate_social7_url'] = array(
+  $form['iastate_footer_social']['iastate_social6_url'] = array(
       '#type'   => 'url',
-      '#title'  => t('Social 7 URL'),
-      '#default_value'  => theme_get_setting('iastate_social7_url'),
+      '#title'  => t('Social 6 URL'),
+      '#default_value'  => theme_get_setting('iastate_social6_url'),
     );
 
   // 7

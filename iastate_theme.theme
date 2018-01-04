@@ -38,7 +38,8 @@ function iastate_theme_preprocess_menu_local_action(&$variables) {
 /*
  * Implements template_preprocess_links().
  *
- * Add Bootstrap 4 classes to Read More and Comments links */
+ * Add Bootstrap 4 classes to Read More and Comments links
+ */
 
 function iastate_theme_preprocess_links(&$variables) {
   $variables['links']['node-readmore']['link']['#options']['attributes']['class'][] = 'btn btn-sm btn-outline-primary';
@@ -52,7 +53,11 @@ function iastate_theme_preprocess_links(&$variables) {
   $variables['links']['book_add_child']['link']['#options']['attributes']['class'][] = 'btn btn-sm btn-outline-primary';
 }
 
-/* Add ISU Theme class to Site Navbar search form */
+/*
+ * Implements theme_form_alter().
+ *
+ * Add ISU Theme class to Site Navbar search form
+ */
 
 use Drupal\Core\Form\FormStateInterface;
 
@@ -62,10 +67,12 @@ function iastate_theme_form_alter(array &$form, FormStateInterface $form_state, 
   }
 }
 
-
 /*
  * Implements template_preprocess_field_multiple_value_form().
+ * 
+ * Add Bootstrap 4 table classes to the multipe value field tables.
  */
+
 function iastate_theme_preprocess_field_multiple_value_form(&$variables) {
    $variables['table']['#attributes']['class'][] = 'table table-bordered isu-multiple-value-form-table';
    
@@ -76,13 +83,19 @@ function iastate_theme_preprocess_field_multiple_value_form(&$variables) {
 
 /*
  * Implements template_preprocess_file_widget_multiple().
+ *
+ * Add Bootstrap 4 table classes to multiple file/image field tables.
  */
 
 function iastate_theme_preprocess_file_widget_multiple(&$variables) {
   $variables['table']['#attributes']['class'][] = 'table table-bordered isu-file-widget-multiple-table';
 }
 
-/* Allow is_front to be used on other templates */
+/*
+ * Implements theme_preprocess()
+ *
+ * Allow is_front to be used on other templates 
+ */
 
 function iastate_theme_preprocess(&$variables, $hook) {
   try {
@@ -103,6 +116,8 @@ function iastate_theme_preprocess(&$variables, $hook) {
 
 function iastate_theme_preprocess_page(&$variables) {
   $variables['isu_navbar'] = theme_get_setting('isu_navbar');
+
+  $variables['theme_path'] = base_path() . $variables['directory'];
 
   $variables['iastate_contact_title'] = theme_get_setting('iastate_contact_title');
   $variables['iastate_contact_address'] = theme_get_setting('iastate_contact_address');

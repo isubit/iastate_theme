@@ -24,16 +24,17 @@
     <span class="isu-row-separator">{{ row.separator }}</span>
   {%- endif %}
   
-  {% set rowClasses = [
-    row.active ? 'active',
-    'btn',
-    'btn-sm',
-    'btn-outline-primary',
-    'isu-unformatted-summary_row'
+  {% 
+    set row_classes = [
+      row.active ? 'active',
+      'btn',
+      'btn-sm',
+      'btn-outline-primary',
+      'isu-unformatted-summary_row'
     ] 
   %}
 
-  <a href="{{ row.url }}"{{ row.attributes.addClass(rowClasses) }}>{{ row.link }}</a>
+  <a href="{{ row.url }}"{{ row.attributes.addClass(row_classes) }}>{{ row.link }}</a>
   {% if options.count %}
     <span class="badge badge-dark badge-pill isu-row-count-badge">{{ row.count }}</span>
   {% endif %}
