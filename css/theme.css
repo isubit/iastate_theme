@@ -151,7 +151,7 @@
 /* Large */
 @media screen and (min-width: 992px) {
   .isu-wordmark-logo {
-    width: auto;
+    width: 100%;
     max-width: 400px;
     margin-top: 0;
   }
