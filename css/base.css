@@ -54,6 +54,9 @@ a.button,
 a.nav-link { /* Some links to not need underlines. */
   text-decoration: none;
 }
+.page-item.disbled .page-link { /* Overrides bootstrap.min.css */
+  color: #676767; /* Sufficient contrast with white. */
+}
 .page-link:focus,
 .page-link:hover { /* Overrides bootstrap.min.css */
   color: #006BA6; /* ISU brand standard */
