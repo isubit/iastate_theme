@@ -995,6 +995,7 @@ a.tabledrag-handle .handle {
   background: #f3f3f3;
 }
 .isu-footer-logo {
+  width: 100%;
   max-width: 180px;
 }
 
