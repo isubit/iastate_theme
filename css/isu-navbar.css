@@ -109,6 +109,7 @@
 }
 .isu-navbar_alpha {
   display: flex;
+  min-width: 675px; /* Needs to be set manually for IE11 */
 }
 .isu-navbar_dropdown-menu a:hover,
 .isu-navbar_dropdown-menu a:focus,
