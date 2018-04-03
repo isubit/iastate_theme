@@ -518,7 +518,7 @@
   text-decoration: none;
 }
 /* The Full Pager uses .active for the current page */
-.page-item.active .isu-page-link {
+.page-item.active .isu-page-link { /* .page-item via Drupal 8 */
   background-color: #cc0000;
   border-color: #cc0000
 }
