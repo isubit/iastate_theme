@@ -63,7 +63,7 @@
   align-items: center;
 }
 .isu-col-header-first {
-  flex: 1 0 0;
+  flex: 1 1 0px;
   text-align: center;
 }
 .isu-col-header-second {
@@ -141,7 +141,7 @@
   margin-bottom: 0.5rem;
 }
 .isu-wordmark-sitename {
-  margin-bottom: 0;
+  margin-bottom: 0.5rem;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.1;
@@ -151,7 +151,7 @@
 /* Large */
 @media screen and (min-width: 992px) {
   .isu-wordmark-logo {
-    width: auto;
+    width: 100%;
     max-width: 400px;
     margin-top: 0;
   }
@@ -516,6 +516,15 @@
   height: 100%;
   color: #333333;
   text-decoration: none;
+}
+/* The Full Pager uses .active for the current page */
+.page-item.active .isu-page-link { /* .page-item via Drupal 8 */
+  background-color: #cc0000;
+  border-color: #cc0000
+}
+.page-item.active .isu-page-link:hover {
+  background-color: #a00606;
+  border-color: #a00606;
 }
 
 /* -------------------------------------- */
@@ -995,6 +1004,7 @@ a.tabledrag-handle .handle {
   background: #f3f3f3;
 }
 .isu-footer-logo {
+  width: 100%;
   max-width: 180px;
 }
 

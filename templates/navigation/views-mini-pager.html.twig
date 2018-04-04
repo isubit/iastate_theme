@@ -10,8 +10,7 @@
  */
 #}
 {% if items.previous or items.next %}
-  <nav role="navigation" aria-labelledby="pagination-heading">
-    <h2 class="pagination-heading visually-hidden">{{ 'Pagination'|t }}</h2>
+  <nav role="navigation" aria-label="{{ 'Pagination'|t }}">
     <ul class="js-pager__items pagination isu-pagination pagination-sm">
       {% if items.previous %}
         <li class="page-item">
