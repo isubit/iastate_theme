@@ -1,0 +1,91 @@
+/**
+ * @file
+ * Print CSS styles for the ISU theme
+ *
+ */
+
+body {
+  padding-top: 0 !important;
+}
+
+body,
+.isu-site-navbar,
+.card-header {
+  background-color: #fff !important;
+}
+
+.isu-site-navbar {
+  border-bottom: none;
+}
+
+.isu-row-site-navbar {
+  display: block;
+}
+
+.isu-col-header-first { 
+  text-align: left;
+}
+
+a.isu-wordmark {
+ text-decoration: none !important;
+}
+
+.isu-wordmark-logo {
+  filter: invert(1) !important;
+  filter: invert(100%) !important;
+  -webkit-filter: invert(1) !important;
+  max-width: 400px;
+}
+
+.isu-wordmark-sitename { 
+  color: #000; 
+  font-size: 18px;
+}
+
+a { 
+  padding: 0 !important;
+  margin: 0 !important;
+  color: #000 !important;
+  font-size: 1em  !important;
+  font-weight: normal !important;
+  text-decoration: underline !important;
+}
+
+.button,
+.alert {
+  color: #000 !important;
+  background-color: #fff !important;
+  border: 1px solid #000 !important;
+}
+
+.badge { 
+  background-color: #fff !important;
+  border: none !important;
+}
+
+#toolbar-bar,
+.isu-navbar,
+.isu-search_collapse,
+.isu-menu-navbar_toggler,
+.isu-search_toggler,
+.isu-menu-navbar,
+.isu-region_breadcrumbs, 
+.nav-tabs,
+.isu-comments_title,
+.comment-comment-form,
+.isu-sidebar,
+.isu-footer,
+.isu-links,
+mark.badge,
+.isu-row-header,
+.isu-both-row-header {
+  display: none;
+}
+
+.node {
+  padding: 0 !important;
+  color: #000 !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  background-color: transparent !important;
+}
