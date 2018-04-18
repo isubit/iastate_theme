@@ -5,12 +5,13 @@ global-css:
       css/bootstrap/bootstrap-grid.min.css: {}
       css/bootstrap/bootstrap.min.css: {}
       css/isu-navbar.css: {}
-      css/isu-responsivetables.css: {}
+      css/isu-responsivetables.css: { media: screen }
       css/base.css: {}
       css/layout.css: {}
       css/theme.css: {}
       css/isu-social.css: {}
       css/utility.css: {}
+      css/print.css: { media: print }
 
 global-js:
   js:
