@@ -169,7 +169,7 @@ caption {
 
 img {
   max-width: 100%;
-  height: auto !important;
+  height: auto;
 }
 table img {
   max-width: none; /* Prevents images from shrinking in tables */
