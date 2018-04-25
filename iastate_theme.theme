@@ -119,6 +119,8 @@ function iastate_theme_preprocess_page(&$variables) {
 
   $variables['theme_path'] = base_path() . $variables['directory'];
 
+  $variables['iastate_footer_logo_path'] = theme_get_setting('iastate_footer_logo_path');
+
   $variables['iastate_contact_title'] = theme_get_setting('iastate_contact_title');
   $variables['iastate_contact_address'] = theme_get_setting('iastate_contact_address');
   $variables['iastate_contact_email'] = theme_get_setting('iastate_contact_email');

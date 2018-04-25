@@ -273,4 +273,19 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
       '#title'  => t('Social 7 URL'),
       '#default_value'  => theme_get_setting('iastate_social7_url'),
     );
+
+  // Create a section for footer logo
+  $form['iastate_footer_logo'] = array(
+    '#type'         => 'details',
+    '#title'        => t('IASTATE Footer Logo'),
+    '#description'  => t('Designate a logo for the footer'),
+    '#open' => TRUE,
+  );
+
+  $form['iastate_footer_logo']['iastate_footer_logo_path'] = array(
+      '#type'   => 'textfield',
+      '#title'  => t('Path to custom footer logo'),
+      '#description' => t('Examples: logo.svg (for a file in the public filesystem), public://logo.svg, or themes/iastate_theme/logo.svg.'),
+      '#default_value'  => theme_get_setting('iastate_footer_logo_path'),
+    ); 
 }
