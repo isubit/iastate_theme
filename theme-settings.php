@@ -285,7 +285,7 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
   $form['iastate_footer_logo']['iastate_footer_logo_path'] = array(
       '#type'   => 'textfield',
       '#title'  => t('Path to custom footer logo'),
-      '#description' => t('Examples: logo.svg (for a file in the public filesystem), public://logo.svg, or themes/iastate_theme/logo.svg.'),
+      '#description' => t('Examples: logo.svg (for a file in the public filesystem), public://logo.svg, or themes/contrib/iastate_theme/logo.svg.'),
       '#default_value'  => theme_get_setting('iastate_footer_logo_path'),
     ); 
 }
