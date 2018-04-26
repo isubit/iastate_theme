@@ -78,7 +78,8 @@ a {
 .isu-links,
 mark.badge,
 .isu-row-header,
-.isu-both-row-header {
+.isu-both-row-header,
+.contextual .trigger {
   display: none;
 }
 
