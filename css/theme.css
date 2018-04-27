@@ -545,6 +545,7 @@ article:not(.isu-user) {
 /* Classes added to unpublished nodes in node.html.twig */
 
 .node--unpublished {
+  position: relative;
   margin: -1rem;
   padding: 1rem;
   border: 1px dashed #bcdff1;
