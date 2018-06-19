@@ -292,7 +292,7 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
   $form['iastate_footer_logo']['iastate_footer_logo_url'] = array(
       '#type'   => 'textfield',
       '#title'  => t('Custom footer logo url'),
-      '#description' => t('Link the footer logo to a different website. Default: https://www.iastate.edu'),
+      '#description' => t('Link the footer logo to a different website.'),
       '#default_value'  => theme_get_setting('iastate_footer_logo_url'),
   );
 }
