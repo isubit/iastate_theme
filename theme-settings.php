@@ -287,5 +287,12 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
       '#title'  => t('Path to custom footer logo'),
       '#description' => t('Examples: logo.svg (for a file in the public filesystem), public://logo.svg, or themes/contrib/iastate_theme/logo.svg.'),
       '#default_value'  => theme_get_setting('iastate_footer_logo_path'),
-    ); 
+  ); 
+
+  $form['iastate_footer_logo']['iastate_footer_logo_url'] = array(
+      '#type'   => 'textfield',
+      '#title'  => t('Custom footer logo url'),
+      '#description' => t('Link the footer logo to a different website. Default: https://www.iastate.edu'),
+      '#default_value'  => theme_get_setting('iastate_footer_logo_url'),
+  );
 }
