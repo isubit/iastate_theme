@@ -42,15 +42,31 @@ function iastate_theme_preprocess_menu_local_action(&$variables) {
  */
 
 function iastate_theme_preprocess_links(&$variables) {
-  $variables['links']['node-readmore']['link']['#options']['attributes']['class'][] = 'btn btn-sm btn-outline-primary';
-  $variables['links']['comment-comments']['link']['#options']['attributes']['class'][] = 'btn btn-sm btn-outline-primary';
-  $variables['links']['comment-add']['link']['#options']['attributes']['class'][] = 'btn btn-sm btn-outline-primary';
-  $variables['links']['comment-delete']['link']['#options']['attributes']['class'][] = 'btn btn-sm btn-outline-secondary';
-  $variables['links']['comment-edit']['link']['#options']['attributes']['class'][] = 'btn btn-sm btn-outline-secondary';
-  $variables['links']['comment-reply']['link']['#options']['attributes']['class'][] = 'btn btn-sm btn-outline-primary';
-  /* Book */
-  $variables['links']['book_printer']['link']['#options']['attributes']['class'][] = 'btn btn-sm btn-outline-primary';
-  $variables['links']['book_add_child']['link']['#options']['attributes']['class'][] = 'btn btn-sm btn-outline-primary';
+  if (!empty($variables['links']['node-readmore']['link'])) {
+    $variables['links']['node-readmore']['link']['#options']['attributes']['class'][] = 'btn btn-sm btn-outline-primary';
+  }
+  if (!empty($variables['links']['comment-comments']['link'])) {
+    $variables['links']['comment-comments']['link']['#options']['attributes']['class'][] = 'btn btn-sm btn-outline-primary';
+  }
+  if (!empty($variables['links']['comment-add']['link'])) {
+    $variables['links']['comment-add']['link']['#options']['attributes']['class'][] = 'btn btn-sm btn-outline-primary';
+  }
+  if (!empty($variables['links']['comment-delete']['link'])) {
+    $variables['links']['comment-delete']['link']['#options']['attributes']['class'][] = 'btn btn-sm btn-outline-secondary';
+  }
+  if (!empty($variables['links']['comment-edit']['link'])) {
+    $variables['links']['comment-edit']['link']['#options']['attributes']['class'][] = 'btn btn-sm btn-outline-secondary';
+  }
+  if (!empty($variables['links']['comment-reply']['link'])) {
+    $variables['links']['comment-reply']['link']['#options']['attributes']['class'][] = 'btn btn-sm btn-outline-primary'; 
+  }
+    /* Book */ 
+  if (!empty($variables['links']['book_printer']['link'])) {
+    $variables['links']['book_printer']['link']['#options']['attributes']['class'][] = 'btn btn-sm btn-outline-primary';
+  }
+  if (!empty($variables['links']['book_add_child']['link'])) {
+    $variables['links']['book_add_child']['link']['#options']['attributes']['class'][] = 'btn btn-sm btn-outline-primary';
+  }
 }
 
 /*
@@ -120,6 +136,7 @@ function iastate_theme_preprocess_page(&$variables) {
   $variables['theme_path'] = base_path() . $variables['directory'];
 
   $variables['iastate_footer_logo_path'] = theme_get_setting('iastate_footer_logo_path');
+  $variables['iastate_footer_logo_url'] = theme_get_setting('iastate_footer_logo_url');
 
   $variables['iastate_contact_title'] = theme_get_setting('iastate_contact_title');
   $variables['iastate_contact_address'] = theme_get_setting('iastate_contact_address');

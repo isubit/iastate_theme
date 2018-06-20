@@ -39,7 +39,6 @@
 
 <div{{ attributes.addClass('isu-field-tags')}}>
   {% if not label_hidden %}
-
     {% 
       set label_classes = [
         label_display == 'inline' ? 'd-inline',
@@ -59,7 +58,13 @@
 
   <ul{{ attributes.addClass(tags_classes) }}>
     {% for item in items %}
-      <li{{ item.attributes.addClass('list-inline-item') }}><a href="{{ item.content['#url']|render }}" class="badge badge-dark">{{ item.content['#title'] }}</a></li>
+      
+      {% if item.content['#type'] == 'link' %}
+        <li{{ item.attributes.addClass('list-inline-item') }}><a href="{{ item.content['#url']|render }}" class="badge badge-dark">{{ item.content['#title'] }}</a></li>
+      {% else %}
+        <li{{ item.attributes.addClass('list-inline-item') }}><span class="badge badge-dark">{{ item.content }}</span></li>
+      {% endif %}
+      
     {% endfor %}
   </ul>
 </div>

@@ -6,27 +6,28 @@
  * mobile and then Bootstrap 4 media queries to tweak styles for larger
  * devices.
  *
- * 01 SITE NAVBAR
+ * 01 LAYOUT
+ * 02 SITE NAVBAR
  *    - ISU WORDMARK
  *    - SEARCH
  *    - SITE LINKS MENU
- * 02 ISU MENU NAVBAR
- * 03 PAGE
+ * 03 ISU MENU NAVBAR
+ * 04 PAGE
  *    - Submitted by
  *    - Pagination
- * 04 NODE
- * 05 BLOCKS
- * 06 VIEWS
+ * 05 NODE
+ * 06 BLOCKS
+ * 07 VIEWS
  *    - ISU list view
  *    - Summary unformatted
- * 07 FIELDS
+ * 08 FIELDS
  *    - Tags
- * 08 COMPONENTS
+ * 09 COMPONENTS
  *    - Breadcrumbs
  *    - Links
  *    - Unsaved changes alerts
- * 09 COMMENTS
- * 10 FORMS
+ * 10 COMMENTS
+ * 11 FORMS
  *    - Summary
  *    - Checkboxes
  *    - Radios
@@ -34,18 +35,45 @@
  *    - Text fields with text format filter
  *    - File or file upload
  *    - Submit buttons
- * 11 SEARCH RESULTS
- * 12 FOOTER
+ * 12 SEARCH RESULTS
+ * 13 FOOTER
  *    - Associates menu
  *    - Social media menu
  *    - Legal menu
- * 13 BOOK
- * 14 FORUM
- * 15 CONTENT
- * 16 CONTENT EDITING
- * 17 ADMIN
+ * 14 BOOK
+ * 15 FORUM
+ * 16 CONTENT
+ * 17 CONTENT EDITING
+ * 18 ADMIN
  *
  */
+
+/* --------------------------------------  */
+/* ## LAYOUT
+/* --------------------------------------  */
+
+/* --- ## Push the footer down --- */
+html,
+body,
+.dialog-off-canvas-main-canvas, /* via settings_tray module */
+.isu-page-wrap {
+  height: 100%;
+}
+.isu-page-wrap {
+  display: flex;
+  flex-direction: column;
+}
+.isu-site-navbar {
+  flex-shrink: 0;
+}
+.isu-main {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+.isu-footer {
+  flex-shrink: 0;
+}
 
 /* --------------------------------------  */
 /* ## SITE NAVBAR
@@ -814,6 +842,44 @@ details {
 }
 
 /* --- ## Summary --- */
+
+.field--widget-text-textarea-with-summary .field-edit-link {
+  /* Hide parentheses around 'Edit summary' button */
+  color: transparent;
+}
+
+.field--widget-text-textarea-with-summary .link-edit-summary {
+  /*
+ * Duplicates Bootstrap 4 button classes: btn btn-sm and
+ * btn-outline-secondary. Reminder that the colors for secondary
+ * button styles have been overridden in base.css. It's a bit hacky, but
+ * I can't find a good place to add the class to the template.
+ */
+  cursor: pointer;
+  /* btn */
+  display: inline-block;
+  font-weight: 400;
+  white-space: nowrap;
+  user-select: none;
+  border: 1px solid transparent;
+  transition: all 0.15s ease-in-out;
+  background-image: none;
+  /* btn-sm */
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  border-radius: 0.2rem;
+  /* btn-outline-secondary */
+  color: #676767;
+  background-color: #ffffff;
+  border-color: #676767;
+}
+  .field--widget-text-textarea-with-summary .link-edit-summary:hover {
+    /* Modified */
+    color: #676767;
+    background-color: #efefef;
+    border-color: #676767;
+  }
 
 .text-summary-wrapper { /* class via Drupal 8 */
   margin-bottom: 1rem;
