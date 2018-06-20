@@ -24,9 +24,13 @@
         {% endif %}
 
         {% if iastate_footer_logo_path %}
-          <a href="http://www.iastate.edu">
-            <img class="isu-footer-logo" src="{{ base_path }}/{{ iastate_footer_logo_path }}" class="wordmark-isu" alt="Iowa State University">
-          </a>
+          {% if iastate_footer_logo_url %}
+            <a href="{{ iastate_footer_logo_url }}">
+          {% endif %}
+              <img class="isu-footer-logo" src="{{ base_path }}/{{ iastate_footer_logo_path }}" class="wordmark-isu" alt="Iowa State University">
+          {% if iastate_footer_logo_url %}
+            </a>
+          {% endif %}
         {% endif %}
 
           <ul class="isu-associates-menu">
