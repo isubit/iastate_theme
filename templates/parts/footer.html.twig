@@ -33,27 +33,29 @@
           {% endif %}
         {% endif %}
 
-        <h2 class="visually-hidden" id="footerassociatesmenu">Associates</h2>
-        <ul class="isu-associates-menu">
-          {% if iastate_associate1_title %}
-            <li><a href="{{ iastate_associate1_url }}">{{ iastate_associate1_title }}</a></li>
-          {% endif %}
-          {% if iastate_associate2_title %}
-            <li><a href="{{ iastate_associate2_url }}">{{ iastate_associate2_title }}</a></li>
-          {% endif %}
-          {% if iastate_associate3_title %}
-            <li><a href="{{ iastate_associate3_url }}">{{ iastate_associate3_title }}</a></li>
-          {% endif %}
-          {% if iastate_associate4_title %}
-            <li><a href="{{ iastate_associate4_url }}">{{ iastate_associate4_title }}</a></li>
-          {% endif %}
-          {% if iastate_associate5_title %}
-            <li><a href="{{ iastate_associate5_url }}">{{ iastate_associate5_title }}</a></li>
-          {% endif %}
-          {% if iastate_associate6_title %}
-            <li><a href="{{ iastate_associate6_url }}">{{ iastate_associate6_title }}</a></li>
-          {% endif %}
-        </ul>
+        {% if iastate_associate1_title or iastate_associate1_url %}
+          <h2 class="visually-hidden" id="footerassociatesmenu">Associates</h2>
+          <ul class="isu-associates-menu">
+            {% if iastate_associate1_title %}
+              <li><a href="{{ iastate_associate1_url }}">{{ iastate_associate1_title }}</a></li>
+            {% endif %}
+            {% if iastate_associate2_title %}
+              <li><a href="{{ iastate_associate2_url }}">{{ iastate_associate2_title }}</a></li>
+            {% endif %}
+            {% if iastate_associate3_title %}
+              <li><a href="{{ iastate_associate3_url }}">{{ iastate_associate3_title }}</a></li>
+            {% endif %}
+            {% if iastate_associate4_title %}
+              <li><a href="{{ iastate_associate4_url }}">{{ iastate_associate4_title }}</a></li>
+            {% endif %}
+            {% if iastate_associate5_title %}
+              <li><a href="{{ iastate_associate5_url }}">{{ iastate_associate5_title }}</a></li>
+            {% endif %}
+            {% if iastate_associate6_title %}
+              <li><a href="{{ iastate_associate6_url }}">{{ iastate_associate6_title }}</a></li>
+            {% endif %}
+          </ul>
+        {% endif %}
 
       </div>
 
@@ -63,35 +65,44 @@
           {{ page.footer_second }}
         {% endif %}
 
-        {% if iastate_contact_title %}
-          <h2 class="isu-footer_contact-title h5" id="footercontact">
-            {{ iastate_contact_title|nl2br }}
-          </h2>
-        {% else %}
-          <h2 class="visually-hidden" id="footercontact">Contact</h2>
-        {% endif %}
-        {% if iastate_contact_address %}
-          <div class="isu-footer_contact-address">
-            {{ iastate_contact_address|nl2br }}
-          </div>
-        {% endif %}
+        {% if
+          iastate_contact_title or 
+          iastate_contact_address or 
+          iastate_contact_email or 
+          iastate_contact_phone or 
+          iastate_contact_phone 
+        %}
 
-        {% if iastate_contact_email %}
-          <div class="isu-footer_contact-email">
-            <a href="mailto:{{ iastate_contact_email }}">{{ iastate_contact_email }}</a>
-          </div>
-        {% endif %}
+          {% if iastate_contact_title %}
+            <h2 class="isu-footer_contact-title h5" id="footercontact">
+              {{ iastate_contact_title|nl2br }}
+            </h2>
+          {% else %}
+            <h2 class="visually-hidden" id="footercontact">Contact</h2>
+          {% endif %}
+          {% if iastate_contact_address %}
+            <div class="isu-footer_contact-address">
+              {{ iastate_contact_address|nl2br }}
+            </div>
+          {% endif %}
 
-        {% if iastate_contact_phone %}
-          <div class="isu-footer_contact-phone">
-            <span>phone: {{ iastate_contact_phone }}</span>
-          </div>
-        {% endif %}
+          {% if iastate_contact_email %}
+            <div class="isu-footer_contact-email">
+              <a href="mailto:{{ iastate_contact_email }}">{{ iastate_contact_email }}</a>
+            </div>
+          {% endif %}
 
-        {% if iastate_contact_fax %}
-          <div class="isu-footer_contact-fax">
-            <span>fax: {{ iastate_contact_fax }}</span>
-          </div>
+          {% if iastate_contact_phone %}
+            <div class="isu-footer_contact-phone">
+              <span>Phone: {{ iastate_contact_phone }}</span>
+            </div>
+          {% endif %}
+
+          {% if iastate_contact_fax %}
+            <div class="isu-footer_contact-fax">
+              <span>Fax: {{ iastate_contact_fax }}</span>
+            </div>
+          {% endif %}
         {% endif %}
 
       </div>
@@ -102,30 +113,33 @@
           {{ page.footer_third }}
         {% endif %}
 
-        <h2 class="visually-hidden" id="footersocialmenu">Social media</h2>
-        <ul class="isu-social-menu">
-          {% if iastate_social1_title %}
-            <li><a href="{{ iastate_social1_url }}">{{ iastate_social1_title }}</a></li>
-          {% endif %}
-          {% if iastate_social2_title %}
-            <li><a href="{{ iastate_social2_url }}">{{ iastate_social2_title }}</a></li>
-          {% endif %}
-          {% if iastate_social3_title %}
-            <li><a href="{{ iastate_social3_url }}">{{ iastate_social3_title }}</a></li>
-          {% endif %}
-          {% if iastate_social4_title %}
-            <li><a href="{{ iastate_social4_url }}">{{ iastate_social4_title }}</a></li>
-          {% endif %}
-          {% if iastate_social5_title %}
-            <li><a href="{{ iastate_social5_url }}">{{ iastate_social5_title }}</a></li>
-          {% endif %}
-          {% if iastate_social6_title %}
-            <li><a href="{{ iastate_social6_url }}">{{ iastate_social6_title }}</a></li>
-          {% endif %}
-          {% if iastate_social7_title %}
-            <li><a href="{{ iastate_social7_url }}">{{ iastate_social7_title }}</a></li>
-          {% endif %}
-        </ul>
+        {% if iastate_social1_title or iastate_social1_url %}
+
+          <h2 class="visually-hidden" id="footersocialmenu">Social media</h2>
+          <ul class="isu-social-menu">
+            {% if iastate_social1_title %}
+              <li><a href="{{ iastate_social1_url }}">{{ iastate_social1_title }}</a></li>
+            {% endif %}
+            {% if iastate_social2_title %}
+              <li><a href="{{ iastate_social2_url }}">{{ iastate_social2_title }}</a></li>
+            {% endif %}
+            {% if iastate_social3_title %}
+              <li><a href="{{ iastate_social3_url }}">{{ iastate_social3_title }}</a></li>
+            {% endif %}
+            {% if iastate_social4_title %}
+              <li><a href="{{ iastate_social4_url }}">{{ iastate_social4_title }}</a></li>
+            {% endif %}
+            {% if iastate_social5_title %}
+              <li><a href="{{ iastate_social5_url }}">{{ iastate_social5_title }}</a></li>
+            {% endif %}
+            {% if iastate_social6_title %}
+              <li><a href="{{ iastate_social6_url }}">{{ iastate_social6_title }}</a></li>
+            {% endif %}
+            {% if iastate_social7_title %}
+              <li><a href="{{ iastate_social7_url }}">{{ iastate_social7_title }}</a></li>
+            {% endif %}
+          </ul>
+        {% endif %}
       </div>
 
       <div class="col-sm-6 col-md-6 col-lg-3">
