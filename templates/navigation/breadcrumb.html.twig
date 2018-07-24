@@ -8,8 +8,7 @@
  */
 #}
 {% if breadcrumb %}
-  <nav role="navigation" aria-labelledby="system-breadcrumb">
-    <h2 id="system-breadcrumb" class="visually-hidden">{{ 'Breadcrumb'|t }}</h2>
+  <nav role="navigation" aria-label="{{ 'Breadcrumb'|t }}">
     <ol class="breadcrumb isu-breadcrumb">
     {% for item in breadcrumb %}
       <li class="breadcrumb-item">
