@@ -30,6 +30,28 @@
     <title>{{ head_title|safe_join(' | ') }}</title>
     <css-placeholder token="{{ placeholder_token|raw }}">
     <js-placeholder token="{{ placeholder_token|raw }}">
+    
+    <?php
+global $base_url;
+$jsPath = DRUPAL_ROOT . "/local/javascript.js";
+$jsURL = $base_url . "/local/javascript.js";
+if (file_exists($jsPath)) {
+  print "<script type=\"text/javascript\" src=\"" . $jsURL . "\"></script>\n";
+}
+
+$cssPath = DRUPAL_ROOT . "/local/styles.css";
+$cssURL = $base_url . "/local/styles.css";
+if (file_exists($cssPath)) {
+  print "<link type=\"text/css\" rel=\"stylesheet\" media=\"all\" href=\"" . $cssURL . "\" />\n";
+}
+
+$printPath = DRUPAL_ROOT . "/local/print.css";
+$printURL = $base_url . "/local/print.css";
+if (file_exists($printPath)) {
+  print "<link type=\"text/css\" rel=\"stylesheet\" media=\"print\" href=\"" . $printURL . "\" />\n";
+}
+?>
+
   </head>
 
   {%
