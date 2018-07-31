@@ -1,5 +1,5 @@
 # IASTATE Drupal 8 Theme
-IASTATE is a responsive, 'born accessible' Drupal 8 theme. It is an implementation of the [IASTATE theme](http://theme.iastate.edu) which provides the Iowa State University look and feel.
+IASTATE is a responsive, 'born accessible' Drupal 8 theme. It is an implementation of the [IASTATE theme](https://github.com/isubit/iastate_theme) which provides the Iowa State University look and feel.  This is the Extension version of that theme.
 
 For questions or support, please contact websupport@iastate.edu
 

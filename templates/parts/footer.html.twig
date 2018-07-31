@@ -27,7 +27,7 @@
           {% if iastate_footer_logo_url %}
             <a href="{{ iastate_footer_logo_url }}">
           {% endif %}
-              <img class="isu-footer-logo" src="{{ base_path }}/{{ iastate_footer_logo_path }}" class="wordmark-isu" alt="Iowa State University">
+              <img class="isu-footer-logo" src="{{ base_path }}/{{ iastate_footer_logo_path }}" class="wordmark-isu" alt="Iowa State University Extension and Outreach">
           {% if iastate_footer_logo_url %}
             </a>
           {% endif %}
@@ -62,7 +62,24 @@
           {{ page.footer_second }}
         {% endif %}
 
-        {% if iastate_contact_title %}
+         <p class="isu-copyright">Copyright © 1995-<script>document.write(new Date().getFullYear())</script><br><strong><a href="https://www.iastate.edu/">Iowa State University of Science and Technology.</a></strong> All rights reserved.<br>
+        2150 Beardshear Hall<br> 
+        Ames, IA 50011-2031<br>
+        (800) 262-3804
+        </p>
+        <p class="isu-legal-menu">
+          <a href="https://www.iastate.edu/">Iowa State University</a>&nbsp;|
+          <a href="https://www.extension.iastate.edu/legal">Policies</a><br />
+          <a href="http://nifa.usda.gov/partners-and-extension-map">State &amp; National Extension Partners</a></p>
+      </div>
+
+      <div class="col-sm-6 col-md-6 col-lg-3">
+
+        {% if page.footer_third %}
+          {{ page.footer_third }}
+        {% endif %}
+
+                 {% if iastate_contact_title %}
           <h2 class="isu-footer_contact-title h5">
             {{ iastate_contact_title|nl2br }}
           </h2>
@@ -95,11 +112,11 @@
 
       <div class="col-sm-6 col-md-6 col-lg-3">
 
-        {% if page.footer_third %}
-          {{ page.footer_third }}
+        {% if page.footer_fourth %}
+          {{ page.footer_fourth }}
         {% endif %}
 
-          <ul class="isu-social-menu">
+        <ul class="isu-social-menu">
             {% if iastate_social1_title %}
               <li><a href="{{ iastate_social1_url }}">{{ iastate_social1_title }}</a></li>
             {% endif %}
@@ -118,25 +135,7 @@
             {% if iastate_social6_title %}
               <li><a href="{{ iastate_social6_url }}">{{ iastate_social6_title }}</a></li>
             {% endif %}
-            {% if iastate_social7_title %}
-              <li><a href="{{ iastate_social7_url }}">{{ iastate_social7_title }}</a></li>
-            {% endif %}
           </ul>
-
-      </div>
-
-      <div class="col-sm-6 col-md-6 col-lg-3">
-
-        {% if page.footer_fourth %}
-          {{ page.footer_fourth }}
-        {% endif %}
-
-        <p class="isu-copyright">Copyright © 1995-<script>document.write(new Date().getFullYear())</script><br>Iowa State University<br>of Science and Technology<br>All rights reserved.</p>
-        <ul class="isu-legal-menu">
-          <li><a href="http://www.policy.iastate.edu/policy/discrimination">Non-discrimination Policy</a></li>
-          <li><a href="http://www.policy.iastate.edu/electronicprivacy">Privacy Policy</a></li>
-          <li><a href="http://digitalaccess.iastate.edu">Digital Access &amp; Accessibility</a></li>
-        </ul>
 
       </div>
     </div>
