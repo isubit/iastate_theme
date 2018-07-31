@@ -9,6 +9,7 @@ global-css:
       css/base.css: {}
       css/layout.css: {}
       css/theme.css: {}
+      css/ext_iastate.css: {}
       css/isu-social.css: {}
       css/utility.css: {}
       css/print.css: { media: print }
