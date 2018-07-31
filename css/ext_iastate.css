@@ -1,0 +1,321 @@
+/* --------------------------------------  */
+/* ## Typography
+/* --------------------------------------  */
+
+/* Fix body height */
+html, body, .dialog-off-canvas-main-canvas, .isu-page-wrap {
+	height: 43%;
+}
+
+/* Reduce size of h1 */
+.h1, h1 {
+	font-size: 1.75rem;
+}
+
+/* Reduce size of h2 */
+.h2, h2 {
+	font-size: 1.5rem;
+}
+
+/* Reduce size of h3 */
+.h3, h3 {
+	font-size: 1.25rem;
+}
+
+/* Reduce size of h4 */
+.h4, h4 {
+	font-size: 1rem;
+}
+
+/* Reduce size of h5 */
+.h5 {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+/* --------------------------------------  */
+/* ## Red Bar
+/* --------------------------------------  */
+
+/* Reduce size of yellow bar */
+.isu-site-navbar {
+	border-bottom: 4px solid #f1be48;
+}
+
+/* Reduce space on top and bottom of wordmark and sitename */
+.isu-row-site-navbar {
+	margin-top: -15px;
+	margin-bottom: -15px;
+}
+
+/* Site Name Size Change */
+.isu-wordmark-sitename {
+	font-size: 22px;
+	padding-left: 11px;
+	font-weight: 700;
+	line-height: 24px;
+	padding-top: 13px;
+}
+
+/* --------------------------------------  */
+/* ## Main Menu
+/* --------------------------------------  */
+
+/* Add hover effect to main menu links */
+.isu-nav-link:hover {
+	border-bottom: 3px solid #bbb !important;
+}
+
+/* Dropdown Menu */
+.isu-dropdown-menu {
+	background: #fff;
+}
+
+.isu-dropdown-item a:focus, .isu-dropdown-item a:hover, .isu-dropdown-item a.active, .isu-dropdown-item a:active {
+	background: transparent;
+	color: #cc0000;
+}
+
+.navbar-nav .dropdown-menu {
+	box-shadow: 0px 2px 3px 0px #aaa;
+}
+
+/* Main Menu link changes */
+.navbar-expand-lg .navbar-nav .nav-link {
+	padding: 10px 12px;
+	letter-spacing: .5px;
+	border-bottom: 3px solid transparent;
+	transition: all 0.1s ease;
+}
+
+/* Main Menu Link Hover Changes */
+.isu-nav-link: hover {
+	background: #eeeeee;
+	border-bottom: 3px solid #bbb;
+}
+
+/* --------------------------------------  */
+/* ## Content Area
+/* --------------------------------------  */
+
+/* Breadcrumb Styling
+.isu-breadcrumb {
+	margin-left: 11px;
+}
+*/
+
+/* Change Authored on information display */
+.isu-user ~ div > .isu-submitted-by_name, .isu-user ~ div > .isu-submitted-by_date {
+	display: inline-block;
+}
+
+.isu-user ~ div > .isu-submitted-by_name {
+	font-size: 0.85rem;
+}
+
+/* Sidebar */
+.isu-page-column {
+	padding-left: 11px;
+}
+
+/* News Styles */
+.card-body svg:not(:root).svg-inline--fa {
+	display: inline-block;
+}
+
+/* Button Styles */
+.btn-danger {
+	background-color: #cc0000;
+	border-color: #cc0000;
+}
+
+.btn-danger:hover {
+	background-color: #7c2529;
+	border-color: #7c2529;
+}	
+
+.btn-outline-danger {
+	color: #cc0000;
+	border-color: #cc0000;
+}
+
+.btn-outline-danger:hover {
+	background-color: #cc0000;
+	border-color: #cc0000;
+}
+
+.btn-primary {
+	background-color: #006BA6;
+	border-color: #006BA6;
+}
+
+.btn-primary:hover {
+	background-color: #003D4C;
+	border-color: #003D4C;
+}
+
+.btn-outline-primary {
+	color: #006BA6;
+	border-color: #006BA6;
+}
+
+.btn-outline-primary:hover {
+	background-color: #006BA6;
+	border-color: #006BA6;
+}
+
+.btn-secondary {
+	background-color: #707372;
+	border-color: #707372;
+}
+
+.btn-secondary:hover {
+	background-color: #6E6259;
+	border-color: #6E6259;
+}
+
+.btn-outline-secondary {
+	color: #707372;
+	border-color: #707372;
+}
+
+.btn-outline-secondary:hover {
+	background-color: #707372;
+	border-color: #707372;
+}
+
+/* Block Title */
+h2.isu-block-title.h4 {
+	margin-bottom: 1rem;
+	line-height: 1.25;
+	font-size: 1.5rem;
+}
+
+/* Remove h5 and h6 */
+
+/* --------------------------------------  */
+/* ## Footer
+/* --------------------------------------  */
+
+
+/* Change footer background color and text color */
+.isu-footer {
+	color: #d3d3d3;
+	background: #333;
+}
+
+/* Change footer link color */
+.isu-footer a {
+	color: #d3d3d3;
+}
+
+/* Change size of stacked wordmark in footer */
+.isu-footer-logo {
+	max-width: 250px;
+	margin-top: -15px;
+}
+
+/* Change footer associates menu link color */
+.isu-associates-menu a {
+	color: #d3d3d3;
+	text-decoration: underline;
+	font-size: 14px;
+	padding-left: 18px;
+	margin-top: -15px;
+}
+
+/* Change footer link hover color and add text decoration */
+.isu-footer a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+
+/* Reduce size of font in contact footer block */
+.isu-region_footer-third {
+	font-size: 14px;
+}
+
+/* Styled static social media icons */
+.isu-social-menu-static {
+  list-style-type: none;
+  padding: 0;
+}
+.isu-social-menu-static a {
+  display: inline-block;
+  color: #676767;
+  text-decoration: none;
+}
+
+/* Change social media menu icon color, size */
+.isu-social-menu a:before {
+	color: #fff;
+	font-size: 24px;
+}
+
+/* Change font color and size of social media menu text */
+.isu-social-menu a {
+	color: #d3d3d3;
+	font-size: 14px;
+	float: left;
+}
+
+/* Adjust legal menu links */
+.isu-legal-menu a {
+	display: inline-block;
+	text-decoration: underline;
+}
+
+/* Add text decoration to legal footer menu */
+.isu-legal-menu a:hover {
+	text-decoration: underline;
+}
+
+/* Reduce size of copyright in footer */
+.isu-copyright {
+	font-size: 12px;
+}
+
+.isu-legal-menu {
+	font-size: 12px;
+}
+
+/* --------------------------------------  */
+/* ## Responsive
+/* --------------------------------------  */
+
+@media (min-width: 992px) {
+	.dropdown.is-hoverable:hover > .dropdown-menu {
+    	display: block;
+	}
+  
+	.isu-wordmark-logo {
+		max-width: 365px;
+		margin-left: 2px;
+	}
+	
+
+@media screen and (max-width : 992px) {
+ 	.isu-wordmark-logo {
+ 		max-width: 275px;
+ 	}
+ 	
+ 	.isu-wordmark-sitename {
+ 		margin-left: -92px;
+ 	}
+ 	
+ }
+
+@media screen and (max-width : 768px) {
+ 	.isu-wordmark-logo {
+ 		margin-top: 1.5rem;
+ 	}
+ 	
+ 	.isu-wordmark-sitename {
+ 		padding-left: 0px;
+ 		margin-left: -39px;
+ 		padding-bottom: 16px;
+ 		font-size: 20px;
+ 		padding-top: 5px;
+ 	}
+ 	
+ }
