@@ -37,14 +37,14 @@
 <section{{ attributes.addClass('isu-comments-section') }} aria-label="Comments">
   {% if comments and not label_hidden %}
     {{ title_prefix }}
-    <h2{{ title_attributes.addClass(comments_title_classes) }}>{{ label }}</h2>
+    <h1{{ title_attributes.addClass(comments_title_classes) }}>{{ label }}</h1>
     {{ title_suffix }}
   {% endif %}
 
   {{ comments }}
 
   {% if comment_form %}
-    <h2{{ content_attributes.addClass(comments_title_classes) }}>{{ 'Add new comment'|t }}</h2>
+    <h1{{ content_attributes.addClass(comments_title_classes) }}>{{ 'Add new comment'|t }}</h1>
     {{ comment_form }}
   {% endif %}
 

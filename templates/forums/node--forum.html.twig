@@ -74,14 +74,15 @@
 
   {{ title_prefix }}
   {% if not page %}
-    <h2{{ title_attributes }}>
+    <h1{{ title_attributes }}>
       <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-    </h2>
+    </h1>
   {% endif %}
   {{ title_suffix }}
 
   {% if display_submitted %}
     {% include '@iastate_theme/parts/submitted-by.html.twig' %}
+    {# Comes in as footer element #}
   {% endif %}
 
   <div{{ content_attributes.addClass('isu-forum-post') }}>

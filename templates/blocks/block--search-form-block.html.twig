@@ -29,15 +29,22 @@
 
 {% set classes = ['isu-search'] %}
 
-<div class="isu-search_collapse" id="isu-search_collapse" aria-label="Search this website">
+{% 
+  set block_title_classes = [
+  'isu-block-title', 
+  'h4'
+  ] 
+%}
+
+<article class="isu-search_collapse" id="isu-search_collapse" aria-label="Search this website">
   <div{{ attributes.addClass(classes) }}>
     {{ title_prefix }}
     {% if label %}
-      <h2{{ title_attributes }}>{{ label }}</h2>
+      <h1{{ title_attributes.addClass(block_title_classes) }}>{{ label }}</h1>
     {% endif %}
     {{ title_suffix }}
     {% block content %}
       {{ content }}
     {% endblock %}
   </div>
-</div>
+</article>

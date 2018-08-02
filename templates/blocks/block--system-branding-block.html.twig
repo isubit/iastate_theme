@@ -33,10 +33,7 @@
   <div>
     <a class="isu-wordmark" rel="home" href="{{ path('<front>') }}" title="{{ site_name }}">
       <img class="isu-wordmark-logo" src="{{ site_logo }}" alt="Iowa State University Logo">
-      
-      {% set sitename_tag = is_front ? 'h1' : 'div' %}
-
-      <{{ sitename_tag }} class="isu-wordmark-sitename">{{ site_name}}</{{ sitename_tag }}>
+      <h1 class="isu-wordmark-sitename">{{ site_name}}</h1>
     </a>
   </div>
 {% endblock %}

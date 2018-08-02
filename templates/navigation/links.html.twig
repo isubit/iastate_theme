@@ -32,35 +32,38 @@
  */
 #}
 
+{% set heading_id = attributes.id ~ '-toolbar'|clean_id %}
+
 {% if links -%}
-  {%- if heading -%}
-    {%- if heading.level -%}
-      <{{ heading.level }}{{ heading.attributes }}>{{ heading.text }}</{{ heading.level }}>
-    {%- else -%}
-      <h2{{ heading.attributes }}>{{ heading.text }}</h2>
+  <div role="toolbar" aria-labelledby="{{heading_id}}">
+    {%- if heading -%}
+      {%- if heading.level -%}
+        <{{ heading.level }}{{ heading.attributes.setAttribute('id', heading_id) }}>{{ heading.text }}</{{ heading.level }}>
+      {%- else -%}
+        <div{{ heading.attributes.setAttribute('id', heading_id) }}>{{ heading.text }}</div>
+      {%- endif -%}
     {%- endif -%}
-  {%- endif -%}
 
+    {% 
+      set list_classes = [
+        'list-inline',
+        'isu-links'
+      ] 
+    %}
 
-  {% 
-    set list_classes = [
-      'list-inline',
-      'isu-links'
-    ] 
-  %}
+    <ul{{ attributes.addClass(list_classes) }}>
+      {%- for item in links -%}
+        <li{{ item.attributes.addClass('list-inline-item') }}>
+          {%- if item.link and item.text -%}
+            {{ item.link }}
 
-  <ul{{ attributes.addClass(list_classes) }}>
-    {%- for item in links -%}
-      <li{{ item.attributes.addClass('list-inline-item') }}>
-        {%- if item.link and item.text -%}
-          {{ item.link }}
-
-        {%- elseif item.text_attributes -%}
-          <span{{ item.text_attributes }}>{{ item.text }}</span>
-        {%- else -%}
-          {{ item.text }}
-        {%- endif -%}
-      </li>
-    {%- endfor -%}
-  </ul>
+          {%- elseif item.text_attributes -%}
+            <span{{ item.text_attributes }}>{{ item.text }}</span>
+          {%- else -%}
+            {{ item.text }}
+          {%- endif -%}
+        </li>
+      {%- endfor -%}
+    </ul>
+  </div>
 {%- endif %}
