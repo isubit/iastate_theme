@@ -7,7 +7,6 @@ global-css:
       css/isu-navbar.css: {}
       css/isu-responsivetables.css: { media: screen }
       css/base.css: {}
-      css/layout.css: {}
       css/theme.css: {}
       css/isu-social.css: {}
       css/utility.css: {}
