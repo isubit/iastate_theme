@@ -122,6 +122,16 @@ function iastate_theme_preprocess(&$variables, $hook) {
   }
   // Ensure the cache varies correctly (new in Drupal 8.3).
   $variables['#cache']['contexts'][] = 'url.path.is_front';
+
+  // Added variables as a workaround for twig not having file exists
+  // Theses variables help with our "local" javascript and css
+  global $base_url;
+  $variables['js_file_exists'] = file_exists(DRUPAL_ROOT . '/local/javascript.js');
+  $variables['js_file_url'] = $base_url . '/local/javascript.js';
+  $variables['css_file_exists'] = file_exists(DRUPAL_ROOT . '/local/styles.css');
+  $variables['css_file_url'] = $base_url . '/local/styles.css';
+  $variables['printcss_file_exists'] = file_exists(DRUPAL_ROOT . '/local/print.css');
+  $variables['printcss_file_url'] = $base_url . '/local/print.css';
 }
 
 /*
