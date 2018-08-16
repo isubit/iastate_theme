@@ -217,11 +217,9 @@ h2.isu-block-title.h4 {
 
 /* Change footer associates menu link color */
 .isu-associates-menu a {
-	color: #d3d3d3;
 	text-decoration: underline;
 	font-size: 14px;
 	padding-left: 18px;
-	margin-top: -15px;
 }
 
 /* Change footer link hover color and add text decoration */
