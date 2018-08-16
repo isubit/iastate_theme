@@ -245,16 +245,10 @@ h2.isu-block-title.h4 {
 }
 
 /* Change social media menu icon color, size */
-.isu-social-menu a:before {
-	color: #fff;
-	font-size: 24px;
-}
 
 /* Change font color and size of social media menu text */
 .isu-social-menu a {
-	color: #d3d3d3;
 	font-size: 14px;
-	float: left;
 }
 
 /* Adjust legal menu links */
