@@ -666,6 +666,12 @@ article:not(.isu-user):not(.isu-search_collapse) {
   margin-top: 1rem;
 }
 
+
+.isu-field-tags {
+  padding-top: 1rem;
+  clear: both;
+}
+
 /* -------------------------------------- */
 /* ## COMPONENTS
 /* -------------------------------------- */
