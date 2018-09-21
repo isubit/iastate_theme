@@ -436,6 +436,11 @@ body,
   background: #dddddd;
 }
 
+.nav-item.active,
+.isu-nav-link.is-active {
+  background: #dddddd;
+}
+
 /*
  * So this is an inelegant stick, but Bootstrap 4 isn't adding .show
  * to the dropdown-menu, so it's not opening. Thus: selector.
