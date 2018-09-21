@@ -436,7 +436,8 @@ body,
   background: #dddddd;
 }
 
-.isu-nav-link.nav-link.active {
+.nav-item.active,
+.isu-nav-link.is-active {
   background: #dddddd;
 }
 
