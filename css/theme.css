@@ -436,6 +436,11 @@ body,
   background: #dddddd;
 }
 
+.nav-item.active,
+.isu-nav-link.is-active {
+  background: #dddddd;
+}
+
 /*
  * So this is an inelegant stick, but Bootstrap 4 isn't adding .show
  * to the dropdown-menu, so it's not opening. Thus: selector.
@@ -814,7 +819,7 @@ details {
 }
 
 .isu-form-element-description {
-  margin-top: 0.5rem;
+  margin-top: 0.25rem;
   font-size: 0.875rem;
   color: #676767;
 }
@@ -888,7 +893,7 @@ details {
 
 /* --- ## Checkboxes --- */
 
-.isu-form-type_checkbox.isu-form-group {
+.isu-form-type_checkbox label {
   margin-bottom: 0;
 }
 
@@ -906,6 +911,12 @@ details {
 }
 .isu-form-control_date {
   width: auto;
+}
+
+/* --- ## Text --- */
+
+.isu-form-control.form-text {
+  margin-top: 0;
 }
 
 /* --- ## Text fields with text format filter --- */
@@ -947,6 +958,45 @@ details {
 }
 .isu-preview-button {
   margin-right: 0.5rem;
+}
+
+/* --- ## Delete Buttons --- */
+/* Delete buttons are links, not buttons.
+ * https://www.drupal.org/node/2250341
+ * Duplicating Bootstrap 4's btn-outline-secondary
+ */
+
+#edit-delete {
+  /* btn */
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  /* btn-outline-secondary */
+  color: #676767;
+  background-color: #ffffff;
+  border-color: #676767;
+}
+
+#edit-delete:hover {
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+#edit-delete:focus {
+    box-shadow: 0 0 0 0.2rem rgba(108,117,125,.5);
 }
 
 /* --- ## Dropbutton Widget --- */
