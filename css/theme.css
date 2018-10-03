@@ -170,6 +170,12 @@ body,
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
+.isu-wordmark-slogan {
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: bold;
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+}
 .isu-wordmark-sitename {
   margin-bottom: 0.5rem;
   font-size: 1rem;
