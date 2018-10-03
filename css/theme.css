@@ -170,18 +170,24 @@ body,
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
-.isu-wordmark-slogan {
-  margin-bottom: 0.5rem;
-  padding-bottom: 0.5rem;
-  font-weight: bold;
-  border-bottom: 1px solid rgba(255,255,255,0.5);
-}
+.isu-wordmark-slogan,
 .isu-wordmark-sitename {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 1rem;
+}
+/* If there is both a slogan and site name,
+ * site name gets slogan's styling and then 
+ * a border.
+ */
+.isu-wordmark-sitename_slogan {
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.1;
   color: #ffffff;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 /* Large */
@@ -191,7 +197,7 @@ body,
     max-width: 400px;
     margin-top: 0;
   }
-  .isu-wordmark-sitename {
+  .isu-wordmark-sitename_slogan {
     font-size: 1.15rem;
   }
 }
