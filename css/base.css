@@ -106,6 +106,15 @@ button.btn {
     background-color: #1A6B2D;
     border-color: #1A6B2D;
   }
+.btn-outline-info { /* Overrides bootstrap.min.css */
+  color: #128091; /* Sufficient contrast with white. */
+  background-color: #ffffff;
+  border-color: #128091;
+}
+  .btn-outline-info:hover {
+    background-color: #0F6875;
+    border-color: #0F6875;
+  }
 .btn-outline-warning {
   color: #757575; /* Sufficient contrast with white. */
 }
