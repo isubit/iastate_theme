@@ -170,12 +170,24 @@ body,
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
+.isu-wordmark-slogan,
 .isu-wordmark-sitename {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 1rem;
+}
+/* If there is both a slogan and site name,
+ * site name gets slogan's styling and then 
+ * a border.
+ */
+.isu-wordmark-sitename_slogan {
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.1;
   color: #ffffff;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 /* Large */
@@ -185,7 +197,7 @@ body,
     max-width: 400px;
     margin-top: 0;
   }
-  .isu-wordmark-sitename {
+  .isu-wordmark-sitename_slogan {
     font-size: 1.15rem;
   }
 }
@@ -876,15 +888,14 @@ details {
   line-height: 1.5;
   border-radius: 0.2rem;
   /* btn-outline-secondary */
-  color: #676767;
+  color: #6c757d;
   background-color: #ffffff;
-  border-color: #676767;
+  border-color: #6c757d;
 }
   .field--widget-text-textarea-with-summary .link-edit-summary:hover {
-    /* Modified */
-    color: #676767;
-    background-color: #efefef;
-    border-color: #676767;
+    color: #ffffff;
+    background-color: #6c757d;
+    border-color: #6c757d;
   }
 
 .text-summary-wrapper { /* class via Drupal 8 */
@@ -983,16 +994,16 @@ details {
   line-height: 1.5;
   border-radius: .25rem;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-  /* btn-outline-secondary */
-  color: #676767;
+  /* btn-outline-danger */
+  color: #dc3545;
   background-color: #ffffff;
-  border-color: #676767;
+  border-color: #dc3545;
 }
 
 #edit-delete:hover {
   color: #fff;
-  background-color: #6c757d;
-  border-color: #6c757d;
+  background-color: #dc3545;
+  border-color: #dc3545;
 }
 
 #edit-delete:focus {
@@ -1067,16 +1078,16 @@ a.tabledrag-handle .handle {
   line-height: 1.5;
   border-radius: 0.2rem;
   /* btn-outline-secondary */
-  color: #676767;
+  color: #6c757d;
   background-color: #ffffff;
-  border-color: #676767;
+  border-color: #6c757d;
   /* Modification */
   margin-bottom: 0.5rem;
 }
   .tabledrag-toggle-weight:hover {
     color: #ffffff;
-    background-color: #575757;
-    border-color: #575757;
+    background-color: #6c757d;
+    border-color: #6c757d;
   }
 
 /* --- ## Vertical Tabs --- */
