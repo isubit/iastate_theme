@@ -67,47 +67,75 @@ button.btn {
 .btn-link:hover { /* Overrides bootstrap.min.css */
   color: #006BA6; /* ISU brand standard */
 }
-.btn-primary { /* Overrides bootstrap.min.css */
-  background-color: #cc0000; /* ISU brand standard */
-  border-color: #cc0000;
+.btn-success { /* Overrides bootstrap.min.css */
+  background-color: #218739; /* Sufficient contrast with white. */
+  border-color: #218739;
 }
-  .btn-primary:hover {
-    background-color: #a00606;
-    border-color: #a00606;
+  .btn-success:hover {
+    background-color: #1A6B2D;
+    border-color: #1A6B2D;
   }
-.btn-outline-primary { /* Overrides bootstrap.min.css */
-  color: #cc0000; /* ISU brand standard */
+.btn-info { /* Overrides bootstrap.min.css */
+  background-color: #128091; /* Sufficient contrast with white. */
+  border-color: #128091;
+}
+  .btn-info:hover {
+    background-color: #0F6875;
+    border-color: #0F6875;
+  }
+.btn-light {
+  border-color: #ddd;
+}
+.btn-outline-primary,
+.btn-outline-secondary,
+.btn-outline-success,
+.btn-outline-danger,
+.btn-outline-warning,
+.btn-outline-info,
+.btn-outline-light,
+.btn-outline-dark { /* Overrides bootstrap.min.css */
   background-color: #ffffff;
-  border-color: #cc0000;
 }
-  .btn-outline-primary:hover {
-    background-color: #a00606;
-    border-color: #a00606;
-  }
-.btn-secondary { /* Overrides bootstrap.min.css */
-  background-color: #676767; /* ISU brand standard */
-  border-color: #676767;
-}
-  .btn-secondary:hover {
-    color: #ffffff;
-    background-color: #575757;
-    border-color: #575757;
-  }
-.btn-outline-secondary { /* Overrides bootstrap.min.css */
-  color: #676767; /* Sufficient contrast with white. */
+
+.btn-outline-success { /* Overrides bootstrap.min.css */
+  color: #218739; /* Sufficient contrast with white. */
   background-color: #ffffff;
-  border-color: #676767;
+  border-color: #218739;
 }
-  .btn-outline-secondary:hover {
-    color: #ffffff;
-    background-color: #575757;
-    border-color: #575757;
+  .btn-outline-success:hover {
+    background-color: #1A6B2D;
+    border-color: #1A6B2D;
   }
-.btn-primary.disabled,
-.btn-primary:disabled { /* Overrides bootstrap.min.css */
-  background-color: #cc0000; /* ISU brand standard */
-  border-color: #cc0000;
+.btn-outline-info { /* Overrides bootstrap.min.css */
+  color: #128091; /* Sufficient contrast with white. */
+  background-color: #ffffff;
+  border-color: #128091;
 }
+  .btn-outline-info:hover {
+    background-color: #0F6875;
+    border-color: #0F6875;
+  }
+.btn-outline-warning {
+  color: #757575; /* Sufficient contrast with white. */
+}
+.btn-outline-light { /* Overrides bootstrap.min.css */
+  color: #757575; /* Sufficient contrast with white. */
+  background-color: #ffffff;
+  border-color: #888888;
+}
+  .btn-outline-light:hover {
+    border-color: #c2c2c2;
+  }
+
+.btn.disabled, 
+.btn:disabled { /* Overrides bootstrap.min.css */
+  /* Sufficient contrast with white. */
+  opacity: 1;
+  background: #e6e6e6;
+  color: #676767;
+  border: 1px solid #bbb;
+}
+
 .button:not(.btn) { /* Duplicates Bootstrap 4 btn, btn-secondary and btn-sm */
   /* btn */
   display: inline-block;

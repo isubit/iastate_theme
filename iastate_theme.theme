@@ -20,7 +20,7 @@ function iastate_theme_preprocess_menu_local_task(&$variables) {
  */
 
 function iastate_theme_preprocess_views_view(&$variables) {
-  $variables['more']['#options']['attributes']['class'] = array('btn', 'btn-sm', 'btn-outline-primary');
+  $variables['more']['#options']['attributes']['class'] = array('btn', 'btn-sm', 'btn-outline-danger');
 }
 
 /*
@@ -32,7 +32,7 @@ function iastate_theme_preprocess_views_view(&$variables) {
 function iastate_theme_preprocess_menu_local_action(&$variables) {
   $variables['link']['#options']['attributes']['class'][] = 'btn';
   $variables['link']['#options']['attributes']['class'][] = 'btn-sm';
-  $variables['link']['#options']['attributes']['class'][] = 'btn-outline-primary';
+  $variables['link']['#options']['attributes']['class'][] = 'btn-outline-info';
 }
 
 /*
@@ -43,29 +43,29 @@ function iastate_theme_preprocess_menu_local_action(&$variables) {
 
 function iastate_theme_preprocess_links(&$variables) {
   if (!empty($variables['links']['node-readmore']['link'])) {
-    $variables['links']['node-readmore']['link']['#options']['attributes']['class'][] = 'btn btn-sm btn-outline-primary';
+    $variables['links']['node-readmore']['link']['#options']['attributes']['class'][] = 'btn btn-sm btn-outline-danger';
   }
   if (!empty($variables['links']['comment-comments']['link'])) {
-    $variables['links']['comment-comments']['link']['#options']['attributes']['class'][] = 'btn btn-sm btn-outline-primary';
+    $variables['links']['comment-comments']['link']['#options']['attributes']['class'][] = 'btn btn-sm btn-outline-danger';
   }
   if (!empty($variables['links']['comment-add']['link'])) {
-    $variables['links']['comment-add']['link']['#options']['attributes']['class'][] = 'btn btn-sm btn-outline-primary';
+    $variables['links']['comment-add']['link']['#options']['attributes']['class'][] = 'btn btn-sm btn-outline-success';
   }
   if (!empty($variables['links']['comment-delete']['link'])) {
-    $variables['links']['comment-delete']['link']['#options']['attributes']['class'][] = 'btn btn-sm btn-outline-secondary';
+    $variables['links']['comment-delete']['link']['#options']['attributes']['class'][] = 'btn btn-sm btn-outline-danger';
   }
   if (!empty($variables['links']['comment-edit']['link'])) {
-    $variables['links']['comment-edit']['link']['#options']['attributes']['class'][] = 'btn btn-sm btn-outline-secondary';
+    $variables['links']['comment-edit']['link']['#options']['attributes']['class'][] = 'btn btn-sm btn-outline-info';
   }
   if (!empty($variables['links']['comment-reply']['link'])) {
-    $variables['links']['comment-reply']['link']['#options']['attributes']['class'][] = 'btn btn-sm btn-outline-primary'; 
+    $variables['links']['comment-reply']['link']['#options']['attributes']['class'][] = 'btn btn-sm btn-outline-success'; 
   }
     /* Book */ 
   if (!empty($variables['links']['book_printer']['link'])) {
-    $variables['links']['book_printer']['link']['#options']['attributes']['class'][] = 'btn btn-sm btn-outline-primary';
+    $variables['links']['book_printer']['link']['#options']['attributes']['class'][] = 'btn btn-sm btn-outline-info';
   }
   if (!empty($variables['links']['book_add_child']['link'])) {
-    $variables['links']['book_add_child']['link']['#options']['attributes']['class'][] = 'btn btn-sm btn-outline-primary';
+    $variables['links']['book_add_child']['link']['#options']['attributes']['class'][] = 'btn btn-sm btn-outline-success';
   }
 }
 
