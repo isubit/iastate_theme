@@ -30,15 +30,30 @@
 {% extends "block.html.twig" %}
 
 {% block content %}
-  <div>
-    <a class="isu-wordmark" rel="home" href="{{ path('<front>') }}" title="{{ site_name }}">
-      <img class="isu-wordmark-logo" src="{{ site_logo }}" alt="Iowa State University Logo">
-      {% if site_slogan %}
-        <div class="isu-wordmark-slogan">{{ site_slogan }}</div>
-        <h1 class="isu-wordmark-sitename_slogan">{{ site_name}}</h1>
-      {% else %}
-        <h1 class="isu-wordmark-sitename">{{ site_name}}</h1>
-      {% endif %}
-    </a>
+  <div class="isu-wordmark">
+    <img class="isu-wordmark-logo" src="{{ site_logo }}" alt="Iowa State University Logo">
+
+    {% if iastate_unit_name %}
+
+      <div class="isu-wordmark-unit">
+        {% if iastate_unit_url %}
+          <a href="{{ iastate_unit_url }}">{{ iastate_unit_name }}</a>
+        {% else %}
+          <span>{{ iastate_unit_name }}</span>
+        {% endif %}
+      </div>
+
+      <h1 class="isu-wordmark-sitename_unit">
+        <a rel="home" href="{{ path('<front>') }}">{{ site_name }}</a>
+      </h1>
+
+    {% else %}
+
+      <h1 class="isu-wordmark-sitename">
+        <a rel="home" href="{{ path('<front>') }}">{{ site_name }}</a>
+      </h1>
+      
+    {% endif %}
   </div>
+
 {% endblock %}

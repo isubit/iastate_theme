@@ -41,12 +41,35 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
     '#description'  => t('Check this option if you\'d like to show the ISU navbar.'),
   );
 
+  // Create a section for Unit settings
+  $form['iastate_unit_settings'] = array(
+    '#type'         => 'details',
+    '#title'        => t('Unit'),
+    '#description'  => t('Name and url of official university unit, such as a department or center, if the Site Name (as set in Basic Site Settings) is not already the name of the unit.'),
+    '#weight'       => -999,
+    '#open'         => TRUE,
+    );
+
+  // Unit Name
+  $form['iastate_unit_settings']['iastate_unit_name'] = array(
+      '#type'   => 'textfield',
+      '#title'  => t('Unit Name'),
+      '#default_value'  => theme_get_setting('iastate_unit_name'),
+    );
+
+  // Unit URL
+  $form['iastate_unit_settings']['iastate_unit_url'] = array(
+      '#type'   => 'url',
+      '#title'  => t('Unit URL'),
+      '#default_value'  => theme_get_setting('iastate_unit_url'),
+    );
+
   // Create a section for footer content
   $form['iastate_footer_contact'] = array(
     '#type'         => 'details',
     '#title'        => t('Contact Info'),
     '#description'  => t('Contact information is displayed in the footer'),
-    '#weight'       => -999,
+    '#weight'       => -998,
     '#open'         => TRUE,
     );
 

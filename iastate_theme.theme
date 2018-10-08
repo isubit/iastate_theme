@@ -122,6 +122,9 @@ function iastate_theme_preprocess(&$variables, $hook) {
   }
   // Ensure the cache varies correctly (new in Drupal 8.3).
   $variables['#cache']['contexts'][] = 'url.path.is_front';
+
+  $variables['iastate_unit_name'] = theme_get_setting('iastate_unit_name');
+  $variables['iastate_unit_url'] = theme_get_setting('iastate_unit_url');
 }
 
 /*
