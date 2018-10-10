@@ -75,6 +75,12 @@ button.btn {
     background-color: #1A6B2D;
     border-color: #1A6B2D;
   }
+  .btn-success:not(:disabled):not(.disabled).active, 
+  .btn-success:not(:disabled):not(.disabled):active, 
+  .show>.btn-success.dropdown-toggle {
+    background-color: #1A6B2D;
+    border-color: #1A6B2D;
+  }
 .btn-info { /* Overrides bootstrap.min.css */
   background-color: #128091; /* Sufficient contrast with white. */
   border-color: #128091;
@@ -106,6 +112,12 @@ button.btn {
     background-color: #1A6B2D;
     border-color: #1A6B2D;
   }
+  .btn-outline-success:not(:disabled):not(.disabled).active, 
+  .btn-outline-success:not(:disabled):not(.disabled):active, 
+  .show > .btn-outline-success.dropdown-toggle {
+    background-color: #1A6B2D;
+    border-color: #1A6B2D;
+  }
 .btn-outline-info { /* Overrides bootstrap.min.css */
   color: #128091; /* Sufficient contrast with white. */
   background-color: #ffffff;
@@ -114,6 +126,12 @@ button.btn {
   .btn-outline-info:hover {
     background-color: #0F6875;
     border-color: #0F6875;
+  }
+  .btn-outline-info:not(:disabled):not(.disabled).active, 
+  .btn-outline-info:not(:disabled):not(.disabled):active, 
+  .show > .btn-outline-info.dropdown-toggle {
+    background-color: #117a8b;
+    border-color: #117a8b;
   }
 .btn-outline-warning {
   color: #757575; /* Sufficient contrast with white. */
