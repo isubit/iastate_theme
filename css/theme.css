@@ -153,15 +153,16 @@ body,
  * Change sitename in Drupal theme settings.
  */
 
-.isu-wordmark {
+.isu-wordmark,
+.isu-wordmark a {
   color: #ffffff;
   text-decoration: none;
 }
-  .isu-wordmark:hover {
+  .isu-wordmark a:hover {
     color: #ffffff;
-    text-decoration: none;
+    text-decoration: underline;
   }
-  .isu-wordmark:focus {
+  .isu-wordmark a:focus {
     color: #ffffff;
   }
 .isu-wordmark-logo {
@@ -170,17 +171,17 @@ body,
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
-.isu-wordmark-slogan,
+.isu-wordmark-unit,
 .isu-wordmark-sitename {
   margin-bottom: 0;
   font-weight: bold;
   font-size: 1rem;
 }
-/* If there is both a slogan and site name,
- * site name gets slogan's styling and then 
+/* If there is both a unit and site name,
+ * site name gets the unit's styling and then 
  * a border.
  */
-.isu-wordmark-sitename_slogan {
+.isu-wordmark-sitename_unit {
   margin-top: 0.5rem;
   padding-top: 0.5rem;
   font-size: 1rem;
