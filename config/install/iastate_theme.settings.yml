@@ -1,8 +1,8 @@
 isu_navbar: 1
 features:
   favicon: true
-iastate_unit_name: ''
-iastate_unit_url: ''
+iastate_unit_name: 'Faculty'
+iastate_unit_url: 'https://sites.iastate.edu'
 iastate_footer_logo_path: themes/contrib/iastate_theme/isu-stacked.svg
 iastate_footer_logo_url: 'https://www.iastate.edu/'
 iastate_contact_address: "2221 Wanda Daley Dr\n2nd Floor ASB\nAmes, IA 50011"
