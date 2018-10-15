@@ -7,7 +7,7 @@ dependencies:
     - system
   theme:
     - iastate_theme
-id: footer
+id: iastate_theme_footer
 theme: iastate_theme
 region: sign_off
 weight: 0
