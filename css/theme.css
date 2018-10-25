@@ -137,7 +137,9 @@ body,
     text-align: left;
   }
   .isu-region_header-second {
-    padding: 0;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.5rem;
   }
   .isu-col-header-second {
     padding: 0 15px; /* Back to Bootstrap 4 default */
@@ -151,15 +153,16 @@ body,
  * Change sitename in Drupal theme settings.
  */
 
-.isu-wordmark {
+.isu-wordmark,
+.isu-wordmark a {
   color: #ffffff;
   text-decoration: none;
 }
-  .isu-wordmark:hover {
+  .isu-wordmark a:hover {
     color: #ffffff;
-    text-decoration: none;
+    text-decoration: underline;
   }
-  .isu-wordmark:focus {
+  .isu-wordmark a:focus {
     color: #ffffff;
   }
 .isu-wordmark-logo {
@@ -168,12 +171,24 @@ body,
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
+.isu-wordmark-unit,
 .isu-wordmark-sitename {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 1rem;
+}
+/* If there is both a unit and site name,
+ * site name gets the unit's styling and then 
+ * a border.
+ */
+.isu-wordmark-sitename_unit {
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.1;
   color: #ffffff;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 /* Large */
@@ -183,7 +198,7 @@ body,
     max-width: 400px;
     margin-top: 0;
   }
-  .isu-wordmark-sitename {
+  .isu-wordmark-sitename_slogan {
     font-size: 1.15rem;
   }
 }
@@ -213,17 +228,6 @@ body,
   border-radius: 0 0.25rem 0.25rem 0;
 }
 
-/* Large */
-@media screen and (min-width: 992px) {
-  .isu-search {
-    margin-top: 0;
-  }
-  .isu-region_header-second .isu-search__search-field.form-control {
-    /* .form-control via Bootstrap 4 */
-    width: 400px;
-  }
-}
-
 /* Specific to Site Navbar search */
 
 .isu-search {
@@ -233,8 +237,12 @@ body,
 /* Large */
 @media screen and (min-width: 992px) {
   .isu-search {
-    margin-top: 1rem;
+    margin-top: 0;
     padding: 0;
+  }
+  .isu-region_header-second .isu-search__search-field.form-control {
+    /* .form-control via Bootstrap 4 */
+    width: 400px;
   }
 }
 
@@ -441,6 +449,11 @@ body,
   background: #dddddd;
 }
 
+.nav-item.active,
+.isu-nav-link.is-active {
+  background: #dddddd;
+}
+
 /*
  * So this is an inelegant stick, but Bootstrap 4 isn't adding .show
  * to the dropdown-menu, so it's not opening. Thus: selector.
@@ -562,7 +575,7 @@ body,
  * The most basic unit of content which appears all over.
  */
 
-article:not(.isu-user) {
+article:not(.isu-user):not(.isu-search_collapse) {
   margin-bottom: 2rem;
 }
 .isu-node-title {
@@ -669,6 +682,12 @@ article:not(.isu-user) {
 /* --- ## Tags --- */
 .views-field-field-tags {
   margin-top: 1rem;
+}
+
+
+.isu-field-tags {
+  padding-top: 1rem;
+  clear: both;
 }
 
 /* -------------------------------------- */
@@ -813,7 +832,7 @@ details {
 }
 
 .isu-form-element-description {
-  margin-top: 0.5rem;
+  margin-top: 0.25rem;
   font-size: 0.875rem;
   color: #676767;
 }
@@ -870,15 +889,14 @@ details {
   line-height: 1.5;
   border-radius: 0.2rem;
   /* btn-outline-secondary */
-  color: #676767;
+  color: #6c757d;
   background-color: #ffffff;
-  border-color: #676767;
+  border-color: #6c757d;
 }
   .field--widget-text-textarea-with-summary .link-edit-summary:hover {
-    /* Modified */
-    color: #676767;
-    background-color: #efefef;
-    border-color: #676767;
+    color: #ffffff;
+    background-color: #6c757d;
+    border-color: #6c757d;
   }
 
 .text-summary-wrapper { /* class via Drupal 8 */
@@ -887,7 +905,7 @@ details {
 
 /* --- ## Checkboxes --- */
 
-.isu-form-type_checkbox.isu-form-group {
+.isu-form-type_checkbox label {
   margin-bottom: 0;
 }
 
@@ -905,6 +923,12 @@ details {
 }
 .isu-form-control_date {
   width: auto;
+}
+
+/* --- ## Text --- */
+
+.isu-form-control.form-text {
+  margin-top: 0;
 }
 
 /* --- ## Text fields with text format filter --- */
@@ -946,6 +970,45 @@ details {
 }
 .isu-preview-button {
   margin-right: 0.5rem;
+}
+
+/* --- ## Delete Buttons --- */
+/* Delete buttons are links, not buttons.
+ * https://www.drupal.org/node/2250341
+ * Duplicating Bootstrap 4's btn-outline-secondary
+ */
+
+#edit-delete {
+  /* btn */
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  /* btn-outline-danger */
+  color: #dc3545;
+  background-color: #ffffff;
+  border-color: #dc3545;
+}
+
+#edit-delete:hover {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+#edit-delete:focus {
+    box-shadow: 0 0 0 0.2rem rgba(108,117,125,.5);
 }
 
 /* --- ## Dropbutton Widget --- */
@@ -1016,16 +1079,16 @@ a.tabledrag-handle .handle {
   line-height: 1.5;
   border-radius: 0.2rem;
   /* btn-outline-secondary */
-  color: #676767;
+  color: #6c757d;
   background-color: #ffffff;
-  border-color: #676767;
+  border-color: #6c757d;
   /* Modification */
   margin-bottom: 0.5rem;
 }
   .tabledrag-toggle-weight:hover {
     color: #ffffff;
-    background-color: #575757;
-    border-color: #575757;
+    background-color: #6c757d;
+    border-color: #6c757d;
   }
 
 /* --- ## Vertical Tabs --- */

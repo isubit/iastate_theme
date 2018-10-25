@@ -1,7 +1,7 @@
 {#
 /**
  * @file
- * Theme override for the body field.
+ * Theme override for a field.
  *
  * To override output, copy the "field.html.twig" from the templates directory
  * to your theme's directory and customize it, just like customizing other
@@ -37,6 +37,20 @@
  */
 #}
 
+{% 
+  set label_classes = [
+    label_display == 'inline' ? 'd-inline-block',
+    label_display == 'visually_hidden' ? 'sr-only',
+    'font-weight-bold',
+  ]
+%}
+
+{% 
+  set field_classes = [
+    label_display == 'inline' ? 'd-inline-block',
+  ]
+%}
+
 {% if label_hidden %}
   {% if multiple %}
     <div{{ attributes }}>
@@ -46,44 +60,17 @@
     </div>
   {% else %}
     {% for item in items %}
-
-      {% 
-        set post_classes = [
-          'mt-4', 
-          'mb-4', 
-          'isu-body'
-        ] 
-      %}
-
-      <div{{ attributes.addClass(classes) }}>{{ item.content }}</div>
+      <div{{ attributes }}>{{ item.content }}</div>
     {% endfor %}
   {% endif %}
 {% else %}
   <div{{ attributes }}>
-      
-    {% 
-      set label_classes = [
-        label_display == 'inline' ? 'd-inline-block',
-        label_display == 'visually_hidden' ? 'sr-only',
-        'font-weight-bold',
-      ]
-    %}
-
     <div{{ title_attributes.addClass(label_classes) }}>{{ label }}</div>
     {% if multiple %}
-      <div>
+      <div{{ attributes.addClass(field_classes) }}>
     {% endif %}
     {% for item in items %}
-
-      {% 
-        set post_classes = [
-          'mt-4', 
-          'mb-4', 
-          'isu-body'
-        ] 
-      %}
-
-      <div{{ item.attributes.addClass(classes) }}>{{ item.content }}</div>
+      <div{{ item.attributes.addClass(field_classes) }}>{{ item.content }}</div>
     {% endfor %}
     {% if multiple %}
       </div>

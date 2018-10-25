@@ -8,8 +8,12 @@
 .isu-social-menu  a:before {
   content: '\f0c1';
   border-radius: 0;
+<<<<<<< HEAD
+  color: #d3d3d3;
+=======
   color: #444;
   width: 1.5rem;
+>>>>>>> upstream/master
   margin-right: 0.25em;
   display: inline-block;
   font-size: 1.5em;

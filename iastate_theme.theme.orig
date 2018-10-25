@@ -123,9 +123,7 @@ function iastate_theme_preprocess(&$variables, $hook) {
   // Ensure the cache varies correctly (new in Drupal 8.3).
   $variables['#cache']['contexts'][] = 'url.path.is_front';
 
-  $variables['iastate_unit_name'] = theme_get_setting('iastate_unit_name');
-  $variables['iastate_unit_url'] = theme_get_setting('iastate_unit_url');
-
+<<<<<<< HEAD
   // Added variables as a workaround for twig not having file exists
   // Theses variables help with our "local" javascript and css
   global $base_url;
@@ -135,6 +133,10 @@ function iastate_theme_preprocess(&$variables, $hook) {
   $variables['css_file_url'] = $base_url . '/local/styles.css';
   $variables['printcss_file_exists'] = file_exists(DRUPAL_ROOT . '/local/print.css');
   $variables['printcss_file_url'] = $base_url . '/local/print.css';
+=======
+  $variables['iastate_unit_name'] = theme_get_setting('iastate_unit_name');
+  $variables['iastate_unit_url'] = theme_get_setting('iastate_unit_url');
+>>>>>>> upstream/master
 }
 
 /*

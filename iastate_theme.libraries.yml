@@ -7,7 +7,6 @@ global-css:
       css/isu-navbar.css: {}
       css/isu-responsivetables.css: { media: screen }
       css/base.css: {}
-      css/layout.css: {}
       css/theme.css: {}
       css/ext_iastate.css: {}
       css/isu-social.css: {}
@@ -43,4 +42,4 @@ font-awesome:
     gpl-compatible: true
   css:
     theme:
-      'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css': { type: external, minified: true }
+      'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css': { type: external, minified: true }
