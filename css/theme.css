@@ -108,6 +108,11 @@ body,
   border: 0;
   border-radius: 0;
 }
+.isu-menu-navbar_toggler:hover,
+.isu-menu-navbar_toggler:focus,
+.isu-menu-navbar_toggler.isu-menu-navbar_toggler_open {
+  background-color: rgba(0, 0, 0, 0.25);
+}
 .isu-menu-navbar_toggler-icon {
   display: block;
   width: auto;
@@ -248,8 +253,18 @@ body,
 
 .isu-search_toggler {
   display: block;
-  padding: 1rem;
+  width: auto;
+  padding: 0.75rem 1rem;
   text-align: center;
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  cursor: pointer;
+}
+.isu-search_toggler:hover,
+.isu-search_toggler:focus,
+.isu-search_toggler.isu-search_toggler_open {
+  background-color: rgba(0, 0, 0, 0.25);
 }
 .isu-search_toggler-icon.fa { /* .fa via Font Awesome */
   display: block;
