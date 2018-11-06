@@ -109,10 +109,10 @@
 .isu-social-menu a[href*='medium.com']:hover:before {
   color: #00ab6c;
 }
-.isu-social-menu a[href*='drupal.com']:before {
+.isu-social-menu a[href*='drupal.org']:before {
   content: "\f1a9"
 }
-.isu-social-menu a[href*='drupal.com']:hover:before {
+.isu-social-menu a[href*='drupal.org']:hover:before {
   color: #0077C0;
 }
 .isu-social-menu a[href*='twitch.tv']:before {
