@@ -1152,6 +1152,11 @@ a.tabledrag-handle .handle {
   width: 100%;
   max-width: 180px;
 }
+.isu-sign-off_wrapper {
+  margin-bottom: -2rem;
+  padding: 1rem 0;
+  background: #dddddd;
+}
 
 /* --- ## ASSOCIATES MENU --- */
 /*
