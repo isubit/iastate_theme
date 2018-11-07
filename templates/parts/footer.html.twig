@@ -60,7 +60,6 @@
         {% if page.footer_first %}
           {{ page.footer_first }}
         {% endif %}
-
       </div>
 
       <div class="col-sm-6 col-md-6 col-lg-3">
@@ -111,7 +110,6 @@
         {% if page.footer_second %}
           {{ page.footer_second }}
         {% endif %}
-
       </div>
 
       <div class="col-sm-6 col-md-6 col-lg-3">
@@ -168,14 +166,15 @@
         {% if page.footer_fourth %}
           {{ page.footer_fourth }}
         {% endif %}
-
       </div>
     </div>
+  </div>
 
-    {% if page.sign_off %}
-      <div>
+  {% if page.sign_off %}
+    <div class="isu-sign-off_wrapper">
+      <div class="container">
         {{ page.sign_off }}
       </div>
-    {% endif %}
-  </div>
+    </div>
+  {% endif %}
 </footer>
