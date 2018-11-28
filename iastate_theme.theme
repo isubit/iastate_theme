@@ -125,6 +125,19 @@ function iastate_theme_preprocess(&$variables, $hook) {
 
   $variables['iastate_unit_name'] = theme_get_setting('iastate_unit_name');
   $variables['iastate_unit_url'] = theme_get_setting('iastate_unit_url');
+
+  // Check to see if it's an edit/add/ or delete node page
+  $route_name = \Drupal::routeMatch()->getRouteName();
+  
+  if ($route_name == 'entity.node.edit_form') {
+    $variables['is_node_edit'] = 'edit';
+  }
+  elseif ($route_name == 'node.add') {
+    $variables['is_node_add'] = 'add';
+  }
+  elseif ($route_name == 'entity.node.delete_form') {
+    $variables['is_node_delete'] = 'delete';
+  }
 }
 
 /*
