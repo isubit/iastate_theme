@@ -47,6 +47,20 @@
 
   <button{{ attributes.addClass(submit_classes) }}>{{ attributes.value }}</button>
 
+{% elseif attributes.value == 'Delete' %}
+
+  {% 
+    set submit_classes = [
+      'btn', 
+      'btn-sm', 
+      'btn-outline-danger', 
+      'isu-remove-button', 
+      'isu-form-submit'
+    ] 
+  %}
+
+  <button{{ attributes.addClass(submit_classes) }}>{{ attributes.value }}</button>
+
 {% elseif attributes.value == 'Preview' %}
 
   {% 

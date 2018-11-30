@@ -1,0 +1,16 @@
+{#
+/**
+ * @file
+ * Theme override for confirm form.
+ *
+ * By default this does not alter the appearance of a form at all,
+ * but is provided as a convenience for themers.
+ *
+ * Available variables:
+ * - form: The confirm form.
+ */
+#}
+
+<p class="alert alert-danger">{{ form.description }}</p>
+
+{{ form|without('description') }}
