@@ -141,8 +141,8 @@ html, body, .dialog-off-canvas-main-canvas, .isu-page-wrap {
 
 .btn-outline-danger {
 	color: #cc0000;
-	border-color: #cc0000;
-	font-weight: 700
+	border: 1px solid #cc0000;
+	font-weight: 700;
 	border-radius: 3px;
 	cursor: pointer;
 	transition: background 0.2s ease;
@@ -171,7 +171,7 @@ html, body, .dialog-off-canvas-main-canvas, .isu-page-wrap {
 
 .btn-outline-primary {
 	color: #006BA6;
-	border-color: #006BA6;
+	border: 1px solid #006BA6;
         font-weight: 700;
         border-radius: 3px;
         cursor: pointer;
@@ -201,7 +201,7 @@ html, body, .dialog-off-canvas-main-canvas, .isu-page-wrap {
 
 .btn-outline-secondary {
 	color: #707372;
-	border-color: #707372;
+	border: 1px solid #707372;
         font-weight: 700;
         border-radius: 3px;
         cursor: pointer;
