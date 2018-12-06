@@ -127,11 +127,16 @@ html, body, .dialog-off-canvas-main-canvas, .isu-page-wrap {
 .btn-danger {
 	background-color: #cc0000;
 	border-color: #cc0000;
+	font-weight: 700;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: background 0.2s ease;
+	padding: 5px;
 }
 
 .btn-danger:hover {
-	background-color: #7c2529;
-	border-color: #7c2529;
+	background-color: #000000;
+	border-color: #000000;
 }	
 
 .btn-outline-danger {
