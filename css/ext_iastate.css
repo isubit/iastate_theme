@@ -131,7 +131,7 @@ html, body, .dialog-off-canvas-main-canvas, .isu-page-wrap {
 	border-radius: 3px;
 	cursor: pointer;
 	transition: background 0.2s ease;
-	padding: 5px;
+	padding: 7px;
 }
 
 .btn-danger:hover {
@@ -142,6 +142,11 @@ html, body, .dialog-off-canvas-main-canvas, .isu-page-wrap {
 .btn-outline-danger {
 	color: #cc0000;
 	border-color: #cc0000;
+	font-weight: 700
+	border-radius: 3px;
+	cursor: pointer;
+	transition: background 0.2s ease;
+	padding: 7px;
 }
 
 .btn-outline-danger:hover {
@@ -151,7 +156,12 @@ html, body, .dialog-off-canvas-main-canvas, .isu-page-wrap {
 
 .btn-primary {
 	background-color: #006BA6;
-	border-color: #006BA6;
+        border-color: #006BA6;
+        font-weight: 700;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: background 0.2s ease;
+        padding: 7px;
 }
 
 .btn-primary:hover {
@@ -162,6 +172,11 @@ html, body, .dialog-off-canvas-main-canvas, .isu-page-wrap {
 .btn-outline-primary {
 	color: #006BA6;
 	border-color: #006BA6;
+        font-weight: 700;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: background 0.2s ease;
+        padding: 7px;
 }
 
 .btn-outline-primary:hover {
@@ -172,6 +187,11 @@ html, body, .dialog-off-canvas-main-canvas, .isu-page-wrap {
 .btn-secondary {
 	background-color: #707372;
 	border-color: #707372;
+        font-weight: 700;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: background 0.2s ease;
+        padding: 7px;
 }
 
 .btn-secondary:hover {
@@ -182,6 +202,11 @@ html, body, .dialog-off-canvas-main-canvas, .isu-page-wrap {
 .btn-outline-secondary {
 	color: #707372;
 	border-color: #707372;
+        font-weight: 700;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: background 0.2s ease;
+        padding: 7px;
 }
 
 .btn-outline-secondary:hover {
