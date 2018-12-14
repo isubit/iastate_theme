@@ -1,5 +1,5 @@
 {
   "name": "isubit/iastate_theme",
-  "type": "drupal-theme",
+  "type": "drupal-custom-theme",
   "description": "Drupal 8 theme for Iowa State University websites"
 }
