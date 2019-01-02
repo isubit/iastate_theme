@@ -108,6 +108,11 @@ body,
   border: 0;
   border-radius: 0;
 }
+.isu-menu-navbar_toggler:hover,
+.isu-menu-navbar_toggler:focus,
+.isu-menu-navbar_toggler.isu-menu-navbar_toggler_open {
+  background-color: rgba(0, 0, 0, 0.25);
+}
 .isu-menu-navbar_toggler-icon {
   display: block;
   width: auto;
@@ -248,8 +253,18 @@ body,
 
 .isu-search_toggler {
   display: block;
-  padding: 1rem;
+  width: auto;
+  padding: 0.75rem 1rem;
   text-align: center;
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  cursor: pointer;
+}
+.isu-search_toggler:hover,
+.isu-search_toggler:focus,
+.isu-search_toggler.isu-search_toggler_open {
+  background-color: rgba(0, 0, 0, 0.25);
 }
 .isu-search_toggler-icon.fa { /* .fa via Font Awesome */
   display: block;
@@ -580,6 +595,27 @@ article:not(.isu-user):not(.isu-search_collapse) {
 }
 .isu-node-title {
   margin-bottom: 1rem;
+}
+
+/* Node form titles */
+/* Classes created via iastate_theme.theme and implemented in html.html.twig */
+
+.node-form .isu-page-title {
+  font-size: 2rem;
+}
+
+.node-form .isu-page-title .placeholder { /* placeholder class via Drupal 8 */
+  font-weight: bold;
+}
+
+.node-form_edit .isu-page-title {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.node-form_edit .isu-page-title em {
+  font-style: normal;
+  font-weight: normal;
 }
 
 /* --- Unpublished Nodes --- */
@@ -972,10 +1008,54 @@ details {
   margin-right: 0.5rem;
 }
 
+/* --- ## Cancel Buttons --- #/
+/* Cancel buttons are links, not buttons.
+ * https://www.drupal.org/node/2250341
+ * Duplicating Bootstrap 4's btn-outline-secondary btn-sm
+ */
+
+#edit-cancel {
+  /* btn */
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  /* btn-outline-danger */
+  color: #6c757d;
+  background-color: #ffffff;
+  border-color: #6c757d;
+  /* btn-sm */
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  border-radius: 0.2rem;
+}
+
+#edit-cancel:hover {
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+#edit-cancel:focus {
+    box-shadow: 0 0 0 0.2rem rgba(108,117,125,.5);
+}
+
 /* --- ## Delete Buttons --- */
 /* Delete buttons are links, not buttons.
  * https://www.drupal.org/node/2250341
- * Duplicating Bootstrap 4's btn-outline-secondary
+ * Duplicating Bootstrap 4's btn-outline-danger
  */
 
 #edit-delete {
@@ -1136,6 +1216,11 @@ a.tabledrag-handle .handle {
 .isu-footer-logo {
   width: 100%;
   max-width: 180px;
+}
+.isu-sign-off_wrapper {
+  margin-bottom: -2rem;
+  padding: 1rem 0;
+  background: #dddddd;
 }
 
 /* --- ## ASSOCIATES MENU --- */

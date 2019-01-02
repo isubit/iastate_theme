@@ -123,6 +123,9 @@ function iastate_theme_preprocess(&$variables, $hook) {
   // Ensure the cache varies correctly (new in Drupal 8.3).
   $variables['#cache']['contexts'][] = 'url.path.is_front';
 
+  $variables['iastate_unit_name'] = theme_get_setting('iastate_unit_name');
+  $variables['iastate_unit_url'] = theme_get_setting('iastate_unit_url');
+
 <<<<<<< HEAD
   // Added variables as a workaround for twig not having file exists
   // Theses variables help with our "local" javascript and css
@@ -134,9 +137,19 @@ function iastate_theme_preprocess(&$variables, $hook) {
   $variables['printcss_file_exists'] = file_exists(DRUPAL_ROOT . '/local/print.css');
   $variables['printcss_file_url'] = $base_url . '/local/print.css';
 =======
-  $variables['iastate_unit_name'] = theme_get_setting('iastate_unit_name');
-  $variables['iastate_unit_url'] = theme_get_setting('iastate_unit_url');
->>>>>>> upstream/master
+  // Check to see if it's an edit/add/ or delete node page
+  $route_name = \Drupal::routeMatch()->getRouteName();
+  
+  if ($route_name == 'entity.node.edit_form') {
+    $variables['is_node_edit'] = 'edit';
+  }
+  elseif ($route_name == 'node.add') {
+    $variables['is_node_add'] = 'add';
+  }
+  elseif ($route_name == 'entity.node.delete_form') {
+    $variables['is_node_delete'] = 'delete';
+  }
+>>>>>>> 0c15b7918e34c437d1b38445837e56b3f2866672
 }
 
 /*
