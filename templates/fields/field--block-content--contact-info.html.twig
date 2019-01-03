@@ -46,7 +46,7 @@
     </div>
   {% else %}
     {% for item in items %}
-      <div{{ attributes.addClass('isu-social-menu').addClass(field_name) }}>{{ item.content }}</div>
+      <div{{ attributes.addClass(field_name) }}>{{ item.content }}</div>
     {% endfor %}
   {% endif %}
 {% else %}
@@ -56,7 +56,7 @@
       <div>
     {% endif %}
     {% for item in items %}
-      <div{{ item.attributes.addClass('isu-social-menu').addClass(field_name) }}>{{ item.content }}</div>
+      <div{{ item.attributes.addClass(field_name) }}>{{ item.content }}</div>
     {% endfor %}
     {% if multiple %}
       </div>
