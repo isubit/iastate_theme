@@ -395,6 +395,11 @@ body,
     margin-top: 1rem;
 }
 
+/* Specific to cse_selector module */
+
+.isu-form-type_radio {float:left; margin:0 20px 0 0;  }
+div#edit-search-broadness {margin:0 0 0 15px; }
+
 /* --- ## Site Links Menu --- */
 /*
  * Markup found in menu--site-links.html.twig
