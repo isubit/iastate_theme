@@ -57,6 +57,11 @@ html, body, .dialog-off-canvas-main-canvas, .isu-page-wrap {
 	padding-top: 13px;
 }
 
+.isu-wordmark-sitename a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
 /* --------------------------------------  */
 /* ## Main Menu
 /* --------------------------------------  */
