@@ -90,11 +90,10 @@ $(document).ready(function() {
           // Close the menu
           dropdownMenu.parents('.isu-dropdown').attr('aria-expanded', 'false');
           // Remove styling class
-          //dropdownMenu.parents('.isu-dropdown a').removeClass('active');
         }
       }
     }, 100 );
-  })
+  });
 
   /* Entering and exiting the dropdowns with the mobile toggle
    *
@@ -103,21 +102,18 @@ $(document).ready(function() {
    * because the mobile breakpoints also appear when the page zooms.
    */
 
-  // Enter dropdowns on mobile with the mobile toggle button
-  $('.isu-dropdown-toggle_mobile').on('keydown', function(event) {
-    var mobileDropdownToggle = $(this);
-    if (event.keyCode === 40) { // DOWN arrow key
-      event.preventDefault();
-      // Open menu
-      mobileDropdownToggle.closest('.isu-dropdown').attr('aria-expanded', 'true');
-    } else if (event.keyCode === 13) {
-      mobileDropdownToggle.closest('.isu-dropdown').attr('aria-expanded', 'true');
-    }
-  });
+  // Toggle dropdowns on mobile with the mobile toggle button
   $('.isu-dropdown-toggle_mobile').click(function() {
     var mobileDropdownToggle = $(this);
-    mobileDropdownToggle.closest('.isu-dropdown').attr('aria-expanded', 'true');
-  })
+    var dropdownMenu = $(this).closest('.isu-dropdown');
+
+    if (dropdownMenu.attr('aria-expanded') === 'true') {
+      $(dropdownMenu).attr('aria-expanded', 'false');
+    } else {
+      $(dropdownMenu).attr('aria-expanded', 'true');
+    }
+  });
+  
 });
 
 })(jQuery, Drupal);
