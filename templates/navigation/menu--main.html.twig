@@ -32,45 +32,58 @@
 {% macro menu_links(items, attributes, menu_level) %}
   {% import _self as menus %}
   {% if items %}
-    {% if menu_level == 0 %}
+    
+    {% if menu_level == 0 %} {# If the menu has only one level. #}
       <ul{{ attributes.addClass('nav navbar-nav') }}>
-    {% else %}
-      <ul class="dropdown-menu isu-dropdown-menu">
+    {% else %} {# If the menu has multiple levels. #}
+      <ul class="isu-dropdown-menu">
     {% endif %}
 
     {% for item in items %}
+      {# Assign classes based on if the item is an open parent, closed parent, 
+      active, or a has a submenu. #}
       {%
-        set classes = [
+        set classes = [ 
           menu_level ? 'dropdown-item isu-dropdown-item' : 'nav-item',
           item.is_expanded ? 'menu-item--expanded',
           item.is_collapsed ? 'menu-item--collapsed',
           item.in_active_trail ? 'active',
-          item.below ? 'dropdown',
+          item.below ? 'isu-dropdown ',
         ]
       %}
-      <li{{ item.attributes.addClass(classes) }}>
+
+      {% if item.below %} {# If the item has children, it will be a dropdown. #}
+        <li{{ item.attributes.addClass(classes).setAttribute('aria-expanded', 'false') }}>
+      {% else %} {# If the item does not have children, it will not be a dropdown. #}
+        <li{{ item.attributes.addClass(classes) }}>
+      {% endif %}
       
+        {# Assign classes based on if the link is a parent or not, and if it is active or not #}
         {%
           set link_classes = [
             not menu_level ? 'nav-link isu-nav-link',
-            item.in_active_trail ? 'active',
+            item.in_active_trail ? 'active brah',
           ]
         %}
-
+        {# If the item is a parent, it acts as a toggle to open the menu. #}
         {% 
           set toggle_classes = [
            'nav-link', 
            'isu-nav-link', 
-           'dropdown-toggle'
+           'isu-dropdown-toggle'
           ]
         %}
 
-        {% if item.below %}
-          {{ link(item.title, item.url, {'class': toggle_classes, 'data-target': '#', 'data-toggle': 'dropdown', 'aria-expanded': 'false'}) }}
+        {% if item.below %} {# If the item has children, it is a toggle. #}
+          <div class="isu-dropdown-toggle_wrapper">
+            {{ link(item.title, item.url, {'class': toggle_classes}) }}
+            <button class="isu-dropdown-toggle_mobile"><span class="fa fa-angle-down"></span><span class="sr-only">Open dropdown menu</span></button>
+          </div>
           {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
-        {% else %}
+        {% else %} {# If the item does not have children, it's just a normal link. #}
           {{ link(item.title, item.url, {'class': link_classes}) }}
         {% endif %}
+        
       </li>
     {% endfor %}
     </ul>
