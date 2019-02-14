@@ -8,6 +8,19 @@
  * - Right and left should also go up and down within the dropdown.
  * - Enter should still work to click on parent items.
  *
+ * HTML Structure
+ * 
+ * ul
+ * - li NO CHILDREN
+ * -- a.isu-navlink
+ * - li.isu-dropdown HAS CHILDREN
+ * -- div.isu-dropdown-toggle_wrapper PARENT LINK IS A TOGGLE
+ * --- a.isu-navlink.isu-dropdown-toggle PARENT LINK
+ * --- button.isu-dropdown-toggle_mobile MOBILE TOGGLE BUTTON
+ * -- ul.isu-dropdown-menu
+ * --- li.isu-dropdown-item
+ * ---- a
+ *
  */
 
 (function ($, Drupal) {
@@ -17,24 +30,26 @@ $(document).ready(function() {
   // Navigate with right and left arrow keys.
   $('#block-iastate8-theme-main-menu').on('keydown', function(event) {
     if (event.keyCode === 39) { // RIGHT arrow key
-      if ( $(':focus').is('.isu-dropdown-menu a') ) {
+      event.preventDefault();
+      if ( $(':focus').is('.isu-dropdown-toggle') ) {
         // If the focused item is a link in a dropdown...
         // Then change the focus to the next link.
-        $(':focus').parent('li').next('li').children('a').focus();
+        $(':focus').closest('li').next('li').find('a').focus();
       } else {
         // Otherwise, the focused item is a top-level link.
         // In this case, move to the next top-level link.
-        $(':focus').parent('li').next('li').children('a').focus();
+        $(':focus').closest('li').next('li').find('a').focus();
       }
     } else if (event.keyCode === 37) { // LEFT arrow key
-      if ( $(':focus').is('.isu-dropdown-menu a') ) {
+      event.preventDefault();
+      if ( $(':focus').is('.isu-dropdown-toggle') ) {
         // If the focused item is a link in a dropdown...
         // Then change the focus to the previous link.
-        $(':focus').parent('li').prev('li').children('a').focus();
+        $(':focus').closest('li').prev('li').find('a').focus();
       } else {
         // Otherwise the focused item is a top-level link.
         // In this case, move the previous top-level link.
-        $(':focus').parent().prev().children('a').focus();
+        $(':focus').closest('li').prev('li').find('a').focus();
       }
     }
   });
@@ -44,12 +59,10 @@ $(document).ready(function() {
     var dropdownToggle = $(this);
       if (event.keyCode === 40) { // DOWN arrow key
         event.preventDefault();
-        // Add class for styling
-        //dropdownToggle.addClass('active');
         // Open menu
         dropdownToggle.closest('.isu-dropdown').attr('aria-expanded', 'true');
         // Change focus to the first link in the dropdown
-        $(':focus').next().find('li:first-of-type a').focus();
+        $(':focus').parent('.isu-dropdown-toggle_wrapper').next('ul').find('li:first-of-type a').focus();
       }
   });
 
@@ -76,7 +89,7 @@ $(document).ready(function() {
         // Close the dropdown
         dropdownMenuItem.closest('.isu-dropdown').attr('aria-expanded', 'false');
         // Refocus on the parent link
-        dropdownMenuItem.closest('.isu-dropdown-menu').prev('.isu-dropdown-toggle').focus();
+        dropdownMenuItem.closest('.isu-dropdown-menu').prev('.isu-dropdown-toggle_wrapper').find('.isu-dropdown-toggle').focus();
       }
   });
 
