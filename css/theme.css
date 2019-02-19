@@ -459,37 +459,53 @@ body,
     color: #333333;
     background: #dddddd;
   }
-.show .isu-nav-link { /* .show via Bootstrap 4 */
-  color: #333333;
-  background: #dddddd;
-}
 
 .nav-item.active,
 .isu-nav-link.is-active {
   background: #dddddd;
 }
 
-/*
- * So this is an inelegant stick, but Bootstrap 4 isn't adding .show
- * to the dropdown-menu, so it's not opening. Thus: selector.
+/* --- Dropdowns --- */
+/* We are not using Bootstrap 4's Dropdown utility because it is not 
+ * optimized to be accessible and keyboard navigable in the way we need. 
+ * Our version is based on the black ISU Navbar's method, which establishes
+ * a consistent behavior. Javascript can be found in isu-main-menu.js.
  */
 
-.dropdown.show > .dropdown-menu {
-  display: block;
+.isu-dropdown {
+  position: relative;
 }
 
-/*
- * Override of Bootstrap 4 dropdown-menu, recreated here
- * to re-style mobile dropdown
- */
+.isu-dropdown-toggle:after {
+  content: "\f107";
+  display: inline-block;
+  margin: 0 0 0 6px;
+  text-align: center;
+  vertical-align: top;
+  font-family: "FontAwesome";
+}
+
+.isu-dropdown-toggle_mobile {
+  display: none; 
+}
 
 .isu-dropdown-menu {
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 10rem;
   margin: 0;
   padding: 0;
   border: 0;
   border-radius: 0;
-  background: #eeeeee;
+  background: #dddddd;
+  z-index: 9999;
 }
+  .isu-dropdown[aria-expanded='false'] .isu-dropdown-menu {
+    display: none;
+  }
+
 .isu-dropdown-item {
   padding: 0;
 }
@@ -499,6 +515,7 @@ body,
   .isu-dropdown-item:active  {
     background-color:transparent;
   }
+
 .isu-dropdown-item a {
   display: block;
   padding: 0.75rem 1rem;
@@ -509,7 +526,7 @@ body,
   .isu-dropdown-item a:hover,
   .isu-dropdown-item a.active,
   .isu-dropdown-item a:active {
-    background: #dddddd;
+    background: #cccccc;
   }
 
 /* Small-ish */
@@ -524,6 +541,42 @@ body,
   .isu-menu-navbar_collapse {
     max-height: 100vh;
     overflow: visible;
+  }
+
+  .isu-dropdown:hover .isu-dropdown-menu {
+    display: block;
+  }
+}
+
+/* Mobile Dropdown Toggles */
+@media (max-width: 992px) {
+  .isu-dropdown-toggle:after {
+    content: '';
+  }
+
+  .isu-dropdown-toggle_wrapper {
+    display: flex;
+    align-items: stretch;
+  }
+
+  .isu-dropdown-toggle_wrapper .nav-link {
+    flex-grow: 1;
+  }
+
+  .isu-dropdown-toggle_mobile {
+    display: flex;
+    align-items: center;
+    margin: 0.25rem;
+    padding: .375rem .75rem;
+    border: 1px solid #676767;
+    background: #ffffff;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+
+  .isu-dropdown-menu {
+    position: static;
+    margin-left: 1rem;
   }
 }
 
