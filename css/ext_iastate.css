@@ -109,6 +109,11 @@ html, body, .dialog-off-canvas-main-canvas, .isu-page-wrap {
 }
 */
 
+.node--unpublished {
+	background: #fff4f4;
+	border: 1px dashed #fff4f4;
+}
+
 /* Change Authored on information display */
 .isu-user ~ div > .isu-submitted-by_name, .isu-user ~ div > .isu-submitted-by_date {
 	display: inline-block;
