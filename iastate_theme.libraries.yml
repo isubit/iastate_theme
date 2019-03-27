@@ -17,9 +17,8 @@ global-js:
     js/isu-navbar.js: {}
     js/iastate_theme.js: {}
     js/isu-responsivetables.js: {}
-    js/bootstrap/popper.min.js: {}
+    js/isu-main-menu.js: {}
     js/bootstrap/util.js: {}
-    js/bootstrap/dropdown.js: {}
   dependencies: 
     - core/jquery
     - core/drupal
