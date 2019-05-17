@@ -499,7 +499,7 @@ body,
   padding: 0;
   border: 0;
   border-radius: 0;
-  background: #dddddd;
+  background: #eeeeee;
   z-index: 9999;
 }
   .isu-dropdown[aria-expanded='false'] .isu-dropdown-menu {
@@ -526,7 +526,7 @@ body,
   .isu-dropdown-item a:hover,
   .isu-dropdown-item a.active,
   .isu-dropdown-item a:active {
-    background: #cccccc;
+    background: #dddddd;
   }
 
 /* Small-ish */
