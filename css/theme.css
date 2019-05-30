@@ -916,7 +916,11 @@ details {
 .isu-form-type_managed-file > label,
 .isu-form-type_textarea label,
 .isu-form-type_select label,
-.isu-form-type_entity-autocomplete label {
+.isu-form-type_entity-autocomplete label,
+.isu-form-type_textfield label,
+.isu-form-type_email label,
+.isu-form-type_tel label,
+.isu-form-type_url label {
   /* .filter-wrapper via Drupal 8 */
   font-weight: 700;
 }
