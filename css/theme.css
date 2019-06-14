@@ -457,11 +457,12 @@ body,
 }
   .isu-nav-link:hover {
     color: #333333;
-    background: #dddddd;
+    background: #bbbbbb;
   }
 
 .nav-item.active,
-.isu-nav-link.is-active {
+.isu-nav-link.is-active,
+.isu-dropdown-item .is-active {
   background: #dddddd;
 }
 
@@ -526,7 +527,7 @@ body,
   .isu-dropdown-item a:hover,
   .isu-dropdown-item a.active,
   .isu-dropdown-item a:active {
-    background: #dddddd;
+    background: #bbbbbb;
   }
 
 /* Small-ish */

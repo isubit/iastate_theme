@@ -47,7 +47,7 @@
           menu_level ? 'dropdown-item isu-dropdown-item' : 'nav-item',
           item.is_expanded ? 'menu-item--expanded',
           item.is_collapsed ? 'menu-item--collapsed',
-          item.in_active_trail ? 'active',
+          item.in_active_trail ? 'active is-active',
           item.below ? 'isu-dropdown ',
         ]
       %}
@@ -62,7 +62,7 @@
         {%
           set link_classes = [
             not menu_level ? 'nav-link isu-nav-link',
-            item.in_active_trail ? 'active brah',
+            item.in_active_trail ? 'active is-active',
           ]
         %}
         {# If the item is a parent, it acts as a toggle to open the menu. #}
