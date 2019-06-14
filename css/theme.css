@@ -457,7 +457,7 @@ body,
 }
   .isu-nav-link:hover {
     color: #333333;
-    background: #bbbbbb;
+    background: #dddddd;
   }
 
 .nav-item.active,
@@ -527,7 +527,7 @@ body,
   .isu-dropdown-item a:hover,
   .isu-dropdown-item a.active,
   .isu-dropdown-item a:active {
-    background: #bbbbbb;
+    background: #dddddd;
   }
 
 /* Small-ish */
