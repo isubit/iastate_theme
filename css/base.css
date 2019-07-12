@@ -209,6 +209,15 @@ caption {
   border-top: 1px solid #cccccc;
 }
 
+/* rowspan and colspan */
+.table th[colspan]:not([colspan="1"]),
+.table th[rowspan]:not([rowspan="1"]),
+.table td[colspan]:not([colspan="1"]),
+.table td[rowspan]:not([rowspan="1"]) {
+  border-right: 1px solid #dddd;
+  border-left: 1px solid #ddd;
+}
+
 /* --------------------------------------  */
 /* ## IMAGES
 /* --------------------------------------  */
