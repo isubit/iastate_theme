@@ -329,6 +329,7 @@ body.cke_editable figure figcaption {
  */
 
  body.cke_editable table {
+  display: block;
   max-width: 100%;
   margin-bottom: 1rem;
   background-color: transparent;
