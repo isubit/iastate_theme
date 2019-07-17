@@ -12,8 +12,8 @@
   width: 1.5rem;
   margin-right: 0.25em;
   display: inline-block;
-  font-size: 1.5em;
   font-family: FontAwesome;
+  font-size: 1.5em;
   font-weight: normal;
   text-align: center;
   -webkit-transition: all 0.2s ease-in-out;
@@ -170,3 +170,22 @@
 .isu-social-menu a[href*='ycombinator.com']:hover:before {
   color: #ff6600;
 }
+.isu-social-menu a[href*='researchgate.net']:before {
+  content: "\e95e";
+  font-family: Academicons;
+  position: relative;
+  top: -2px;
+}
+.isu-social-menu a[href*='researchgate.net']:hover:before {
+  color: #00ccbb;
+}
+.isu-social-menu a[href*='scholar.google.com']:before {
+  content: "\e9d4";
+  font-family: Academicons;
+  position: relative;
+  top: -2px;
+}
+.isu-social-menu a[href*='scholar.google.com']:hover:before {
+  color: #dd4b39;
+}
+

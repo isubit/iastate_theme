@@ -32,8 +32,21 @@ $(document).ready(function() {
   bothHeader.addClass('isu-table-both');
   bothHeader.removeClass('isu-table-none isu-table-row isu-table-col');
   
+  // All responsive tables
+  table.addClass('isu-responsive-table table');
+
   // Colspan or Rowspan
-  var responsiveClasses = 'isu-table-none isu-table-row isu-table-col';
+  
+  /* Remove extranneous colspan and rowspan */
+
+  $('th[colspan="1"]').removeAttr('colspan');
+  $('th[rowspan="1"]').removeAttr('rowspan');
+  $('td[colspan="1"]').removeAttr('colspan');
+  $('td[rowspan="1"]').removeAttr('rowspan');
+
+  /* Then apply the correct classes for colspan/rowspan tables */
+
+  var responsiveClasses = 'isu-responsive-table isu-table-none isu-table-row isu-table-col';
 
   var tdColFreeze = $(table.has('td[colspan]'));
       tdColFreeze.addClass('isu-table-freeze');
@@ -50,9 +63,6 @@ $(document).ready(function() {
   var thRowFreeze = $(table.has('th[rowspan]'));
       thRowFreeze.addClass('isu-table-freeze');
       thRowFreeze.removeClass(responsiveClasses);
-
-  // All responsive tables
-  table.addClass('isu-responsive-table table');
 
 /* 
  * Now apply any jQuery needed to make the tables responsive
