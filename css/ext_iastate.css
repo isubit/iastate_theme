@@ -55,6 +55,7 @@ html, body, .dialog-off-canvas-main-canvas, .isu-page-wrap {
 	font-weight: 700;
 	line-height: 24px;
 	padding-top: 13px;
+	padding-bottom: 10px;
 }
 
 .isu-wordmark-sitename a:hover {
