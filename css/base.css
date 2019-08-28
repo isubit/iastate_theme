@@ -209,6 +209,15 @@ caption {
   border-top: 1px solid #cccccc;
 }
 
+/* rowspan and colspan */
+.table th[colspan]:not([colspan="1"]),
+.table th[rowspan]:not([rowspan="1"]),
+.table td[colspan]:not([colspan="1"]),
+.table td[rowspan]:not([rowspan="1"]) {
+  border-right: 1px solid #dddd;
+  border-left: 1px solid #ddd;
+}
+
 /* --------------------------------------  */
 /* ## IMAGES
 /* --------------------------------------  */
@@ -267,6 +276,12 @@ table img {
 summary[aria-expanded="true"] {
   margin-bottom: 1rem;
 }
+
+.form-control,
+.cke_chrome {
+  /* Overrides bootstrap.min.css and editor.css for sufficient contrast */
+  border-color: #767676 !important;
+}
 .form-control:focus {
   /* Overrides bootstrap.min.css which removed focus style */
   outline: #5cb3fd auto 5px;
@@ -323,7 +338,7 @@ body.cke_editable figure figcaption {
  */
 
  body.cke_editable table {
-  max-width: 100%;
+  width: auto;
   margin-bottom: 1rem;
   background-color: transparent;
 }
