@@ -36,8 +36,6 @@
     {% if menu_level == 0 %} {# If the menu has only one level. #}
       <ul{{ attributes.addClass('nav navbar-nav') }}>
     {% else %} {# If the menu has multiple levels. #}
-      <ul class="isu-dropdown-menu">
-    {% else %}
       <ul class="dropdown-menu isu-dropdown-menu">
     {% endif %}
 
@@ -90,3 +88,5 @@
     {% endfor %}
     </ul>
   {% endif %}
+
+(% endmacro %}
