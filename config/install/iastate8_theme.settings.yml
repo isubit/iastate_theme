@@ -1,0 +1,49 @@
+isu_navbar: 1
+features:
+  favicon: true
+  node_user_picture: true
+  comment_user_picture: true
+  comment_user_verification: true
+_core:
+  default_config_hash: MwNccqnk-AEN0czabzWSbjc-CIXWXNsOAm3fapDu4WA
+logo:
+  use_default: true
+favicon:
+  use_default: true
+iastate_contact_title: ''
+iastate_contact_address: ''
+iastate_contact_email: ''
+iastate_contact_phone: ''
+iastate_contact_fax: ''
+iastate_associate1_title: ''
+iastate_associate1_url: ''
+iastate_associate2_title: ''
+iastate_associate2_url: ''
+iastate_associate3_title: ''
+iastate_associate3_url: ''
+iastate_associate4_title: ''
+iastate_associate4_url: ''
+iastate_associate5_title: ''
+iastate_associate5_url: ''
+iastate_associate6_title: ''
+iastate_associate6_url: ''
+iastate_social1_title: ''
+iastate_social1_url: ''
+iastate_social2_title: ''
+iastate_social2_url: ''
+iastate_social3_title: ''
+iastate_social3_url: ''
+iastate_social4_title: ''
+iastate_social4_url: ''
+iastate_social5_title: ''
+iastate_social5_url: ''
+iastate_social6_title: ''
+iastate_social6_url: ''
+iastate_social7_title: ''
+iastate_social7_url: ''
+iastate_footer_logo_path: themes/contrib/iastate_theme/isu-stacked.svg
+front: 1
+iastate_footer_logo_url: 'https://www.iastate.edu'
+iastate_unit_name: ''
+iastate_unit_url: ''
+iastate8_sitename_url: ''

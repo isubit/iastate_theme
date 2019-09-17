@@ -1,0 +1,25 @@
+uuid: 9af72a6d-300a-4b0d-a82e-304af5712c5b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+_core:
+  default_config_hash: Dmj0kCBhx_EgTLIL_-Z2OtncOwRYmr5LZN-ObH_ct2o
+id: iastate8_theme_page_title
+theme: iastate_theme
+region: content
+weight: -11
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '/people/*'
+    negate: true
+    context_mapping: {  }

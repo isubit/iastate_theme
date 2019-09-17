@@ -1,0 +1,19 @@
+uuid: a48b6ab4-e13c-4574-bce6-2b0bd955ebcd
+langcode: en
+status: true
+dependencies:
+  module:
+    - iastate8
+id: iastate8_contact_settings_footer_link_block
+theme: iastate8_theme
+region: footer_second
+weight: 0
+provider: null
+plugin: iastate8_contact_settings_footer_link_block
+settings:
+  id: iastate8_contact_settings_footer_link_block
+  label: 'Contact Information Settings Link Block'
+  provider: iastate8
+  label_display: '0'
+  iastate8_contact_settings_footer_link_block_settings: null
+visibility: {  }

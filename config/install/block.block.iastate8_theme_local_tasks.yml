@@ -1,0 +1,27 @@
+uuid: 72846b27-21bc-4426-98f8-cad9b7ca8254
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+_core:
+  default_config_hash: cVIYuql1UaIMuqaVXFvMnHjGHCMw7uS3OdZOlqJJIw8
+id: iastate8_theme_local_tasks
+theme: iastate_theme
+region: content
+weight: -6
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility:
+  request_path:
+    id: request_path
+    pages: '/people/*'
+    negate: true
+    context_mapping: {  }
