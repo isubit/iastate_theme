@@ -5,7 +5,7 @@ dependencies:
     - system
   theme:
     - iastate_theme
-id: poweredbydrupal
+id: iastate_theme_poweredbydrupal
 theme: iastate_theme
 region: sign_off
 weight: 0
