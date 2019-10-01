@@ -136,6 +136,18 @@ html, body, .dialog-off-canvas-main-canvas, .isu-page-wrap {
 	padding-left: 11px;
 }
 
+.isu-sidebar .isu-block {
+	padding: 1rem;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+}
+
+.isu-block-title {
+	font-weight: 300;
+	border-bottom: solid 1px #ccc;
+	padding: 0 0 13px 0;
+}
+
 /* News Styles */
 .card-body svg:not(:root).svg-inline--fa {
 	display: inline-block;
