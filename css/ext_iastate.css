@@ -330,6 +330,10 @@ h2.isu-block-title.h4 {
 		margin-left: -17px;
 	}
 	
+	.navbar-expand-lg .navbar-nav {
+		margin-left: -19px;
+	}
+	
 
 @media screen and (max-width : 992px) {
  	.isu-wordmark-logo {
