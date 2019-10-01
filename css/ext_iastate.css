@@ -63,6 +63,12 @@ html, body, .dialog-off-canvas-main-canvas, .isu-page-wrap {
 	text-decoration: none;
 }
 
+/* Red bar social media menu */
+.isu-social-menu-red {
+	color: #fff;
+	background: #cc0000;
+	padding-left: 18%;
+
 /* --------------------------------------  */
 /* ## Main Menu
 /* --------------------------------------  */
