@@ -79,35 +79,6 @@
           {{ page.footer_third }}
         {% endif %}
 
-                 {% if iastate_contact_title %}
-          <h2 class="isu-footer_contact-title h5">
-            {{ iastate_contact_title|nl2br }}
-          </h2>
-        {% endif %}
-        {% if iastate_contact_address %}
-          <div class="isu-footer_contact-address">
-            {{ iastate_contact_address|nl2br }}
-          </div>
-        {% endif %}
-
-        {% if iastate_contact_email %}
-          <div class="isu-footer_contact-email">
-            <a href="mailto:{{ iastate_contact_email }}">{{ iastate_contact_email }}</a>
-          </div>
-        {% endif %}
-
-        {% if iastate_contact_phone %}
-          <div class="isu-footer_contact-phone">
-            <span>phone: {{ iastate_contact_phone }}</span>
-          </div>
-        {% endif %}
-
-        {% if iastate_contact_fax %}
-          <div class="isu-footer_contact-fax">
-            <span>fax: {{ iastate_contact_fax }}</span>
-          </div>
-        {% endif %}
-
       </div>
 
       <div class="col-sm-6 col-md-6 col-lg-3">
@@ -115,27 +86,6 @@
         {% if page.footer_fourth %}
           {{ page.footer_fourth }}
         {% endif %}
-
-        <ul class="isu-social-menu">
-            {% if iastate_social1_title %}
-              <li><a href="{{ iastate_social1_url }}">{{ iastate_social1_title }}</a></li>
-            {% endif %}
-            {% if iastate_social2_title %}
-              <li><a href="{{ iastate_social2_url }}">{{ iastate_social2_title }}</a></li>
-            {% endif %}
-            {% if iastate_social3_title %}
-              <li><a href="{{ iastate_social3_url }}">{{ iastate_social3_title }}</a></li>
-            {% endif %}
-            {% if iastate_social4_title %}
-              <li><a href="{{ iastate_social4_url }}">{{ iastate_social4_title }}</a></li>
-            {% endif %}
-            {% if iastate_social5_title %}
-              <li><a href="{{ iastate_social5_url }}">{{ iastate_social5_title }}</a></li>
-            {% endif %}
-            {% if iastate_social6_title %}
-              <li><a href="{{ iastate_social6_url }}">{{ iastate_social6_title }}</a></li>
-            {% endif %}
-          </ul>
 
       </div>
     </div>
