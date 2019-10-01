@@ -26,3 +26,9 @@
  */
 #}
 
+<div{{ attributes.addClass("isu-social-menu") }}>
+  {{ title_suffix }}
+  {% block content %}
+    {{content}}
+  {% endblock %}
+</div>
