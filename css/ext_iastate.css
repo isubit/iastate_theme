@@ -68,6 +68,7 @@ html, body, .dialog-off-canvas-main-canvas, .isu-page-wrap {
 	color: #fff;
 	background: #cc0000;
 	padding-left: 18%;
+}
 
 /* --------------------------------------  */
 /* ## Main Menu
@@ -101,7 +102,7 @@ html, body, .dialog-off-canvas-main-canvas, .isu-page-wrap {
 }
 
 /* Main Menu Link Hover Changes */
-.isu-nav-link: hover {
+.isu-nav-link:hover {
 	background: #eeeeee;
 	border-bottom: 3px solid #bbb;
 }
@@ -339,6 +340,7 @@ h2.isu-block-title.h4 {
 	.navbar-expand-lg .navbar-nav {
 		margin-left: -19px;
 	}
+}
 	
 
 @media screen and (max-width : 992px) {
