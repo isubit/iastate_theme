@@ -8,7 +8,7 @@
 .isu-social-menu  a:before {
   content: '\f0c1';
   border-radius: 0;
-  color: #444;
+  color: #d3d3d3;
   width: 1.5rem;
   margin-right: 0.25em;
   display: inline-block;
