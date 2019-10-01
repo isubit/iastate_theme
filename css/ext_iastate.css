@@ -122,6 +122,11 @@ html, body, .dialog-off-canvas-main-canvas, .isu-page-wrap {
 	border: 1px dashed #fff4f4;
 }
 
+/* Page Title */
+.isu-page-title {
+	padding-top: 1.5rem;
+}
+
 /* Change Authored on information display */
 .isu-user ~ div > .isu-submitted-by_name, .isu-user ~ div > .isu-submitted-by_date {
 	display: inline-block;
