@@ -78,6 +78,9 @@
 .isu-social-menu a[href*='youtube.com']:hover:before {
   color: #e52d27;
 }
+.isu-social-menu-red a[href*='youtube.com']:hover:before {
+  color: #000;
+}
 .isu-social-menu a[href*='github.com']:before {
   content: "\f092"
 }
@@ -101,6 +104,9 @@
 }
 .isu-social-menu a[href*='pinterest.com']:hover:before {
   color: #cb2027;
+}
+.isu-social-menu-red a[href*='pinterest.com']:hover:before {
+  color: #d3d3d3;
 }
 .isu-social-menu a[href*='reddit.com']:before {
   content: "\f1a2";
