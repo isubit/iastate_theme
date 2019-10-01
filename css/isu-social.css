@@ -23,6 +23,29 @@
   transition: all 0.2s ease-in-out;
   vertical-align: middle;
 }
+
+/* .isu-social-menu-red a:hover {
+  color: #;
+} */
+.isu-social-menu-red  a:before {
+  content: '\f0c1';
+  border-radius: 0;
+  color: #fff;
+  width: 1.5rem;
+  margin-right: 0.25em;
+  display: inline-block;
+  font-family: FontAwesome;
+  font-size: 1.5em;
+  font-weight: normal;
+  text-align: center;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  vertical-align: middle;
+}
+
 .isu-social-menu a:hover:before {
   color: #006BA6;
   text-decoration: none;
