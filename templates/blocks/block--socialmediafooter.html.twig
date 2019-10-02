@@ -29,6 +29,30 @@
 <div{{ attributes.addClass("isu-social-menu") }}>
   {{ title_suffix }}
   {% block content %}
-    {{content}}
+   <div>
+    {% if content.field_facebook.0['#url']  %}
+     {{content.field_facebook.0}}
+    {% endif %}
+   </div>
+   <div>
+   {% if content.field_instagram.0['#url']  %}
+    {{content.field_instagram.0}}
+   {% endif %}
+   </div>
+   <div>
+   {% if content.field_linkedin.0['#url']  %}
+    {{content.field_linkedin.0}}
+   {% endif %}
+   </div>
+   <div>
+   {% if content.field_pinterest.0['#url']  %}
+    {{content.field_pinterest.0}}
+   {% endif %}
+   </div>
+   <div>
+   {% if content.field_twitter.0['#url']  %}
+    {{content.field_twitter.0}}
+   {% endif %}
+   </div>
   {% endblock %}
 </div>

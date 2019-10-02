@@ -27,7 +27,21 @@
 #}
  <div {{attributes.addClass("isu-social-menu-red","isu-social-menu")}}>
   {{ title_suffix }}
-  {% block content %}    
-    <a href="{{content.field_facebook_red.0['#url']}}"></a><a href="{{content.field_instagram_red.0['#url']}}"></a><a href="{{content.field_linked_in_red.0['#url']}}"></a><a href="{{content.field_pinterest_red.0['#url']}}"></a><a href="{{content.field_twitter_red.0['#url']}}"></a>
+  {% block content %}
+    {% if content.field_facebook_red.0['#url'] %}
+    <a href="{{content.field_facebook_red.0['#url']}}"></a>
+    {% endif %}
+    {% if content.field_instagram_red.0['#url'] %}
+    <a href="{{content.field_instagram_red.0['#url']}}"></a>
+    {% endif %}
+    {% if content.field_linked_in_red.0['#url'] %}
+    <a href="{{content.field_linked_in_red.0['#url']}}"></a>
+    {% endif %}
+    {% if content.field_pinterest_red.0['#url'] %}
+    <a href="{{content.field_pinterest_red.0['#url']}}"></a>
+    {% endif %}
+    {% if content.field_twitter_red.0['#url'] %}
+    <a href="{{content.field_twitter_red.0['#url']}}"></a>
+    {% endif %}
   {% endblock %}
  </div>
