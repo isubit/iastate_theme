@@ -262,6 +262,15 @@ h2.isu-block-title.h4 {
 	border: 1px solid #ddd;
 	border-radius: 3px;
 }
+
+.publication a:before {
+	content: '\f02d';
+	font-family: FontAwesome;
+	display: block;
+	margin-right: 0.5rem;
+	color: #676767;
+	float: left;
+}
  
 /* --------------------------------------  */
 /* ## Footer
