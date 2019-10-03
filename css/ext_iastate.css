@@ -284,7 +284,7 @@ h2.isu-block-title.h4 {
 	margin-bottom: 1rem;
 	padding: 1rem;
 	border: 1px solid #ddd;
-	max-width: 48%;
+	min-width: 48%;
 }
 
 
