@@ -40,7 +40,7 @@
    {% endif %}
    </div>
    <div>
-   {% if content.field_linkedin.0['#url']  %}
+   {% if content.field_linked_in.0['#url']  %}
     {{content.field_linkedin.0}}
    {% endif %}
    </div>
@@ -52,6 +52,11 @@
    <div>
    {% if content.field_twitter.0['#url']  %}
     {{content.field_twitter.0}}
+   {% endif %}
+   </div>
+   <div>
+   {% if content.field_youtube.0['#url']  %}
+    {{content.field_youtube.0}}
    {% endif %}
    </div>
   {% endblock %}
