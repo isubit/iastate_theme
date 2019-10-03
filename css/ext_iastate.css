@@ -278,7 +278,7 @@ h2.isu-block-title.h4 {
 	padding: 10px;
 }
 
-#block-publications, #block-aggregatorfeed, #block-recentnews, #block-wordsonwellnessnewsletter {
+#block-publications, #block-aggregatorfeed, #block-recentnews, #block-wordsonwellnessnewsletter, #block-countyname4hfacebook {
 	float: left;
 	margin: 0 0.5rem;
 	margin-bottom: 1rem;
