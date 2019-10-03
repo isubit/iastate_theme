@@ -285,6 +285,7 @@ h2.isu-block-title.h4 {
 	padding: 1rem;
 	border: 1px solid #ddd;
 	min-width: 48%;
+	max-width: 48%;
 }
 
 
