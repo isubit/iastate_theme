@@ -278,6 +278,15 @@ h2.isu-block-title.h4 {
 	padding: 10px;
 }
 
+#block-publications, #block-aggregatorfeed {
+	float: left;
+	margin: 0 0.5rem;
+	margin-bottom: 1rem;
+	padding: 1rem;
+	border: 1px solid #ddd;
+}
+
+
 /* --------------------------------------  */
 /* ## Footer
 /* --------------------------------------  */
