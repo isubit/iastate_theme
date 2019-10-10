@@ -29,7 +29,7 @@
  */
 #}
 {% if tree or has_links %}
-  <nav role="navigation" aria-labelledby="book-label-{{ book_id }}">
+  <nav role="navigation" aria-labelledby="book-label-{{ book_id }}" class="mt-3">
     {{ tree }}
     {% if has_links %}
       <h1 id="book-label-{{ book_id}}" class="isu-book-navigation-title h5">{{ 'Navigate this book'|t }}</h1>
