@@ -278,11 +278,13 @@ summary[aria-expanded="true"] {
 }
 
 .form-control,
-.cke_chrome {
+.cke_chrome,
+.form-textarea {
   /* Overrides bootstrap.min.css and editor.css for sufficient contrast */
   border-color: #767676 !important;
 }
-.form-control:focus {
+.form-control:focus,
+.form-textarea:focus {
   /* Overrides bootstrap.min.css which removed focus style */
   outline: #5cb3fd auto 5px;
 }
@@ -294,6 +296,26 @@ summary[aria-expanded="true"] {
   border-top: 0;
   border-left: 0;
   transform: rotate(45deg);
+}
+
+/* Textarea */
+/* Found that adding classes to a textarea template (textarea.html.twig)
+ * breaks CKEditor's ability to limit the height of the WYSIWYG editor. So
+ * we apply the form-control Bootstrap 4 styles manually.
+ */
+
+.form-textarea {
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 /* --------------------------------------  */
