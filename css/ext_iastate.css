@@ -66,8 +66,11 @@ html, body, .dialog-off-canvas-main-canvas, .isu-page-wrap {
 /* Red bar social media menu */
 .isu-social-menu-red {
 	color: #fff;
-	background: #cc0000;
-	padding-left: 18%;
+	background: transparent;
+	padding-left: 30px;
+	position: absolute;
+	top: 105px;
+	text-align: center;
 }
 
 /* --------------------------------------  */
@@ -277,7 +280,7 @@ h2.isu-block-title.h4 {
 .isu-footer-logo {
 	max-width: 250px;
 	margin-top: -15px;
-	margin-left: -21px;
+	padding-bottom: 10px;`
 }
 
 /* Change footer associates menu link color */
