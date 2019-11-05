@@ -34,6 +34,11 @@
      {{content.field_facebook.0}}
     {% endif %}
    </div>
+    <div>
+    {% if content.field_facebook.1['#url'] %}
+      {{content.field_facebook.1}}
+    {% endif %}
+   </div>
    <div>
    {% if content.field_instagram.0['#url']  %}
     {{content.field_instagram.0}}
@@ -57,6 +62,11 @@
    <div>
    {% if content.field_youtube.0['#url']  %}
     {{content.field_youtube.0}}
+   {% endif %}
+   </div>
+  <div>
+   {% if content.field_twitter.1['#url'] %}
+    {{content.field_twitter.1}}
    {% endif %}
    </div>
   {% endblock %}
