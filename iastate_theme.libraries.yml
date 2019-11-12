@@ -40,7 +40,7 @@ font-awesome:
     gpl-compatible: true
   css:
     theme:
-      css/icons/font-awesome-4.7.0/css/font-awesome.min.css: { minified: true }
+      'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css': { type: external, minified: true }
 
 academicons:
   remote: https://jpswalsh.github.io/academicons/
