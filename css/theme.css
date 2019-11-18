@@ -85,6 +85,9 @@ body,
 .isu-site-navbar {
   padding: 0;
   background-color: #cc0000;
+}
+/* The gold border is optional and can be hidden in theme settings */
+.isu-gold-border {
   border-bottom: 9px solid #f1be48;
 }
 .isu-row-site-navbar {
