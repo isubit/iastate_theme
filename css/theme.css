@@ -593,6 +593,7 @@ body,
   margin-bottom: 2rem;
 }
 .isu-page-title {
+  margin-top: 1rem;
   margin-bottom: 2rem;
 }
 
@@ -790,7 +791,7 @@ article:not(.isu-user):not(.isu-search_collapse) {
 /* --- ## Breadcrumbs --- */
 
 .isu-breadcrumb {
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   background: transparent;
 }
 
