@@ -259,6 +259,36 @@ h2.isu-block-title.h4 {
 	font-size: 1.5rem;
 }
 
+/* Accordion Styles */
+dl {
+	padding-left: 0rem;
+}
+
+.ckeditor-accordion-container > dl {
+	border: 1px solid transparent;
+}
+
+.ckeditor-accordion-container > dl dt.active > a {
+	background-color: #dddddd;
+}
+
+.ckeditor-accordion-container > dl dt > a {
+	color: #000000;
+	background-color: #eeeeee;
+	border-bottom: 1px solid transparent;
+	margin-bottom: .5rem;
+	border-radius: 4px;
+}
+
+.ckeditor-accordion-container > dl dt > a:hover {
+	background-color: #dddddd;
+}
+
+.ckeditor-accordion-container > dl dt > .ckeditor-accordion-toggle:before, .ckeditor-accordion-container > dl dt > .ckeditor-accordion-toggle:after {
+	background: #555555;
+}
+
+
 
 /* --------------------------------------  */
 /* ## Footer
