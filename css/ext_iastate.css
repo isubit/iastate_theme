@@ -412,3 +412,121 @@ dl {
  	}
  	
  }
+
+/* --------------------------------------  */
+/* ## Bean Cards
+/* --------------------------------------  */
+.bean-card {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	border-radius: 3px;
+	color: #ffffff;
+  }
+  
+  .bean-card.bean-card_width_full {
+	display: block;
+  }
+  
+  a.bean-card_link {
+	display: block;
+	position: relative;
+	color: #ffffff;
+	text-decoration: none;
+	border-radius: 3px;
+	overflow: hidden; 
+  }
+	.bean-card a:hover {
+	  box-shadow: 0 0 5px 1px #7a99ac;
+	}
+  
+  .bean-card_img img {
+	width: 100%;
+  }
+  
+  .bean-card_label {
+	padding: 0.75rem 1rem;
+	text-align: center;
+	background: #cc0000;
+  }
+  
+  .bean-card .fa {
+	margin-right: 1rem;
+  }
+  
+  .bean-card_label p {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	font-size: 1.5em;
+	line-height: 1.25;
+  }
+  
+  /* Colors */
+  .bean-card_blue .bean-card_label { background: #006ba6; }
+  .bean-card_green .bean-card_label { background: #6A7A1A; }
+  .bean-card_dark-red .bean-card_label { background: #7c2529; }
+  .bean-card_dark-blue .bean-card_label { background: #003D4C; }
+  .bean-card_dark-green .bean-card_label { background: #3E4827; }
+  .bean-card_brown .bean-card_label { background: #8b5b29; }
+  .bean-card_grey .bean-card_label { background: #707372; }
+  
+  /* Overlay */
+  /* Overlay needs a minimum height in case there is no image. */
+  .bean-card.bean-card_dark-overlay_left,
+  .bean-card.bean-card_dark-overlay_bottom {
+	min-height: 100px;
+	background: #efefef;
+  }
+  
+  .bean-card_dark-overlay_left .bean-card_label,
+  .bean-card_dark-overlay_bottom .bean-card_label {
+	position: absolute;
+	text-align: left;
+	background: rgba(0, 0, 0, 0.75);
+  }
+  
+  .bean-card_dark-overlay_left .bean-card_label p,
+  .bean-card_dark-overlay_bottom .bean-card_label p {
+	justify-content: flex-start;
+  }
+  
+  .bean-card_dark-overlay_left .bean-card_label {
+	left: 0; bottom: 20%;
+	max-width: 90%;
+  }
+  
+  .bean-card_dark-overlay_bottom .bean-card_label {
+	left: 0; bottom: 0; right: 0;
+	width: 100%;
+  }
+  
+  /* Text Size */
+  
+  .bean-card_text-sm p {
+	font-size: 1em
+  }
+  
+  .bean-card_text-md p {
+	font-size: 1.5em;
+  }
+  
+  .bean-card_text-lg p {
+	font-size: 2em;
+  }
+  
+  .bean-card_text-sm .fa {
+	margin-right: 0.5rem;
+  }
+  
+  .bean-card_text-md .fa {
+	margin-right: 1rem;
+  }
+  
+  .bean-card_text-lg p {
+	margin-right: 1.25rem;
+  }
+  
+  /* Kill external link icon */
+  #section-content .bean-card a.external:after { display: none; }
