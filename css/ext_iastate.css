@@ -347,6 +347,11 @@ dl {
 }
 
 /* Change footer associates menu link color */
+.isu-associates-menu {
+	margin-top: 0;
+	font-weight: 700;
+}
+
 .isu-associates-menu a {
 	text-decoration: underline;
 	font-size: 14px;
