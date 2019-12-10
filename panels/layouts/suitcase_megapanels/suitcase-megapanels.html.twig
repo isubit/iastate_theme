@@ -1,0 +1,143 @@
+<div class="suitcase_megapanels" {% if css_id %} {{ css_id }} {% endif %}>
+
+	{% if content.top_full %}
+		<div class="megapanels-wrapper megapanels-wrapper_full_top">
+			<div class="megapanels-full megapanels-full_top">
+				<div class="megapanels-pane_full">
+					{{ content.top_full }}
+				</div>
+			</div>
+		</div>
+	{% endif %}
+
+	<div class="megapanels-wrapper megapanels-wrapper_top">
+		<div class="megapanels-row megapanels-row_top">
+			{% if content.top_grow_first %}
+				<div class="megapanels-pane megapanels-pane_grow megapanels-pane_top_grow_first">
+					{{ content.top_grow_first }}
+				</div>
+			{% endif %}
+
+			{% if content.top_1 %}
+				<div class="megapanels-pane megapanels-pane_top_1">
+					{{ content.top_1 }}
+				</div>
+			{% endif %}
+
+			{% if content.top_2 %}
+				<div class="megapanels-pane megapanels-pane_top_2">
+					{{ content.top_2 }}
+				</div>
+			{% endif %}
+
+			{% if content.top_3 %}
+				<div class="megapanels-pane megapanels-pane_top_3">
+					{{ content.top_3 }}
+				</div>
+			{% endif %}
+
+			{% if content.top_4 %}
+				<div class="megapanels-pane megapanels-pane_top_4">
+					{{ content.top_4 }}
+				</div>
+			{% endif %}
+
+			{% if content.top_grow_last %}
+				<div class="megapanels-pane megapanels-pane_grow megapanels-pane_top_grow_last">
+					{{ content.top_grow_last }}
+				</div>
+			{% endif %}
+		</div>
+	</div>
+
+	<div class="megapanels-wrapper megapanels-wrapper_middle">
+		<div class="megapanels-row megapanels-row_middle">
+			{% if content.middle_grow_first %}
+				<div class="megapanels-pane megapanels-pane_grow megapanels-pane_middle_grow_first">
+					{{ content.middle_grow_first }}
+				</div>
+			{% endif %}
+
+			{% if content.middle_1 %}
+				<div class="megapanels-pane megapanels-pane_middle_1">
+					{{ content.middle_1 }}
+				</div>
+			{% endif %}
+
+			{% if content.middle_2 %}
+				<div class="megapanels-pane megapanels-pane_middle_2">
+					{{ content.middle_2 }}
+				</div>
+			{% endif %}
+
+			{% if content.middle_3 %}
+				<div class="megapanels-pane megapanels-pane_middle_3">
+					{{ content.middle_3 }}
+				</div>
+			{% endif %}
+
+			{% if content.middle_4 %}
+				<div class="megapanels-pane megapanels-pane_middle_4">
+					{{ content.middle_4 }}
+				</div>
+			{% endif %}
+
+			{% if content.middle_grow_last %}
+				<div class="megapanels-pane megapanels-pane_grow megapanels-pane_middle_grow_last">
+					{{ content.middle_grow_last }}
+				</div>
+			{% endif %}
+		</div>
+	</div>
+
+	<div class="megapanels-wrapper megapanels-wrapper_bottom">
+		<div class="megapanels-row megapanels-row_bottom">
+			{% if content.bottom_grow_first %}
+				<div class="megapanels-pane megapanels-pane_grow megapanels-pane_bottom_grow_first">
+					{{ content.bottom_grow_first }}
+				</div>
+			{% endif %}
+
+			{% if content.bottom_1 %}
+				<div class="megapanels-pane megapanels-pane_bottom_1 ">
+					{{ content.bottom_1 }}
+				</div>
+			{% endif %}
+
+			{% if content.bottom_2 %}
+				<div class="megapanels-pane megapanels-pane_bottom_2 ">
+					{{ content.bottom_2 }}
+				</div>
+			{% endif %}
+
+			{% if content.bottom_3 %}
+				<div class="megapanels-pane megapanels-pane_bottom_3 ">
+					{{ content.bottom_3 }}
+				</div>
+			{% endif %}
+
+			{% if content.bottom_4 %}
+				<div class="megapanels-pane megapanels-pane_bottom_4 ">
+					{{ content.bottom_4 }}
+				</div>
+			{% endif %}
+
+			{% if content.bottom_grow_last %}
+				<div class="megapanels-pane megapanels-pane_grow megapanels-pane_bottom_grow_last">
+					{{ content.bottom_grow_last }}
+				</div>
+			{% endif %}
+		</div>
+	</div>
+
+	{% if content.bottom_full %}
+		<div class="megapanels_wrapper">
+			<div class="megapanels-full megapanels-full_bottom">
+				<div class="megapanels-pane_full">
+					{{ content.bottom_full }}
+				</div>
+			</div>
+		</div>
+	{% endif %}
+
+</div>

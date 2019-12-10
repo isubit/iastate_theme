@@ -1,0 +1,7 @@
+.megapanels-row {
+  display: flex;
+}
+
+.megapanels-pane {
+  flex: 1 1 100%;
+}

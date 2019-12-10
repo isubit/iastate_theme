@@ -110,6 +110,16 @@ html, body, .dialog-off-canvas-main-canvas, .isu-page-wrap {
 	border-bottom: 3px solid #bbb;
 }
 
+
+/* --------------------------------------  */
+/* ## Banner Slider
+/* -------------------------------------  */
+
+.flexslider {
+	background: none;
+	border: none;
+}
+
 /* --------------------------------------  */
 /* ## Content Area
 /* --------------------------------------  */
