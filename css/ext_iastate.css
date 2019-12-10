@@ -322,6 +322,24 @@ dl {
 }
 
 
+/* --------------------------------------  */
+/* ## Events
+/* --------------------------------------  */
+
+.event_details_registration {
+	padding-top: 20px;
+}
+
+.event_description {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.event_details_dates {
+	float: left;
+	font-style: italic;
+	padding-right: 5px;
+}
 
 /* --------------------------------------  */
 /* ## Footer
