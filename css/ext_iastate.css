@@ -170,6 +170,11 @@ html, body, .dialog-off-canvas-main-canvas, .isu-page-wrap {
 /* Sidebar */
 .isu-page-column {
 	padding-left: 11px;
+	max-width: 75%;
+}
+
+.isu-region.isu-region_sidebar-second {
+	margin-top: 2rem;
 }
 
 .isu-sidebar .isu-block {
