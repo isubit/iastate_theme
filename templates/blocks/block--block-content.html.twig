@@ -40,14 +40,12 @@
             </div>
         {% else %}
             <div class="bean-card {{content.field_color_style[0]}}">
-                <a class="bean-card_link" href="{{content.field_content_card_url.0['#url']}}">
-                    <div class="bean-card_label bean-card_overlay_top">
-                        <p class="{{content.field_text_size[0]}} fa {{content.field_icon[0]}}">{{content.field_content_card_title[0]}}</p>
-                    </div>
-                    <div class="bean-card_body">
-                        {{content.body[0]}}
-                    </div>
-                </a>
+                <div class="bean-card_label bean-card_overlay_top">
+                    <p class="{{content.field_text_size[0]}} fa {{content.field_icon[0]}}">{{content.field_content_card_title[0]}}</p>
+                </div>
+                <div class="bean-card_body">
+                    {{content.body[0]}}
+                </div>
             </div>
         {% endif %}
 
