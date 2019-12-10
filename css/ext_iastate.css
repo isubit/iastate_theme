@@ -120,6 +120,24 @@ html, body, .dialog-off-canvas-main-canvas, .isu-page-wrap {
 	border: none;
 }
 
+/* ------------------------------------- */
+/* ## Panel
+/* ------------------------------------- */
+
+.layout--threecol-33-34-33 > .layout__region--first, .layout--threecol-33-34-33 > .layout__region--third, .layout--threecol-33-34-33 > .layout__region--second {
+	flex: 0 1 250px;
+	min-width: 250px;
+	margin: 0 0.5rem;
+	margin-bottom: 1rem;
+	padding: 1rem;
+	border: 1px solid #ddd;
+}
+
+.col-lg-9 {
+	flex: 0 0 100%;
+	max-width: 100%;
+}
+
 /* --------------------------------------  */
 /* ## Content Area
 /* --------------------------------------  */
