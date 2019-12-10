@@ -25,8 +25,8 @@
  * @see template_preprocess_block()
  */
 #}
-
 {% block content %}
+    {% if content.field_color_style[0] %}
     <div class="bean-card {{content.field_color_style[0]}}">
         <a class="bean-card_link" href="{{content.field_content_card_url.0['#url']}}">
             <div class="bean-card_img">
@@ -37,4 +37,7 @@
             </div>
         </a>
     </div>
-{% endblock %}
+    {% else %}
+        {{content}}
+    {% endif %}
+  {% endblock %}
