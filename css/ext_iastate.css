@@ -532,11 +532,6 @@ dl {
 	background: rgba(0, 0, 0, 0.75);
   }
   
-  .bean-card_dark-overlay_left .bean-card_label p,
-  .bean-card_dark-overlay_bottom .bean-card_label p {
-	justify-content: flex-start;
-  }
-  
   .bean-card_dark-overlay_left .bean-card_label {
 	left: 0; bottom: 20%;
 	max-width: 90%;
