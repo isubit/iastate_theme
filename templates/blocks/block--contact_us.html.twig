@@ -46,9 +46,11 @@
         {{content.field_email[0]}}
       </a>
     </div> 
-    <div class="isu-footer_contact-address">
-      Phone: {{content.field_phone[0]}}
-    </div>
+    {% if content.field_phone[0]  %}
+     <div class="isu-footer_contact-address">
+       Phone: {{content.field_phone[0]}}
+     </div>
+    {% endif  %}
     {% if content.field_phone_secondary[0] %}
       <div class="isu-footer_contact-address">
         Phone 2: {{content.field_phone_secondary[0]}}
