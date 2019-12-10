@@ -515,6 +515,7 @@ dl {
   
   .bean-card .fa {
 	margin-right: 1rem;
+	padding-right: 5px;
   }
   
   .bean-card_label p {
@@ -559,11 +560,15 @@ dl {
 	left: 0; bottom: 0; right: 0;
 	width: 100%;
   }
+  .bean-card_overlay_top{
+	  left: 0;
+	  bottom: 40px;
+  }
     
 /* Text Size */
   
   .bean-card_text-sm p {
-	font-size: 1em
+	font-size: 1em;
   }
   
   .bean-card_text-md p {
@@ -576,14 +581,22 @@ dl {
   
   .bean-card_text-sm .fa {
 	margin-right: 0.5rem;
+	padding-right: 5px;
   }
   
   .bean-card_text-md .fa {
 	margin-right: 1rem;
+	padding-right: 5px;
   }
   
-  .bean-card_text-lg p {
+  .bean-card_text-lg .fa {
 	margin-right: 1.25rem;
+	padding-right: 5px;
+  }
+
+  .bean-card_body p{
+	  color: black;
+	  padding-top: 50px;
   }
   
   /* Kill external link icon */
