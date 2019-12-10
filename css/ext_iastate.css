@@ -334,6 +334,10 @@ dl {
 	background: #333;
 }
 
+.isu-region.isu-region_footer-fourth {
+	font-size: 14px;
+}
+
 /* Change footer link color */
 .isu-footer a {
 	color: #d3d3d3;
