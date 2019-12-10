@@ -1,0 +1,27 @@
+megapanels:
+  label: Suitcase Mega Panel
+  category: Suitcase: Mega Panels
+  template: panels/layouts/suitcase_megapanels
+  regions:
+    top:
+      label: Top Full
+      label: Top 1
+      label: Top 2
+      label: Top 3
+      label: Top 4
+      label: Top Grow Last
+    middle: 
+      label: Middle Grow First
+      label: Middle 1
+      label: Middle 2
+      label: Middle 3
+      label: Middle 4
+      label: Middle Grow Last
+    Bottom: 
+      label: Bottom Grow First
+      label: Bottom 1
+      label: Bottom 2
+      label: Bottom 3
+      label: Bottom 4
+      label: Bottom Grow Last
+      label: Bottom Full  
