@@ -1,7 +1,7 @@
 suitcase_megapanels:
   label: Suitcase Mega Panel
   category: Suitcase: Mega Panels
-  template: panels/layouts/suitcase_megapanels
+  template: templates/panels/layouts/suitcase_megapanels
   regions:
     top:
       label: Top Full
