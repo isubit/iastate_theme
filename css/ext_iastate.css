@@ -476,7 +476,10 @@ dl {
 	padding: 0.75rem 1rem;
 	text-align: center;
 	background: #cc0000;
-  }
+	bottom: 0;
+	width: 100%;
+	position: absolute;  
+}
   
   .bean-card .fa {
 	margin-right: 1rem;
@@ -529,8 +532,8 @@ dl {
 	left: 0; bottom: 0; right: 0;
 	width: 100%;
   }
-  
-  /* Text Size */
+    
+/* Text Size */
   
   .bean-card_text-sm p {
 	font-size: 1em
