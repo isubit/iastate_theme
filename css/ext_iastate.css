@@ -490,7 +490,7 @@ dl {
 	justify-content: center;
 	border-radius: 3px;
 	color: #ffffff;
-	padding-top: 50px;
+	padding-top: 20%;
   }
   
   .bean-card.bean-card_width_full {
@@ -571,7 +571,7 @@ dl {
   }
   .bean-card_overlay_top{
 	  left: 0;
-	  bottom: 110px;
+	  bottom: 70%;
   }
     
 /* Text Size */
