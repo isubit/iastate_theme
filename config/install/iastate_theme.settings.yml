@@ -1,5 +1,5 @@
 isu_navbar: 1
-gold_border: 1
+gold_border_hidden: 0
 features:
   favicon: true
 iastate_unit_name: ''
