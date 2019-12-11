@@ -484,6 +484,15 @@ dl {
 	color: #ffffff;
   }
   
+  .bean-card_text {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	border-radius: 3px;
+	color: #ffffff;
+	padding-top: 50px;
+  }
+  
   .bean-card.bean-card_width_full {
 	display: block;
   }
@@ -562,7 +571,7 @@ dl {
   }
   .bean-card_overlay_top{
 	  left: 0;
-	  bottom: 40px;
+	  bottom: 110px;
   }
     
 /* Text Size */
