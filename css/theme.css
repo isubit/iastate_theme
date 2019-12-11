@@ -87,6 +87,10 @@ body,
   background-color: #cc0000;
   border-bottom: 9px solid #f1be48;
 }
+/* The gold border is optional and can be hidden in theme settings */
+.isu-gold-border_hidden {
+  border: 0;
+}
 .isu-row-site-navbar {
   align-items: center;
 }
@@ -590,6 +594,7 @@ body,
   margin-bottom: 2rem;
 }
 .isu-page-title {
+  margin-top: 1rem;
   margin-bottom: 2rem;
 }
 
@@ -787,7 +792,7 @@ article:not(.isu-user):not(.isu-search_collapse) {
 /* --- ## Breadcrumbs --- */
 
 .isu-breadcrumb {
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   background: transparent;
 }
 

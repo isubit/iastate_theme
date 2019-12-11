@@ -12,7 +12,13 @@
  */
 #}
 
-<header class="isu-site-navbar" role="banner" aria-label="Site header">
+{% set site_navbar_classes = [
+  'isu-site-navbar',
+  gold_border_hidden ? 'isu-gold-border_hidden'
+  ] 
+%}
+
+<header{{ attributes.addClass(site_navbar_classes) }} role="banner" aria-label="Site header">
   <div class="container">
     <div class="row isu-row-site-navbar">
 
