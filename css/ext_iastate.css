@@ -610,3 +610,11 @@ dl {
   
   /* Kill external link icon */
   #section-content .bean-card a.external:after { display: none; }
+
+
+/* --------------------------------------  */
+/* ## Flex Slider
+/* --------------------------------------  */
+.flex-active-slide{
+	width: 1180px;
+}
