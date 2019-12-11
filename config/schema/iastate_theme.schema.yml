@@ -5,7 +5,7 @@ iastate_theme.settings:
     isu_navbar:
       type: integer
       label: 'Show ISU navbar'
-    gold_border:
+    gold_border_hidden:
       type: integer
       label: 'Show gold border'
     features:

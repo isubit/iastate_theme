@@ -85,10 +85,11 @@ body,
 .isu-site-navbar {
   padding: 0;
   background-color: #cc0000;
+  border-bottom: 9px solid #f1be48;
 }
 /* The gold border is optional and can be hidden in theme settings */
-.isu-gold-border {
-  border-bottom: 9px solid #f1be48;
+.isu-gold-border_hidden {
+  border: 0;
 }
 .isu-row-site-navbar {
   align-items: center;
