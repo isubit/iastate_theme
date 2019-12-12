@@ -34,14 +34,21 @@
                         {{content.field_content_card_image}}
                     </div>
                     <div class="bean-card_label">
-                        <p class="{{content.field_text_size[0]}} fa {{content.field_icon[0]}}">{{content.field_content_card_title[0]}}</p>
-                    </div>
+                        {% if content.field_icon[0] is not null %}
+                            <p class="{{content.field_text_size[0]}} fa {{content.field_icon[0]}}">{{content.field_content_card_title[0]}}</p>
+                        {% else %}
+                            <p class="{{content.field_text_size[0]}}">{{content.field_content_card_title[0]}}</p>
+                        {% endif %}
                 </a>
             </div>
         {% else %}
             <div class="bean-card_text {{content.field_color_style[0]}}">
                 <div class="bean-card_label bean-card_overlay_top">
-                    <p class="{{content.field_text_size[0]}} fa {{content.field_icon[0]}}">{{content.field_content_card_title[0]}}</p>
+                    {% if content.field_icon[0] is not null %}
+                        <p class="{{content.field_text_size[0]}} fa {{content.field_icon[0]}}">{{content.field_content_card_title[0]}}</p>
+                    {% else %}
+                        <p class="{{content.field_text_size[0]}}">{{content.field_content_card_title[0]}}</p>
+                    {% endif %}
                 </div>
                 <div class="bean-card_body">
                     {{content.body[0]}}
