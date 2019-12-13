@@ -1,0 +1,16 @@
+test_column:
+  label: Testing
+  category: My Layouts
+  template: templates/test-column
+  regions:
+    main:
+      label: Main content
+second_test:
+  label: Second Test
+  category: My Layouts
+  template: templates/second
+  regions:
+    main:
+      label: Main content-test
+    sidebar:
+      label: Sidebar
