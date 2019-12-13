@@ -521,15 +521,6 @@ dl {
 	width: 100%;
 	position: absolute;  
 }
-
-.bean-card-with-text_label {
-	padding: 0.75rem 1rem;
-	text-align: center;
-	background: #cc0000;
-	bottom: 0;
-	width: 100%;
-	position: inherit;  
-}
   
   .bean-card .fa {
 	margin-right: 1rem;
@@ -580,6 +571,7 @@ dl {
   }
   .bean-card_overlay_top{
 	  left: 0;
+	  margin-bottom: 5%;
   }
     
 /* Text Size */
@@ -613,7 +605,7 @@ dl {
 
   .bean-card_body p{
 	  color: black;
-	  margin-top: 5%;
+	  padding-top: 50px;
   }
   
   /* Kill external link icon */
