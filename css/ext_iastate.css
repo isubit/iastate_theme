@@ -571,7 +571,8 @@ dl {
   }
   .bean-card_overlay_top{
 	  left: 0;
-	  bottom: 70%;
+	  bottom: 75%;
+	  top: 0%
   }
     
 /* Text Size */
@@ -605,7 +606,8 @@ dl {
 
   .bean-card_body p{
 	  color: black;
-	  padding-top: 50px;
+	  margin-top: 5%;
+	  margin-bottom: 15%;
   }
   
   /* Kill external link icon */
