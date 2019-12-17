@@ -430,7 +430,7 @@ dl {
 /* -------------------------------------- */
 /* ## Layout Builder Homepage
 /* -------------------------------------- */
-.layout--onecol, layout--threecol-section {
+.layout--onecol, .layout--threecol-section {
 	width: 135%;
 }
 
@@ -514,9 +514,6 @@ dl {
 	padding-left: 25px;
   }
  
-.bean-card_red {
-	height: 250px;
-}
  
   .bean-card.bean-card_width_full {
 	display: block;
@@ -540,9 +537,7 @@ dl {
   
   .bean-card_label {
 	padding: 0.75rem 1rem;
-	text-align: center;
 	background: #cc0000;
-	bottom: 0;
 	width: 100%;
 	position: absolute;  
 }
@@ -595,7 +590,7 @@ dl {
 	width: 100%;
   }
   .bean-card_overlay_top{
-	  bottom: 75%;
+	  bottom: 78%;
   }
     
 /* Text Size */
@@ -632,7 +627,8 @@ dl {
 	  margin-top: 5%;
 	  margin-bottom: 15%;
 	  text-align: left;
-  }
+	padding-left: 7%; 
+ }
   
   /* Kill external link icon */
   #section-content .bean-card a.external:after { display: none; }
