@@ -427,6 +427,22 @@ dl {
 	font-size: 12px;
 }
 
+/* -------------------------------------- */
+/* ## Layout Builder Homepage
+/* -------------------------------------- */
+.layout--onecol, layout--threecol-section {
+	width: 135%;
+}
+
+.layout__region--third {
+	border: 1px solid #eee;
+}
+
+.layout__region--third .isu-block-title {
+	padding: 18px;
+}
+	
+
 /* --------------------------------------  */
 /* ## Responsive
 /* --------------------------------------  */
@@ -483,11 +499,19 @@ dl {
 	border-radius: 3px;
 	color: #ffffff;
   }
+
+.bean-card_text.bean-card_red {
+	border: 1px solid #eee;
+	height: 250px;
+	margin-bottom: 25px;
+	margin-right: 25px;
+}
   
   .bean-card_text {
 	position: relative;
 	color: #ffffff;
 	padding-top: 25%;
+	padding-left: 25px;
   }
  
 .bean-card_red {
