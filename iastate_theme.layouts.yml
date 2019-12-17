@@ -1,0 +1,33 @@
+columns_one:
+  label: One Column
+  category: Bootstrap 4 Columns
+  type: partial
+  template: templates/layout/columns-one/columns_one
+  icon: templates/layout/columns-one/columns-one.png
+  regions:
+    col_1:
+      label: Column One
+columns_two:
+  label: Two Columns
+  category: Bootstrap 4 Columns
+  type: partial
+  template: templates/layout/columns-two/columns_two
+  icon: templates/layout/columns-two/columns-two.png
+  regions:
+    col_1:
+      label: Column One
+    col_2:
+      label: Column Two
+columns_three:
+  label: Three Columns
+  category: Bootstrap 4 Columns
+  type: partial
+  template: templates/layout/columns-three/columns_three
+  icon: templates/layout/columns-three/columns-three.png
+  regions:
+    col_1:
+      label: Column One
+    col_2:
+      label: Column Two
+    col_3:
+      label: Column Three
