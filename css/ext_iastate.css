@@ -604,11 +604,11 @@ dl {
 	padding-right: 5px;
   }
 
-  .bean-card_body p{
+  .bean-card_body{
 	  color: black;
 	  margin-top: 5%;
 	  margin-bottom: 15%;
-	  text-align: center;
+	  text-align: left;
   }
   
   /* Kill external link icon */
