@@ -225,7 +225,7 @@ html, body, .dialog-off-canvas-main-canvas, .isu-page-wrap {
 	border-color: #cc0000;
 }
 
-.btn-primary .events_show_more{
+.btn-primary{
 	background-color: #006BA6;
         border-color: #006BA6;
         font-weight: 700;
@@ -235,7 +235,7 @@ html, body, .dialog-off-canvas-main-canvas, .isu-page-wrap {
         padding: 7px;
 }
 
-.btn-primary:hover .events_show_more:hover{
+.btn-primary:hover{
 	background-color: #003D4C;
 	border-color: #003D4C;
 }
@@ -340,6 +340,23 @@ dl {
 	font-style: italic;
 	padding-right: 5px;
 }
+
+.events_show_more{
+	background-color: #006BA6;
+        border-color: #006BA6;
+        font-weight: 700;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: background 0.2s ease;
+		padding: 7px;
+		margin-left: 45%;
+}
+
+.events_show_more:hover{
+	background-color: #003D4C;
+	border-color: #003D4C;
+}
+
 
 /* --------------------------------------  */
 /* ## Footer
