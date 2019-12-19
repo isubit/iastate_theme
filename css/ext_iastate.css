@@ -349,13 +349,14 @@ dl {
         cursor: pointer;
         transition: background 0.2s ease;
 		padding: 7px;
-		margin-left: 45%;
+		margin-left: 5%;
 		color: #fff;
+		text-decoration: none;
 }
 
 .events_show_more:hover{
-	background-color: #003D4C;
-	border-color: #003D4C;
+	background-color: #202124;
+	color: #fff;
 }
 
 
