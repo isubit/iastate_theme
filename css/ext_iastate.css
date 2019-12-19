@@ -523,7 +523,7 @@ dl {
 	color: #ffffff;
 	padding-top: 25%;
 	border: 1px solid #eee;
-	height: 250px;
+	height: 200px;
 	margin-bottom: 25px;
 	margin-right: 25px;
   }
@@ -638,7 +638,6 @@ dl {
 
   .bean-card_body{
 	  color: black;
-	  margin-top: 5%;
 	  margin-bottom: 15%;
 	  text-align: left;
 	padding-left: 7%; 
