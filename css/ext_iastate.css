@@ -357,6 +357,7 @@ dl {
 .events_show_more:hover{
 	background-color: #202124;
 	color: #fff;
+	text-decoration: none;
 }
 
 
