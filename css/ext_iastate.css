@@ -350,6 +350,7 @@ dl {
         transition: background 0.2s ease;
 		padding: 7px;
 		margin-left: 45%;
+		color: #fff;
 }
 
 .events_show_more:hover{
