@@ -82,17 +82,17 @@
   <div class="container">
     <div class="row">
 
-      {% if page.sidebar_first and page.sidebar_second %}
+      {% if page.sidebar_first|render and page.sidebar_second|render %}
         {% set content_classes = 'col-lg-6' %}
         {% set sidebar_classes = 'col-lg-3' %}
-      {% elseif page.sidebar_first or page.sidebar_second %}
+      {% elseif page.sidebar_first|render or page.sidebar_second|render %}
         {% set content_classes = 'col-lg-9' %}
         {% set sidebar_classes = 'col-lg-3' %}
       {% else %}
         {% set content_classes = 'col-lg-12' %}
       {% endif %}
 
-      {% if page.sidebar_first %}
+      {% if page.sidebar_first|render %}
         <div class="isu-page-column isu-sidebar isu-sidebar-first {{sidebar_classes}}">
           <aside role="complementary">
             {{ page.sidebar_first }}
@@ -100,13 +100,13 @@
         </div>
       {% endif %}
 
-      {% if page.content %}
+      {% if page.content|render %}
         <div class="isu-page-column isu-content-column {{content_classes}}">
           {{ page.content }}
         </div>
       {% endif %}
 
-      {% if page.sidebar_second %}
+      {% if page.sidebar_second|render %}
         <div class="isu-page-column isu-sidebar isu-sidebar-second {{sidebar_classes}}">
           <aside role="complementary">
             {{ page.sidebar_second }}
