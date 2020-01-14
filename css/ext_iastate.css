@@ -203,6 +203,7 @@ html, body, .dialog-off-canvas-main-canvas, .isu-page-wrap {
 	cursor: pointer;
 	transition: background 0.2s ease;
 	padding: 7px;
+	white-space: break-spaces;
 }
 
 .btn-danger:hover {
