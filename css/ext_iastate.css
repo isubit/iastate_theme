@@ -219,6 +219,7 @@ html, body, .dialog-off-canvas-main-canvas, .isu-page-wrap {
 	cursor: pointer;
 	transition: background 0.2s ease;
 	padding: 7px;
+	white-space: break-spaces;
 }
 
 .btn-outline-danger:hover {
@@ -233,7 +234,8 @@ html, body, .dialog-off-canvas-main-canvas, .isu-page-wrap {
         border-radius: 3px;
         cursor: pointer;
         transition: background 0.2s ease;
-        padding: 7px;
+		padding: 7px;
+		white-space: break-spaces;
 }
 
 .btn-primary:hover{
@@ -248,7 +250,8 @@ html, body, .dialog-off-canvas-main-canvas, .isu-page-wrap {
         border-radius: 3px;
         cursor: pointer;
         transition: background 0.2s ease;
-        padding: 7px;
+		padding: 7px;
+		white-space: break-spaces;
 }
 
 .btn-outline-primary:hover {
@@ -263,7 +266,8 @@ html, body, .dialog-off-canvas-main-canvas, .isu-page-wrap {
         border-radius: 3px;
         cursor: pointer;
         transition: background 0.2s ease;
-        padding: 7px;
+		padding: 7px;
+		white-space: break-spaces;
 }
 
 .btn-secondary:hover {
@@ -278,7 +282,8 @@ html, body, .dialog-off-canvas-main-canvas, .isu-page-wrap {
         border-radius: 3px;
         cursor: pointer;
         transition: background 0.2s ease;
-        padding: 7px;
+		padding: 7px;
+		white-space: break-spaces;
 }
 
 .btn-outline-secondary:hover {
