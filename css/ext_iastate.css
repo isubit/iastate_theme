@@ -486,6 +486,16 @@ dl {
 	.navbar-expand-lg .navbar-nav {
 		margin-left: -19px;
 	}
+
+	.bean-card_text{
+		position: relative;
+		color: #ffffff;
+		padding-top: 22%;
+		border: 1px solid #eee;
+		height: 180px;
+		margin-bottom: 25px;
+		margin-right: 25px;
+	}
 }
 	
 
@@ -497,7 +507,16 @@ dl {
  	.isu-wordmark-sitename {
  		margin-left: -92px;
  	}
- 	
+	 
+	.bean-card_text{
+		position: relative;
+		color: #ffffff;
+		padding-top: 22%;
+		border: 1px solid #eee;
+		height: 180px;
+		margin-bottom: 25px;
+		margin-right: 25px;
+	}
  }
 
 @media screen and (max-width : 768px) {
@@ -511,7 +530,17 @@ dl {
  		padding-bottom: 16px;
  		font-size: 20px;
  		padding-top: 5px;
- 	}
+	}
+	 
+	.bean-card_text{
+		position: relative;
+		color: #ffffff;
+		padding-top: 22%;
+		border: 1px solid #eee;
+		height: 180px;
+		margin-bottom: 25px;
+		margin-right: 25px;
+	}
  	
  }
 
