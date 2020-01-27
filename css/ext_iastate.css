@@ -623,16 +623,6 @@ dl {
 	.navbar-expand-lg .navbar-nav {
 		margin-left: -19px;
 	}
-
-	.bean-card_text{
-		position: relative;
-		color: #ffffff;
-		padding-top: 15%;
-		border: 1px solid #eee;
-		height: 180px;
-		margin-bottom: 25px;
-		margin-right: 25px;
-	}
 }
 	
 
