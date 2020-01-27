@@ -391,7 +391,7 @@ dl {
 .isu-footer-logo {
 	max-width: 250px;
 	margin-top: -15px;
-	padding-bottom: 10px;`
+	padding-bottom: 10px;
 }
 
 /* Change footer associates menu link color */
@@ -468,82 +468,6 @@ dl {
 	padding: 18px;
 }
 	
-
-/* --------------------------------------  */
-/* ## Responsive
-/* --------------------------------------  */
-
-@media (min-width: 992px) {
-	.dropdown.is-hoverable:hover > .dropdown-menu {
-    	display: block;
-	}
-  
-	.isu-wordmark-logo {
-		max-width: 365px;
-		margin-left: -17px;
-	}
-	
-	.navbar-expand-lg .navbar-nav {
-		margin-left: -19px;
-	}
-
-	.bean-card_text{
-		position: relative;
-		color: #ffffff;
-		padding-top: 15%;
-		border: 1px solid #eee;
-		height: 180px;
-		margin-bottom: 25px;
-		margin-right: 25px;
-	}
-}
-	
-
-@media screen and (max-width : 992px) {
- 	.isu-wordmark-logo {
- 		max-width: 275px;
- 	}
- 	
- 	.isu-wordmark-sitename {
- 		margin-left: -92px;
- 	}
-	 
-	.bean-card_text{
-		position: relative;
-		color: #ffffff;
-		padding-top: 15%;
-		border: 1px solid #eee;
-		height: 180px;
-		margin-bottom: 25px;
-		margin-right: 25px;
-	}
- }
-
-@media screen and (max-width : 768px) {
- 	.isu-wordmark-logo {
- 		margin-top: 1.5rem;
- 	}
- 	
- 	.isu-wordmark-sitename {
- 		padding-left: 0px;
- 		margin-left: -39px;
- 		padding-bottom: 16px;
- 		font-size: 20px;
- 		padding-top: 5px;
-	}
-	 
-	.bean-card_text{
-		position: relative;
-		color: #ffffff;
-		padding-top: 15%;
-		border: 1px solid #eee;
-		height: 180px;
-		margin-bottom: 25px;
-		margin-right: 25px;
-	}
- 	
- }
-
 /* --------------------------------------  */
 /* ## Bean Cards
 /* --------------------------------------  */
@@ -680,6 +604,83 @@ dl {
 	padding-left: 7%; 
  }
   
+
+
+/* --------------------------------------  */
+/* ## Responsive
+/* --------------------------------------  */
+
+@media (min-width: 992px) {
+	.dropdown.is-hoverable:hover > .dropdown-menu {
+    	display: block;
+	}
+  
+	.isu-wordmark-logo {
+		max-width: 365px;
+		margin-left: -17px;
+	}
+	
+	.navbar-expand-lg .navbar-nav {
+		margin-left: -19px;
+	}
+
+	.bean-card_text{
+		position: relative;
+		color: #ffffff;
+		padding-top: 15%;
+		border: 1px solid #eee;
+		height: 180px;
+		margin-bottom: 25px;
+		margin-right: 25px;
+	}
+}
+	
+
+@media screen and (max-width : 992px) {
+ 	.isu-wordmark-logo {
+ 		max-width: 275px;
+ 	}
+ 	
+ 	.isu-wordmark-sitename {
+ 		margin-left: -92px;
+ 	}
+	 
+	.bean-card_text{
+		position: relative;
+		color: #ffffff;
+		padding-top: 15%;
+		border: 1px solid #eee;
+		height: 180px;
+		margin-bottom: 25px;
+		margin-right: 25px;
+	}
+ }
+
+@media screen and (max-width : 768px) {
+ 	.isu-wordmark-logo {
+ 		margin-top: 1.5rem;
+ 	}
+ 	
+ 	.isu-wordmark-sitename {
+ 		padding-left: 0px;
+ 		margin-left: -39px;
+ 		padding-bottom: 16px;
+ 		font-size: 20px;
+ 		padding-top: 5px;
+	}
+	 
+	.bean-card_text{
+		position: relative;
+		color: #ffffff;
+		padding-top: 15%;
+		border: 1px solid #eee;
+		height: 180px;
+		margin-bottom: 25px;
+		margin-right: 25px;
+	}
+ 	
+ }
+
   /* Kill external link icon */
   #section-content .bean-card a.external:after { display: none; }
 
