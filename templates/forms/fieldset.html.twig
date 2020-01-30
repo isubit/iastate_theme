@@ -50,20 +50,21 @@
     {% if prefix %}
       <span class="field-prefix">{{ prefix }}</span>
     {% endif %}
-    {{ children }}
-    {% if suffix %}
-      <span class="field-suffix">{{ suffix }}</span>
-    {% endif %}
     {% if description.content %}
 
       {% 
         set description_classes = [ 
           'description', 
-          'isu-form-element-description'
+          'isu-form-element-description',
+          'isu-form-element-description_fieldset'
         ] 
       %}
 
       <div{{ description.attributes.addClass(description_classes) }}>{{ description.content }}</div>
+    {% endif %}
+    {{ children }}
+    {% if suffix %}
+      <span class="field-suffix">{{ suffix }}</span>
     {% endif %}
   </div>
 </fieldset>
