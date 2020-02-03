@@ -936,6 +936,11 @@ details {
   font-size: 0.875rem;
   color: #676767;
 }
+.isu-form-element-description_fieldset {
+  margin-top: -0.75rem;
+  margin-bottom: 1rem;
+  margin-left: 0.5rem;
+}
 .isu-fieldset {
   width: 100%;
   margin: 0.5rem 0 1rem;
