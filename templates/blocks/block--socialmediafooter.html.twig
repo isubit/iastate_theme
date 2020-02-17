@@ -60,13 +60,13 @@
    {% endif %}
    </div>
    <div>
+    {% if content.field_twitter.1['#url'] %}
+     {{content.field_twitter.1}}
+    {% endif %}
+   </div>
+   <div>
    {% if content.field_youtube.0['#url']  %}
     {{content.field_youtube.0}}
-   {% endif %}
-   </div>
-  <div>
-   {% if content.field_twitter.1['#url'] %}
-    {{content.field_twitter.1}}
    {% endif %}
    </div>
   {% endblock %}
