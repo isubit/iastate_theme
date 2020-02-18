@@ -408,3 +408,44 @@ body.cke_editable table[border] td {
   border-bottom-color: #808080;
   border-top-color: #808080;
 }
+
+/* --------------------------------------  */
+/* ## FORM
+/* --------------------------------------  */
+
+/* --- Add image UI --- */
+
+.form-item-field-thumbnail-0 img {
+  width: 700px;
+}
+
+.isu-form-type_managed-file .isu-form-type_textfield {
+  display: block;
+}
+
+.isu-form-type_managed-file .isu-form-type_textfield label {
+  display: block;
+  text-align: left;
+}
+
+.isu-form-type_managed-file .isu-form-type_textfield .description {
+  padding-left: 0;
+}
+
+.isu-form-type_managed-file img {
+  margin-bottom: 1rem;
+}
+
+.isu-form-type_managed-file .isu-remove-button {
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+/* CKEditor */
+div[id|='edit-attributes-data-align'] {
+  display: flex;
+}
+
+.form-item-attributes-data-align .form-radio {
+  margin-bottom: 0;
+}
