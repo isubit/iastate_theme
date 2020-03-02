@@ -415,10 +415,6 @@ body.cke_editable table[border] td {
 
 /* --- Add image UI --- */
 
-.form-item-field-thumbnail-0 img {
-  width: 700px;
-}
-
 .isu-form-type_managed-file .isu-form-type_textfield {
   display: block;
 }
