@@ -514,7 +514,7 @@ dl {
 	padding: 0.75rem 1rem;
 	background: #cc0000;
 	width: 100%;
-	position: absolute;  
+	position: relative;  
 }
   
   .bean-card .fa {
