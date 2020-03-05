@@ -631,10 +631,6 @@ dl {
  		max-width: 275px;
  	}
  	
- 	.isu-wordmark-sitename {
- 		margin-left: -92px;
- 	}
-	 
 	.bean-card_text{
 		position: relative;
 		color: #ffffff;
@@ -653,7 +649,7 @@ dl {
  	
  	.isu-wordmark-sitename {
  		padding-left: 0px;
- 		margin-left: -70px;
+ 		margin-left: -23%;
  		padding-bottom: 21px;
  		font-size: 20px;
  		padding-top: 5px;
@@ -672,7 +668,17 @@ dl {
 	.isu-region_footer-third {
 		margin-bottom: 1rem;
 	} 	
+
+	.isu-page-column {
+		max-width: 98%;
+	}
  }
+
+@media screen and (max-width : 400px) {
+	.isu-wordmark-sitename {
+		margin-left: -33%;
+	}
+}
 
   /* Kill external link icon */
   #section-content .bean-card a.external:after { display: none; }
