@@ -653,8 +653,8 @@ dl {
  	
  	.isu-wordmark-sitename {
  		padding-left: 0px;
- 		margin-left: -39px;
- 		padding-bottom: 16px;
+ 		margin-left: -70px;
+ 		padding-bottom: 21px;
  		font-size: 20px;
  		padding-top: 5px;
 	}
@@ -668,7 +668,10 @@ dl {
 		margin-bottom: 25px;
 		margin-right: 25px;
 	}
- 	
+	
+	.isu-region_footer-third {
+		margin-bottom: 1rem;
+	} 	
  }
 
   /* Kill external link icon */
