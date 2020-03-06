@@ -73,6 +73,10 @@ html, body, .dialog-off-canvas-main-canvas, .isu-page-wrap {
 	text-align: center;
 }
 
+.isu-col-header-first {
+	text-align: -webkit-match-parent;
+}
+
 /* --------------------------------------  */
 /* ## Main Menu
 /* --------------------------------------  */
@@ -632,11 +636,14 @@ dl {
   
 	.isu-wordmark-logo {
 		max-width: 365px;
-		margin-left: -17px;
 	}
 	
 	.navbar-expand-lg .navbar-nav {
 		margin-left: -19px;
+	}
+	
+	.isu-col-header-first {
+		text-align: -webkit-match-parent;
 	}
 }
 	
@@ -664,7 +671,6 @@ dl {
  	
  	.isu-wordmark-sitename {
  		padding-left: 0px;
- 		margin-left: -23%;
  		padding-bottom: 21px;
  		font-size: 20px;
  		padding-top: 5px;
@@ -689,14 +695,3 @@ dl {
 	}
  }
 
-@media screen and (max-width : 400px) {
-	.isu-wordmark-sitename {
-		margin-left: -33%;
-	}
-}
-
-@media screen and (max-width : 500px) {
-	.isu-wordmark-sitename {
-		margin-left: -39%;
-	}
-}
