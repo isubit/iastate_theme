@@ -158,6 +158,7 @@ function iastate_theme_preprocess(&$variables, $hook) {
 
 function iastate_theme_preprocess_page(&$variables) {
   $variables['isu_navbar'] = theme_get_setting('isu_navbar');
+  $variables['gold_border_hidden'] = theme_get_setting('gold_border_hidden');
 
   $variables['theme_path'] = base_path() . $variables['directory'];
 

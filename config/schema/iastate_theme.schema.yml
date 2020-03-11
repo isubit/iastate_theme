@@ -1,0 +1,98 @@
+iastate_theme.settings:
+  type: theme_settings
+  label: 'Iowa State Theme Settings'
+  mapping:
+    isu_navbar:
+      type: integer
+      label: 'Show ISU navbar'
+    gold_border_hidden:
+      type: integer
+      label: 'Show gold border'
+    features:
+      type: mapping
+      label: 'Optional features'
+      mapping:
+        favicon:
+          type: boolean
+          label: 'Use the favicon supplied by the theme'
+    iastate_footer_logo_path:
+      type: uri
+      label: 'Path to custom footer logo'
+    iastate_footer_logo_url:
+      type: uri
+      label: 'Custom footer logo url'
+    iastate_contact_address:
+      type: text
+      label: 'Address'
+    iastate_contact_email:
+      type: email
+      label: 'Email'
+    iastate_contact_phone:
+      type: string
+      label: 'Phone'
+    iastate_associate1_title:
+      type: string
+      label: 'Associate 1 Title'
+    iastate_associate1_url:
+      type: uri
+      label: 'Associate 1 URL'
+    iastate_associate2_title:
+      type: string
+      label: 'Associate 2 Title'
+    iastate_associate2_url:
+      type: uri
+      label: 'Associate 2 URL'
+    iastate_associate3_title:
+      type: string
+      label: 'Associate 3 Title'
+    iastate_associate3_url:
+      type: uri
+      label: 'Associate 3 URL'
+    iastate_associate4_title:
+      type: string
+      label: 'Associate 4 Title'
+    iastate_associate4_url:
+      type: uri
+      label: 'Associate 4 URL'
+    iastate_associate5_title:
+      type: string
+      label: 'Associate 5 Title'
+    iastate_associate5_url:
+      type: uri
+      label: 'Associate 5 URL'
+    iastate_associate6_title:
+      type: string
+      label: 'Associate 6 Title'
+    iastate_associate6_url:
+      type: uri
+      label: 'Associate 6 URL'
+    iastate_social1_title:
+      type: string
+      label: 'Social 1 Title'
+    iastate_social1_url:
+      type: uri
+      label: 'Social 1 URL'
+    iastate_social2_title:
+      type: string
+      label: 'Social 2 Title'
+    iastate_social2_url:
+      type: uri
+      label: 'Social 2 URL'
+    iastate_social3_title:
+      type: string
+      label: 'Social 3 Title'
+    iastate_social3_url:
+      type: uri
+      label: 'Social 3 URL'
+    iastate_social4_title:
+      type: string
+      label: 'Social 4 Title'
+    iastate_social4_url:
+      type: uri
+      label: 'Social 4 URL'
+    iastate_social5_title:
+      type: string
+      label: 'Social 5 Title'
+    iastate_social5_url:
+      type: uri
+      label: 'Social 5 URL'

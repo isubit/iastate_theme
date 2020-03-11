@@ -12,7 +12,13 @@
  */
 #}
 
-<header class="isu-site-navbar" role="banner" aria-label="Site header">
+{% set site_navbar_classes = [
+  'isu-site-navbar',
+  gold_border_hidden ? 'isu-gold-border_hidden'
+  ] 
+%}
+
+<header{{ attributes.addClass(site_navbar_classes) }} role="banner" aria-label="Site header">
   <div class="container">
     <div class="row isu-row-site-navbar">
 
@@ -27,7 +33,7 @@
 
       <button class="isu-search_toggler" id="isu-search_toggler">
         <span class="fa fa-search isu-search_toggler-icon" aria-hidden="true"></span>
-        <span class="isu-search_toggler-label">Search</span>
+        <span class="isu-search_toggler-label">Open search bar</span>
       </button> 
 
       <div class="col-lg isu-col-header-second isu-col-header-second_has-search">

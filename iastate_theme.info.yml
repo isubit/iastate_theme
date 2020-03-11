@@ -7,6 +7,7 @@ libraries:
   - iastate_theme/global-js
   - iastate_theme/fonts
   - iastate_theme/font-awesome
+  - iastate_theme/academicons
 ckeditor_stylesheets:
   - css/bootstrap/bootstrap.min.css
   - css/base.css

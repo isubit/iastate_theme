@@ -19,6 +19,32 @@ body {
   background-color: #ffffff;
 }
 
+/* Override Bootstrap 4's typography */
+h1, .h1 {
+  font-size: 2rem;
+}
+
+h2, .h2 {
+  margin-top: 2rem;
+  font-size: 1.75rem;
+  font-weight: 400;
+}
+
+h2:first-child,
+.h2:first-child,
+.sr-only + h2,
+.sr-only + .h2 {
+  margin-top: 0;
+}
+
+h3, .h3 { 
+  margin-bottom: 0.35rem;
+  font-size: 1.5rem; 
+  font-weight: 400;
+}
+
+h4, .h4 { font-size: 1.35rem; }
+
 
 dl, ol, ul { /* Overrides bootstrap-reboot.min.css */
   padding-left: 2rem;
@@ -381,4 +407,41 @@ body.cke_editable table[border] td {
   border-collapse: inherit;
   border-bottom-color: #808080;
   border-top-color: #808080;
+}
+
+/* --------------------------------------  */
+/* ## FORM
+/* --------------------------------------  */
+
+/* --- Add image UI --- */
+
+.isu-form-type_managed-file .isu-form-type_textfield {
+  display: block;
+}
+
+.isu-form-type_managed-file .isu-form-type_textfield label {
+  display: block;
+  text-align: left;
+}
+
+.isu-form-type_managed-file .isu-form-type_textfield .description {
+  padding-left: 0;
+}
+
+.isu-form-type_managed-file img {
+  margin-bottom: 1rem;
+}
+
+.isu-form-type_managed-file .isu-remove-button {
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+/* CKEditor */
+div[id|='edit-attributes-data-align'] {
+  display: flex;
+}
+
+.form-item-attributes-data-align .form-radio {
+  margin-bottom: 0;
 }
