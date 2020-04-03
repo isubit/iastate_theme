@@ -333,45 +333,6 @@ dl {
 
 
 /* --------------------------------------  */
-/* ## Events
-/* --------------------------------------  */
-
-.event_details_registration {
-	padding-top: 20px;
-}
-
-.event_description {
-	padding-top: 20px;
-	padding-bottom: 20px;
-}
-
-.event_details_dates {
-	float: left;
-	font-style: italic;
-	padding-right: 5px;
-}
-
-.events_show_more{
-	background-color: #006BA6;
-        border-color: #006BA6;
-        font-weight: 700;
-        border-radius: 3px;
-        cursor: pointer;
-        transition: background 0.2s ease;
-		padding: 7px;
-		margin-left: 5%;
-		color: #fff;
-		text-decoration: none;
-}
-
-.events_show_more:hover{
-	background-color: #202124;
-	color: #fff;
-	text-decoration: none;
-}
-
-
-/* --------------------------------------  */
 /* ## Footer
 /* --------------------------------------  */
 
