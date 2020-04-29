@@ -593,6 +593,9 @@ body,
   margin-top: 1rem;
   margin-bottom: 2rem;
 }
+.isu-sidebar {
+  margin-top: 2rem;
+}
 .isu-page-title {
   margin-top: 1rem;
   margin-bottom: 2rem;
@@ -713,8 +716,13 @@ article:not(.isu-user):not(.isu-search_collapse) {
   margin-bottom: 1rem;
 }
 .isu-block-title {
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
   line-height: 1.25;
+  border-bottom: 1px solid #bbbbbb;
+}
+.isu-sidebar .isu-block-title {
+  font-size: 1.15rem;
 }
 
 /* -------------------------------------- */
@@ -1185,6 +1193,12 @@ details {
   padding: 0.25rem 0.5rem;
   text-decoration: none;
 }
+/* Imitate browser focus state */
+.js .dropbutton a:focus,
+.dropbutton-toggle button:focus {
+  box-shadow: inset 0 0 1px 2px #5096ff;
+}
+
 
 /* --- ## Multiple values table --- */
 /* Overrides tabledrag.module.css */
