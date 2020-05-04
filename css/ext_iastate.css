@@ -597,6 +597,7 @@ dl {
   
 	.isu-wordmark-logo {
 		max-width: 365px;
+		margin-left: -3%;
 	}
 	
 	.navbar-expand-lg .navbar-nav {
