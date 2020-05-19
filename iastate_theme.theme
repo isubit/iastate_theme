@@ -3,7 +3,7 @@
 /*
  * Implements template_preprocess_menu_local_task().
  *
- * Add Bootstrap 4 classes to links in tabs 
+ * Add Bootstrap 4 classes to links in tabs
  */
 
 function iastate_theme_preprocess_menu_local_task(&$variables) {
@@ -16,7 +16,7 @@ function iastate_theme_preprocess_menu_local_task(&$variables) {
 /*
  * Implements template_preprocess_views_view().
  *
- * Add Bootstrap 4 classes to views buttons 
+ * Add Bootstrap 4 classes to views buttons
  */
 
 function iastate_theme_preprocess_views_view(&$variables) {
@@ -26,7 +26,7 @@ function iastate_theme_preprocess_views_view(&$variables) {
 /*
  * Implements template_preprocess_menu_local_action().
  *
- * Add Bootstrap 4 classes to local actions 
+ * Add Bootstrap 4 classes to local actions
  */
 
 function iastate_theme_preprocess_menu_local_action(&$variables) {
@@ -58,9 +58,9 @@ function iastate_theme_preprocess_links(&$variables) {
     $variables['links']['comment-edit']['link']['#options']['attributes']['class'][] = 'btn btn-sm btn-outline-info';
   }
   if (!empty($variables['links']['comment-reply']['link'])) {
-    $variables['links']['comment-reply']['link']['#options']['attributes']['class'][] = 'btn btn-sm btn-outline-success'; 
+    $variables['links']['comment-reply']['link']['#options']['attributes']['class'][] = 'btn btn-sm btn-outline-success';
   }
-    /* Book */ 
+    /* Book */
   if (!empty($variables['links']['book_printer']['link'])) {
     $variables['links']['book_printer']['link']['#options']['attributes']['class'][] = 'btn btn-sm btn-outline-info';
   }
@@ -85,13 +85,13 @@ function iastate_theme_form_alter(array &$form, FormStateInterface $form_state, 
 
 /*
  * Implements template_preprocess_field_multiple_value_form().
- * 
+ *
  * Add Bootstrap 4 table classes to the multipe value field tables.
  */
 
 function iastate_theme_preprocess_field_multiple_value_form(&$variables) {
    $variables['table']['#attributes']['class'][] = 'table table-bordered isu-multiple-value-form-table';
-   
+
   if (!empty($variables['table']['#header'][0]['data']['#prefix']) && $variables['table']['#header'][0]['data']['#prefix'] == "<h4 class=\"label\">") {
     unset($variables['table']['#header'][0]['data']['#prefix'], $variables['table']['#header'][0]['data']['#suffix']);
   }
@@ -110,7 +110,7 @@ function iastate_theme_preprocess_file_widget_multiple(&$variables) {
 /*
  * Implements theme_preprocess()
  *
- * Allow is_front to be used on other templates 
+ * Allow is_front to be used on other templates
  */
 
 function iastate_theme_preprocess(&$variables, $hook) {
@@ -135,10 +135,13 @@ function iastate_theme_preprocess(&$variables, $hook) {
   $variables['css_file_url'] = $base_url . '/local/styles.css';
   $variables['printcss_file_exists'] = file_exists(DRUPAL_ROOT . '/local/print.css');
   $variables['printcss_file_url'] = $base_url . '/local/print.css';
+  $variables['footer2_file_exists'] = file_exists(DRUPAL_ROOT . '/local/footer2.htm');
+  $variables['footer2_file_path'] = DRUPAL_ROOT . '/local/footer2.htm';
+  $variables['footer2_file_contents'] = file_get_contents(DRUPAL_ROOT . '/local/footer2.htm');
 
   // Check to see if it's an edit/add/ or delete node page
   $route_name = \Drupal::routeMatch()->getRouteName();
-  
+
   if ($route_name == 'entity.node.edit_form') {
     $variables['is_node_edit'] = 'edit';
   }
