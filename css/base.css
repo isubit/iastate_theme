@@ -74,6 +74,9 @@ a { /* Overrides bootstrap.min.css */
 a:hover { /* Overrides bootstrap.min.css */
   color: #006BA6; /* ISU brand standard */
 }
+a:hover img {
+  outline: #5cb3fd auto 5px;
+}
 a.btn,
 a.badge,
 a.button,
