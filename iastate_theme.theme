@@ -137,7 +137,10 @@ function iastate_theme_preprocess(&$variables, $hook) {
   $variables['printcss_file_url'] = $base_url . '/local/print.css';
   $variables['footer2_file_exists'] = file_exists(DRUPAL_ROOT . '/local/footer2.htm');
   $variables['footer2_file_path'] = DRUPAL_ROOT . '/local/footer2.htm';
-  $variables['footer2_file_contents'] = file_get_contents(DRUPAL_ROOT . '/local/footer2.htm');
+  $variables['footer2_file_contents'] = '';
+  if ($variables['footer2_file_exists']) {
+    $variables['footer2_file_contents'] = file_get_contents(DRUPAL_ROOT . '/local/footer2.htm');
+  }
 
   // Check to see if it's an edit/add/ or delete node page
   $route_name = \Drupal::routeMatch()->getRouteName();
