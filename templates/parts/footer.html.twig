@@ -150,18 +150,22 @@
 
       <div class="col-sm-6 col-md-6 col-lg-3">
 
-        <div class="mb-3">
-          <h2 class="visually-hidden">Copyright Information</h2>
+        {% if iastate_copyright_hidden %}
+          {# Show nothing if the copyright is hidden #}
+        {% else %}
+          <div class="mb-3">
+            <h2 class="visually-hidden">Copyright Information</h2>
 
-          <p class="isu-copyright">Copyright © <script>document.write(new Date().getFullYear());</script><br>Iowa State University<br>of Science and Technology<br>All rights reserved.</p>
+            <p class="isu-copyright">Copyright © <script>document.write(new Date().getFullYear());</script><br>Iowa State University<br>of Science and Technology<br>All rights reserved.</p>
 
-          <h2 class="visually-hidden">Legal and Privay Links</h2>
-          <ul class="isu-legal-menu">
-            <li><a href="http://www.policy.iastate.edu/policy/discrimination">Non-discrimination Policy</a></li>
-            <li><a href="http://www.policy.iastate.edu/electronicprivacy">Privacy Policy</a></li>
-            <li><a href="http://digitalaccess.iastate.edu">Digital Access &amp; Accessibility</a></li>
-          </ul>
-        </div>
+            <h2 class="visually-hidden">Legal and Privay Links</h2>
+            <ul class="isu-legal-menu">
+              <li><a href="http://www.policy.iastate.edu/policy/discrimination">Non-discrimination Policy</a></li>
+              <li><a href="http://www.policy.iastate.edu/electronicprivacy">Privacy Policy</a></li>
+              <li><a href="http://digitalaccess.iastate.edu">Digital Access &amp; Accessibility</a></li>
+            </ul>
+          </div>
+        {% endif %}
 
         {% if page.footer_fourth %}
           {{ page.footer_fourth }}
