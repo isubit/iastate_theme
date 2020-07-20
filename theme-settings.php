@@ -57,6 +57,14 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
     '#description'  => t('Check this option to hide the gold border on the red header.'),
   );
 
+  // Set up the checkbox to show/hide the copyright
+  $form['iastate_theme_settings']['iastate_copyright_hidden'] = array(
+    '#type'         => 'checkbox',
+    '#title'        => t('Hide copyright'),
+    '#default_value' => theme_get_setting('iastate_copyright_hidden'),
+    '#description'  => t('Check this option to hide the copyright and legal links in the footer.'),
+  );
+
   // Create a section for Unit settings
   $form['iastate_unit_settings'] = array(
     '#type'         => 'details',
@@ -335,7 +343,6 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
     '#default_value'  => theme_get_setting('iastate_footer_logo_url'),
   );
 
-  // Foooter logo alt text
   $form['iastate_footer_logo']['iastate_footer_logo_alt'] = array(
     '#type'   => 'textfield',
     '#title'  => t('Footer logo alt text'),

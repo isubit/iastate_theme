@@ -138,6 +138,8 @@ function iastate_theme_preprocess(&$variables, $hook) {
   elseif ($route_name == 'entity.node.delete_form') {
     $variables['is_node_delete'] = 'delete';
   }
+
+  $variables['iastate_copyright_hidden'] = theme_get_setting('iastate_copyright_hidden');
 }
 
 /*
@@ -160,7 +162,7 @@ function iastate_theme_preprocess_block(&$variables) {
 function iastate_theme_preprocess_page(&$variables) {
   $variables['isu_navbar'] = theme_get_setting('isu_navbar');
   $variables['gold_border_hidden'] = theme_get_setting('gold_border_hidden');
-
+  
   $variables['theme_path'] = base_path() . $variables['directory'];
 
   $variables['iastate_footer_logo_path'] = theme_get_setting('iastate_footer_logo_path');
