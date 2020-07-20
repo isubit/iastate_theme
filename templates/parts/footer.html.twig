@@ -24,7 +24,7 @@
             {% if iastate_footer_logo_url %}
               <a href="{{ iastate_footer_logo_url }}">
             {% endif %}
-                <img class="isu-footer-logo" src="{{ base_path }}{{ iastate_footer_logo_path }}" class="wordmark-isu" alt="Iowa State University">
+                <img class="isu-footer-logo" src="{{ base_path }}{{ iastate_footer_logo_path }}" class="wordmark-isu" {% if iastate_footer_logo_alt %} alt="{{ iastate_footer_logo_alt }}" {% else %} alt="Iowa State University logo" {% endif %}>
             {% if iastate_footer_logo_url %}
               </a>
             {% endif %}

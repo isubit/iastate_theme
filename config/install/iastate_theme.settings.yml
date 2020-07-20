@@ -2,10 +2,12 @@ isu_navbar: 1
 gold_border_hidden: 0
 features:
   favicon: true
+iastate_logo_alt: ''
 iastate_unit_name: ''
 iastate_unit_url: ''
 iastate_footer_logo_path: themes/contrib/iastate_theme/isu-stacked.svg
 iastate_footer_logo_url: 'https://www.iastate.edu/'
+iastate_footer_logo_alt: ''
 iastate_contact_address: "2221 Wanda Daley Dr\n2nd Floor ASB\nAmes, IA 50011"
 iastate_contact_email: 'theme@iastate.edu'
 iastate_contact_phone: '515-294-6654'
