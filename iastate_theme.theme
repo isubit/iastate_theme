@@ -1,5 +1,11 @@
 <?php
 
+function iastate_theme_preprocess_html(&$variables) {
+  if ($node = \Drupal::request()->attributes->get('node')) {
+    $variables['attributes']['class'][] = 'node-id_' . $node->id();
+  }
+}
+
 /*
  * Implements template_preprocess_menu_local_task().
  *
