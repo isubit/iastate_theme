@@ -15,6 +15,12 @@ iastate_theme.settings:
         favicon:
           type: boolean
           label: 'Use the favicon supplied by the theme'
+    iastate_unit_name:
+      type: string
+      label: 'Unit name'
+    iastate_unit_url:
+      type: uri
+      label: 'Unit url'
     iastate_footer_logo_path:
       type: uri
       label: 'Path to custom footer logo'
