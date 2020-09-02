@@ -457,8 +457,8 @@ body,
 .isu-nav-link.nav-link { 
   /* .nav-link via Bootstrap 4, for specificity */
   /* Must override .navbar-expand-lg */
-  padding-right: 1em !important;
-  padding-left: 1em !important;
+  padding-right: 0.75em !important;
+  padding-left: 0.75em !important;
   color: #333333;
 }
   .isu-nav-link:hover {
