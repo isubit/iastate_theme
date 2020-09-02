@@ -454,9 +454,11 @@ body,
   max-height: 100vh;
 }
 
-.isu-nav-link.nav-link { /* .nav-link via Bootstrap 4, for specificity */
-  padding-right: 1em;
-  padding-left: 1em;
+.isu-nav-link.nav-link { 
+  /* .nav-link via Bootstrap 4, for specificity */
+  /* Must override .navbar-expand-lg */
+  padding-right: 1em !important;
+  padding-left: 1em !important;
   color: #333333;
 }
   .isu-nav-link:hover {
