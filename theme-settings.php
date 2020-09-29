@@ -23,6 +23,14 @@
  */
 function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
 
+  // Logo alt text
+  $form['logo']['iastate_logo_alt'] = array(
+    '#type'   => 'textfield',
+    '#title'  => t('Logo alt text'),
+    '#default_value'  => theme_get_setting('iastate_logo_alt'),
+    '#description' => t('If left blank the alt text will be Iowa State University logo'),
+  );
+
   // Create a section for ISU theme settings
   $form['iastate_theme_settings'] = array(
     '#type'         => 'details',
@@ -47,6 +55,14 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
     '#title'        => t('Hide gold border'),
     '#default_value' => theme_get_setting('gold_border_hidden'),
     '#description'  => t('Check this option to hide the gold border on the red header.'),
+  );
+
+  // Set up the checkbox to show/hide the copyright
+  $form['iastate_theme_settings']['iastate_copyright_hidden'] = array(
+    '#type'         => 'checkbox',
+    '#title'        => t('Hide copyright'),
+    '#default_value' => theme_get_setting('iastate_copyright_hidden'),
+    '#description'  => t('Check this option to hide the copyright and legal links in the footer.'),
   );
 
   // Create a section for Unit settings
@@ -130,80 +146,80 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
   
   // 1
   $form['iastate_footer_associates']['iastate_associate1_title'] = array(
-      '#type'   => 'textfield',
-      '#title'  => t('Associate 1 Title'),
-      '#default_value'  => theme_get_setting('iastate_associate1_title'),
-    );
+    '#type'   => 'textfield',
+    '#title'  => t('Associate 1 Title'),
+    '#default_value'  => theme_get_setting('iastate_associate1_title'),
+  );
 
   $form['iastate_footer_associates']['iastate_associate1_url'] = array(
-      '#type'   => 'url',
-      '#title'  => t('Associate 1 URL'),
-      '#default_value'  => theme_get_setting('iastate_associate1_url'),
-    );
+    '#type'   => 'url',
+    '#title'  => t('Associate 1 URL'),
+    '#default_value'  => theme_get_setting('iastate_associate1_url'),
+  );
 
   // 2
   $form['iastate_footer_associates']['iastate_associate2_title'] = array(
-      '#type'   => 'textfield',
-      '#title'  => t('Associate 2 Title'),
-      '#default_value'  => theme_get_setting('iastate_associate2_title'),
-    );
+    '#type'   => 'textfield',
+    '#title'  => t('Associate 2 Title'),
+    '#default_value'  => theme_get_setting('iastate_associate2_title'),
+  );
 
   $form['iastate_footer_associates']['iastate_associate2_url'] = array(
-      '#type'   => 'url',
-      '#title'  => t('Associate 2 URL'),
-      '#default_value'  => theme_get_setting('iastate_associate2_url'),
-    );
+    '#type'   => 'url',
+    '#title'  => t('Associate 2 URL'),
+    '#default_value'  => theme_get_setting('iastate_associate2_url'),
+  );
 
   // 3
   $form['iastate_footer_associates']['iastate_associate3_title'] = array(
-      '#type'   => 'textfield',
-      '#title'  => t('Associate 3 Title'),
-      '#default_value'  => theme_get_setting('iastate_associate3_title'),
-    );
+    '#type'   => 'textfield',
+    '#title'  => t('Associate 3 Title'),
+    '#default_value'  => theme_get_setting('iastate_associate3_title'),
+  );
 
   $form['iastate_footer_associates']['iastate_associate3_url'] = array(
-      '#type'   => 'url',
-      '#title'  => t('Associate 3 URL'),
-      '#default_value'  => theme_get_setting('iastate_associate3_url'),
-    );
+    '#type'   => 'url',
+    '#title'  => t('Associate 3 URL'),
+    '#default_value'  => theme_get_setting('iastate_associate3_url'),
+  );
 
   // 4
   $form['iastate_footer_associates']['iastate_associate4_title'] = array(
-      '#type'   => 'textfield',
-      '#title'  => t('Associate 4 Title'),
-      '#default_value'  => theme_get_setting('iastate_associate4_title'),
-    );
+    '#type'   => 'textfield',
+    '#title'  => t('Associate 4 Title'),
+    '#default_value'  => theme_get_setting('iastate_associate4_title'),
+  );
 
   $form['iastate_footer_associates']['iastate_associate4_url'] = array(
-      '#type'   => 'url',
-      '#title'  => t('Associate 4 URL'),
-      '#default_value'  => theme_get_setting('iastate_associate4_url'),
-    );
+    '#type'   => 'url',
+    '#title'  => t('Associate 4 URL'),
+    '#default_value'  => theme_get_setting('iastate_associate4_url'),
+  );
 
   $form['iastate_footer_associates']['iastate_associate5_title'] = array(
-      '#type'   => 'textfield',
-      '#title'  => t('Associate 5 Title'),
-      '#default_value'  => theme_get_setting('iastate_associate5_title'),
-    );
+    '#type'   => 'textfield',
+    '#title'  => t('Associate 5 Title'),
+    '#default_value'  => theme_get_setting('iastate_associate5_title'),
+  );
 
   $form['iastate_footer_associates']['iastate_associate5_url'] = array(
-      '#type'   => 'url',
-      '#title'  => t('Associate 5 URL'),
-      '#default_value'  => theme_get_setting('iastate_associate5_url'),
-    );
+    '#type'   => 'url',
+    '#title'  => t('Associate 5 URL'),
+    '#default_value'  => theme_get_setting('iastate_associate5_url'),
+  );
 
   // 6
   $form['iastate_footer_associates']['iastate_associate6_title'] = array(
-      '#type'   => 'textfield',
-      '#title'  => t('Associate 6 Title'),
-      '#default_value'  => theme_get_setting('iastate_associate6_title'),
-    );
+    '#type'   => 'textfield',
+    '#title'  => t('Associate 6 Title'),
+    '#default_value'  => theme_get_setting('iastate_associate6_title'),
+  );
 
   $form['iastate_footer_associates']['iastate_associate6_url'] = array(
-      '#type'   => 'url',
-      '#title'  => t('Associate 6 URL'),
-      '#default_value'  => theme_get_setting('iastate_associate6_url'),
-    );
+    '#type'   => 'url',
+    '#title'  => t('Associate 6 URL'),
+    '#default_value'  => theme_get_setting('iastate_associate6_url'),
+  );
 
   // Create a section for social media links
   $form['iastate_footer_social'] = array(
@@ -216,94 +232,94 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
   
   // 1
   $form['iastate_footer_social']['iastate_social1_title'] = array(
-      '#type'   => 'textfield',
-      '#title'  => t('Social 1 Title'),
-      '#default_value'  => theme_get_setting('iastate_social1_title'),
-    );
+    '#type'   => 'textfield',
+    '#title'  => t('Social 1 Title'),
+    '#default_value'  => theme_get_setting('iastate_social1_title'),
+  );
 
   $form['iastate_footer_social']['iastate_social1_url'] = array(
-      '#type'   => 'url',
-      '#title'  => t('Social 1 URL'),
-      '#default_value'  => theme_get_setting('iastate_social1_url'),
-    );
+    '#type'   => 'url',
+    '#title'  => t('Social 1 URL'),
+    '#default_value'  => theme_get_setting('iastate_social1_url'),
+  );
 
   // 2
   $form['iastate_footer_social']['iastate_social2_title'] = array(
-      '#type'   => 'textfield',
-      '#title'  => t('Social 2 Title'),
-      '#default_value'  => theme_get_setting('iastate_social2_title'),
-    );
+    '#type'   => 'textfield',
+    '#title'  => t('Social 2 Title'),
+    '#default_value'  => theme_get_setting('iastate_social2_title'),
+  );
 
   $form['iastate_footer_social']['iastate_social2_url'] = array(
-      '#type'   => 'url',
-      '#title'  => t('Social 2 URL'),
-      '#default_value'  => theme_get_setting('iastate_social2_url'),
-    );
+    '#type'   => 'url',
+    '#title'  => t('Social 2 URL'),
+    '#default_value'  => theme_get_setting('iastate_social2_url'),
+  );
 
   // 3
   $form['iastate_footer_social']['iastate_social3_title'] = array(
-      '#type'   => 'textfield',
-      '#title'  => t('Social 3 Title'),
-      '#default_value'  => theme_get_setting('iastate_social3_title'),
-    );
+    '#type'   => 'textfield',
+    '#title'  => t('Social 3 Title'),
+    '#default_value'  => theme_get_setting('iastate_social3_title'),
+  );
 
   $form['iastate_footer_social']['iastate_social3_url'] = array(
-      '#type'   => 'url',
-      '#title'  => t('Social 3 URL'),
-      '#default_value'  => theme_get_setting('iastate_social3_url'),
-    );
+    '#type'   => 'url',
+    '#title'  => t('Social 3 URL'),
+    '#default_value'  => theme_get_setting('iastate_social3_url'),
+  );
 
   // 4
   $form['iastate_footer_social']['iastate_social4_title'] = array(
-      '#type'   => 'textfield',
-      '#title'  => t('Social 4 Title'),
-      '#default_value'  => theme_get_setting('iastate_social4_title'),
-    );
+    '#type'   => 'textfield',
+    '#title'  => t('Social 4 Title'),
+    '#default_value'  => theme_get_setting('iastate_social4_title'),
+  );
 
   $form['iastate_footer_social']['iastate_social4_url'] = array(
-      '#type'   => 'url',
-      '#title'  => t('Social 4 URL'),
-      '#default_value'  => theme_get_setting('iastate_social4_url'),
-    );
+    '#type'   => 'url',
+    '#title'  => t('Social 4 URL'),
+    '#default_value'  => theme_get_setting('iastate_social4_url'),
+  );
 
   // 5
   $form['iastate_footer_social']['iastate_social5_title'] = array(
-      '#type'   => 'textfield',
-      '#title'  => t('Social 5 Title'),
-      '#default_value'  => theme_get_setting('iastate_social5_title'),
-    );
+    '#type'   => 'textfield',
+    '#title'  => t('Social 5 Title'),
+    '#default_value'  => theme_get_setting('iastate_social5_title'),
+  );
 
   $form['iastate_footer_social']['iastate_social5_url'] = array(
-      '#type'   => 'url',
-      '#title'  => t('Social 5 URL'),
-      '#default_value'  => theme_get_setting('iastate_social5_url'),
-    );
+    '#type'   => 'url',
+    '#title'  => t('Social 5 URL'),
+    '#default_value'  => theme_get_setting('iastate_social5_url'),
+  );
 
   // 6
   $form['iastate_footer_social']['iastate_social6_title'] = array(
-      '#type'   => 'textfield',
-      '#title'  => t('Social 6 Title'),
-      '#default_value'  => theme_get_setting('iastate_social6_title'),
-    );
+    '#type'   => 'textfield',
+    '#title'  => t('Social 6 Title'),
+    '#default_value'  => theme_get_setting('iastate_social6_title'),
+  );
 
   $form['iastate_footer_social']['iastate_social6_url'] = array(
-      '#type'   => 'url',
-      '#title'  => t('Social 6 URL'),
-      '#default_value'  => theme_get_setting('iastate_social6_url'),
-    );
+    '#type'   => 'url',
+    '#title'  => t('Social 6 URL'),
+    '#default_value'  => theme_get_setting('iastate_social6_url'),
+  );
 
   // 7
   $form['iastate_footer_social']['iastate_social7_title'] = array(
-      '#type'   => 'textfield',
-      '#title'  => t('Social 7 Title'),
-      '#default_value'  => theme_get_setting('iastate_social7_title'),
-    );
+    '#type'   => 'textfield',
+    '#title'  => t('Social 7 Title'),
+    '#default_value'  => theme_get_setting('iastate_social7_title'),
+  );
 
   $form['iastate_footer_social']['iastate_social7_url'] = array(
-      '#type'   => 'url',
-      '#title'  => t('Social 7 URL'),
-      '#default_value'  => theme_get_setting('iastate_social7_url'),
-    );
+    '#type'   => 'url',
+    '#title'  => t('Social 7 URL'),
+    '#default_value'  => theme_get_setting('iastate_social7_url'),
+  );
 
   // Create a section for footer logo
   $form['iastate_footer_logo'] = array(
@@ -314,16 +330,23 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
   );
 
   $form['iastate_footer_logo']['iastate_footer_logo_path'] = array(
-      '#type'   => 'textfield',
-      '#title'  => t('Path to custom footer logo'),
-      '#description' => t('Examples: logo.svg (for a file in the public filesystem), public://logo.svg, or themes/contrib/iastate_theme/logo.svg.'),
-      '#default_value'  => theme_get_setting('iastate_footer_logo_path'),
+    '#type'   => 'textfield',
+    '#title'  => t('Path to custom footer logo'),
+    '#description' => t('Examples: logo.svg (for a file in the public filesystem), public://logo.svg, or themes/contrib/iastate_theme/logo.svg.'),
+    '#default_value'  => theme_get_setting('iastate_footer_logo_path'),
   ); 
 
   $form['iastate_footer_logo']['iastate_footer_logo_url'] = array(
-      '#type'   => 'textfield',
-      '#title'  => t('Custom footer logo url'),
-      '#description' => t('Link the footer logo to a different website.'),
-      '#default_value'  => theme_get_setting('iastate_footer_logo_url'),
+    '#type'   => 'textfield',
+    '#title'  => t('Custom footer logo url'),
+    '#description' => t('Link the footer logo to a different website.'),
+    '#default_value'  => theme_get_setting('iastate_footer_logo_url'),
+  );
+
+  $form['iastate_footer_logo']['iastate_footer_logo_alt'] = array(
+    '#type'   => 'textfield',
+    '#title'  => t('Footer logo alt text'),
+    '#default_value'  => theme_get_setting('iastate_footer_logo_alt'),
+    '#description' => t('If left blank the alt text will be Iowa State University logo'),
   );
 }

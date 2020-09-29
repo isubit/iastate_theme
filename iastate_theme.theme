@@ -1,5 +1,11 @@
 <?php
 
+function iastate_theme_preprocess_html(&$variables) {
+  if ($node = \Drupal::request()->attributes->get('node')) {
+    $variables['attributes']['class'][] = 'node-id_' . $node->id();
+  }
+}
+
 /*
  * Implements template_preprocess_menu_local_task().
  *
@@ -138,22 +144,36 @@ function iastate_theme_preprocess(&$variables, $hook) {
   elseif ($route_name == 'entity.node.delete_form') {
     $variables['is_node_delete'] = 'delete';
   }
+
+  $variables['iastate_copyright_hidden'] = theme_get_setting('iastate_copyright_hidden');
+}
+
+/*
+ * Implements theme_preprocess_block().
+ *
+ * Make theme settings available in block templates
+ */
+
+function iastate_theme_preprocess_block(&$variables) {
+  $variables['iastate_logo_alt'] = theme_get_setting('iastate_logo_alt');
+
 }
 
 /*
  * Implements theme_preprocess_page().
  *
- * Make theme settings available in templates
+ * Make theme settings available in page templates
  */
 
 function iastate_theme_preprocess_page(&$variables) {
   $variables['isu_navbar'] = theme_get_setting('isu_navbar');
   $variables['gold_border_hidden'] = theme_get_setting('gold_border_hidden');
-
+  
   $variables['theme_path'] = base_path() . $variables['directory'];
 
   $variables['iastate_footer_logo_path'] = theme_get_setting('iastate_footer_logo_path');
   $variables['iastate_footer_logo_url'] = theme_get_setting('iastate_footer_logo_url');
+  $variables['iastate_footer_logo_alt'] = theme_get_setting('iastate_footer_logo_alt');
 
   $variables['iastate_contact_title'] = theme_get_setting('iastate_contact_title');
   $variables['iastate_contact_address'] = theme_get_setting('iastate_contact_address');
