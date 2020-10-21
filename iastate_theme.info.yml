@@ -30,3 +30,10 @@ regions:
   footer_third: 'Footer Third'
   footer_fourth: 'Footer Fourth'
   sign_off: 'Sign Off'
+
+libraries-override:
+  layout_builder/drupal.layout_builder:
+    css:
+      theme:
+        /core/themes/stable/css/layout_builder/layout-builder.css: /themes/custom/iastate_theme/css/layout-builder.css
+ 
