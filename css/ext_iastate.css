@@ -432,6 +432,11 @@ dl {
 }
 
 /* Layout Builder Content Type */
+.node-type_layout-ct .row {
+	margin-left: 0;
+	margin-right:0;
+}
+
 .node-type_layout-ct .isu-region.isu-region_content {
   width: 100%;
 }
@@ -444,11 +449,6 @@ dl {
   padding-left: 1rem;
   padding-right: 1rem;
   max-width: 100%;
-}
-
-.node-type_layout-ct #block-iastate-theme-content--2 {
-    margin-left: 15px;
-    margin-right: 15px;
 }
 
 @media (min-width: 576px) {
