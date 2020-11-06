@@ -1,7 +1,15 @@
 <?php
 
+use Drupal\node\NodeInterface;
+
+/**
+ * Implements template_preprocess_html().
+ * 
+ * Add node-id_{id} class.
+ */
 function iastate_theme_preprocess_html(&$variables) {
-  if ($node = \Drupal::request()->attributes->get('node')) {
+  $node = \Drupal::request()->attributes->get('node');
+  if ($node instanceof NodeInterface) {
     $variables['attributes']['class'][] = 'node-id_' . $node->id();
   }
 }
