@@ -434,7 +434,7 @@ dl {
 /* Layout Builder Content Type */
 .node-type_layout-ct .row {
 	margin-left: 0;
-	margin-right:0;
+	margin-right: 0;
 }
 
 .node-type_layout-ct .isu-region.isu-region_content {
@@ -443,7 +443,8 @@ dl {
 
 .node-type_layout-ct #block-iastate-theme-help,
 .node-type_layout-ct #block-iastate-theme-page-title--2,
-.node-type_layout-ct #block-iastate-theme-local-tasks {
+.node-type_layout-ct #block-iastate-theme-local-tasks,
+.node-type_layout-ct #node-layout-ct-layout-builder-form {
   margin-right: auto;
   margin-left: auto;
   padding-left: 1rem;
@@ -454,32 +455,36 @@ dl {
 @media (min-width: 576px) {
   .node-type_layout-ct #block-iastate-theme-help,
   .node-type_layout-ct #block-iastate-theme-page-title--2,
-  .node-type_layout-ct #block-iastate-theme-local-tasks { max-width: 540px; }
-}
-
-@media (max-width: 767px) {
-  .node-type_layout-ct #block-iastate-theme-help,
-  .node-type_layout-ct #block-iastate-theme-page-title--2,
-  .node-type_layout-ct #block-iastate-theme-local-tasks { width: 100%; }
+  .node-type_layout-ct #block-iastate-theme-local-tasks,
+  .node-type_layout-ct #node-layout-ct-layout-builder-form,
+  .node-type_layout-ct .layout--content-container--default .layout-content { max-width: 540px; }
 }
 
 @media (min-width: 768px) {
   .node-type_layout-ct #block-iastate-theme-help,
   .node-type_layout-ct #block-iastate-theme-page-title--2,
-  .node-type_layout-ct #block-iastate-theme-local-tasks { max-width: 720px; }
+  .node-type_layout-ct #block-iastate-theme-local-tasks,
+  .node-type_layout-ct #node-layout-ct-layout-builder-form,
+  .node-type_layout-ct .layout--content-container--default .layout-content { max-width: 720px; }
 }
 
 @media (min-width: 992px) {
   .node-type_layout-ct #block-iastate-theme-help,
   .node-type_layout-ct #block-iastate-theme-page-title--2,
-  .node-type_layout-ct #block-iastate-theme-local-tasks { max-width: 960px; }
+  .node-type_layout-ct #block-iastate-theme-local-tasks,
+  .node-type_layout-ct #node-layout-ct-layout-builder-form,
+  .node-type_layout-ct .layout--content-container--default .layout-content { max-width: 960px; }
 }
 
 @media (min-width: 1200px) {
   .node-type_layout-ct #block-iastate-theme-help,
   .node-type_layout-ct #block-iastate-theme-page-title--2,
-  .node-type_layout-ct #block-iastate-theme-local-tasks { max-width: 1240px; }
+  .node-type_layout-ct #block-iastate-theme-local-tasks,
+  .node-type_layout-ct #node-layout-ct-layout-builder-form,
+  .node-type_layout-ct .layout--content-container--default .layout-content { max-width: 1140px; }
 }
+
+/*- Layout Builder Base -*/
 
 /* --------------------------------------  */
 /* ## Aggregator Feed
