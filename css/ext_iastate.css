@@ -452,6 +452,11 @@ dl {
   max-width: 100%;
 }
 
+.node-type_layout-ct #layout_builder {
+  border: 3px solid #2f91da;
+  background-color: #fff;
+}
+
 @media (min-width: 576px) {
   .node-type_layout-ct #block-iastate-theme-help,
   .node-type_layout-ct #block-iastate-theme-page-title--2,
