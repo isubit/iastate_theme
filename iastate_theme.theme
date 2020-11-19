@@ -205,3 +205,4 @@ function iastate_theme_preprocess_page(&$variables) {
   $variables['iastate_social7_title'] = theme_get_setting('iastate_social7_title');
   $variables['iastate_social7_url'] = theme_get_setting('iastate_social7_url');
 }
+

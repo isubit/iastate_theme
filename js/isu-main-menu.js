@@ -28,13 +28,13 @@
 $(document).ready(function() {
 
   // Navigate with right and left arrow keys.
-  $('#block-iastate8-theme-main-menu').on('keydown', function(event) {
+  $('#block-iastate-theme-main-menu').on('keydown', function(event) {
     if (event.keyCode === 39) { // RIGHT arrow key
       event.preventDefault();
       if ( $(':focus').is('.isu-dropdown-toggle') ) {
         // If the focused item is a link in a dropdown...
         // Then change the focus to the next link.
-        $(':focus').closest('li').next('li').find('a').focus();
+		$(':focus').closest('li').next('li').find('a').focus();
       } else {
         // Otherwise, the focused item is a top-level link.
         // In this case, move to the next top-level link.
@@ -130,3 +130,4 @@ $(document).ready(function() {
 });
 
 })(jQuery, Drupal);
+
