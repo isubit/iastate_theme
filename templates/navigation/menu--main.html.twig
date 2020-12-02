@@ -75,14 +75,21 @@
 
         {% if item.below %} {# If the item has children, it is a toggle. #}
           <div role="none" class="isu-dropdown-toggle_wrapper">
-			<a class="nav-link isu-nav-link isu-dropdown-toggle" href="{{ item.url }}">{{ item.title }}</a>
+		    {% if item.url|render|trim %}
+		      <a class="nav-link isu-nav-link isu-dropdown-toggle" href="{{ item.url }}">{{ item.title }}</a>
+		    {% else %}
+              <a class="nav-link isu-nav-link isu-dropdown-toggle" href="#">{{ item.title }}</a>
+		    {% endif %}
 			{# {{ link(item.title, item.url, {'class': toggle_classes}) }} #}
             <button class="isu-dropdown-toggle_mobile"><span class="fa fa-angle-down"></span><span class="sr-only">Open dropdown menu</span></button>
           </div>
           {{ menus.menu_links(item.below, item.attributes, menu_level + 1) }}
-        {% else %} {# If the item does not have children, it's just a normal link. #}
-		  <a class="nav-link isu-nav-link" href="#">{{ item.title }}</a>
-          {# {{ link(item.title, item.url, {'class': link_classes}) }} #}
+		{% else %}
+		  {% if item.url|render|trim %}
+		    <a class="nav-link isu-nav-link" href="{{ item.url }}">{{ item.title }}</a>
+		  {% else %}
+		    <a class="nav-link isu-nav-link" href="#">{{ item.title }}</a>
+		  {% endif %}
         {% endif %}
         
       </li>
