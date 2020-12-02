@@ -67,6 +67,7 @@
     description_display == 'invisible' ? 'visually-hidden',
   ]
 %}
+
 <div{{ attributes.addClass(element_classes) }}>
   {% if label_display in ['before', 'invisible'] %}
     {{ label }}
@@ -87,7 +88,7 @@
     {{ label }}
   {% endif %}
   {% if errors %}
-    <div class="form-item--error-message">
+    <div class="form-item--error-message alert alert-danger" id="{{ error_id }}" role="alert">
       {{ errors }}
     </div>
   {% endif %}
