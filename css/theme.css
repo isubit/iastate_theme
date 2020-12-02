@@ -936,7 +936,9 @@ details {
 .isu-form-type_textfield label,
 .isu-form-type_email label,
 .isu-form-type_tel label,
-.isu-form-type_url label {
+.isu-form-type_url label,
+.isu-form-type_date label,
+.isu-form-type_number label {
   /* .filter-wrapper via Drupal 8 */
   font-weight: 700;
 }
