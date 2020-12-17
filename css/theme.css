@@ -482,9 +482,9 @@ div#edit-search-broadness {margin:0 0 0 15px; }
  * a consistent behavior. Javascript can be found in isu-main-menu.js.
  */
 
-.isu-dropdown {
+/* .isu-dropdown {
   position: relative;
-}
+} */
 
 .isu-dropdown-toggle:after {
   content: "\f107";
@@ -500,10 +500,7 @@ div#edit-search-broadness {margin:0 0 0 15px; }
 }
 
 .isu-dropdown-menu {
-  /* list-style: none; unnecessary */
   position: absolute;
-  /* top: 100%; unnecessary */
-  /* left: 0; unnecessary */
   min-width: 10rem;
   margin: 0;
   padding: 0;
@@ -525,7 +522,7 @@ div#edit-search-broadness {margin:0 0 0 15px; }
 .isu-dropdown-item:hover,
 .isu-dropdown-item.active,
 .isu-dropdown-item:active  {
-  background-color:transparent;
+  background-color: transparent;
 }
 
 .isu-dropdown-item a,
@@ -557,7 +554,7 @@ div#edit-search-broadness {margin:0 0 0 15px; }
     overflow: visible;
   }
 
-  .isu-dropdown:hover .isu-dropdown-menu {
+  .isu-dropdown:hover > .isu-dropdown-menu {
     display: block;
   }
 }
@@ -583,7 +580,7 @@ div#edit-search-broadness {margin:0 0 0 15px; }
     margin: 0.25rem;
     padding: .375rem .75rem;
     border: 1px solid #676767;
-    background: #ffffff;
+    background: #eeeeee;
     border-radius: 0.25rem;
     cursor: pointer;
   }
@@ -591,6 +588,10 @@ div#edit-search-broadness {margin:0 0 0 15px; }
   .isu-dropdown-menu {
     position: static;
     margin-left: 1rem;
+  }
+
+  .isu-dropdown-item {
+	background-color: #eeeeee !important; 
   }
 }
 
