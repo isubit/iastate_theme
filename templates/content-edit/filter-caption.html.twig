@@ -19,7 +19,7 @@
 
 {% set figid = random() %}
 
-<figure role="group" class="caption caption-{{ tag }}{%- if classes %} {{ classes }}{%- endif %}" aria-labelledby="{{ figid }}">
+<figure class="caption caption-{{ tag }}{%- if classes %} {{ classes }}{%- endif %}" aria-labelledby="{{ figid }}">
   {{ node }}
   <figcaption id="{{ figid }}">{{ caption }}</figcaption>
 </figure>
