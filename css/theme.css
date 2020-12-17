@@ -936,7 +936,9 @@ details {
 .isu-form-type_textfield label,
 .isu-form-type_email label,
 .isu-form-type_tel label,
-.isu-form-type_url label {
+.isu-form-type_url label,
+.isu-form-type_date label,
+.isu-form-type_number label {
   /* .filter-wrapper via Drupal 8 */
   font-weight: 700;
 }
@@ -958,21 +960,12 @@ details {
   border-radius: 0.25rem;
   border: 1px solid #d8d8d8;
 }
-.isu-fieldset .isu-fieldset {
-  margin: 0;
-  padding: 0;
-  border-radius: 0;
-  border: 0;
-}
 .isu-legend {
   display: inline-block;
   width: auto;
   padding: 0 0.5rem;
   font-size: 1rem;
   font-weight: 700;
-}
-.isu-fieldset .isu-fieldset .isu-legend {
-  padding: 0;
 }
 
 /* --- ## Summary --- */
