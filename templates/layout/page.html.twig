@@ -69,7 +69,7 @@
 {# menu-navbar.html.twig contains the main menu #}
 {% include '@iastate_theme/parts/menu-navbar.html.twig' %}
 
-<main class="isu-main" role="main">
+<main class="isu-main">
 
   <a id="main-content" tabindex="-1"></a>
 
@@ -94,7 +94,7 @@
 
       {% if page.sidebar_first|render %}
         <div class="isu-page-column isu-sidebar isu-sidebar-first {{sidebar_classes}}">
-          <aside role="complementary">
+          <aside>
             {{ page.sidebar_first }}
           </aside>
         </div>
@@ -108,7 +108,7 @@
 
       {% if page.sidebar_second|render %}
         <div class="isu-page-column isu-sidebar isu-sidebar-second {{sidebar_classes}}">
-          <aside role="complementary">
+          <aside>
             {{ page.sidebar_second }}
           </aside>
         </div>
