@@ -687,6 +687,7 @@ dl {
 @media screen and (max-width : 768px) {
  	.isu-wordmark-logo {
  		margin-top: 1.5rem;
+		margin-bottom: 1.5rem;
  	}
  	
  	.isu-wordmark-sitename {
