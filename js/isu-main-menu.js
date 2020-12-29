@@ -66,11 +66,13 @@ $(document).ready(function() {
   $('.isu-dropdown-menu').on('keydown', function(event) {
     if (event.keyCode === 40) { // DOWN arrow key
       event.preventDefault();
+	  event.stopPropagation();
       // Change the focus to the next link in the dropdown
       $(':focus').closest('li').next('li').find('a').focus();
 	  // console.log($(':focus').parent());
     } else if (event.keyCode === 38) { // UP arrow key
       event.preventDefault();
+	  event.stopPropagation();
       if ( $(':focus').is('.isu-dropdown-menu li:not(:first-of-type) a') ) {
         // If the focused item is NOT the first item in the list...
         // Change the focus to the link in the previous li
