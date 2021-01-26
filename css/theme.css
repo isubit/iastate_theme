@@ -938,7 +938,8 @@ details {
 .isu-form-type_tel label,
 .isu-form-type_url label,
 .isu-form-type_date label,
-.isu-form-type_number label {
+.isu-form-type_number label,
+.field--type-datetime label {
   /* .filter-wrapper via Drupal 8 */
   font-weight: 700;
 }
