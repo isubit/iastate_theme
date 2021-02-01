@@ -12,6 +12,9 @@ function iastate_theme_preprocess_html(&$variables) {
   if ($node instanceof NodeInterface) {
     $variables['attributes']['class'][] = 'node-id_' . $node->id();
   }
+  if (isset($variables['node_type'])) {
+    $variables['attributes']['class'][] = 'node-type_' . $variables['node_type'];
+  }
 }
 
 /*

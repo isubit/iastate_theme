@@ -35,7 +35,6 @@
   {%
     set body_classes = [
       logged_in ? 'logged-in',
-      'node-type_' ~ node_type|clean_class,
       is_node_edit == 'edit' ? 'node-form node-form_' ~ 'edit',
       is_node_add == 'add' ? 'node-form node-form_' ~ 'add',
       is_node_delete == 'delete' ? 'node-form node-form_' ~ 'delete',
