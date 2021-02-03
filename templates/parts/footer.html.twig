@@ -36,23 +36,60 @@
             <h2 class="visually-hidden" id="footerassociatesmenu">Associates</h2>
             <ul class="isu-associates-menu">
               {% if iastate_associate1_title %}
-                <li><a href="{{ iastate_associate1_url }}">{{ iastate_associate1_title }}</a></li>
+                <li>
+                  {% if iastate_associate1_url %}
+                    <a href="{{ iastate_associate1_url }}">{{ iastate_associate1_title }}</a>
+                  {% else %}
+                    <span>{{ iastate_associate1_title }}</span>
+                  {% endif %}
+                </li>
               {% endif %}
               {% if iastate_associate2_title %}
-                <li><a href="{{ iastate_associate2_url }}">{{ iastate_associate2_title }}</a></li>
+                <li>
+                  {% if iastate_associate2_url %}
+                    <a href="{{ iastate_associate2_url }}">{{ iastate_associate2_title }}</a>
+                  {% else %}
+                    <span>{{ iastate_associate2_title }}</span>
+                  {% endif %}
+                </li>
               {% endif %}
               {% if iastate_associate3_title %}
-                <li><a href="{{ iastate_associate3_url }}">{{ iastate_associate3_title }}</a></li>
+                <li>
+                  {% if iastate_associate3_url %}
+                    <a href="{{ iastate_associate3_url }}">{{ iastate_associate3_title }}</a>
+                  {% else %}
+                    <span>{{ iastate_associate3_title }}</span>
+                  {% endif %}
+                </li>
               {% endif %}
               {% if iastate_associate4_title %}
-                <li><a href="{{ iastate_associate4_url }}">{{ iastate_associate4_title }}</a></li>
+                <li>
+                  {% if iastate_associate4_url %}
+                    <a href="{{ iastate_associate4_url }}">{{ iastate_associate4_title }}</a>
+                  {% else %}
+                    <span>{{ iastate_associate4_title }}</span>
+                  {% endif %}
+                </li>
               {% endif %}
               {% if iastate_associate5_title %}
-                <li><a href="{{ iastate_associate5_url }}">{{ iastate_associate5_title }}</a></li>
+                <li>
+                  {% if iastate_associate5_url %}
+                    <a href="{{ iastate_associate5_url }}">{{ iastate_associate5_title }}</a>
+                  {% else %}
+                    <span>{{ iastate_associate5_title }}</span>
+                  {% endif %}
+                </li>
               {% endif %}
               {% if iastate_associate6_title %}
-                <li><a href="{{ iastate_associate6_url }}">{{ iastate_associate6_title }}</a></li>
+                <li>
+                  {% if iastate_associate6_url %}
+                    <a href="{{ iastate_associate6_url }}">{{ iastate_associate6_title }}</a>
+                  {% else %}
+                    <span>{{ iastate_associate6_title }}</span>
+                  {% endif %}
+                </li>
               {% endif %}
+
             </ul>
           </div>
         {% endif %}
