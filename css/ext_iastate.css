@@ -67,10 +67,8 @@ html, body, .dialog-off-canvas-main-canvas, .isu-page-wrap {
 .isu-social-menu-red {
 	color: #fff;
 	background: transparent;
-	padding-left: 30px;
-	position: absolute;
-	top: 105px;
-	text-align: center;
+	padding-left: 16%;
+	text-align: left;
 }
 
 .isu-col-header-first {
@@ -140,6 +138,58 @@ html, body, .dialog-off-canvas-main-canvas, .isu-page-wrap {
 .col-lg-9 {
 	flex: 0 0 100%;
 	max-width: 100%;
+}
+/* -------------------------------------- */
+/* ## Homepage
+/* ------------------------------------- */
+
+/* Upcoming Events */
+.layout__region--second h2.isu-block-title.h3 {
+	color: #ffffff;
+	font-weight: 700;
+}
+
+ul.county_ievents {
+	list-style-type: none;
+	padding-left: 0rem;
+}
+
+p.event_longDate {
+	display: none;
+}
+
+.event_shortDate {
+	float: left;
+	padding-right: 10px;
+	clear: both;
+	display: block;
+}
+
+li.event {
+	padding-bottom: 25px;
+}
+
+a.event_title {
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 600;
+	border-left: 3px solid #f1be48;
+	padding-left: 10px;
+}
+
+span.event_day {
+	color: #ffffff;
+	float: left;
+	font-size: 2rem;
+	margin-top: -12px;
+}
+
+span.event_month {
+	color: #ffffff;
+	float: left;
+	clear: both;
+	margin-top: -10px;
+	margin-bottom: 15px;
 }
 
 /* --------------------------------------  */
