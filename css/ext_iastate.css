@@ -51,7 +51,7 @@ html, body, .dialog-off-canvas-main-canvas, .isu-page-wrap {
 /* Site Name Size Change */
 .isu-wordmark-sitename {
 	font-size: 22px;
-	margin-left: -8px;
+	margin-left: -4%;
 	font-weight: 700;
 	line-height: 24px;
 	padding-top: 13px;
@@ -404,7 +404,7 @@ dl {
 .isu-footer-logo {
 	max-width: 250px;
 	margin-top: -15px;
-	padding-bottom: 10px;
+	margin-left: -14%;
 }
 
 /* Change footer associates menu link color */
@@ -423,6 +423,11 @@ dl {
 .isu-footer a:hover {
 	color: #fff;
 	text-decoration: underline;
+}
+
+.isu-footer .isu-social-menu-red {
+	padding-left: 0px;
+	margin-left: -2%;
 }
 
 /* Reduce size of font in contact footer block */
@@ -705,7 +710,7 @@ dl {
   
 	.isu-wordmark-logo {
 		max-width: 365px;
-		margin-left: -3%;
+		margin-left: -6%;
 	}
 	
 	.navbar-expand-lg .navbar-nav {
