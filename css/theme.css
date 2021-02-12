@@ -1561,6 +1561,9 @@ blockquote.isu-pull-quote {
   flex-wrap: wrap;
   margin-bottom: 1rem;
 }
+.views-exposed-form .isu-block-title {
+  width: 100%;
+}
 .views-exposed-form .isu-form-group {
   margin-right: 1rem;
 }
