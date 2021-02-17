@@ -53,3 +53,13 @@ academicons:
     theme: 
       css/icons/academicons-1.8.6/css/academicons.min.css: { minified: true }
 
+isuthemeicons:
+  version: 1.0.0
+  license: 
+    name: MIT
+    url: https://opensource.org/licenses/mit-license.html
+    gpl-compatible: true
+  css: 
+    theme: 
+      css/icons/isuthemeicons-1.0.0/css/isuthemeicons.min.css: { minified: true }
+
