@@ -93,6 +93,12 @@ a.nav-link { /* Some links to not need underlines. */
 .page-link:hover { /* Overrides bootstrap.min.css */
   color: #006BA6; /* ISU brand standard */
 }
+.btn {
+  -webkit-user-select: initial;
+  -moz-user-select: initial;
+  -ms-user-select: initial;
+  user-select: initial;
+}
 button.btn {
   cursor: pointer;
 }
