@@ -27,23 +27,67 @@
 #}
 
 <div{{ attributes.addClass("isu-links-menu") }}>
-  {# {{ kint(content.field_icons) }} #}
   {% block content %}
-	<div>
-	  {% if content.field_icons.0 %}
-		{{ content.field_icons.0 }}
-	  {% endif%}
+  {% if content.field_icons.0['#icons'][0] %}
+	<div class="links_block_icon">
+	  {{ content.field_icons.0['#icons'][0] }}
 	</div>
-	<div>
-	  {% if content.field_links.0['#url'] %}
-	    {{ content.field_links.0 }}
-	  {% endif %}
+  {% endif %}
+  {% if content.field_links.0['#url'] %}
+	<div class="links_block_link">
+	  {{ content.field_links.0 }}
 	</div>
-	<div>
-	  {% if content.field_links.1['#url'] %}
-	    {{ content.field_links.1 }}
-	  {% endif %}
+  {% endif %}
+  {% if content.field_icons.0['#icons'][1] %}
+	<div class="links_block_icon">
+      {{ content.field_icons.0['#icons'][1] }}
 	</div>
+  {% endif %}
+  {% if content.field_links.1['#url'] %}
+	<div class="links_block_link">
+      {{ content.field_links.1 }}
+	</div>
+  {% endif %}
+  {% if content.field_icons.0['#icons'][2] %}
+	<div class="links_block_icon">
+      {{ content.field_icons.0['#icons'][2] }}
+	</div>
+  {% endif %}
+  {% if content.field_links.2['#url'] %}
+	<div class="links_block_link">
+	  {{ content.field_links.2 }}
+	</div>
+  {% endif %}
+  {% if content.field_icons.0['#icons'][3] %}
+	<div class="links_block_icon">
+      {{ content.field_icons.0['#icons'][3] }}
+	</div>
+  {% endif %}
+  {% if content.field_links.3['#url'] %}
+	<div class="links_block_link">
+      {{ content.field_links.3 }}
+	</div>
+  {% endif %}
+  {% if content.field_icons.0['#icons'][4] %}
+	<div class="links_block_icon">
+      {{ content.field_icons.0['#icons'][4] }}
+	</div>
+  {% endif %}
+  {% if content.field_links.4['#url'] %}
+	<div class="links_block_link">
+      {{ content.field_links.4 }}
+    </div>
+  {% endif %}
+  {% if content.field_icons.0['#icons'][5] %}
+	<div class="links_block_icon">
+      {{ content.field_icons.0['#icons'][5] }}
+	</div>
+  {% endif %}
+  {% if content.field_links.5['#url'] %}
+	<div class="links_block_link">
+      {{ content.field_links.5 }}
+	</div>
+  {% endif %}
   {% endblock %}
 </div>
 

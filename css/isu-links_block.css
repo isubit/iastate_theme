@@ -1,0 +1,14 @@
+.links_block_link {
+    display: inline-block;
+    width: 225px;
+}
+
+.links_block_link a {
+	text-decoration: none;
+}
+
+.links_block_icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}

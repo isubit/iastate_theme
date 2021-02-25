@@ -10,6 +10,7 @@ global-css:
       css/theme.css: {}
       css/ext_iastate.css: {}
       css/isu-social.css: {}
+      css/isu-links_block.css: {}
       css/utility.css: {}
       css/print.css: { media: print }
 
