@@ -426,10 +426,6 @@ dl {
 	width: 100%;
 }
 
-.layout__region--third {
-	border: 1px solid #eee;
-}
-
 .layout__region--third .isu-block-title {
 	padding: 18px;
 }
