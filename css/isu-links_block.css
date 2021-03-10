@@ -1,14 +1,14 @@
-.links_block_link {
-    display: inline-block;
-    width: 225px;
+.links_block_field {
+    display: -webkit-box;
 }
 
-.links_block_link a {
+.links_block_field a {
 	text-decoration: none;
 }
 
-.links_block_icon {
-    display: inline-block;
+ .links_block_field .fontawesome-icons svg {
+    display: inline;
     width: 24px;
-    height: 24px;
+	margin: auto;
 }
+
