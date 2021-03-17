@@ -538,7 +538,8 @@ dl {
 	border-radius: 3px;
 	overflow: hidden; 
   }
-	.bean-card a:hover {
+
+  .bean-card a:hover {
 	  box-shadow: 0 0 5px 1px #7a99ac;
 	}
   
@@ -559,7 +560,16 @@ dl {
   }
   
   .bean-card_label p {
-	display: flex;
+	display: inline-block;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	font-size: 1.5em;
+	line-height: 1.25;
+  }
+
+  .bean-card_label div {
+	display: inline-block;
 	align-items: center;
 	justify-content: center;
 	margin: 0;
@@ -606,37 +616,37 @@ dl {
     
 /* Text Size */
   
-  .bean-card_text-sm p {
+  .bean-card_text-sm {
 	font-size: 1em;
   }
   
-  .bean-card_text-md p {
+  .bean-card_text-md {
 	font-size: 1.5em;
   }
   
-  .bean-card_text-lg p {
+  .bean-card_text-lg {
 	font-size: 2em;
   }
   
-  .bean-card_text-sm .fa {
+  .bean-card_text-sm div.fontawesome-icons {
 	margin-right: 0.5rem;
 	padding-right: 5px;
   }
   
-  .bean-card_text-md .fa {
+  .bean-card_text-md div.fontawesome-icons {
 	margin-right: 1rem;
 	padding-right: 5px;
   }
   
-  .bean-card_text-lg .fa {
+  .bean-card_text-lg div.fontawesome-icons {
 	margin-right: 1.25rem;
 	padding-right: 5px;
   }
 
-  .bean-card_body{
-	  color: black;
-	  margin-bottom: 15%;
-	  text-align: left;
+  .bean-card_body {
+	color: black;
+	margin-bottom: 15%;
+	text-align: left;
 	padding-left: 7%; 
  }
   

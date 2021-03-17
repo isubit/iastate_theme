@@ -28,28 +28,31 @@
 {% block content %}
     {% if content.field_color_style[0] %}
         {% if content.field_content_card_image[0] is not null %}
-            <div class="bean-card {{content.field_color_style[0]}}">
-                <a class="bean-card_link" href="{{content.field_content_card_url.0['#url']}}">
+            <div class="bean-card {{ content.field_color_style[0] }}">
+                <a class="bean-card_link" href="{{ content.field_content_card_url.0['#url'] }}">
                     <div class="bean-card_img">
-                        {{content.field_content_card_image}}
+                        {{ content.field_content_card_image }}
                     </div>
-                    <div class="bean-card_label">
-                        <p class="{{content.field_text_size[0]}}"><i class="fa fa-{{content.field_icon[0]}} fa-fw"></i>{{content.field_content_card_title[0]}}</p>
+                    <div class="bean-card_label {{ content.field_text_size[0] }}">
+						{% if content.field_icon.0 %}
+							{{ content.field_icon.0 }}	
+						{% endif %}
+                        <p>{{ content.field_content_card_title[0] }}</p>
                     </div>
                 </a>
             </div>
         {% else %}
-            <div class="bean-card_text {{content.field_color_style[0]}}">
+            <div class="bean-card_text {{ content.field_color_style[0] }}">
                 <div class="bean-card_label bean-card_overlay_top">
-                    <p class="{{content.field_text_size[0]}}"><i class="fa {{content.field_icon[0]}} fa-fw"></i>{{content.field_content_card_title[0]}}</p>
+                    <p class="{{content.field_text_size[0]}}"><i class="fas {{content.field_icon[0]}} fa-fw"></i>{{content.field_content_card_title[0]}}</p>
                 </div>
                 <div class="bean-card_body">
                     {{content.body[0]}}
                 </div>
             </div>
         {% endif %}
-
     {% else %}
         {{content}}
     {% endif %}
   {% endblock %}
+
