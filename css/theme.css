@@ -631,6 +631,7 @@ body,
 
 .isu-pagination {
   padding-top: 1rem;
+  justify-content: center;
 }
 .isu-page-link {
   height: 100%;
