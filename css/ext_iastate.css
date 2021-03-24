@@ -177,6 +177,13 @@ html, body, .dialog-off-canvas-main-canvas, .isu-page-wrap {
 
 .isu-region.isu-region_sidebar-second {
 	margin-top: 2rem;
+	padding: 1rem;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+}
+
+.isu-region_sidebar-second .h3 {
+	border-bottom: 1px solid #ddd;
 }
 
 .isu-sidebar .isu-block {
