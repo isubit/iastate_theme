@@ -609,6 +609,10 @@ dl {
   .bean-card_text-sm p {
 	font-size: 1em;
   }
+
+.fontawesome-icons {
+	font-family: FontAwesome;
+}
   
   .bean-card_text-md p {
 	font-size: 1.5em;
