@@ -538,7 +538,8 @@ dl {
 	border-radius: 3px;
 	overflow: hidden; 
   }
-	.bean-card a:hover {
+
+  .bean-card a:hover {
 	  box-shadow: 0 0 5px 1px #7a99ac;
 	}
   
@@ -547,24 +548,20 @@ dl {
   }
   
   .bean-card_label {
+	display: flex;
 	padding: 0.75rem 1rem;
+	justify-content: center;
 	background: #cc0000;
-	width: 100%;
-	position: relative;  
-}
-  
-  .bean-card .fa {
-	margin-right: 1rem;
-	padding-right: 5px;
+	font-size: 1.5rem;
   }
   
   .bean-card_label p {
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	margin: 0;
-	font-size: 1.5em;
-	line-height: 1.25;
+	line-height: 1.45;
+  }
+
+  .bean-card_label div {
+	margin: 0;
   }
   
   /* Colors */
@@ -606,41 +603,41 @@ dl {
     
 /* Text Size */
   
-  .bean-card_text-sm p {
-	font-size: 1em;
+  .bean-card_text-sm {
+	font-size: 1rem !important;
   }
 
 .fontawesome-icons {
 	font-family: FontAwesome;
 }
   
-  .bean-card_text-md p {
-	font-size: 1.5em;
+  .bean-card_text-md {
+	font-size: 1.5rem !important;
   }
   
-  .bean-card_text-lg p {
-	font-size: 2em;
+  .bean-card_text-lg {
+	font-size: 2rem !important;
   }
   
-  .bean-card_text-sm .fa {
+  .bean-card_text-sm div.fontawesome-icons {
 	margin-right: 0.5rem;
 	padding-right: 5px;
   }
   
-  .bean-card_text-md .fa {
+  .bean-card_text-md div.fontawesome-icons {
 	margin-right: 1rem;
 	padding-right: 5px;
   }
   
-  .bean-card_text-lg .fa {
+  .bean-card_text-lg div.fontawesome-icons {
 	margin-right: 1.25rem;
 	padding-right: 5px;
   }
 
-  .bean-card_body{
-	  color: black;
-	  margin-bottom: 15%;
-	  text-align: left;
+  .bean-card_body {
+	color: black;
+	margin-bottom: 15%;
+	text-align: left;
 	padding-left: 7%; 
  }
   
