@@ -507,7 +507,7 @@ dl {
 /* --------------------------------------  */
 /* ## Bean Cards
 /* --------------------------------------  */
-.bean-card {
+  .bean-card {
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -515,6 +515,7 @@ dl {
 	color: #ffffff;
   }
   
+  /* Not used bc body is disabled */
   .bean-card_text {
 	position: relative;
 	color: #ffffff;
@@ -524,7 +525,6 @@ dl {
 	margin-bottom: 25px;
 	margin-right: 25px;
   }
- 
  
   .bean-card.bean-card_width_full {
 	display: block;
@@ -563,73 +563,76 @@ dl {
   .bean-card_label div {
 	margin: 0;
   }
+
+  /* Fontawesome icons */
+  .fontawesome-icons {
+	font-family: 'FontAwesome';
+  }
   
   /* Colors */
-  .bean-card_blue .bean-card_label { background: #006ba6; }
-  .bean-card_green .bean-card_label { background: #6A7A1A; }
-  .bean-card_dark-red .bean-card_label { background: #7c2529; }
-  .bean-card_dark-blue .bean-card_label { background: #003D4C; }
-  .bean-card_dark-green .bean-card_label { background: #3E4827; }
-  .bean-card_brown .bean-card_label { background: #8b5b29; }
-  .bean-card_grey .bean-card_label { background: #707372; }
+  .bean-card_label.Blue  { background: #006ba6; }
+  .bean-card_label.Green { background: #6A7A1A; }
+  .bean-card_label.Dark-Red { background: #7c2529; }
+  .bean-card_label.Dark-Blue { background: #003D4C; }
+  .bean-card_label.Dark-Green { background: #3E4827; }
+  .bean-card_label.Brown { background: #8b5b29; }
+  .bean-card_label.Grey { background: #707372; }
   
   /* Overlay */
   /* Overlay needs a minimum height in case there is no image. */
-  .bean-card.bean-card_dark-overlay_left,
-  .bean-card.bean-card_dark-overlay_bottom {
+  .bean-card_label.Dark-Overlay_Left,
+  .bean-card_label.Dark-Overlay_Bottom {
 	min-height: 100px;
 	background: #efefef;
   }
   
-  .bean-card_dark-overlay_left .bean-card_label,
-  .bean-card_dark-overlay_bottom .bean-card_label {
+  .bean-card_label.Dark-Overlay_Left,
+  .bean-card_label.Dark-Overlay_Bottom {
 	position: absolute;
 	text-align: left;
 	background: rgba(0, 0, 0, 0.75);
   }
   
-  .bean-card_dark-overlay_left .bean-card_label {
+  .bean-card_label.Dark-Overlay_Left {
 	left: 0; bottom: 20%;
 	max-width: 90%;
   }
   
-  .bean-card_dark-overlay_bottom .bean-card_label {
+  .bean-card_label.Dark-Overlay_Bottom {
 	left: 0; bottom: 0; right: 0;
 	width: 100%;
-  }
-  .bean-card_overlay_top{
-	  bottom: 78%;
   }
     
 /* Text Size */
   
-  .bean-card_text-sm {
+  .bean-card_label.Small {
 	font-size: 1rem !important;
   }
   
-  .bean-card_text-md {
+  .bean-card_label.Medium {
 	font-size: 1.5rem !important;
   }
   
-  .bean-card_text-lg {
+  .bean-card_label.Large {
 	font-size: 2rem !important;
   }
   
-  .bean-card_text-sm div.fontawesome-icons {
+  .bean-card_label.Small div.fontawesome-icons {
 	margin-right: 0.5rem;
 	padding-right: 5px;
   }
   
-  .bean-card_text-md div.fontawesome-icons {
+  .bean-card_label.Medium div.fontawesome-icons {
 	margin-right: 1rem;
 	padding-right: 5px;
   }
   
-  .bean-card_text-lg div.fontawesome-icons {
+  .bean-card_label.Large div.fontawesome-icons {
 	margin-right: 1.25rem;
 	padding-right: 5px;
   }
 
+  /* Currently disabled */
   .bean-card_body {
 	color: black;
 	margin-bottom: 15%;
