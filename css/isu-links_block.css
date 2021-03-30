@@ -2,13 +2,18 @@
     display: -webkit-box;
 }
 
-.links_block_field a {
+a.links_block_field {
 	text-decoration: none;
+	margin-bottom: 0.65rem;
 }
 
- .links_block_field .fontawesome-icons svg {
-    display: inline;
-    width: 24px;
-	margin: auto;
+a.links_block_field > p {
+	margin: 0;
+}
+
+.links_block_field .fontawesome-icons svg {
+    width: 1.5rem;
+	margin-right: 0.25em;
+	font-size: 1.45em;
 }
 
