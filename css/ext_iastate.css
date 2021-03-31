@@ -336,6 +336,11 @@ dl {
 	background: #555555;
 }
 
+.align-center img {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
 
 /* --------------------------------------  */
 /* ## Footer
