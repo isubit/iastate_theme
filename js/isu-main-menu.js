@@ -28,29 +28,23 @@
 $(document).ready(function() {
 
   // Navigate with right and left arrow keys.
-  $('#block-iastate8-theme-main-menu').on('keydown', function(event) {
+  $('#block-iastate-theme-main-menu').on('keydown', function(event) {
     if (event.keyCode === 39) { // RIGHT arrow key
       event.preventDefault();
-      if ( $(':focus').is('.isu-dropdown-toggle') ) {
-        // If the focused item is a link in a dropdown...
-        // Then change the focus to the next link.
-        $(':focus').closest('li').next('li').find('a').focus();
-      } else {
-        // Otherwise, the focused item is a top-level link.
-        // In this case, move to the next top-level link.
-        $(':focus').closest('li').next('li').find('a').focus();
-      }
+	  if ($(':focus').hasClass('sub')) {
+		$(':focus').closest('.isu-dropdown').attr('aria-expanded', 'true');
+		$(':focus').parent('.isu-dropdown-toggle_wrapper').next('ul').find('li:first-of-type a').focus();
+	  } else {
+		$(':focus').closest('li').next('li').find('a').focus();
+	  }
     } else if (event.keyCode === 37) { // LEFT arrow key
       event.preventDefault();
-      if ( $(':focus').is('.isu-dropdown-toggle') ) {
-        // If the focused item is a link in a dropdown...
-        // Then change the focus to the previous link.
-        $(':focus').closest('li').prev('li').find('a').focus();
-      } else {
-        // Otherwise the focused item is a top-level link.
-        // In this case, move the previous top-level link.
-        $(':focus').closest('li').prev('li').find('a').focus();
-      }
+	  if ($(':focus').offsetParent().siblings('div.isu-dropdown-toggle_wrapper').children('a.sub').hasClass('isu-dropdown-toggle')) {
+		$(':focus').offsetParent().offsetParent().find('a.sub').focus();
+        $(':focus').closest('.isu-dropdown').attr('aria-expanded', 'false');
+	  } else {
+	    $(':focus').closest('li').prev('li').find('a').focus();
+	  }
     }
   });
 
@@ -59,10 +53,12 @@ $(document).ready(function() {
     var dropdownToggle = $(this);
       if (event.keyCode === 40) { // DOWN arrow key
         event.preventDefault();
-        // Open menu
-        dropdownToggle.closest('.isu-dropdown').attr('aria-expanded', 'true');
-        // Change focus to the first link in the dropdown
-        $(':focus').parent('.isu-dropdown-toggle_wrapper').next('ul').find('li:first-of-type a').focus();
+		if (!($(':focus').is('a.isu-dropdown-toggle.sub'))) {
+		  // Open menu
+          dropdownToggle.closest('.isu-dropdown').attr('aria-expanded', 'true');
+          // Change focus to the first link in the dropdown
+          $(':focus').parent('.isu-dropdown-toggle_wrapper').next('ul').find('li:first-of-type a').focus();
+		}
       }
   });
 
@@ -70,14 +66,18 @@ $(document).ready(function() {
   $('.isu-dropdown-menu').on('keydown', function(event) {
     if (event.keyCode === 40) { // DOWN arrow key
       event.preventDefault();
+	  event.stopPropagation();
       // Change the focus to the next link in the dropdown
-      $(':focus').parent('li').next('li').children('a').focus();
+      $(':focus').closest('li').next('li').find('a').focus();
+	  // console.log($(':focus').parent());
     } else if (event.keyCode === 38) { // UP arrow key
       event.preventDefault();
+	  event.stopPropagation();
       if ( $(':focus').is('.isu-dropdown-menu li:not(:first-of-type) a') ) {
         // If the focused item is NOT the first item in the list...
         // Change the focus to the link in the previous li
-        $(':focus').parent('li').prev().children('a').focus();
+		// console.log($(':focus').closest('li').prev('li'));
+        $(':focus').closest('li').prev('li').find('a').focus();
       }
     }
   });
@@ -86,10 +86,12 @@ $(document).ready(function() {
   $('.isu-dropdown-menu > li:first-of-type a').on('keydown', function(event) {
     var dropdownMenuItem = $(this);
       if (event.keyCode === 38) { // up
-        // Close the dropdown
-        dropdownMenuItem.closest('.isu-dropdown').attr('aria-expanded', 'false');
-        // Refocus on the parent link
-        dropdownMenuItem.closest('.isu-dropdown-menu').prev('.isu-dropdown-toggle_wrapper').find('.isu-dropdown-toggle').focus();
+		if (!($(':focus').offsetParent().hasClass('isu-dropdown-submenu'))) {
+          // Close the dropdown
+          dropdownMenuItem.offsetParent().closest('.isu-dropdown').attr('aria-expanded', 'false');
+          // Refocus on the parent link
+          dropdownMenuItem.closest('.isu-dropdown-menu').prev('.isu-dropdown-toggle_wrapper').find('.isu-dropdown-toggle').focus();
+		}
       }
   });
 
@@ -101,10 +103,10 @@ $(document).ready(function() {
         // If neither the dropdown or its children have focus...
         if (dropdownMenu.siblings('a:focus').length === 0) {
           // Close the menu
-          dropdownMenu.parents('.isu-dropdown').attr('aria-expanded', 'false');
+          dropdownMenu.parent('.isu-dropdown').attr('aria-expanded', 'false');
           // Remove styling class
         }
-      }
+	  }
     }, 100 );
   });
 
@@ -130,3 +132,4 @@ $(document).ready(function() {
 });
 
 })(jQuery, Drupal);
+

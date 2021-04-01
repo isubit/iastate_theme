@@ -161,7 +161,6 @@ function iastate_theme_preprocess(&$variables, $hook) {
  *
  * Make theme settings available in templates
  */
-
 function iastate_theme_preprocess_page(&$variables) {
   $variables['isu_navbar'] = theme_get_setting('isu_navbar');
   $variables['gold_border_hidden'] = theme_get_setting('gold_border_hidden');
@@ -206,6 +205,7 @@ function iastate_theme_preprocess_page(&$variables) {
   $variables['iastate_social7_url'] = theme_get_setting('iastate_social7_url');
 }
 
+<<<<<<< HEAD
 /**
  * Implements hook_theme_suggestions_HOOK_alter().
  * Allow template suggestion based on content type.
@@ -254,3 +254,5 @@ function iastate_theme_preprocess_block(&$variables) {
 }
 */
 
+=======
+>>>>>>> menufix

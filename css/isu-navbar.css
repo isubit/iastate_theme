@@ -21,7 +21,7 @@
 }
 .isu-navbar a {
   position: relative;
-  display: block;
+  display: inline-block;
   padding: 4px 8px;
   color: #dddddd;
   line-height: 20px;
