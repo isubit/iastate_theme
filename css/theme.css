@@ -525,8 +525,7 @@ div#edit-search-broadness {margin:0 0 0 15px; }
   background-color: transparent;
 }
 
-.isu-dropdown-item a,
-.isu-dropdown-item span {
+.isu-dropdown-item a {
   display: block;
   padding: 0.75rem 1rem;
   color: #333333;
