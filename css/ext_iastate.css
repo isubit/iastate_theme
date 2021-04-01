@@ -216,19 +216,16 @@ a.isu-dropdown-submenu {
 /* Accordion Styles */
 .ckeditor-accordion-container > dl dt.active > a {
 	background-color: #eeeeee;
+	text-decoration: none;
+	font-size: 1.15rem;
 }
 
 .ckeditor-accordion-container > dl dt > a > .ckeditor-accordion-toggle:before, .ckeditor-accordion-container > dl dt > a > .ckeditor-accordion-toggle:after {
-	color: #000000;
+	background: #000000;
 }
 
 .ckeditor-accordion-container dt {
 	font-weight: inherit;
-}
-
-.ckeditor-accordion-toggle a {
-	text-decoration: none;
-	font-size: 1.25rem;
 }
 
 .ckeditor-accordion-container > dl dd {
