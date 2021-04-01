@@ -228,6 +228,11 @@ a.isu-dropdown-submenu {
 	font-weight: inherit;
 }
 
+.ckeditor-accordion-container > dl dt > a {
+	text-decoration: none;
+	font-size: 1.15rem;
+}
+
 .ckeditor-accordion-container > dl dd {
 	border-left: 1px solid #eeeeee;
 	border-right: 1px solid #eeeeee;
