@@ -213,6 +213,33 @@ a.isu-dropdown-submenu {
 	padding: 0 0 13px 0;
 }
 
+/* Accordion Styles */
+.ckeditor-accordion-container > dl dt.active > a {
+	background-color: #eeeeee;
+}
+
+.ckeditor-accordion-container > dl dt > a > .ckeditor-accordion-toggle:before, .ckeditor-accordion-container > dl dt > a > .ckeditor-accordion-toggle:after {
+	color: #000000;
+}
+
+.ckeditor-accordion-container dt {
+	font-weight: inherit;
+}
+
+.ckeditor-accordion-toggle a {
+	text-decoration: none;
+	font-size: 1.25rem;
+}
+
+.ckeditor-accordion-container > dl dd {
+	border-left: 1px solid #eeeeee;
+	border-right: 1px solid #eeeeee;
+	border-bottom: 1px solid #eeeeee;
+	padding: 1em 2.2em 1.2em;
+}
+
+
+
 /* News Styles */
 .card-body svg:not(:root).svg-inline--fa {
 	display: inline-block;
