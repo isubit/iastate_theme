@@ -482,9 +482,9 @@ div#edit-search-broadness {margin:0 0 0 15px; }
  * a consistent behavior. Javascript can be found in isu-main-menu.js.
  */
 
-.isu-dropdown {
+/* .isu-dropdown {
   position: relative;
-}
+} */
 
 .isu-dropdown-toggle:after {
   content: "\f107";
@@ -500,10 +500,7 @@ div#edit-search-broadness {margin:0 0 0 15px; }
 }
 
 .isu-dropdown-menu {
-  list-style: none;
   position: absolute;
-  top: 100%;
-  left: 0;
   min-width: 10rem;
   margin: 0;
   padding: 0;
@@ -512,19 +509,21 @@ div#edit-search-broadness {margin:0 0 0 15px; }
   background: #eeeeee;
   z-index: 9999;
 }
-  .isu-dropdown[aria-expanded='false'] .isu-dropdown-menu {
-    display: none;
-  }
+
+.isu-dropdown[aria-expanded='false'] .isu-dropdown-menu {
+  display: none;
+}
 
 .isu-dropdown-item {
   padding: 0;
 }
-  .isu-dropdown-item:focus,
-  .isu-dropdown-item:hover,
-  .isu-dropdown-item.active,
-  .isu-dropdown-item:active  {
-    background-color:transparent;
-  }
+
+.isu-dropdown-item:focus,
+.isu-dropdown-item:hover,
+.isu-dropdown-item.active,
+.isu-dropdown-item:active  {
+  background-color: transparent;
+}
 
 .isu-dropdown-item a {
   display: block;
@@ -532,12 +531,13 @@ div#edit-search-broadness {margin:0 0 0 15px; }
   color: #333333;
   text-decoration: none;
 }
-  .isu-dropdown-item a:focus,
-  .isu-dropdown-item a:hover,
-  .isu-dropdown-item a.active,
-  .isu-dropdown-item a:active {
-    background: #dddddd;
-  }
+
+.isu-dropdown-item a:focus,
+.isu-dropdown-item a:hover,
+.isu-dropdown-item a.active,
+.isu-dropdown-item a:active {
+  background: #dddddd;
+}
 
 /* Small-ish */
 @media screen and (max-width: 575px) {
@@ -553,7 +553,7 @@ div#edit-search-broadness {margin:0 0 0 15px; }
     overflow: visible;
   }
 
-  .isu-dropdown:hover .isu-dropdown-menu {
+  .isu-dropdown:hover > .isu-dropdown-menu {
     display: block;
   }
 }
@@ -579,7 +579,7 @@ div#edit-search-broadness {margin:0 0 0 15px; }
     margin: 0.25rem;
     padding: .375rem .75rem;
     border: 1px solid #676767;
-    background: #ffffff;
+    background: #eeeeee;
     border-radius: 0.25rem;
     cursor: pointer;
   }
@@ -587,6 +587,10 @@ div#edit-search-broadness {margin:0 0 0 15px; }
   .isu-dropdown-menu {
     position: static;
     margin-left: 1rem;
+  }
+
+  .isu-dropdown-item {
+	background-color: #eeeeee !important; 
   }
 }
 
