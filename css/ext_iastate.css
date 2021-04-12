@@ -184,6 +184,10 @@ a.isu-dropdown-submenu {
 	font-size: 0.85rem;
 }
 
+li article:not(.isu-user):not(.isu-search_collapse) {
+	margin-bottom: 0rem;
+}
+
 /* Sidebar */
 .isu-page-column {
 	padding-left: 11px;
