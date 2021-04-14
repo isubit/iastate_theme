@@ -1302,6 +1302,15 @@ a.tabledrag-handle .handle {
   padding: 1rem 0;
   background: #dddddd;
 }
+.isu-footer_contact-title,
+.isu-footer .isu-block-title {
+  margin-bottom: 0.5rem;
+  padding-bottom: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 700;
+  border-bottom: 0;
+}
 
 /* --- ## ASSOCIATES MENU --- */
 /*
