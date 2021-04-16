@@ -165,6 +165,12 @@ a.isu-dropdown-submenu {
 }
 */
 
+/* Translation */
+.gtranslate {
+	float: right;
+	padding: 15px;
+}
+
 .node--unpublished {
 	background: #fff4f4;
 	border: 1px dashed #fff4f4;
