@@ -305,25 +305,41 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
       '#default_value'  => theme_get_setting('iastate_social7_url'),
     );
 
+  $form['logo']['site_logo_alttext'] = array(
+	  '#type'		=> 'textfield',
+	  '#title'	=> t('Image Alt Text'),
+	  '#description'	=> t('Alternative text for logo image'),
+	  '#default_value'	=> theme_get_setting('site_logo_alttext'),
+    );
+
+  $form['logo']['site_logo_link_url'] = array(
+	  '#type'		=> 'url',
+	  '#title'	=> t('Link URL'),
+	  '#description'	=> t('Hyperlinked text of logo'),
+	  '#default_value'	=> theme_get_setting('site_logo_link_url'),
+    );
+
+  print_r(array_keys($form['logo']['site_logo_alttext']['#default_value']));
+
   // Create a section for footer logo
   $form['iastate_footer_logo'] = array(
-    '#type'         => 'details',
-    '#title'        => t('IASTATE Footer Logo'),
-    '#description'  => t('Designate a logo for the footer'),
-    '#open' => TRUE,
-  );
+	  '#type'         => 'details',
+      '#title'        => t('IASTATE Footer Logo'),
+      '#description'  => t('Designate a logo for the footer'),
+      '#open' => TRUE,
+    );
 
   $form['iastate_footer_logo']['iastate_footer_logo_path'] = array(
       '#type'   => 'textfield',
       '#title'  => t('Path to custom footer logo'),
       '#description' => t('Examples: logo.svg (for a file in the public filesystem), public://logo.svg, or themes/contrib/iastate_theme/logo.svg.'),
       '#default_value'  => theme_get_setting('iastate_footer_logo_path'),
-  ); 
+    ); 
 
   $form['iastate_footer_logo']['iastate_footer_logo_url'] = array(
       '#type'   => 'textfield',
       '#title'  => t('Custom footer logo url'),
       '#description' => t('Link the footer logo to a different website.'),
       '#default_value'  => theme_get_setting('iastate_footer_logo_url'),
-  );
+    );
 }

@@ -206,6 +206,12 @@ function iastate_theme_preprocess_page(&$variables) {
   $variables['iastate_social7_url'] = theme_get_setting('iastate_social7_url');
 }
 
+function iastate_theme_preprocess_block__system_branding_block(&$variables) {
+  $variables['site_logo_alttext'] = theme_get_setting('site_logo_alttext');
+  $variables['site_logo_link_url'] = theme_get_setting('site_logo_link_url');
+
+}
+
 /**
  * Implements hook_theme_suggestions_HOOK_alter().
  * Allow template suggestion based on content type.
@@ -242,15 +248,4 @@ function iastate_theme_theme_suggestions_page_alter(array &$suggestions, array $
     $suggestions[] = 'page__type__' . $node->getType() . '__canonical';
   }
 }
-
-/*
-function iastate_theme_preprocess_region(&$variables) {
-  unset($variables['elements']['iastate_theme_content']);
-  unset($variables['elements']['iastate_theme_content']);
-}
-
-function iastate_theme_preprocess_block(&$variables) {
-  dpm($variables);
-}
-*/
 

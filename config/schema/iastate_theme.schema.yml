@@ -15,6 +15,12 @@ iastate_theme.settings:
         favicon:
           type: boolean
           label: 'Use the favicon supplied by the theme'
+    site_logo_alttext:
+      type: string
+      label: 'Text describing image'
+    site_logo_link_url:
+      type: uri
+      label: 'URL attribute'
     iastate_footer_logo_path:
       type: uri
       label: 'Path to custom footer logo'

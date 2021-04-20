@@ -31,8 +31,8 @@
 
 {% block content %}
   <div class="isu-wordmark">
-    <a href="https://www.extension.iastate.edu">
-      <img class="isu-wordmark-logo" src="{{ site_logo }}" alt="Iowa State University Extension and Outreach">
+    <a href="{{ site_logo_link_url }}">
+      <img class="isu-wordmark-logo" src="{{ site_logo }}" alt="{{ site_logo_alttext }}">
     </a>
     {% if iastate_unit_name %}
 
@@ -58,3 +58,4 @@
   </div>
 
 {% endblock %}
+
