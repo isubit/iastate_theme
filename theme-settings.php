@@ -319,8 +319,6 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
 	  '#default_value'	=> theme_get_setting('site_logo_link_url'),
     );
 
-  print_r(array_keys($form['logo']['site_logo_alttext']['#default_value']));
-
   // Create a section for footer logo
   $form['iastate_footer_logo'] = array(
 	  '#type'         => 'details',

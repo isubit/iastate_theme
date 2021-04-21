@@ -206,6 +206,10 @@ function iastate_theme_preprocess_page(&$variables) {
   $variables['iastate_social7_url'] = theme_get_setting('iastate_social7_url');
 }
 
+/**
+ * Implements hook_theme_preprocess_block()
+ * Allows use for variables in twig template
+ */
 function iastate_theme_preprocess_block__system_branding_block(&$variables) {
   $variables['site_logo_alttext'] = theme_get_setting('site_logo_alttext');
   $variables['site_logo_link_url'] = theme_get_setting('site_logo_link_url');
