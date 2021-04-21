@@ -631,6 +631,7 @@ body,
 
 .isu-pagination {
   padding-top: 1rem;
+  justify-content: center;
 }
 .isu-page-link {
   height: 100%;
@@ -1301,6 +1302,15 @@ a.tabledrag-handle .handle {
   padding: 1rem 0;
   background: #dddddd;
 }
+.isu-footer_contact-title,
+.isu-footer .isu-block-title {
+  margin-bottom: 0.5rem;
+  padding-bottom: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 700;
+  border-bottom: 0;
+}
 
 /* --- ## ASSOCIATES MENU --- */
 /*
@@ -1560,6 +1570,9 @@ blockquote.isu-pull-quote {
   align-items: flex-end;
   flex-wrap: wrap;
   margin-bottom: 1rem;
+}
+.views-exposed-form .isu-block-title {
+  width: 100%;
 }
 .views-exposed-form .isu-form-group {
   margin-right: 1rem;

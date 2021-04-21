@@ -188,4 +188,9 @@
 .isu-social-menu a[href*='scholar.google.com']:hover:before {
   color: #dd4b39;
 }
+.isu-social-menu a[href*='discord']:before {
+  content: '\e900';
+  font-family: isuthemeicons;
+  position: relative;
+}
 

@@ -3,12 +3,14 @@ description: Drupal 8 theme for Iowa State University websites
 type: theme
 core: 8.x
 core_version_requirement: ^8 || ^9
+base_theme: stable
 libraries: 
   - iastate_theme/global-css
   - iastate_theme/global-js
   - iastate_theme/fonts
   - iastate_theme/font-awesome
   - iastate_theme/academicons
+  - iastate_theme/isuthemeicons
 ckeditor_stylesheets:
   - css/bootstrap/bootstrap.min.css
   - css/base.css

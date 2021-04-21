@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'isuthemeicons';
+  src:url('../fonts/isuthemeicons.eot?v=1.0.0');
+  src:url('../fonts/isuthemeicons.eot?v=1.0.0') format('embedded-opentype'),
+      url('../fonts/isuthemeicons.ttf?v=1.0.0') format('truetype'),
+      url('../fonts/isuthemeicons.woff?v=1.0.0') format('woff'),
+      url('../fonts/isuthemeicons.svg?v=1.0.0#isuthemeicons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.isui {
+  display: inline-block;
+  font-family: 'isuthemeicons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.isui-discord:before {
+  content: '\e900';
+}
