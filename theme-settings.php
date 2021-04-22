@@ -305,14 +305,14 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
       '#default_value'  => theme_get_setting('iastate_social7_url'),
     );
 
-  $form['logo']['site_logo_alttext'] = array(
+  $form['logo']['settings']['site_logo_alttext'] = array(
 	  '#type'		=> 'textfield',
 	  '#title'	=> t('Image Alt Text'),
 	  '#description'	=> t('Alternative text for logo image'),
 	  '#default_value'	=> theme_get_setting('site_logo_alttext'),
     );
 
-  $form['logo']['site_logo_link_url'] = array(
+  $form['logo']['settings']['site_logo_link_url'] = array(
 	  '#type'		=> 'url',
 	  '#title'	=> t('Link URL'),
 	  '#description'	=> t('Hyperlinked text of logo'),
