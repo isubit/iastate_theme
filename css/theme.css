@@ -1311,6 +1311,18 @@ a.tabledrag-handle .handle {
   font-weight: 700;
   border-bottom: 0;
 }
+.isu-region_sign-off {
+  color: #616161;
+}
+.isu-region_sign-off a:not(.btn) {
+  color: #c70000;
+}
+.isu-region_sign-off a:not(.btn):hover {
+  color: #00679E;
+}
+.isu-region_sign-off blockquote {
+  border-color: #aaaaaa;
+}
 
 /* --- ## ASSOCIATES MENU --- */
 /*
