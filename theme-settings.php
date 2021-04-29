@@ -309,14 +309,16 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
 	  '#type'		=> 'textfield',
 	  '#title'	=> t('Image Alt Text'),
 	  '#description'	=> t('Alternative text for logo image'),
-	  '#default_value'	=> theme_get_setting('site_logo_alttext'),
+	  // Tenery checks to see if 'use defaults' checkbox is enabled, if so we use a default if not take user input
+	  '#default_value'	=> ($form['logo']['default_logo']['#default_value']) ? 'Iowa State University Extension and Outreach Site' : theme_get_setting('site_logo_alttext'),
     );
 
   $form['logo']['settings']['site_logo_link_url'] = array(
 	  '#type'		=> 'url',
 	  '#title'	=> t('Link URL'),
 	  '#description'	=> t('Hyperlinked text of logo'),
-	  '#default_value'	=> theme_get_setting('site_logo_link_url'),
+	  // Tenery checks to see if 'use defaults' checkbox is enabled, if so we use a default if not take user input
+	  '#default_value'	=> ($form['logo']['default_logo']['#default_value']) ? 'https://www.extension.iastate.edu'  : theme_get_setting('site_logo_link_url'),
     );
 
   // Create a section for footer logo

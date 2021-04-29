@@ -31,16 +31,8 @@
 
 {% block content %}
     <div class="isu-wordmark">
-      {% if site_logo_link_url != null %}
         <a href="{{ site_logo_link_url }}">
-      {% else %}
-        <a href="https://www.extension.iastate.edu">
-      {% endif %}
-        {% if site_logo_alttext != null %}
           <img class="isu-wordmark-logo" src="{{ site_logo }}" alt="{{ site_logo_alttext }}">
-        {% else %}
-          <img class="isu-wordmark-logo" src="{{ site_logo }}" alt="Iowa State University Extension and Outreach Site">
-        {% endif %}
       </a>
 
     {% if iastate_unit_name %}
