@@ -4,6 +4,8 @@ features:
   favicon: true
 iastate_unit_name: ''
 iastate_unit_url: ''
+site_logo_alttext: 'Iowa State University Extension and Outreach Site'
+site_logo_link_url: 'https://www.extension.iastate.edu'
 iastate_footer_logo_path: themes/contrib/iastate_theme/isu-stacked.svg
 iastate_footer_logo_url: 'https://www.iastate.edu/'
 iastate_contact_address: "2221 Wanda Daley Dr\n2nd Floor ASB\nAmes, IA 50011"
