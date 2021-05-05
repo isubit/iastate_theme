@@ -30,12 +30,12 @@
 {% extends "block.html.twig" %}
 
 {% block content %}
-  <div class="isu-wordmark">
-    <a href="https://www.extension.iastate.edu">
-      <img class="isu-wordmark-logo" src="{{ site_logo }}" alt="Iowa State University Extension and Outreach">
-    </a>
-    {% if iastate_unit_name %}
+    <div class="isu-wordmark">
+        <a href="{{ site_logo_link_url }}">
+          <img class="isu-wordmark-logo" src="{{ site_logo }}" alt="{{ site_logo_alttext }}">
+      </a>
 
+    {% if iastate_unit_name %}
       <div class="isu-wordmark-unit">
         {% if iastate_unit_url %}
           <a href="{{ iastate_unit_url }}">{{ iastate_unit_name }}</a>
@@ -58,3 +58,4 @@
   </div>
 
 {% endblock %}
+
