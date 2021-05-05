@@ -194,6 +194,14 @@ li article:not(.isu-user):not(.isu-search_collapse) {
 	margin-bottom: 0rem;
 }
 
+/* Media Captions */
+.caption > figcaption {
+	background-color: #eeeeee;
+	margin-top: -2.5rem;
+	padding: 25px;
+	border-left: .25rem solid #dddddd;
+}
+
 /* Sidebar */
 .isu-page-column {
 	padding-left: 11px;
