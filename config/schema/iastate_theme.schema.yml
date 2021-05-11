@@ -21,9 +21,15 @@ iastate_theme.settings:
     site_logo_link_url:
       type: uri
       label: 'URL attribute'
+    default_footer_logo:
+      type: boolean
+      label: 'Use the defaults supplied by the theme'
     iastate_footer_logo_path:
       type: uri
       label: 'Path to custom footer logo'
+    iastate_footer_logo_alttext:
+      type: string
+      label: 'Text describing image'
     iastate_footer_logo_url:
       type: uri
       label: 'Custom footer logo url'

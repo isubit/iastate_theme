@@ -23,11 +23,17 @@
           {{ page.footer_first }}
         {% endif %}
 
+		{% if default_footer_logo %}
+		  {% set iastate_footer_logo_path = 'themes/custom/iastate_theme/images/wordmark-stacked.svg' %} 
+		  {% set iastate_footer_logo_url = 'https://www.extension.iastate.edu' %}
+		  {% set iastate_footer_logo_alttext = 'Iowa State University Extension and Outreach Site' %}
+		{% endif %}
+
         {% if iastate_footer_logo_path %}
           {% if iastate_footer_logo_url %}
             <a href="{{ iastate_footer_logo_url }}">
           {% endif %}
-              <img class="isu-footer-logo" src="{{ base_path }}{{ iastate_footer_logo_path }}" class="wordmark-isu" alt="Iowa State University Extension and Outreach">
+              <img class="isu-footer-logo" src="{{ base_path }}{{ iastate_footer_logo_path }}" class="wordmark-isu" alt="{{ iastate_footer_logo_alttext }}">
           {% if iastate_footer_logo_url %}
             </a>
           {% endif %}
