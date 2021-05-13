@@ -21,8 +21,6 @@
  *   displayed in front of the main title tag that appears in the template.
  * - title_suffix: Additional output populated by modules, intended to be
  *   displayed after the main title tag that appears in the template.
- *
- * @see template_preprocess_block()
  * @see search_preprocess_block()
  */
 #}
@@ -30,32 +28,46 @@
 {% extends "block.html.twig" %}
 
 {% block content %}
-    <div class="isu-wordmark">
-        <a href="{{ site_logo_link_url }}">
-          <img class="isu-wordmark-logo" src="{{ site_logo }}" alt="{{ site_logo_alttext }}">
+  <div class="isu-wordmark">
+
+  {# This if statement is not yet functional #}
+  {% if default_logo %}
+	{% set site_logo = 'themes/custom/iastate_theme/images/isueo-wordmark.svg' %}
+	{% set site_logo_alttext = 'Iowa State University Extension and Outreach Site' %}
+    {% set site_logo_link_url = 'https://www.extension.iastate.edu/' %}
+  {% endif %}
+
+  {% if site_logo %}
+    {% if site_logo_link_url %}
+      <a href="{{ site_logo_link_url }}">
+	{% endif %}
+      <img class="isu-wordmark-logo" src="{{ site_logo }}" alt="{{ site_logo_alttext }}">
+    {% if site_logo_link_url %}
       </a>
+	{% endif %}
+  {% endif %}
 
-    {% if iastate_unit_name %}
-      <div class="isu-wordmark-unit">
-        {% if iastate_unit_url %}
-          <a href="{{ iastate_unit_url }}">{{ iastate_unit_name }}</a>
-        {% else %}
-          <span>{{ iastate_unit_name }}</span>
-        {% endif %}
-      </div>
+  {% if iastate_unit_name %}
+    <div class="isu-wordmark-unit">
+      {% if iastate_unit_url %}
+        <a href="{{ iastate_unit_url }}">{{ iastate_unit_name }}</a>
+      {% else %}
+        <span>{{ iastate_unit_name }}</span>
+      {% endif %}
+    </div>
 
-      <h1 class="isu-wordmark-sitename_unit">
-        <a rel="home" href="{{ path('<front>') }}">{{ site_name }}</a>
-      </h1>
+    <h1 class="isu-wordmark-sitename_unit">
+      <a rel="home" href="{{ path('<front>') }}">{{ site_name }}</a>
+    </h1>
 
-    {% else %}
+  {% else %}
 
-      <h1 class="isu-wordmark-sitename">
-        <a rel="home" href="{{ path('<front>') }}">{{ site_name }}</a>
-      </h1>
-      
-    {% endif %}
-  </div>
+    <h1 class="isu-wordmark-sitename">
+      <a rel="home" href="{{ path('<front>') }}">{{ site_name }}</a>
+    </h1>
+    
+  {% endif %}
+</div>
 
 {% endblock %}
 
