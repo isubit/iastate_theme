@@ -638,6 +638,13 @@ dl {
 	margin: 0;
   }
 
+  .bean-card_body {
+	color: black;
+	padding: 0.5rem 0.5rem 0 0.5rem;
+	border: 0.5rem solid #CC0000;
+  }
+  
+
   /* Fontawesome icons */
   .fontawesome-icons {
 	font-family: 'FontAwesome';
@@ -652,14 +659,14 @@ dl {
   .bean-card_label.Brown { background: #8b5b29; }
   .bean-card_label.Grey { background: #707372; }
 
-  .bean-card_body.Red { border: 0.5rem solid #cc0000; }
-  .bean-card_body.Blue { border: 0.5rem solid #006ba6; }
-  .bean-card_body.Green { border: 0.5rem solid #6A7A1A; }
-  .bean-card_body.Dark-Red { border: 0.5rem solid #7C2529; }
-  .bean-card_body.Dark-Blue { border: 0.5rem solid #003D4C; }
-  .bean-card_body.Dark-Green { border: 0.5rem solid #3E4827; }
-  .bean-card_body.Brown { border: 0.5rem solid #8b5b29; }
-  .bean-card_body.Grey { border: 0.5rem solid #707372; }
+  /* Changes color of border depending on selected label color (content cards) */
+  .bean-card_body.Blue { border-color: #006ba6; }
+  .bean-card_body.Green { border-color: #6A7A1A; }
+  .bean-card_body.Dark-Red { border-color: #7C2529; }
+  .bean-card_body.Dark-Blue { border-color: #003D4C; }
+  .bean-card_body.Dark-Green { border-color: #3E4827; }
+  .bean-card_body.Brown { border-color: #8b5b29; }
+  .bean-card_body.Grey { border-color: #707372; }
   
   /* Overlay */
   /* Overlay needs a minimum height in case there is no image. */
@@ -718,11 +725,6 @@ dl {
 	padding-right: 5px;
   }
 
-  .bean-card_body {
-	color: black;
-	padding: 0.5rem 0.5rem 0 0.5rem;
-  }
-  
 /* Kill external link icon */
 #section-content .bean-card a.external:after { display: none; }
 
