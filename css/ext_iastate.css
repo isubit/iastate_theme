@@ -586,6 +586,7 @@ dl {
 	justify-content: center;
 	border-radius: 3px;
 	color: #ffffff;
+	margin-bottom: 1rem;
   }
   
   /* Old bean-card body css
@@ -720,7 +721,6 @@ dl {
   .bean-card_body {
 	color: black;
 	padding: 0.5rem 0.5rem 0 0.5rem;
-	margin-bottom: 1rem;
   }
   
 /* Kill external link icon */
