@@ -583,13 +583,12 @@ dl {
 /* --------------------------------------  */
   .bean-card {
 	position: relative;
-	display: flex;
 	justify-content: center;
 	border-radius: 3px;
 	color: #ffffff;
   }
   
-  /* Not used bc body is disabled */
+  /* Old bean-card body css
   .bean-card_text {
 	position: relative;
 	color: #ffffff;
@@ -598,7 +597,7 @@ dl {
 	height: 180px;
 	margin-bottom: 25px;
 	margin-right: 25px;
-  }
+  } */
  
   .bean-card.bean-card_width_full {
 	display: block;
@@ -646,11 +645,20 @@ dl {
   /* Colors */
   .bean-card_label.Blue  { background: #006ba6; }
   .bean-card_label.Green { background: #6A7A1A; }
-  .bean-card_label.Dark-Red { background: #7c2529; }
+  .bean-card_label.Dark-Red { background: #7C2529; }
   .bean-card_label.Dark-Blue { background: #003D4C; }
   .bean-card_label.Dark-Green { background: #3E4827; }
   .bean-card_label.Brown { background: #8b5b29; }
   .bean-card_label.Grey { background: #707372; }
+
+  .bean-card_body.Red { border: 0.5rem solid #cc0000; }
+  .bean-card_body.Blue { border: 0.5rem solid #006ba6; }
+  .bean-card_body.Green { border: 0.5rem solid #6A7A1A; }
+  .bean-card_body.Dark-Red { border: 0.5rem solid #7C2529; }
+  .bean-card_body.Dark-Blue { border: 0.5rem solid #003D4C; }
+  .bean-card_body.Dark-Green { border: 0.5rem solid #3E4827; }
+  .bean-card_body.Brown { border: 0.5rem solid #8b5b29; }
+  .bean-card_body.Grey { border: 0.5rem solid #707372; }
   
   /* Overlay */
   /* Overlay needs a minimum height in case there is no image. */
@@ -678,15 +686,14 @@ dl {
   }
     
 /* Text Size */
+  .fontawesome-icons {
+	font-family: FontAwesome;
+  }
   
   .bean-card_label.Small {
 	font-size: 1rem !important;
   }
 
-.fontawesome-icons {
-	font-family: FontAwesome;
-}
-  
   .bean-card_label.Medium {
 	font-size: 1.5rem !important;
   }
@@ -710,13 +717,11 @@ dl {
 	padding-right: 5px;
   }
 
-  /* Currently disabled */
   .bean-card_body {
 	color: black;
-	margin-bottom: 15%;
-	text-align: left;
-	padding-left: 7%; 
- }
+	padding: 0.5rem 0.5rem 0 0.5rem;
+	margin-bottom: 1rem;
+  }
   
 /* Kill external link icon */
 #section-content .bean-card a.external:after { display: none; }
@@ -757,6 +762,7 @@ dl {
 		margin-top: 0;
 	}
  	
+  /* Old bean-card body css
 	.bean-card_text{
 		position: relative;
 		color: #ffffff;
@@ -765,7 +771,7 @@ dl {
 		height: 180px;
 		margin-bottom: 25px;
 		margin-right: 25px;
-	}
+	} */
  }
 
 @media screen and (max-width : 768px) {
@@ -781,6 +787,7 @@ dl {
  		padding-top: 5px;
 	}
 	 
+  /* Old bean-card body css
 	.bean-card_text{
 		position: relative;
 		color: #ffffff;
@@ -789,7 +796,7 @@ dl {
 		height: 180px;
 		margin-bottom: 25px;
 		margin-right: 25px;
-	}
+	} */
 	
 	.isu-region_footer-third {
 		margin-bottom: 1rem;
