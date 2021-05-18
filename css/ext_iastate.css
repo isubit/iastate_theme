@@ -616,7 +616,8 @@ dl {
   .bean-card a:hover {
 	  box-shadow: 0 0 5px 1px #7a99ac;
 	}
-  
+
+  /* Used for image card */
   .bean-card_img img {
 	width: 100%;
   }
@@ -638,10 +639,11 @@ dl {
 	margin: 0;
   }
 
+  /* Used for content card */
   .bean-card_body {
 	color: black;
 	padding: 0.5rem 0.5rem 0 0.5rem;
-	border: 0.5rem solid #CC0000;
+	border: 3px solid #CC0000;
   }
   
 
