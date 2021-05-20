@@ -30,21 +30,17 @@
 {% block content %}
   <div class="isu-wordmark">
 
-  {# This if statement is not yet functional #}
-  {% if default_logo %}
-	{% set site_logo = 'themes/custom/iastate_theme/images/isueo-wordmark.svg' %}
+  {% if default_site_logo_alttext_url %}
 	{% set site_logo_alttext = 'Iowa State University Extension and Outreach Site' %}
-    {% set site_logo_link_url = 'https://www.extension.iastate.edu/' %}
+    {% set site_logo_url = 'https://www.extension.iastate.edu/' %}
   {% endif %}
 
   {% if site_logo %}
-    {% if site_logo_link_url %}
-      <a href="{{ site_logo_link_url }}">
+    {% if site_logo_url %}
+      <a href="{{ site_logo_url }}">
 	{% endif %}
-      <img class="isu-wordmark-logo" src="{{ site_logo }}" alt="{{ site_logo_alttext }}">
-    {% if site_logo_link_url %}
+        <img class="isu-wordmark-logo" src="{{ site_logo }}" alt="{{ site_logo_alttext }}">
       </a>
-	{% endif %}
   {% endif %}
 
   {% if iastate_unit_name %}

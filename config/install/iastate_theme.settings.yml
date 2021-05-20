@@ -4,8 +4,9 @@ features:
   favicon: true
 iastate_unit_name: ''
 iastate_unit_url: ''
+default_site_logo_alttext_url: 1
 site_logo_alttext: 'Iowa State University Extension and Outreach Site'
-site_logo_link_url: 'https://www.extension.iastate.edu'
+site_logo_url: 'https://www.extension.iastate.edu'
 default_footer_logo: 1
 iastate_footer_logo_path: themes/contrib/iastate_theme/isu-stacked.svg
 iastate_footer_logo_alttext: 'Iowa State University Extension and Outreach Site' 
