@@ -305,6 +305,7 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
     '#default_value'  => theme_get_setting('iastate_social7_url'),
     );
 
+  // Weight variable affects ordering
   $form['logo']['#weight'] = 20;
 
   $form['site_logo_alttext_url'] = array(
@@ -351,14 +352,12 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
     '#default_value'  => theme_get_setting('default_site_logo_alttext_url') ? 'https://www.extension.iastate.edu' : theme_get_setting('site_logo_url'),
     );
 
-  $form['favicon']['#weight'] = 40;
-
   // Create a section for footer logo
   $form['iastate_footer_logo'] = array(
 	'#type'	=> 'details',
     '#title'	=> t('IASTATE Footer Logo'),
     '#description'	=> t('Designate a logo for the footer'),
-	'#weight'	=> 50,
+	'#weight'	=> 40,
 	'#open'	=> TRUE,
     );
 
@@ -406,6 +405,9 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
 	// Value is also handled in respective twig template
     '#default_value'  => theme_get_setting('default_footer_logo') ? 'https://www.extension.iastate.edu' : theme_get_setting('iastate_footer_logo_url'),
     );
+
+  // Weight variable affects ordering
+  $form['favicon']['#weight'] = 50;
 
 }
 
