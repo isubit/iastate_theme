@@ -30,6 +30,7 @@ regions:
   footer_third: 'Footer Third'
   footer_fourth: 'Footer Fourth'
   sign_off: 'Sign Off'
+logo: images/isueo-wordmark.svg
 
 libraries-override:
   layout_builder/drupal.layout_builder:
