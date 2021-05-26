@@ -340,7 +340,7 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
 	'#description'  => t('Alternative text for logo image'),
 	// Tenery checks to see if 'use defaults' checkbox is enabled, if so we use a default if not take user input
 	// Value is also handled in respective twig template
-	'#default_value'	=> theme_get_setting('default_site_logo_alttext_url') ? 'Iowa State University Extension and Outreach Site' : theme_get_setting('site_logo_alttext'),
+	'#default_value'	=> theme_get_setting('default_site_logo_alttext_url') ? 'Iowa State University Extension and Outreach' : theme_get_setting('site_logo_alttext'),
     );
 
   $form['site_logo_alttext_url']['settings']['site_logo_url'] = array(
@@ -394,7 +394,7 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
 	'#description'  => t('Alternative text for footer logo image'),
 	// Tenery checks to see if 'use defaults' checkbox is enabled, if so we use a default if not take user input
 	// Value is also handled in respective twig template
-	'#default_value'	=> theme_get_setting('default_footer_logo') ? 'Iowa State University Extension and Outreach Site' : theme_get_setting('iastate_footer_logo_alttext'),
+	'#default_value'	=> theme_get_setting('default_footer_logo') ? 'Iowa State University Extension and Outreach' : theme_get_setting('iastate_footer_logo_alttext'),
     );
 
   $form['iastate_footer_logo']['settings']['iastate_footer_logo_url'] = array(
