@@ -165,6 +165,12 @@ a.isu-dropdown-submenu {
 }
 */
 
+/* Translation */
+.gtranslate {
+	float: right;
+	padding: 15px;
+}
+
 .node--unpublished {
 	background: #fff4f4;
 	border: 1px dashed #fff4f4;
@@ -186,6 +192,14 @@ a.isu-dropdown-submenu {
 
 li article:not(.isu-user):not(.isu-search_collapse) {
 	margin-bottom: 0rem;
+}
+
+/* Media Captions */
+.caption > figcaption {
+	background-color: #eeeeee;
+	margin-top: -2.5rem;
+	padding: 25px;
+	border-left: .25rem solid #dddddd;
 }
 
 /* Sidebar */
@@ -569,13 +583,13 @@ dl {
 /* --------------------------------------  */
   .bean-card {
 	position: relative;
-	display: flex;
 	justify-content: center;
 	border-radius: 3px;
 	color: #ffffff;
+	margin-bottom: 1rem;
   }
   
-  /* Not used bc body is disabled */
+  /* Old bean-card body css
   .bean-card_text {
 	position: relative;
 	color: #ffffff;
@@ -584,7 +598,7 @@ dl {
 	height: 180px;
 	margin-bottom: 25px;
 	margin-right: 25px;
-  }
+  } */
  
   .bean-card.bean-card_width_full {
 	display: block;
@@ -602,7 +616,8 @@ dl {
   .bean-card a:hover {
 	  box-shadow: 0 0 5px 1px #7a99ac;
 	}
-  
+
+  /* Used for image card */
   .bean-card_img img {
 	width: 100%;
   }
@@ -624,6 +639,14 @@ dl {
 	margin: 0;
   }
 
+  /* Used for content card */
+  .bean-card_body {
+	color: black;
+	padding: 0.5rem 0.5rem 0 0.5rem;
+	border: 3px solid #CC0000;
+  }
+  
+
   /* Fontawesome icons */
   .fontawesome-icons {
 	font-family: 'FontAwesome';
@@ -632,11 +655,20 @@ dl {
   /* Colors */
   .bean-card_label.Blue  { background: #006ba6; }
   .bean-card_label.Green { background: #6A7A1A; }
-  .bean-card_label.Dark-Red { background: #7c2529; }
+  .bean-card_label.Dark-Red { background: #7C2529; }
   .bean-card_label.Dark-Blue { background: #003D4C; }
   .bean-card_label.Dark-Green { background: #3E4827; }
   .bean-card_label.Brown { background: #8b5b29; }
   .bean-card_label.Grey { background: #707372; }
+
+  /* Changes color of border depending on selected label color (content cards) */
+  .bean-card_body.Blue { border-color: #006ba6; }
+  .bean-card_body.Green { border-color: #6A7A1A; }
+  .bean-card_body.Dark-Red { border-color: #7C2529; }
+  .bean-card_body.Dark-Blue { border-color: #003D4C; }
+  .bean-card_body.Dark-Green { border-color: #3E4827; }
+  .bean-card_body.Brown { border-color: #8b5b29; }
+  .bean-card_body.Grey { border-color: #707372; }
   
   /* Overlay */
   /* Overlay needs a minimum height in case there is no image. */
@@ -664,15 +696,14 @@ dl {
   }
     
 /* Text Size */
+  .fontawesome-icons {
+	font-family: FontAwesome;
+  }
   
   .bean-card_label.Small {
 	font-size: 1rem !important;
   }
 
-.fontawesome-icons {
-	font-family: FontAwesome;
-}
-  
   .bean-card_label.Medium {
 	font-size: 1.5rem !important;
   }
@@ -696,14 +727,6 @@ dl {
 	padding-right: 5px;
   }
 
-  /* Currently disabled */
-  .bean-card_body {
-	color: black;
-	margin-bottom: 15%;
-	text-align: left;
-	padding-left: 7%; 
- }
-  
 /* Kill external link icon */
 #section-content .bean-card a.external:after { display: none; }
 
@@ -743,6 +766,7 @@ dl {
 		margin-top: 0;
 	}
  	
+  /* Old bean-card body css
 	.bean-card_text{
 		position: relative;
 		color: #ffffff;
@@ -751,7 +775,7 @@ dl {
 		height: 180px;
 		margin-bottom: 25px;
 		margin-right: 25px;
-	}
+	} */
  }
 
 @media screen and (max-width : 768px) {
@@ -767,6 +791,7 @@ dl {
  		padding-top: 5px;
 	}
 	 
+  /* Old bean-card body css
 	.bean-card_text{
 		position: relative;
 		color: #ffffff;
@@ -775,7 +800,7 @@ dl {
 		height: 180px;
 		margin-bottom: 25px;
 		margin-right: 25px;
-	}
+	} */
 	
 	.isu-region_footer-third {
 		margin-bottom: 1rem;
