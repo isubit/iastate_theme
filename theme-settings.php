@@ -72,6 +72,77 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
       '#default_value'  => theme_get_setting('iastate_unit_url'),
     );
 
+  $form['iastate_copyright'] = array(
+    '#type'         => 'details',
+    '#title'        => t('Copyright Info'),
+    '#description'  => t(''),
+    '#weight' => -800,
+    '#open' => TRUE,
+    );
+  
+  $form['iastate_copyright']['default_copyright'] = array(
+	'#type'		=> 'checkbox',
+	'#title'	=> t('Use IAState copyright defaults from theme'),
+	'#default_value'	=> theme_get_setting('default_copyright'),
+	'#tree'		=> '',
+	);
+
+  $form['iastate_copyright']['settings'] = array(
+	'#type'	=> 'container',
+	'#states'	=> array(
+	  'invisible'	=> array(
+	    'input[name="default_copyright"]' => array(
+		  'checked'	=> true
+		  ),
+		),
+	  ),
+	);
+
+  $form['iastate_copyright']['settings']['copyright_subject'] = array(
+	'#type'	=> 'textfield',
+	'#title'	=> t('Copyright subject'),
+	'#description'  => t(''),
+	// Tenery checks to see if 'use defaults' checkbox is enabled, if so we use a default if not take user input
+	// Value is also handled in respective twig template
+	'#default_value'	=> theme_get_setting('default_copyright') ? 'Iowa State University of Science and Technology.' : theme_get_setting('copyright_title'),
+    );
+
+  $form['iastate_copyright']['settings']['copyright_subject_url'] = array(
+	'#type'	=> 'textfield',
+	'#title'	=> t('Copyright subject URL'),
+	'#description'  => t(''),
+	// Tenery checks to see if 'use defaults' checkbox is enabled, if so we use a default if not take user input
+	// Value is also handled in respective twig template
+	'#default_value'	=> theme_get_setting('default_copyright') ? 'https://www.iastate.edu/' : theme_get_setting('copyright_title_url'),
+    );
+
+  $form['iastate_copyright']['settings']['copyright_address1'] = array(
+	'#type'	=> 'textfield',
+	'#title'	=> t('Copyright address line 1'),
+	'#description'  => t(''),
+	// Tenery checks to see if 'use defaults' checkbox is enabled, if so we use a default if not take user input
+	// Value is also handled in respective twig template
+	'#default_value'	=> theme_get_setting('default_copyright') ? '2150 Beardshear Hall' : theme_get_setting('copyright_address1'),
+    );
+
+  $form['iastate_copyright']['settings']['copyright_address2'] = array(
+	'#type'	=> 'textfield',
+	'#title'	=> t('Copyright address line 2'),
+	'#description'  => t(''),
+	// Tenery checks to see if 'use defaults' checkbox is enabled, if so we use a default if not take user input
+	// Value is also handled in respective twig template
+	'#default_value'	=> theme_get_setting('default_copyright') ? 'Ames, IA 50011-2031' : theme_get_setting('copyright_address2'),
+    );
+
+  $form['iastate_copyright']['settings']['copyright_phone'] = array(
+	'#type'	=> 'textfield',
+	'#title'	=> t('Copyright phone'),
+	'#description'  => t(''),
+	// Tenery checks to see if 'use defaults' checkbox is enabled, if so we use a default if not take user input
+	// Value is also handled in respective twig template
+	'#default_value'	=> theme_get_setting('default_copyright') ? '(800) 262-3804' : theme_get_setting('copyright_phone'),
+    );
+
   // Create a section for footer content
   $form['iastate_footer_contact'] = array(
     '#type'         => 'details',
@@ -212,98 +283,14 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
     '#description'  => t('A list of social media links are displayed in the footer.'),
     '#weight' => -800,
     '#open' => TRUE,
-  );
+    );
   
-  // 1
-  $form['iastate_footer_social']['iastate_social1_title'] = array(
-      '#type'   => 'textfield',
-      '#title'  => t('Social 1 Title'),
-      '#default_value'  => theme_get_setting('iastate_social1_title'),
-    );
-
-  $form['iastate_footer_social']['iastate_social1_url'] = array(
-      '#type'   => 'url',
-      '#title'  => t('Social 1 URL'),
-      '#default_value'  => theme_get_setting('iastate_social1_url'),
-    );
-
-  // 2
-  $form['iastate_footer_social']['iastate_social2_title'] = array(
-      '#type'   => 'textfield',
-      '#title'  => t('Social 2 Title'),
-      '#default_value'  => theme_get_setting('iastate_social2_title'),
-    );
-
-  $form['iastate_footer_social']['iastate_social2_url'] = array(
-      '#type'   => 'url',
-      '#title'  => t('Social 2 URL'),
-      '#default_value'  => theme_get_setting('iastate_social2_url'),
-    );
-
-  // 3
-  $form['iastate_footer_social']['iastate_social3_title'] = array(
-      '#type'   => 'textfield',
-      '#title'  => t('Social 3 Title'),
-      '#default_value'  => theme_get_setting('iastate_social3_title'),
-    );
-
-  $form['iastate_footer_social']['iastate_social3_url'] = array(
-      '#type'   => 'url',
-      '#title'  => t('Social 3 URL'),
-      '#default_value'  => theme_get_setting('iastate_social3_url'),
-    );
-
-  // 4
-  $form['iastate_footer_social']['iastate_social4_title'] = array(
-      '#type'   => 'textfield',
-      '#title'  => t('Social 4 Title'),
-      '#default_value'  => theme_get_setting('iastate_social4_title'),
-    );
-
-  $form['iastate_footer_social']['iastate_social4_url'] = array(
-      '#type'   => 'url',
-      '#title'  => t('Social 4 URL'),
-      '#default_value'  => theme_get_setting('iastate_social4_url'),
-    );
-
-  // 5
-  $form['iastate_footer_social']['iastate_social5_title'] = array(
-      '#type'   => 'textfield',
-      '#title'  => t('Social 5 Title'),
-      '#default_value'  => theme_get_setting('iastate_social5_title'),
-    );
-
-  $form['iastate_footer_social']['iastate_social5_url'] = array(
-      '#type'   => 'url',
-      '#title'  => t('Social 5 URL'),
-      '#default_value'  => theme_get_setting('iastate_social5_url'),
-    );
-
-  // 6
-  $form['iastate_footer_social']['iastate_social6_title'] = array(
-      '#type'   => 'textfield',
-      '#title'  => t('Social 6 Title'),
-      '#default_value'  => theme_get_setting('iastate_social6_title'),
-    );
-
-  $form['iastate_footer_social']['iastate_social6_url'] = array(
-      '#type'   => 'url',
-      '#title'  => t('Social 6 URL'),
-      '#default_value'  => theme_get_setting('iastate_social6_url'),
-    );
-
-  // 7
-  $form['iastate_footer_social']['iastate_social7_title'] = array(
-      '#type'   => 'textfield',
-      '#title'  => t('Social 7 Title'),
-      '#default_value'  => theme_get_setting('iastate_social7_title'),
-    );
-
-  $form['iastate_footer_social']['iastate_social7_url'] = array(
-    '#type'   => 'url',
-    '#title'  => t('Social 7 URL'),
-    '#default_value'  => theme_get_setting('iastate_social7_url'),
-    );
+  $form['iastate_footer_social']['default_footer_social'] = array(
+	'#type'		=> 'checkbox',
+	'#title'	=> t('Show social footer'),
+	'#default_value'	=> theme_get_setting('default_footer_social'),
+	'#tree'		=> '',
+	);
 
   // Weight variable affects ordering
   $form['logo']['#weight'] = 20;
