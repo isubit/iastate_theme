@@ -305,20 +305,51 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
     '#default_value'  => theme_get_setting('iastate_social7_url'),
     );
 
-  $form['logo']['settings']['site_logo_alttext'] = array(
-	'#type'	=> 'textfield',
-	'#title'	=> t('Image Alt Text'),
-	'#description'	=> t('Alternative text for logo image'),
-	// Tenery checks to see if 'use defaults' checkbox is enabled, if so we use a default if not take user input
-	'#default_value'	=> $form['logo']['default_logo']['#default_value'] ? 'Iowa State University Extension and Outreach Site' : theme_get_setting('site_logo_alttext'),
+  // Weight variable affects ordering
+  $form['logo']['#weight'] = 20;
+
+  $form['site_logo_alttext_url'] = array(
+	'#type'	=> 'details',
+    '#title'	=> t('Logo Image Alternative Text & URL'),
+    '#description'	=> t('Designate alternative text and URL for logo'),
+	'#weight'	=> 30,
+	'#open'	=> TRUE,
     );
 
-  $form['logo']['settings']['site_logo_link_url'] = array(
-	'#type'	=> 'url',
-	'#title'	=> t('Link URL'),
-	'#description'	=> t('Hyperlinked text of logo'),
+  $form['site_logo_alttext_url']['default_site_logo_alttext_url'] = array(
+	'#type'		=> 'checkbox',
+	'#title'	=> t('Use the default alternative text and URL supplied by the theme for logo'),
+	'#default_value'	=> theme_get_setting('default_site_logo_alttext_url'),
+	'#tree'		=> '',
+	);
+
+  $form['site_logo_alttext_url']['settings'] = array(
+	'#type'	=> 'container',
+	'#states'	=> array(
+	  'invisible'	=> array(
+	    'input[name="default_site_logo_alttext_url"]' => array(
+		  'checked'	=> true
+		  ),
+		),
+	  ),
+	);
+
+  $form['site_logo_alttext_url']['settings']['site_logo_alttext'] = array(
+	'#type'	=> 'textfield',
+	'#title'	=> t('Logo alternative text'),
+	'#description'  => t('Alternative text for logo image'),
 	// Tenery checks to see if 'use defaults' checkbox is enabled, if so we use a default if not take user input
-	'#default_value'	=> $form['logo']['default_logo']['#default_value'] ? 'https://www.extension.iastate.edu' : theme_get_setting('site_logo_link_url'),
+	// Value is also handled in respective twig template
+	'#default_value'	=> theme_get_setting('default_site_logo_alttext_url') ? 'Iowa State University Extension and Outreach' : theme_get_setting('site_logo_alttext'),
+    );
+
+  $form['site_logo_alttext_url']['settings']['site_logo_url'] = array(
+    '#type'   => 'textfield',
+    '#title'  => t('Logo URL'),
+    '#description' => t('Link the logo image to a different website.'),
+	// Tenery checks to see if 'use defaults' checkbox is enabled, if so we use a default if not take user input
+	// Value is also handled in respective twig template
+    '#default_value'  => theme_get_setting('default_site_logo_alttext_url') ? 'https://www.extension.iastate.edu' : theme_get_setting('site_logo_url'),
     );
 
   // Create a section for footer logo
@@ -326,6 +357,7 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
 	'#type'	=> 'details',
     '#title'	=> t('IASTATE Footer Logo'),
     '#description'	=> t('Designate a logo for the footer'),
+	'#weight'	=> 40,
 	'#open'	=> TRUE,
     );
 
@@ -351,23 +383,31 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
     '#type'	=> 'textfield',
     '#title'	=> t('Path to custom footer logo'),
     '#description' => t('Examples: logo.svg (for a file in the public filesystem), public://logo.svg, or themes/contrib/iastate_theme/logo.svg.'),
+	// Tenery checks to see if 'use defaults' checkbox is enabled, if so we use a default if not take user input
+	// Value is also handled in respective twig template
     '#default_value'  => theme_get_setting('default_footer_logo') ? 'themes/custom/iastate_theme/images/wordmark-stacked.svg' : theme_get_setting('iastate_footer_logo_path'),
     ); 
 
   $form['iastate_footer_logo']['settings']['iastate_footer_logo_alttext'] = array(
 	'#type'	=> 'textfield',
-	'#title'	=> t('Footer Image Alt Text'),
-	'#description'  => t('Alternative text for logo image'),
+	'#title'	=> t('Footer logo alternate text'),
+	'#description'  => t('Alternative text for footer logo image'),
 	// Tenery checks to see if 'use defaults' checkbox is enabled, if so we use a default if not take user input
-	'#default_value'	=> theme_get_setting('default_footer_logo') ? 'Iowa State University Extension and Outreach Site' : theme_get_setting('iastate_footer_logo_alttext'),
+	// Value is also handled in respective twig template
+	'#default_value'	=> theme_get_setting('default_footer_logo') ? 'Iowa State University Extension and Outreach' : theme_get_setting('iastate_footer_logo_alttext'),
     );
 
   $form['iastate_footer_logo']['settings']['iastate_footer_logo_url'] = array(
     '#type'   => 'textfield',
-    '#title'  => t('Custom footer logo url'),
+    '#title'  => t('Footer logo URL'),
     '#description' => t('Link the footer logo to a different website.'),
+	// Tenery checks to see if 'use defaults' checkbox is enabled, if so we use a default if not take user input
+	// Value is also handled in respective twig template
     '#default_value'  => theme_get_setting('default_footer_logo') ? 'https://www.extension.iastate.edu' : theme_get_setting('iastate_footer_logo_url'),
     );
+
+  // Weight variable affects ordering
+  $form['favicon']['#weight'] = 50;
 
 }
 
