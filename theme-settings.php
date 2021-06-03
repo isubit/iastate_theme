@@ -99,48 +99,12 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
 	);
 
   $form['iastate_copyright']['settings']['copyright_subject'] = array(
-	'#type'	=> 'textfield',
+	'#type'	=> 'text_format',
 	'#title'	=> t('Copyright subject'),
-	'#description'  => t(''),
+	'#allowed_formats'	=> array('wysiwyg'),
 	// Tenery checks to see if 'use defaults' checkbox is enabled, if so we use a default if not take user input
 	// Value is also handled in respective twig template
-	'#default_value'	=> theme_get_setting('default_copyright') ? 'Iowa State University of Science and Technology.' : theme_get_setting('copyright_title'),
-    );
-
-  $form['iastate_copyright']['settings']['copyright_subject_url'] = array(
-	'#type'	=> 'textfield',
-	'#title'	=> t('Copyright subject URL'),
-	'#description'  => t(''),
-	// Tenery checks to see if 'use defaults' checkbox is enabled, if so we use a default if not take user input
-	// Value is also handled in respective twig template
-	'#default_value'	=> theme_get_setting('default_copyright') ? 'https://www.iastate.edu/' : theme_get_setting('copyright_title_url'),
-    );
-
-  $form['iastate_copyright']['settings']['copyright_address1'] = array(
-	'#type'	=> 'textfield',
-	'#title'	=> t('Copyright address line 1'),
-	'#description'  => t(''),
-	// Tenery checks to see if 'use defaults' checkbox is enabled, if so we use a default if not take user input
-	// Value is also handled in respective twig template
-	'#default_value'	=> theme_get_setting('default_copyright') ? '2150 Beardshear Hall' : theme_get_setting('copyright_address1'),
-    );
-
-  $form['iastate_copyright']['settings']['copyright_address2'] = array(
-	'#type'	=> 'textfield',
-	'#title'	=> t('Copyright address line 2'),
-	'#description'  => t(''),
-	// Tenery checks to see if 'use defaults' checkbox is enabled, if so we use a default if not take user input
-	// Value is also handled in respective twig template
-	'#default_value'	=> theme_get_setting('default_copyright') ? 'Ames, IA 50011-2031' : theme_get_setting('copyright_address2'),
-    );
-
-  $form['iastate_copyright']['settings']['copyright_phone'] = array(
-	'#type'	=> 'textfield',
-	'#title'	=> t('Copyright phone'),
-	'#description'  => t(''),
-	// Tenery checks to see if 'use defaults' checkbox is enabled, if so we use a default if not take user input
-	// Value is also handled in respective twig template
-	'#default_value'	=> theme_get_setting('default_copyright') ? '(800) 262-3804' : theme_get_setting('copyright_phone'),
+	'#default_value'	=> theme_get_setting('default_copyright') ? "<p>Copyright © 1995-2021<br>Iowa State University of Science and Technology. All rights reserved.<br>2150 Beardshear Hall<br>Ames, IA 50011-2031<br>(800) 262-3804<br><br>Iowa State University | Policies<br>State & National Extension Partners</p>" : theme_get_setting('copyright_subject'),
     );
 
   // Create a section for footer content
@@ -277,7 +241,7 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
     );
 
   // Create a section for social media links
-  $form['iastate_footer_social'] = array(
+  $form['iastate_social_footer'] = array(
     '#type'         => 'details',
     '#title'        => t('Social Media Links'),
     '#description'  => t('A list of social media links are displayed in the footer.'),
@@ -285,10 +249,10 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
     '#open' => TRUE,
     );
   
-  $form['iastate_footer_social']['default_footer_social'] = array(
+  $form['iastate_social_footer']['default_social_footer'] = array(
 	'#type'		=> 'checkbox',
 	'#title'	=> t('Show social footer'),
-	'#default_value'	=> theme_get_setting('default_footer_social'),
+	'#default_value'	=> theme_get_setting('default_social_footer'),
 	'#tree'		=> '',
 	);
 

@@ -193,10 +193,6 @@ function iastate_theme_preprocess_page(&$variables) {
 
   $variables['default_copyright'] = theme_get_setting('default_copyright');
   $variables['copyright_subject'] = theme_get_setting('copyright_subject');
-  $variables['copyright_subject_url'] = theme_get_setting('copyright_subject_url');
-  $variables['copyright_address1'] = theme_get_setting('copyright_address1');
-  $variables['copyright_address2'] = theme_get_setting('copyright_address2');
-  $variables['copyright_phone'] = theme_get_setting('copyright_phone');
 
 }
 
@@ -216,7 +212,7 @@ function iastate_theme_preprocess_block__system_branding_block(&$variables) {
  * Allows use for variables in twig template
  */
 function iastate_theme_preprocess_block__socialmediafooter(&$variables) {
-  $variables['default_social_footer'] = theme_get_setting('default_footer_social');
+  $variables['default_social_footer'] = theme_get_setting('default_social_footer');
 
 }
 

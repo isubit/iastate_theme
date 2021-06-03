@@ -5,11 +5,7 @@ features:
 iastate_unit_name: ''
 iastate_unit_url: ''
 default_copyright: 1
-copyright_subject: 'Iowa State University of Science and Technology.'
-copyright_subject_url: 'https://www.iastate.edu/'
-copyright_address1: '2150 Beardshear Hall'
-copyright_address2: 'Ames, IA 50011-2031'
-copyright_phone: '(800) 262-3804'
+copyright_subject: "Iowa State University of Science and Technology."
 default_site_logo_alttext_url: 1
 site_logo_alttext: 'Iowa State University Extension and Outreach'
 site_logo_url: 'https://www.extension.iastate.edu'

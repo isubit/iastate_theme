@@ -21,18 +21,6 @@ iastate_theme.settings:
     copyright_subject:
       type: string
       label: 'Subject of copyright'
-    copyright_subject_url:
-      type: uri
-      label: 'URL for copyright subject'
-    copyright_address1:
-      type: string
-      label: 'Line 1 for address'
-    copyright_address2:
-      type: string
-      label: 'Line 2 for address'
-    copyright_phone:
-      type: string
-      label: 'Phone number associated with copyright'
     default_site_logo_alttext_url:
       type: boolean
       label: 'Use the defaults supplied by the theme'
