@@ -79,26 +79,33 @@
 		  {# using merge filter to apply to value key of copyright_subject array (cannot use copyright_subject.value for set) #}
 		  {# Referenced: https://craftcms.stackexchange.com/questions/23932/unexpected-token-punctuation-of-value-end-of-statement-block-expected #}
 		  {% set copyright_subject = copyright_subject|merge({'value': '
-			Copyright © 1995-2021<br>
-		  	<a href="https://www.iastate.edu/">Iowa State University of Science and Technology.</a> All rights reserved.<br>
-		  	2150 Beardshear Hall<br>
-		  	Ames, IA 50011-2031<br>
-		  	(800) 262-3804<br><br>
-		  	<a href="https://www.iastate.edu/">Iowa State University</a> | <a href="https://www.extension.iastate.edu/legal">Policies</a><br>
-		  	<a href="http://nifa.usda.gov/partners-and-extension-map">State & National Extension Partners</a>
+		    <p>
+			  Copyright © 1995-2021<br>
+		  	  <a href="https://www.iastate.edu/">Iowa State University of Science and Technology.</a> All rights reserved.<br>
+		  	  2150 Beardshear Hall<br>
+		  	  Ames, IA 50011-2031<br>
+		  	  (800) 262-3804<br><br>
+		  	  <a href="https://www.iastate.edu/">Iowa State University</a> | <a href="https://www.extension.iastate.edu/legal">Policies</a><br>
+		  	  <a href="http://nifa.usda.gov/partners-and-extension-map">State & National Extension Partners</a>
+			</p>
 		  ' }) %}
 		{% endif %}
+
+		{# replace filter to remove 'non-breaking space' characters, this is necessary for newlines to work when printing #}
+		{% set copyright_build = {
+		  '#type':	'processed_text',
+		  '#text':	copyright_subject.value|replace({ '<p>&nbsp;</p>': '<br/>' }),
+		  '#format':	copyright_subject.format,
+		} %}
 
         {% if footer2_file_exists %}
           {% autoescape false %}
             {{ footer2_file_contents }}
           {% endautoescape %}
         {% else %}
-          <p class="isu-copyright">
-			{# filters to remove 'non-breaking space' characters, this is necessary for newlines to work with wysiwyg #}
-			{# could potentially be done better but idk #}
-			{{ copyright_subject.value|replace({'&nbsp;': '<br>'})|striptags('<a><br>')|raw }}
-          </p>
+          <div class="isu-copyright">
+			{{ copyright_build }}
+          </div>
         {% endif %}
       </div>
 

@@ -485,7 +485,8 @@ dl {
 }
 
 /* Reduce size of copyright in footer */
-.isu-copyright {
+.isu-copyright p {
+	margin-bottom: 0;
 	font-size: 12px;
 }
 
