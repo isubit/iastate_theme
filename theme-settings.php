@@ -84,7 +84,7 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
   // Checkbox to use copyright defaults, default_copyright boolean variable
   $form['iastate_copyright']['default_copyright'] = array(
 	'#type'		=> 'checkbox',
-	'#title'	=> t('Use ISU copyright defaults from theme'),
+	'#title'	=> t('Use copyright defaults supplied by the theme'),
 	'#default_value'	=> theme_get_setting('default_copyright'),
 	'#tree'		=> '',
 	);
