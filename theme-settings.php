@@ -71,7 +71,8 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
       '#title'  => t('Unit URL'),
       '#default_value'  => theme_get_setting('iastate_unit_url'),
     );
-
+  
+  // Copyright details field
   $form['iastate_copyright'] = array(
     '#type'         => 'details',
     '#title'        => t('Copyright Info'),
@@ -80,13 +81,15 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
     '#open' => TRUE,
     );
   
+  // Checkbox to use copyright defaults, default_copyright boolean variable
   $form['iastate_copyright']['default_copyright'] = array(
 	'#type'		=> 'checkbox',
-	'#title'	=> t('Use IAState copyright defaults from theme'),
+	'#title'	=> t('Use ISU copyright defaults from theme'),
 	'#default_value'	=> theme_get_setting('default_copyright'),
 	'#tree'		=> '',
 	);
 
+  // Hiding functionality dependent on 'default_copyright'
   $form['iastate_copyright']['settings'] = array(
 	'#type'	=> 'container',
 	'#states'	=> array(
@@ -98,13 +101,14 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
 	  ),
 	);
 
+  // Creates wysiwyg restricted editor field, text value saved in copyright_subject['value']
   $form['iastate_copyright']['settings']['copyright_subject'] = array(
 	'#type'	=> 'text_format',
 	'#title'	=> t('Copyright subject'),
-	'#allowed_formats'	=> array('wysiwyg'),
+	'#allowed_formats'	=> [ 'wysiwyg' ],
 	// Tenery checks to see if 'use defaults' checkbox is enabled, if so we use a default if not take user input
-	// Value is also handled in respective twig template
-	'#default_value'	=> theme_get_setting('default_copyright') ? "<p>Copyright © 1995-2021<br>Iowa State University of Science and Technology. All rights reserved.<br>2150 Beardshear Hall<br>Ames, IA 50011-2031<br>(800) 262-3804<br><br>Iowa State University | Policies<br>State & National Extension Partners</p>" : theme_get_setting('copyright_subject'),
+	// Value is also reflected in respective theme setting field
+	'#default_value'	=> theme_get_setting('default_copyright') ? 'Copyright © 1995-2021<br><a href="https://www.iastate.edu/">Iowa State University of Science and Technology.</a> All rights reserved.<br>2150 Beardshear Hall<br>Ames, IA 50011-2031<br>(800) 262-3804<br><br><a href="https://www.iastate.edu/">Iowa State University</a> | <a href="https://www.extension.iastate.edu/legal">Policies</a><br><a href="http://nifa.usda.gov/partners-and-extension-map">State & National Extension Partners</a>' : theme_get_setting('copyright_subject')['value'],
     );
 
   // Create a section for footer content
@@ -290,7 +294,7 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
 	'#title'	=> t('Logo alternative text'),
 	'#description'  => t('Alternative text for logo image'),
 	// Tenery checks to see if 'use defaults' checkbox is enabled, if so we use a default if not take user input
-	// Value is also handled in respective twig template
+	// Value is also reflected in respective theme setting field
 	'#default_value'	=> theme_get_setting('default_site_logo_alttext_url') ? 'Iowa State University Extension and Outreach' : theme_get_setting('site_logo_alttext'),
     );
 
@@ -299,7 +303,7 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
     '#title'  => t('Logo URL'),
     '#description' => t('Link the logo image to a different website.'),
 	// Tenery checks to see if 'use defaults' checkbox is enabled, if so we use a default if not take user input
-	// Value is also handled in respective twig template
+	// Value is also reflected in respective theme setting field
     '#default_value'  => theme_get_setting('default_site_logo_alttext_url') ? 'https://www.extension.iastate.edu' : theme_get_setting('site_logo_url'),
     );
 
@@ -335,7 +339,7 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
     '#title'	=> t('Path to custom footer logo'),
     '#description' => t('Examples: logo.svg (for a file in the public filesystem), public://logo.svg, or themes/contrib/iastate_theme/logo.svg.'),
 	// Tenery checks to see if 'use defaults' checkbox is enabled, if so we use a default if not take user input
-	// Value is also handled in respective twig template
+	// Value is also reflected in respective theme setting field
     '#default_value'  => theme_get_setting('default_footer_logo') ? 'themes/custom/iastate_theme/images/wordmark-stacked.svg' : theme_get_setting('iastate_footer_logo_path'),
     ); 
 
@@ -344,7 +348,7 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
 	'#title'	=> t('Footer logo alternate text'),
 	'#description'  => t('Alternative text for footer logo image'),
 	// Tenery checks to see if 'use defaults' checkbox is enabled, if so we use a default if not take user input
-	// Value is also handled in respective twig template
+	// Value is also reflected in respective theme setting field
 	'#default_value'	=> theme_get_setting('default_footer_logo') ? 'Iowa State University Extension and Outreach' : theme_get_setting('iastate_footer_logo_alttext'),
     );
 
@@ -353,7 +357,7 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
     '#title'  => t('Footer logo URL'),
     '#description' => t('Link the footer logo to a different website.'),
 	// Tenery checks to see if 'use defaults' checkbox is enabled, if so we use a default if not take user input
-	// Value is also handled in respective twig template
+	// Value is also reflected in respective theme setting field
     '#default_value'  => theme_get_setting('default_footer_logo') ? 'https://www.extension.iastate.edu' : theme_get_setting('iastate_footer_logo_url'),
     );
 

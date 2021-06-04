@@ -5,7 +5,8 @@ features:
 iastate_unit_name: ''
 iastate_unit_url: ''
 default_copyright: 1
-copyright_subject: "Iowa State University of Science and Technology."
+copyright_subject: 
+  value: "Iowa State University of Science and Technology."
 default_site_logo_alttext_url: 1
 site_logo_alttext: 'Iowa State University Extension and Outreach'
 site_logo_url: 'https://www.extension.iastate.edu'

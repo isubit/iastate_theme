@@ -19,8 +19,12 @@ iastate_theme.settings:
       type: boolean
       label: 'Use the defaults supplied by the theme'
     copyright_subject:
-      type: string
+      type: mapping
       label: 'Subject of copyright'
+      mapping:
+        value:
+          type: string
+          label: 'Subject of copyright value'
     default_site_logo_alttext_url:
       type: boolean
       label: 'Use the defaults supplied by the theme'

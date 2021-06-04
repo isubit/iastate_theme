@@ -76,7 +76,17 @@
         {% endif %}
 
 		{% if default_copyright %}
-		  {% set copyright_subject = 'Copyright © 1995-2021\nIowa State University of Science and Technology. All rights reserved.\n2150 Beardshear Hall\nAmes, IA 50011-2031\n(800) 262-384\n\nIowa State University | Policies\nState & National Extension Partners' %} 
+		  {# using merge filter to apply to value key of copyright_subject array (cannot use copyright_subject.value for set) #}
+		  {# Referenced: https://craftcms.stackexchange.com/questions/23932/unexpected-token-punctuation-of-value-end-of-statement-block-expected #}
+		  {% set copyright_subject = copyright_subject|merge({'value': '
+			Copyright © 1995-2021<br>
+		  	<a href="https://www.iastate.edu/">Iowa State University of Science and Technology.</a> All rights reserved.<br>
+		  	2150 Beardshear Hall<br>
+		  	Ames, IA 50011-2031<br>
+		  	(800) 262-3804<br><br>
+		  	<a href="https://www.iastate.edu/">Iowa State University</a> | <a href="https://www.extension.iastate.edu/legal">Policies</a><br>
+		  	<a href="http://nifa.usda.gov/partners-and-extension-map">State & National Extension Partners</a>
+		  ' }) %}
 		{% endif %}
 
         {% if footer2_file_exists %}
@@ -85,13 +95,10 @@
           {% endautoescape %}
         {% else %}
           <p class="isu-copyright">
-			{{ copyright_subject|nl2br }}
+			{# filters to remove 'non-breaking space' characters, this is necessary for newlines to work with wysiwyg #}
+			{# could potentially be done better but idk #}
+			{{ copyright_subject.value|replace({'&nbsp;': '<br>'})|striptags('<a><br>')|raw }}
           </p>
-          <p class="isu-legal-menu">
-            <a href="https://www.iastate.edu/">Iowa State University</a>&nbsp;|
-            <a href="https://www.extension.iastate.edu/legal">Policies</a><br />
-            <a href="http://nifa.usda.gov/partners-and-extension-map">State &amp; National Extension Partners</a>
-		  </p>
         {% endif %}
       </div>
 
