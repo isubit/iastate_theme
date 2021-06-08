@@ -192,7 +192,12 @@ function iastate_theme_preprocess_page(&$variables) {
   $variables['iastate_footer_logo_url'] = theme_get_setting('iastate_footer_logo_url');
 
   $variables['default_copyright'] = theme_get_setting('default_copyright');
-  $variables['copyright_subject'] = theme_get_setting('copyright_subject');
+  // Create copyright render array
+  $variables['copyright_subject'] = array(
+    '#type' => 'processed_text',
+	'#text' => theme_get_setting('copyright_subject')['value'],
+	'#format' => theme_get_setting('copyright_subject')['format'],
+	);
 
 }
 

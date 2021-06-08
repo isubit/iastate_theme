@@ -76,9 +76,9 @@
         {% endif %}
 
 		{% if default_copyright %}
-		  {# using merge filter to apply to value key of copyright_subject array (cannot use copyright_subject.value for set) #}
+		  {# using merge filter to apply to '#text' key of copyright_subject render array (cannot use copyright_subject.#text for set operation) #}
 		  {# Referenced: https://craftcms.stackexchange.com/questions/23932/unexpected-token-punctuation-of-value-end-of-statement-block-expected #}
-		  {% set copyright_subject = copyright_subject|merge({'value': '
+		  {% set copyright_subject = copyright_subject|merge({'#text': '
 		    <p>
 			  Copyright © 1995-2021<br>
 		  	  <a href="https://www.iastate.edu/">Iowa State University of Science and Technology.</a> All rights reserved.<br>
@@ -91,20 +91,13 @@
 		  ' }) %}
 		{% endif %}
 
-		{# replace filter to remove 'non-breaking space' characters, this is necessary for newlines to work when printing #}
-		{% set copyright_build = {
-		  '#type':	'processed_text',
-		  '#text':	copyright_subject.value|replace({ '<p>&nbsp;</p>': '<br/>' }),
-		  '#format':	copyright_subject.format,
-		} %}
-
         {% if footer2_file_exists %}
           {% autoescape false %}
             {{ footer2_file_contents }}
           {% endautoescape %}
         {% else %}
           <div class="isu-copyright">
-			{{ copyright_build }}
+			{{ copyright_subject }}
           </div>
         {% endif %}
       </div>
