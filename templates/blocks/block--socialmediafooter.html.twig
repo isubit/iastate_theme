@@ -25,51 +25,49 @@
  * @see template_preprocess_block()
  */
 #}
-{% if default_social_footer %}
-  <div{{ attributes.addClass("isu-social-menu") }}>
-    {{ title_suffix }}
-    {% block content %}
-      <div>
-        {% if content.field_facebook.0['#url'] %}
-          {{ content.field_facebook.0 }}
-        {% endif %}
-      </div>
-      <div>
-        {% if content.field_facebook.1['#url'] %}
-          {{ content.field_facebook.1 }}
-        {% endif %}
-      </div>
-      <div>
-        {% if content.field_instagram.0['#url'] %}
-          {{ content.field_instagram.0 }}
-        {% endif %}
-      </div>
-      <div>
-        {% if content.field_linkedin.0['#url'] %}
-          {{ content.field_linkedin.0 }}
-        {% endif %}
-      </div>
-      <div>
-        {% if content.field_pinterest.0['#url'] %}
-          {{ content.field_pinterest.0 }}
-        {% endif %}
-      </div>
-      <div>
-        {% if content.field_twitter.0['#url'] %}
-          {{ content.field_twitter.0 }}
-        {% endif %}
-      </div>
-      <div>
-        {% if content.field_twitter.1['#url'] %}
-          {{ content.field_twitter.1 }}
-        {% endif %}
-      </div>
-      <div>
-        {% if content.field_youtube.0['#url'] %}
-          {{ content.field_youtube.0 }}
-        {% endif %}
-      </div>
-    {% endblock %}
-  </div>
-{% endif %}
+<div{{ attributes.addClass("isu-social-menu") }}>
+  {{ title_suffix }}
+  {% block content %}
+    <div>
+      {% if content.field_facebook.0['#url'] %}
+        {{ content.field_facebook.0 }}
+      {% endif %}
+    </div>
+    <div>
+      {% if content.field_facebook.1['#url'] %}
+        {{ content.field_facebook.1 }}
+      {% endif %}
+    </div>
+    <div>
+      {% if content.field_instagram.0['#url'] %}
+        {{ content.field_instagram.0 }}
+      {% endif %}
+    </div>
+    <div>
+      {% if content.field_linkedin.0['#url'] %}
+        {{ content.field_linkedin.0 }}
+      {% endif %}
+    </div>
+    <div>
+      {% if content.field_pinterest.0['#url'] %}
+        {{ content.field_pinterest.0 }}
+      {% endif %}
+    </div>
+    <div>
+      {% if content.field_twitter.0['#url'] %}
+        {{ content.field_twitter.0 }}
+      {% endif %}
+    </div>
+    <div>
+      {% if content.field_twitter.1['#url'] %}
+        {{ content.field_twitter.1 }}
+      {% endif %}
+    </div>
+    <div>
+      {% if content.field_youtube.0['#url'] %}
+        {{ content.field_youtube.0 }}
+      {% endif %}
+    </div>
+  {% endblock %}
+</div>
 

@@ -37,14 +37,16 @@
             </a>
         {% endif %}
 
-		<div class="isu-social-menu-footer isu-social-menu">
-          <a href="https://www.facebook.com/iowastateuniversityextension"></a>
-          <a href="https://instagram.com/isuextension"></a>
-          <a href="https://www.linkedin.com/company/iowa-state-university-extension-and-outreach?trk=nmp_rec_act_company_name"></a>
-          <a href="https://pinterest.com/isuextension/"></a>
-          <a href="https://twitter.com/isuextension"></a>
-          <a href="https://youtube.com"></a>
-        </div>
+		{% if default_social_footer %}
+		  <div class="isu-social-menu-footer isu-social-menu">
+            <a href="https://www.facebook.com/iowastateuniversityextension"></a>
+            <a href="https://instagram.com/isuextension"></a>
+            <a href="https://www.linkedin.com/company/iowa-state-university-extension-and-outreach?trk=nmp_rec_act_company_name"></a>
+            <a href="https://pinterest.com/isuextension/"></a>
+            <a href="https://twitter.com/isuextension"></a>
+            <a href="https://youtube.com"></a>
+          </div>
+		{% endif %}
 
 		<ul class="isu-associates-menu">
           {% if iastate_associate1_title %}

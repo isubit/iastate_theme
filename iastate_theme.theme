@@ -191,6 +191,8 @@ function iastate_theme_preprocess_page(&$variables) {
   $variables['iastate_footer_logo_alttext'] = theme_get_setting('iastate_footer_logo_alttext');
   $variables['iastate_footer_logo_url'] = theme_get_setting('iastate_footer_logo_url');
 
+  $variables['default_social_footer'] = theme_get_setting('default_social_footer');
+
   $variables['default_copyright'] = theme_get_setting('default_copyright');
   // Create copyright render array
   $variables['copyright_subject'] = array(
@@ -209,15 +211,6 @@ function iastate_theme_preprocess_block__system_branding_block(&$variables) {
   $variables['default_site_logo_alttext_url'] = theme_get_setting('default_site_logo_alttext_url');
   $variables['site_logo_alttext'] = theme_get_setting('site_logo_alttext');
   $variables['site_logo_url'] = theme_get_setting('site_logo_url');
-
-}
-
-/**
- * Implements hook_theme_preprocess_block()
- * Allows use for variables in twig template
- */
-function iastate_theme_preprocess_block__socialmediafooter(&$variables) {
-  $variables['default_social_footer'] = theme_get_setting('default_social_footer');
 
 }
 

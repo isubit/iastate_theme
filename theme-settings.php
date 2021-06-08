@@ -101,7 +101,7 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
 	  ),
 	);
 
-  // Creates wysiwyg restricted editor field, text value saved in copyright_subject['value']
+  // Creates wysiwyg restricted editor field, text value saved in copyright_subject['#text'] of render array
   $form['iastate_copyright']['settings']['copyright_subject'] = array(
 	'#type'	=> 'text_format',
 	'#title'	=> t('Copyright subject'),
@@ -244,22 +244,6 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
       '#default_value'  => theme_get_setting('iastate_associate6_url'),
     );
 
-  // Create a section for social media links
-  $form['iastate_social_footer'] = array(
-    '#type'         => 'details',
-    '#title'        => t('Social Media Links'),
-    '#description'  => t('A list of social media links are displayed in the footer.'),
-    '#weight' => -800,
-    '#open' => TRUE,
-    );
-  
-  $form['iastate_social_footer']['default_social_footer'] = array(
-	'#type'		=> 'checkbox',
-	'#title'	=> t('Show social footer'),
-	'#default_value'	=> theme_get_setting('default_social_footer'),
-	'#tree'		=> '',
-	);
-
   // Weight variable affects ordering
   $form['logo']['#weight'] = 20;
 
@@ -360,6 +344,22 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
 	// Value is also reflected in respective theme setting field
     '#default_value'  => theme_get_setting('default_footer_logo') ? 'https://www.extension.iastate.edu' : theme_get_setting('iastate_footer_logo_url'),
     );
+
+  // Create a section for social media links
+  $form['iastate_social_footer'] = array(
+    '#type'         => 'details',
+    '#title'        => t('Social Media Icons'),
+    '#description'  => t('A row of social media icon links displayed under footer logo'),
+    '#weight' => 45,
+    '#open' => TRUE,
+    );
+  
+  $form['iastate_social_footer']['default_social_footer'] = array(
+	'#type'		=> 'checkbox',
+	'#title'	=> t('Show social footer icons'),
+	'#default_value'	=> theme_get_setting('default_social_footer'),
+	'#tree'		=> '',
+	);
 
   // Weight variable affects ordering
   $form['favicon']['#weight'] = 50;
