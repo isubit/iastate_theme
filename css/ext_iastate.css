@@ -777,6 +777,19 @@ dl {
 		margin-bottom: 25px;
 		margin-right: 25px;
 	} */
+	
+	.isu-footer-logo {
+		margin-left: -8%;
+	}
+
+	.isu-footer {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+
+	.isu-copyright {	
+		padding-bottom: 20px;
+	}
  }
 
 @media screen and (max-width : 768px) {
