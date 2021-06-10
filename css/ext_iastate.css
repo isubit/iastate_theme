@@ -485,8 +485,9 @@ dl {
 }
 
 /* Reduce size of copyright in footer */
-.isu-copyright {
-	font-size: 12px;
+.isu-copyright p {
+	margin-bottom: 0;
+	font-size: 14px;
 }
 
 .isu-legal-menu {

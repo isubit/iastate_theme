@@ -37,35 +37,37 @@
             </a>
         {% endif %}
 
- <div class="isu-social-menu-red isu-social-menu">
-          <a href="https://www.facebook.com/iowastateuniversityextension"></a>
-          <a href="https://www.instagram.com/isuextension/"></a>
-          <a href="https://www.linkedin.com/company/iowa-state-university-extension-and-outreach?trk=nmp_rec_act_company_name"></a>
-          <a href="https://www.pinterest.com/isuextension/"></a>
-          <a href="https://twitter.com/isuextension"></a>
-          <a href="https://www.youtube.com/user/IowaStateExtension"></a>
-        </div>
+		{% if default_social_footer %}
+		  <div class="isu-social-menu-footer isu-social-menu">
+            <a href="https://www.facebook.com/iowastateuniversityextension"></a>
+            <a href="https://instagram.com/isuextension"></a>
+            <a href="https://www.linkedin.com/company/iowa-state-university-extension-and-outreach?trk=nmp_rec_act_company_name"></a>
+            <a href="https://pinterest.com/isuextension/"></a>
+            <a href="https://twitter.com/isuextension"></a>
+            <a href="https://youtube.com"></a>
+          </div>
+		{% endif %}
 
- <ul class="isu-associates-menu">
-            {% if iastate_associate1_title %}
-              <li><a href="{{ iastate_associate1_url }}">{{ iastate_associate1_title }}</a></li>
-            {% endif %}
-            {% if iastate_associate2_title %}
-              <li><a href="{{ iastate_associate2_url }}">{{ iastate_associate2_title }}</a></li>
-            {% endif %}
-            {% if iastate_associate3_title %}
-              <li><a href="{{ iastate_associate3_url }}">{{ iastate_associate3_title }}</a></li>
-            {% endif %}
-            {% if iastate_associate4_title %}
-              <li><a href="{{ iastate_associate4_url }}">{{ iastate_associate4_title }}</a></li>
-            {% endif %}
-            {% if iastate_associate5_title %}
-              <li><a href="{{ iastate_associate5_url }}">{{ iastate_associate5_title }}</a></li>
-            {% endif %}
-            {% if iastate_associate6_title %}
-              <li><a href="{{ iastate_associate6_url }}">{{ iastate_associate6_title }}</a></li>
-            {% endif %}
-          </ul>
+		<ul class="isu-associates-menu">
+          {% if iastate_associate1_title %}
+            <li><a href="{{ iastate_associate1_url }}">{{ iastate_associate1_title }}</a></li>
+          {% endif %}
+          {% if iastate_associate2_title %}
+            <li><a href="{{ iastate_associate2_url }}">{{ iastate_associate2_title }}</a></li>
+          {% endif %}
+          {% if iastate_associate3_title %}
+            <li><a href="{{ iastate_associate3_url }}">{{ iastate_associate3_title }}</a></li>
+          {% endif %}
+          {% if iastate_associate4_title %}
+            <li><a href="{{ iastate_associate4_url }}">{{ iastate_associate4_title }}</a></li>
+          {% endif %}
+          {% if iastate_associate5_title %}
+            <li><a href="{{ iastate_associate5_url }}">{{ iastate_associate5_title }}</a></li>
+          {% endif %}
+          {% if iastate_associate6_title %}
+            <li><a href="{{ iastate_associate6_url }}">{{ iastate_associate6_title }}</a></li>
+          {% endif %}
+        </ul>
 
       </div>
 
@@ -75,21 +77,31 @@
           {{ page.footer_second }}
         {% endif %}
 
+		{% if default_copyright %}
+		  {# using merge filter to apply to '#text' key of copyright_subject render array (cannot use copyright_subject.#text for set operation) #}
+		  {# Referenced: https://craftcms.stackexchange.com/questions/23932/unexpected-token-punctuation-of-value-end-of-statement-block-expected #}
+		  {% set copyright_subject = copyright_subject|merge({'#text': '
+		    <p>
+			  Copyright © 1995-<script>document.write(new Date().getFullYear())</script><br>
+		  	  <strong><a href="https://www.iastate.edu/">Iowa State University of Science and Technology.</a></strong> All rights reserved.<br>
+		  	  2150 Beardshear Hall<br>
+		  	  Ames, IA 50011-2031<br>
+		  	  (800) 262-3804<br><br>
+		  	  <a href="https://www.iastate.edu/">Iowa State University</a> | <a href="https://www.extension.iastate.edu/legal">Policies</a><br>
+		  	  <a href="http://nifa.usda.gov/partners-and-extension-map">State & National Extension Partners</a>
+			</p>
+		  ' }) %}
+		{% endif %}
+
         {% if footer2_file_exists %}
           {% autoescape false %}
             {{ footer2_file_contents }}
           {% endautoescape %}
         {% else %}
-          <p class="isu-copyright">Copyright © 1995-<script>document.write(new Date().getFullYear())</script><br><strong><a href="https://www.iastate.edu/">Iowa State University of Science and Technology.</a></strong> All rights reserved.<br>
-            2150 Beardshear Hall<br>
-            Ames, IA 50011-2031<br>
-            (800) 262-3804
-          </p>
-          <p class="isu-legal-menu">
-            <a href="https://www.iastate.edu/">Iowa State University</a>&nbsp;|
-            <a href="https://www.extension.iastate.edu/legal">Policies</a><br />
-            <a href="http://nifa.usda.gov/partners-and-extension-map">State &amp; National Extension Partners</a></p>
-          {% endif %}
+          <div class="isu-copyright">
+			{{ copyright_subject }}
+          </div>
+        {% endif %}
       </div>
 
       <div class="col-sm-6 col-md-6 col-lg-3">

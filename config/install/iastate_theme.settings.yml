@@ -4,6 +4,11 @@ features:
   favicon: true
 iastate_unit_name: ''
 iastate_unit_url: ''
+default_copyright: 1
+copyright_subject:
+  type: 'processed_text'
+  text: 'Copyright © 1995-2021<br><a href="https://www.iastate.edu/">Iowa State University of Science and Technology.</a> All rights reserved.<br>2150 Beardshear Hall<br>Ames, IA 50011-2031<br>(800) 262-3804<br><br><a href="https://www.iastate.edu/">Iowa State University</a> | <a href="https://www.extension.iastate.edu/legal">Policies</a><br><a href="http://nifa.usda.gov/partners-and-extension-map">State & National Extension Partners</a>'
+  format: 'wysiwyg'
 default_site_logo_alttext_url: 1
 site_logo_alttext: 'Iowa State University Extension and Outreach'
 site_logo_url: 'https://www.extension.iastate.edu'
@@ -11,6 +16,7 @@ default_footer_logo: 1
 iastate_footer_logo_path: themes/contrib/iastate_theme/isu-stacked.svg
 iastate_footer_logo_alttext: 'Iowa State University Extension and Outreach' 
 iastate_footer_logo_url: 'https://www.iastate.edu/'
+default_social_footer: 1
 iastate_contact_address: "2221 Wanda Daley Dr\n2nd Floor ASB\nAmes, IA 50011"
 iastate_contact_email: 'theme@iastate.edu'
 iastate_contact_phone: '515-294-6654'
@@ -26,14 +32,4 @@ iastate_associate5_title: 'University Relations'
 iastate_associate5_url: 'http://www.ur.iastate.edu/'
 iastate_associate6_title: 'Office of University Marketing'
 iastate_associate6_url: 'http://marketing.iastate.edu/'
-iastate_social1_title: 'Facebook'
-iastate_social1_url: 'http://facebook.com/IowaStateU/'
-iastate_social2_title: 'Twitter'
-iastate_social2_url: 'http://twitter.com/iowastateu?lang=en'
-iastate_social3_title: 'Instagram'
-iastate_social3_url: 'http://instagram.com/iowastateu/'
-iastate_social4_title: 'YouTube'
-iastate_social4_url: 'http://youtube.com/user/iowastateu'
-iastate_social5_title: 'RSS'
-iastate_social5_url: 'http://www.news.iastate.edu/rss/rss.php'
 

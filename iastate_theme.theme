@@ -186,25 +186,20 @@ function iastate_theme_preprocess_page(&$variables) {
   $variables['iastate_associate6_title'] = theme_get_setting('iastate_associate6_title');
   $variables['iastate_associate6_url'] = theme_get_setting('iastate_associate6_url');
 
-  $variables['iastate_social1_title'] = theme_get_setting('iastate_social1_title');
-  $variables['iastate_social1_url'] = theme_get_setting('iastate_social1_url');
-  $variables['iastate_social2_title'] = theme_get_setting('iastate_social2_title');
-  $variables['iastate_social2_url'] = theme_get_setting('iastate_social2_url');
-  $variables['iastate_social3_title'] = theme_get_setting('iastate_social3_title');
-  $variables['iastate_social3_url'] = theme_get_setting('iastate_social3_url');
-  $variables['iastate_social4_title'] = theme_get_setting('iastate_social4_title');
-  $variables['iastate_social4_url'] = theme_get_setting('iastate_social4_url');
-  $variables['iastate_social5_title'] = theme_get_setting('iastate_social5_title');
-  $variables['iastate_social5_url'] = theme_get_setting('iastate_social5_url');
-  $variables['iastate_social6_title'] = theme_get_setting('iastate_social6_title');
-  $variables['iastate_social6_url'] = theme_get_setting('iastate_social6_url');
-  $variables['iastate_social7_title'] = theme_get_setting('iastate_social7_title');
-  $variables['iastate_social7_url'] = theme_get_setting('iastate_social7_url');
-
   $variables['default_footer_logo'] = theme_get_setting('default_footer_logo');
   $variables['iastate_footer_logo_path'] = theme_get_setting('iastate_footer_logo_path');
   $variables['iastate_footer_logo_alttext'] = theme_get_setting('iastate_footer_logo_alttext');
   $variables['iastate_footer_logo_url'] = theme_get_setting('iastate_footer_logo_url');
+
+  $variables['default_social_footer'] = theme_get_setting('default_social_footer');
+
+  $variables['default_copyright'] = theme_get_setting('default_copyright');
+  // Create copyright render array
+  $variables['copyright_subject'] = array(
+    '#type' => 'processed_text',
+	'#text' => theme_get_setting('copyright_subject')['value'],
+	'#format' => theme_get_setting('copyright_subject')['format'],
+	);
 
 }
 
