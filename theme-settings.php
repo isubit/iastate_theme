@@ -108,7 +108,7 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
 	'#allowed_formats'	=> [ 'wysiwyg' ],
 	// Tenery checks to see if 'use defaults' checkbox is enabled, if so we use a default if not take user input
 	// Value is also reflected in respective theme setting field
-	'#default_value'	=> theme_get_setting('default_copyright') ? 'Copyright © 1995-2021<br><a href="https://www.iastate.edu/">Iowa State University of Science and Technology.</a> All rights reserved.<br>2150 Beardshear Hall<br>Ames, IA 50011-2031<br>(800) 262-3804<br><br><a href="https://www.iastate.edu/">Iowa State University</a> | <a href="https://www.extension.iastate.edu/legal">Policies</a><br><a href="http://nifa.usda.gov/partners-and-extension-map">State & National Extension Partners</a>' : theme_get_setting('copyright_subject')['value'],
+	'#default_value'	=> theme_get_setting('default_copyright') ? 'Copyright © 1995-'. date("Y") . '<br><a href="https://www.iastate.edu/">Iowa State University of Science and Technology.</a> All rights reserved.<br>2150 Beardshear Hall<br>Ames, IA 50011-2031<br>(800) 262-3804<br><br><a href="https://www.iastate.edu/">Iowa State University</a> | <a href="https://www.extension.iastate.edu/legal">Policies</a><br><a href="http://nifa.usda.gov/partners-and-extension-map">State & National Extension Partners</a>' : theme_get_setting('copyright_subject')['value'],
     );
 
   // Create a section for footer content

@@ -82,7 +82,7 @@
 		  {# Referenced: https://craftcms.stackexchange.com/questions/23932/unexpected-token-punctuation-of-value-end-of-statement-block-expected #}
 		  {% set copyright_subject = copyright_subject|merge({'#text': '
 		    <p>
-			  Copyright © 1995-2021<br>
+			  Copyright © 1995-<script>document.write(new Date().getFullYear())</script><br>
 		  	  <a href="https://www.iastate.edu/">Iowa State University of Science and Technology.</a> All rights reserved.<br>
 		  	  2150 Beardshear Hall<br>
 		  	  Ames, IA 50011-2031<br>
