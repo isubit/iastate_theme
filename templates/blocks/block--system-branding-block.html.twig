@@ -31,7 +31,9 @@
 
 {% block content %}
   <div class="isu-wordmark">
-    <img class="isu-wordmark-logo" src="{{ site_logo }}" {% if iastate_logo_alt %} alt="{{ iastate_logo_alt }}" {% else %} alt="Iowa State University logo"{% endif %}>
+    {% if site_logo %}
+      <img class="isu-wordmark-logo" src="{{ site_logo }}" {% if iastate_logo_alt %} alt="{{ iastate_logo_alt }}" {% else %} alt="Iowa State University logo"{% endif %}>
+    {% endif %}
 
     {% if iastate_unit_name %}
 
