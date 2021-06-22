@@ -731,6 +731,11 @@ dl {
 /* Kill external link icon */
 #section-content .bean-card a.external:after { display: none; }
 
+/* Hamburger Menu */
+.navbar-toggler:not(:disabled):not(.disabled) {
+	margin-top: -23px;
+}
+
 /* --------------------------------------  */
 /* ## Responsive
 /* --------------------------------------  */
@@ -799,11 +804,19 @@ dl {
  	}
  	
  	.isu-wordmark-sitename {
- 		padding-left: 0px;
- 		padding-bottom: 21px;
- 		font-size: 20px;
- 		padding-top: 5px;
+ 		padding-left: 6px;
+ 		padding-bottom: 20px;
+ 		font-size: 15px;
+ 		padding-top: 0px;
 	}
+	
+	.isu-search_toggler-label {
+		font-size: 9px;
+	}
+
+	.isu-search_toggler {
+		margin-top: -26px;
+		
 	 
   /* Old bean-card body css
 	.bean-card_text{
