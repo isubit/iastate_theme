@@ -121,7 +121,7 @@
 /* Dropdown menus
 /* -------------------------------------- */
 
-.isu-navbar_dropdown[aria-expanded='false'] .isu-navbar_dropdown-menu {
+.isu-navbar_dropdown[data-isu-navbar-expanded='false'] .isu-navbar_dropdown-menu {
   display: none;
 }
 @media (min-width: 992px) {
