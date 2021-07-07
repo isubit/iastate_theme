@@ -206,6 +206,10 @@ li article:not(.isu-user):not(.isu-search_collapse) {
 	max-width: 50%;
 }
 
+.views-view-grid .views-row {
+	padding: 15px;
+}
+
 /* Sidebar */
 .isu-page-column {
 	padding-left: 11px;
