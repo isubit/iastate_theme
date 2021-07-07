@@ -202,6 +202,10 @@ li article:not(.isu-user):not(.isu-search_collapse) {
 	border-left: .25rem solid #dddddd;
 }
 
+.views-view-grid .views-col {
+	max-width: 50%;
+}
+
 /* Sidebar */
 .isu-page-column {
 	padding-left: 11px;
