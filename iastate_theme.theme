@@ -167,7 +167,7 @@ function iastate_theme_preprocess(&$variables, $hook) {
 
 function iastate_theme_preprocess_block(&$variables) {
   $variables['iastate_logo_alt'] = theme_get_setting('iastate_logo_alt');
-
+  $variables['iastate_logo_url'] = theme_get_setting('iastate_logo_url');
 }
 
 /*
