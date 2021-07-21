@@ -260,7 +260,7 @@ caption {
 /* ## IMAGES
 /* --------------------------------------  */
 
-img {
+img:not(.isu-wordmark-logo_custom) { /* See theme.css */
   max-width: 100%;
   height: auto;
 }
