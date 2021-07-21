@@ -188,6 +188,8 @@ function iastate_theme_preprocess_page(&$variables) {
   $variables['iastate_footer_logo_path'] = theme_get_setting('iastate_footer_logo_path');
   $variables['iastate_footer_logo_url'] = theme_get_setting('iastate_footer_logo_url');
   $variables['iastate_footer_logo_alt'] = theme_get_setting('iastate_footer_logo_alt');
+  $variables['iastate_footer_logo_width'] = theme_get_setting('iastate_footer_logo_width');
+  $variables['iastate_footer_logo_height'] = theme_get_setting('iastate_footer_logo_height');
 
   $variables['iastate_contact_title'] = theme_get_setting('iastate_contact_title');
   $variables['iastate_contact_address'] = theme_get_setting('iastate_contact_address');
