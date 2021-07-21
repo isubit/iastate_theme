@@ -176,7 +176,7 @@ body,
   }
 .isu-wordmark-logo_default {
   width: 100%;
-  max-width: 250px;
+  max-width: 250px ;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
@@ -1306,9 +1306,9 @@ a.tabledrag-handle .handle {
   color: #676767;
   background: #f3f3f3;
 }
-.isu-footer-logo {
-  width: 100%;
-  max-width: 180px;
+.isu-footer-logo { 
+  max-width:  100%;
+  height: auto;
 }
 .isu-sign-off_wrapper {
   margin-bottom: -2rem;
