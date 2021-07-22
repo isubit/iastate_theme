@@ -23,12 +23,28 @@
  */
 function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
 
+  // Logo settings
+  $form['logo']['logo_settings'] = array(
+    '#type'         => 'details',
+    '#title'        => t('Custom logo Settings'),
+    '#weight' => 1,
+    '#open' => FALSE,
+  );
+
   // Logo alt text
-  $form['logo']['iastate_logo_alt'] = array(
+  $form['logo']['logo_settings']['iastate_logo_alt'] = array(
     '#type'   => 'textfield',
     '#title'  => t('Logo alt text'),
     '#default_value'  => theme_get_setting('iastate_logo_alt'),
-    '#description' => t('If left blank the alt text will be Iowa State University logo'),
+    '#description' => t('If left blank the alt text will be "Iowa State University logo".'),
+  );
+
+  // Logo custom url
+  $form['logo']['logo_settings']['iastate_logo_url'] = array(
+    '#type'   => 'textfield',
+    '#title'  => t('Logo link'),
+    '#description' => t('By default the logo is not linked. Use this field to add a link.'),
+    '#default_value'  => theme_get_setting('iastate_logo_url'),
   );
 
   // Create a section for ISU theme settings
@@ -93,7 +109,7 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
     '#type'         => 'details',
     '#title'        => t('Contact Info'),
     '#description'  => t('Contact information is displayed in the footer'),
-    '#weight'       => -998,
+    '#weight'       => 10,
     '#open'         => TRUE,
     );
 
@@ -140,7 +156,7 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
     '#type'         => 'details',
     '#title'        => t('Associates'),
     '#description'  => t('Organization associates are displayed as a list in the footer.'),
-    '#weight' => -800,
+    '#weight' => 11,
     '#open' => TRUE,
   );
   
@@ -226,7 +242,7 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
     '#type'         => 'details',
     '#title'        => t('Social Media Links'),
     '#description'  => t('A list of social media links are displayed in the footer.'),
-    '#weight' => -800,
+    '#weight' => 11,
     '#open' => TRUE,
   );
   
