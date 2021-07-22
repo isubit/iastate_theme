@@ -36,7 +36,15 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
     '#type'   => 'textfield',
     '#title'  => t('Logo alt text'),
     '#default_value'  => theme_get_setting('iastate_logo_alt'),
-    '#description' => t('If left blank the alt text will be Iowa State University logo'),
+    '#description' => t('If left blank the alt text will be "Iowa State University logo".'),
+  );
+
+  // Logo custom url
+  $form['logo']['logo_settings']['iastate_logo_url'] = array(
+    '#type'   => 'textfield',
+    '#title'  => t('Logo link'),
+    '#description' => t('By default the logo is not linked. Use this field to add a link.'),
+    '#default_value'  => theme_get_setting('iastate_logo_url'),
   );
 
   // Logo dimensions description

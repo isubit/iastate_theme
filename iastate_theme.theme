@@ -171,6 +171,7 @@ function iastate_theme_preprocess_block(&$variables) {
   $variables['iastate_logo_height'] = theme_get_setting('iastate_logo_height');
   $variables['iastate_logo_alt'] = theme_get_setting('iastate_logo_alt');
   $variables['is_default_logo'] = \Drupal::config('iastate_theme.settings')->get('logo.use_default');
+  $variables['iastate_logo_url'] = theme_get_setting('iastate_logo_url');
 }
 
 /*

@@ -32,6 +32,9 @@
 {% block content %}
 
   <div class="isu-wordmark">
+    {% if iastate_logo_url %}
+      <a href="{{ iastate_logo_url }}">
+    {% endif %}
 
     {% if site_logo %}
       {% if is_default_logo %}
@@ -39,6 +42,10 @@
       {% else %}
         <img class="isu-wordmark-logo isu-wordmark-logo_custom" {% if iastate_logo_width %}width="{{ iastate_logo_width }}"{% endif %} {% if iastate_logo_height %} height="{{ iastate_logo_height }}"{% endif %} src="{{ site_logo }}" {% if iastate_logo_alt %} alt="{{ iastate_logo_alt }}" {% else %} alt="Iowa State University logo"{% endif %}>
       {% endif %}
+    {% endif %}
+    
+    {% if iastate_logo_url %}
+      </a>
     {% endif %}
 
     {% if iastate_unit_name %}

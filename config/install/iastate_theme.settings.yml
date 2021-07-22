@@ -3,12 +3,13 @@ gold_border_hidden: 0
 iastate_copyright_hidden: 0
 features:
   favicon: true
-iastate_logo_alt: ''
 logo:
   use_default: 1
   path: ''
+iastate_logo_alt: ''
 iastate_logo_width: ''
 iastate_logo_height: ''
+iastate_logo_url: ''
 iastate_unit_name: ''
 iastate_unit_url: ''
 iastate_footer_logo_path: themes/contrib/iastate_theme/isu-stacked.svg
