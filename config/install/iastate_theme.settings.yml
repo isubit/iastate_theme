@@ -4,7 +4,7 @@ iastate_copyright_hidden: 0
 features:
   favicon: true
 logo:
-  use_default: 1
+  use_default: true
   path: ''
 iastate_logo_alt: ''
 iastate_logo_width: ''
