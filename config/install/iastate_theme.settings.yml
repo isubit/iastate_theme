@@ -3,9 +3,6 @@ gold_border_hidden: 0
 iastate_copyright_hidden: 0
 features:
   favicon: true
-  node_user_picture: true
-  comment_user_picture: true
-  comment_user_verification: true
 iastate_logo_alt: ''
 iastate_unit_name: ''
 iastate_unit_url: ''
@@ -50,5 +47,5 @@ iastate_social6_title: ''
 iastate_social6_url: ''
 iastate_social7_title: ''
 iastate_social7_url: ''
-iastate_footer_logo_width: ''
-iastate_footer_logo_height: ''
+iastate_footer_logo_width: '180'
+iastate_footer_logo_height: '58'
