@@ -3,23 +3,18 @@ gold_border_hidden: 0
 iastate_copyright_hidden: 0
 features:
   favicon: true
-logo:
-  use_default: true
-  path: ''
+  node_user_picture: true
+  comment_user_picture: true
+  comment_user_verification: true
 iastate_logo_alt: ''
-iastate_logo_width: ''
-iastate_logo_height: ''
-iastate_logo_url: ''
 iastate_unit_name: ''
 iastate_unit_url: ''
 iastate_footer_logo_path: themes/contrib/iastate_theme/isu-stacked.svg
 iastate_footer_logo_url: 'https://www.iastate.edu/'
 iastate_footer_logo_alt: ''
-iastate_footer_logo_width: '180'
-iastate_footer_logo_height: '58'
-iastate_contact_address: "2221 Wanda Daley Dr\n2nd Floor ASB\nAmes, IA 50011"
-iastate_contact_email: 'theme@iastate.edu'
-iastate_contact_phone: '515-294-6654'
+iastate_contact_address: "2221 Wanda Daley Dr\r\n2nd Floor ASB\r\nAmes, IA 50011"
+iastate_contact_email: theme@iastate.edu
+iastate_contact_phone: 515-294-6654
 iastate_associate1_title: 'Information Technology Services'
 iastate_associate1_url: 'https://www.it.iastate.edu/'
 iastate_associate2_title: 'Biology Information Technology'
@@ -32,14 +27,28 @@ iastate_associate5_title: 'University Relations'
 iastate_associate5_url: 'http://www.ur.iastate.edu/'
 iastate_associate6_title: 'Office of University Marketing'
 iastate_associate6_url: 'http://marketing.iastate.edu/'
-iastate_social1_title: 'Facebook'
+iastate_social1_title: Facebook
 iastate_social1_url: 'http://facebook.com/IowaStateU/'
-iastate_social2_title: 'Twitter'
+iastate_social2_title: Twitter
 iastate_social2_url: 'http://twitter.com/iowastateu?lang=en'
-iastate_social3_title: 'Instagram'
+iastate_social3_title: Instagram
 iastate_social3_url: 'http://instagram.com/iowastateu/'
-iastate_social4_title: 'YouTube'
+iastate_social4_title: YouTube
 iastate_social4_url: 'http://youtube.com/user/iowastateu'
-iastate_social5_title: 'RSS'
+iastate_social5_title: RSS
 iastate_social5_url: 'http://www.news.iastate.edu/rss/rss.php'
-
+logo:
+  use_default: true
+iastate_logo_url: ''
+iastate_logo_width: ''
+iastate_logo_height: ''
+favicon:
+  use_default: true
+iastate_contact_title: ''
+iastate_contact_fax: ''
+iastate_social6_title: ''
+iastate_social6_url: ''
+iastate_social7_title: ''
+iastate_social7_url: ''
+iastate_footer_logo_width: ''
+iastate_footer_logo_height: ''
