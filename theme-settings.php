@@ -388,14 +388,14 @@ function iastate_theme_form_system_theme_settings_alter(&$form, FormStateInterfa
   );
 
   // Footer logo dimensions description
-  $form['iastate_footer_logo']['footer_logo_dimensions_description'] = array(
-    '#type' => 'item',
+  $form['iastate_footer_logo']['footer_logo_dimensions'] = array(
+    '#type' => 'details',
     '#title' => t('Logo dimensions'),
     '#description' => t('Set an explicit width and height for the footer logo.'),
   );
 
   // Footer logo width
-  $form['iastate_footer_logo']['iastate_footer_logo_width'] = array(
+  $form['iastate_footer_logo']['footer_logo_dimensions']['iastate_footer_logo_width'] = array(
     '#type'   => 'number',
     '#title'  => t('Footer logo width in pixels'),
     '#default_value'  => theme_get_setting('iastate_footer_logo_width'),
@@ -403,7 +403,7 @@ function iastate_theme_form_system_theme_settings_alter(&$form, FormStateInterfa
   );
 
   // Footer logo height
-  $form['iastate_footer_logo']['iastate_footer_logo_height'] = array(
+  $form['iastate_footer_logo']['footer_logo_dimensions']['iastate_footer_logo_height'] = array(
     '#type'   => 'number',
     '#title'  => t('Footer logo height in pixels'),
     '#default_value'  => theme_get_setting('iastate_footer_logo_height'),
