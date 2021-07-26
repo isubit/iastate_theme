@@ -8,6 +8,9 @@ iastate_theme.settings:
     gold_border_hidden:
       type: integer
       label: 'Show gold border'
+    iastate_copyright_hidden:
+      type: integer
+      label: 'Hide copyright'
     features:
       type: mapping
       label: 'Optional features'
@@ -21,12 +24,37 @@ iastate_theme.settings:
     iastate_unit_url:
       type: uri
       label: 'Unit url'
+    iastate_logo_url:
+      type: string
+      label: 'Custom logo url'
+    iastate_logo_alt:
+      type: string
+      label: 'Logo alt text'
+    logo_dimensions:
+      type: mapping
+      label: 'Logo Dimensions'
+      mapping:
+        iastate_logo_width:
+          type: string
+          label: 'Logo width in pixels'
+        iastate_logo_height:
+          type: string
+          label: 'Logo height in pixels'
     iastate_footer_logo_path:
       type: uri
       label: 'Path to custom footer logo'
     iastate_footer_logo_url:
       type: uri
       label: 'Custom footer logo url'
+    iastate_footer_logo_alt:
+      type: string
+      label: 'Footer logo alt text'
+    iastate_footer_logo_width:
+      type: string
+      label: 'Footer logo width in pixels'
+    iastate_footer_logo_height:
+      type: sring
+      label: 'Footer logo height in pixels'
     iastate_contact_address:
       type: text
       label: 'Address'
