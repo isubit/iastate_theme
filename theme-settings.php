@@ -47,6 +47,27 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
     '#default_value'  => theme_get_setting('iastate_logo_url'),
   );
 
+  // Logo dimensions description
+    $form['logo']['logo_settings']['logo_dimensions_description'] = array(
+    '#type' => 'item',
+    '#title' => t('Logo dimensions'),
+    '#markup' => t('If you are using a custom logo, set an explicit width and height to improve page load time.'),
+  );
+
+  // Logo width
+  $form['logo']['logo_settings']['iastate_logo_width'] = array(
+    '#type'   => 'number',
+    '#title'  => t('Logo width in pixels'),
+    '#default_value'  => theme_get_setting('iastate_logo_width'),
+  );
+
+  // Logo height
+  $form['logo']['logo_settings']['iastate_logo_height'] = array(
+    '#type'   => 'number',
+    '#title'  => t('Logo height in pixels'),
+    '#default_value'  => theme_get_setting('iastate_logo_height'),
+  );
+
   // Create a section for ISU theme settings
   $form['iastate_theme_settings'] = array(
     '#type'         => 'details',
@@ -364,5 +385,28 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
     '#title'  => t('Footer logo alt text'),
     '#default_value'  => theme_get_setting('iastate_footer_logo_alt'),
     '#description' => t('If left blank the alt text will be Iowa State University logo'),
+  );
+
+  // Footer logo dimensions description
+    $form['iastate_footer_logo']['footer_logo_dimensions_description'] = array(
+    '#type' => 'item',
+    '#title' => t('Logo dimensions'),
+    '#markup' => t('Set an explicit width and height for the footer logo.'),
+  );
+
+  // Footer logo width
+  $form['iastate_footer_logo']['iastate_footer_logo_width'] = array(
+    '#type'   => 'number',
+    '#title'  => t('Footer logo width in pixels'),
+    '#default_value'  => theme_get_setting('iastate_footer_logo_width'),
+    '#description' => t('Default is 180.'),
+  );
+
+  // Footer logo height
+  $form['iastate_footer_logo']['iastate_footer_logo_height'] = array(
+    '#type'   => 'number',
+    '#title'  => t('Footer logo height in pixels'),
+    '#default_value'  => theme_get_setting('iastate_footer_logo_height'),
+    '#description' => t('Default is 58.'),
   );
 }
