@@ -36,6 +36,7 @@ iastate_social5_title: RSS
 iastate_social5_url: 'http://www.news.iastate.edu/rss/rss.php'
 logo:
   use_default: true
+  path: ''
 iastate_logo_url: ''
 iastate_logo_width: ''
 iastate_logo_height: ''
