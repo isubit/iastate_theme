@@ -30,16 +30,12 @@ iastate_theme.settings:
     iastate_logo_alt:
       type: string
       label: 'Logo alt text'
-    logo_dimensions:
-      type: mapping
-      label: 'Logo Dimensions'
-      mapping:
-        iastate_logo_width:
-          type: string
-          label: 'Logo width in pixels'
-        iastate_logo_height:
-          type: string
-          label: 'Logo height in pixels'
+    iastate_logo_width:
+      type: string
+      label: 'Logo width in pixels'
+    iastate_logo_height:
+      type: string
+      label: 'Logo height in pixels'
     iastate_footer_logo_path:
       type: uri
       label: 'Path to custom footer logo'
