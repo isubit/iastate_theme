@@ -22,7 +22,7 @@ use \Drupal\Core\Form\FormStateInterface;
  * @param $form_state
  *   A keyed array containing the current state of the form.
  */
-function iastate_theme_form_system_theme_settings_alter(&$form, FormStateInterface &$form_state) {
+function iastate_theme_form_system_theme_settings_alter(&$form, FormStateInterface $form_state) {
   // Logo settings
   $form['logo']['logo_settings'] = array(
     '#type'         => 'details',
