@@ -49,8 +49,11 @@ iastate_theme.settings:
       type: string
       label: 'Footer logo width in pixels'
     iastate_footer_logo_height:
-      type: sring
+      type: string
       label: 'Footer logo height in pixels'
+    iastate_contact_title:
+      type: string
+      label: 'Contact Title'
     iastate_contact_address:
       type: text
       label: 'Address'
@@ -60,6 +63,9 @@ iastate_theme.settings:
     iastate_contact_phone:
       type: string
       label: 'Phone'
+    iastate_contact_fax:
+      type: string
+      label: 'Fax'
     iastate_associate1_title:
       type: string
       label: 'Associate 1 Title'
@@ -126,3 +132,15 @@ iastate_theme.settings:
     iastate_social5_url:
       type: uri
       label: 'Social 5 URL'
+    iastate_social6_title:
+      type: string
+      label: 'Social 6 Title'
+    iastate_social6_url:
+      type: uri
+      label: 'Social 6 URL'
+    iastate_social7_title:
+      type: string
+      label: 'Social 7 Title'
+    iastate_social7_url:
+      type: uri
+      label: 'Social 7 URL'
