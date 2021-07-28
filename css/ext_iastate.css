@@ -504,6 +504,7 @@ dl {
 
 /* -------------------------------------- */
 /* ## Layout Builder Homepage
+ * Landing Page and Edu Page could be combined I think
 /* -------------------------------------- */
 .layout--onecol, .layout--threecol-section {
 	width: 100%;
@@ -543,7 +544,7 @@ dl {
 .node-type_educational-programs-page #block-iastate-theme-help,
 .node-type_educational-programs-page #block-iastate-theme-page-title--2,
 .node-type_educational-programs-page #block-iastate-theme-local-tasks,
-.node-type_educational-programs-page #node-layout-ct-layout-builder-form {
+.node-type_educational-programs-page #node-educational-programs-page-layout-builder-form {
   margin-right: auto;
   margin-left: auto;
   padding-left: 1rem;
@@ -571,7 +572,7 @@ dl {
   .node-type_educational-programs-page #block-iastate-theme-help,
   .node-type_educational-programs-page #block-iastate-theme-page-title--2,
   .node-type_educational-programs-page #block-iastate-theme-local-tasks,
-  .node-type_educational-programs-page #node-layout-ct-layout-builder-form,
+  .node-type_educational-programs-page #node-educational-programs-page-layout-builder-form,
   .node-type_educational-programs-page .layout--content-container--default .layout-content { max-width: 540px; }
 }
 
@@ -586,7 +587,7 @@ dl {
   .node-type_educational-programs-page #block-iastate-theme-help,
   .node-type_educational-programs-page #block-iastate-theme-page-title--2,
   .node-type_educational-programs-page #block-iastate-theme-local-tasks,
-  .node-type_educational-programs-page #node-layout-ct-layout-builder-form,
+  .node-type_educational-programs-page #node-educational-programs-page-layout-builder-form,
   .node-type_educational-programs-page .layout--content-container--default .layout-content { max-width: 720px; }
 }
 
@@ -601,7 +602,7 @@ dl {
   .node-type_educational-programs-page #block-iastate-theme-help,
   .node-type_educational-programs-page #block-iastate-theme-page-title--2,
   .node-type_educational-programs-page #block-iastate-theme-local-tasks,
-  .node-type_educational-programs-page #node-layout-ct-layout-builder-form,
+  .node-type_educational-programs-page #node-educational-programs-page-layout-builder-form,
   .node-type_educational-programs-page .layout--content-container--default .layout-content { max-width: 960px; }
 }
 
@@ -616,7 +617,7 @@ dl {
   .node-type_educational-programs-page #block-iastate-theme-help,
   .node-type_educational-programs-page #block-iastate-theme-page-title--2,
   .node-type_educational-programs-page #block-iastate-theme-local-tasks,
-  .node-type_educational-programs-page #node-layout-ct-layout-builder-form,
+  .node-type_educational-programs-page #node-educational-programs-page-layout-builder-form,
   .node-type_educational-programs-page .layout--content-container--default .layout-content { max-width: 1140px; }
 }
 
