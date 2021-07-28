@@ -518,8 +518,15 @@ dl {
 	margin-left: 0;
 	margin-right: 0;
 }
+.node-type_educational-programs-page .row {
+	margin-left: 0;
+	margin-right: 0;
+}
 
 .node-type_layout-ct .isu-region.isu-region_content {
+  width: 100%;
+}
+.node-type_educational-programs-page .isu-region.isu-region_content {
   width: 100%;
 }
 
@@ -533,8 +540,22 @@ dl {
   padding-right: 1rem;
   max-width: 100%;
 }
+.node-type_educational-programs-page #block-iastate-theme-help,
+.node-type_educational-programs-page #block-iastate-theme-page-title--2,
+.node-type_educational-programs-page #block-iastate-theme-local-tasks,
+.node-type_educational-programs-page #node-layout-ct-layout-builder-form {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 100%;
+}
 
 .node-type_layout-ct #layout_builder {
+  border: 3px solid #2f91da;
+  background-color: #fff;
+}
+.node-type_educational-programs-page #layout_builder {
   border: 3px solid #2f91da;
   background-color: #fff;
 }
@@ -546,6 +567,13 @@ dl {
   .node-type_layout-ct #node-layout-ct-layout-builder-form,
   .node-type_layout-ct .layout--content-container--default .layout-content { max-width: 540px; }
 }
+@media (min-width: 576px) {
+  .node-type_educational-programs-page #block-iastate-theme-help,
+  .node-type_educational-programs-page #block-iastate-theme-page-title--2,
+  .node-type_educational-programs-page #block-iastate-theme-local-tasks,
+  .node-type_educational-programs-page #node-layout-ct-layout-builder-form,
+  .node-type_educational-programs-page .layout--content-container--default .layout-content { max-width: 540px; }
+}
 
 @media (min-width: 768px) {
   .node-type_layout-ct #block-iastate-theme-help,
@@ -553,6 +581,13 @@ dl {
   .node-type_layout-ct #block-iastate-theme-local-tasks,
   .node-type_layout-ct #node-layout-ct-layout-builder-form,
   .node-type_layout-ct .layout--content-container--default .layout-content { max-width: 720px; }
+}
+@media (min-width: 768px) {
+  .node-type_educational-programs-page #block-iastate-theme-help,
+  .node-type_educational-programs-page #block-iastate-theme-page-title--2,
+  .node-type_educational-programs-page #block-iastate-theme-local-tasks,
+  .node-type_educational-programs-page #node-layout-ct-layout-builder-form,
+  .node-type_educational-programs-page .layout--content-container--default .layout-content { max-width: 720px; }
 }
 
 @media (min-width: 992px) {
@@ -562,6 +597,13 @@ dl {
   .node-type_layout-ct #node-layout-ct-layout-builder-form,
   .node-type_layout-ct .layout--content-container--default .layout-content { max-width: 960px; }
 }
+@media (min-width: 992px) {
+  .node-type_educational-programs-page #block-iastate-theme-help,
+  .node-type_educational-programs-page #block-iastate-theme-page-title--2,
+  .node-type_educational-programs-page #block-iastate-theme-local-tasks,
+  .node-type_educational-programs-page #node-layout-ct-layout-builder-form,
+  .node-type_educational-programs-page .layout--content-container--default .layout-content { max-width: 960px; }
+}
 
 @media (min-width: 1200px) {
   .node-type_layout-ct #block-iastate-theme-help,
@@ -569,6 +611,13 @@ dl {
   .node-type_layout-ct #block-iastate-theme-local-tasks,
   .node-type_layout-ct #node-layout-ct-layout-builder-form,
   .node-type_layout-ct .layout--content-container--default .layout-content { max-width: 1140px; }
+}
+@media (min-width: 1200px) {
+  .node-type_educational-programs-page #block-iastate-theme-help,
+  .node-type_educational-programs-page #block-iastate-theme-page-title--2,
+  .node-type_educational-programs-page #block-iastate-theme-local-tasks,
+  .node-type_educational-programs-page #node-layout-ct-layout-builder-form,
+  .node-type_educational-programs-page .layout--content-container--default .layout-content { max-width: 1140px; }
 }
 
 /*- Layout Builder Base -*/
