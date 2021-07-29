@@ -8,6 +8,9 @@ iastate_theme.settings:
     gold_border_hidden:
       type: integer
       label: 'Show gold border'
+    iastate_copyright_hidden:
+      type: integer
+      label: 'Hide copyright'
     features:
       type: mapping
       label: 'Optional features'
@@ -21,12 +24,36 @@ iastate_theme.settings:
     iastate_unit_url:
       type: uri
       label: 'Unit url'
+    iastate_logo_url:
+      type: string
+      label: 'Custom logo url'
+    iastate_logo_alt:
+      type: string
+      label: 'Logo alt text'
+    iastate_logo_width:
+      type: string
+      label: 'Logo width in pixels'
+    iastate_logo_height:
+      type: string
+      label: 'Logo height in pixels'
     iastate_footer_logo_path:
       type: uri
       label: 'Path to custom footer logo'
     iastate_footer_logo_url:
       type: uri
       label: 'Custom footer logo url'
+    iastate_footer_logo_alt:
+      type: string
+      label: 'Footer logo alt text'
+    iastate_footer_logo_width:
+      type: string
+      label: 'Footer logo width in pixels'
+    iastate_footer_logo_height:
+      type: string
+      label: 'Footer logo height in pixels'
+    iastate_contact_title:
+      type: string
+      label: 'Contact Title'
     iastate_contact_address:
       type: text
       label: 'Address'
@@ -36,6 +63,9 @@ iastate_theme.settings:
     iastate_contact_phone:
       type: string
       label: 'Phone'
+    iastate_contact_fax:
+      type: string
+      label: 'Fax'
     iastate_associate1_title:
       type: string
       label: 'Associate 1 Title'
@@ -102,3 +132,15 @@ iastate_theme.settings:
     iastate_social5_url:
       type: uri
       label: 'Social 5 URL'
+    iastate_social6_title:
+      type: string
+      label: 'Social 6 Title'
+    iastate_social6_url:
+      type: uri
+      label: 'Social 6 URL'
+    iastate_social7_title:
+      type: string
+      label: 'Social 7 Title'
+    iastate_social7_url:
+      type: uri
+      label: 'Social 7 URL'

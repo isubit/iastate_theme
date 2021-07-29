@@ -1,6 +1,7 @@
 <?php
 
 use Drupal\node\NodeInterface;
+use Drupal\Core\Form\FormStateInterface;
 
 /**
  * Implements template_preprocess_html().
@@ -91,9 +92,6 @@ function iastate_theme_preprocess_links(&$variables) {
  *
  * Add ISU Theme class to Site Navbar search form
  */
-
-use Drupal\Core\Form\FormStateInterface;
-
 function iastate_theme_form_alter(array &$form, FormStateInterface $form_state, $form_id) {
   if( $form_id == 'search_block_form') {
     $form['actions']['submit']['#attributes']['class'][] = 'isu-search__search-btn';
@@ -167,7 +165,11 @@ function iastate_theme_preprocess(&$variables, $hook) {
 
 function iastate_theme_preprocess_block(&$variables) {
   $variables['iastate_logo_alt'] = theme_get_setting('iastate_logo_alt');
-
+  $variables['iastate_logo_width'] = theme_get_setting('iastate_logo_width');
+  $variables['iastate_logo_height'] = theme_get_setting('iastate_logo_height');
+  $variables['iastate_logo_alt'] = theme_get_setting('iastate_logo_alt');
+  $variables['is_default_logo'] = \Drupal::config('iastate_theme.settings')->get('logo.use_default');
+  $variables['iastate_logo_url'] = theme_get_setting('iastate_logo_url');
 }
 
 /*
@@ -185,6 +187,8 @@ function iastate_theme_preprocess_page(&$variables) {
   $variables['iastate_footer_logo_path'] = theme_get_setting('iastate_footer_logo_path');
   $variables['iastate_footer_logo_url'] = theme_get_setting('iastate_footer_logo_url');
   $variables['iastate_footer_logo_alt'] = theme_get_setting('iastate_footer_logo_alt');
+  $variables['iastate_footer_logo_width'] = theme_get_setting('iastate_footer_logo_width');
+  $variables['iastate_footer_logo_height'] = theme_get_setting('iastate_footer_logo_height');
 
   $variables['iastate_contact_title'] = theme_get_setting('iastate_contact_title');
   $variables['iastate_contact_address'] = theme_get_setting('iastate_contact_address');

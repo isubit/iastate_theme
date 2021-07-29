@@ -11,6 +11,7 @@
  * hook_form_system_theme_settings_alter/8)
  *
  */
+use \Drupal\Core\Form\FormStateInterface;
 
 /**
  * Implementation of hook_form_system_theme_settings_alter()
@@ -21,14 +22,50 @@
  * @param $form_state
  *   A keyed array containing the current state of the form.
  */
-function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
+function iastate_theme_form_system_theme_settings_alter(&$form, FormStateInterface $form_state) {
+  // Logo settings
+  $form['logo']['logo_settings'] = array(
+    '#type'         => 'details',
+    '#title'        => t('Custom logo Settings'),
+    '#weight' => 1,
+    '#open' => FALSE,
+  );
 
   // Logo alt text
-  $form['logo']['iastate_logo_alt'] = array(
+  $form['logo']['logo_settings']['iastate_logo_alt'] = array(
     '#type'   => 'textfield',
     '#title'  => t('Logo alt text'),
     '#default_value'  => theme_get_setting('iastate_logo_alt'),
-    '#description' => t('If left blank the alt text will be Iowa State University logo'),
+    '#description' => t('If left blank the alt text will be "Iowa State University logo".'),
+  );
+
+  // Logo custom url
+  $form['logo']['logo_settings']['iastate_logo_url'] = array(
+    '#type'   => 'textfield',
+    '#title'  => t('Logo link'),
+    '#description' => t('By default the logo is not linked. Use this field to add a link.'),
+    '#default_value'  => theme_get_setting('iastate_logo_url'),
+  );
+
+  // Logo dimensions description
+    $form['logo']['logo_settings']['logo_dimensions'] = array(
+    '#type' => 'details',
+    '#title' => t('Logo dimensions'),
+    '#markup' => t('If you are using a custom logo, set an explicit width and height to improve page load time.'),
+  );
+
+  // Logo width
+  $form['logo']['logo_settings']['logo_dimensions']['iastate_logo_width'] = array(
+    '#type'   => 'number',
+    '#title'  => t('Logo width in pixels'),
+    '#default_value'  => theme_get_setting('iastate_logo_width'),
+  );
+
+  // Logo height
+  $form['logo']['logo_settings']['logo_dimensions']['iastate_logo_height'] = array(
+    '#type'   => 'number',
+    '#title'  => t('Logo height in pixels'),
+    '#default_value'  => theme_get_setting('iastate_logo_height'),
   );
 
   // Create a section for ISU theme settings
@@ -72,30 +109,30 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
     '#description'  => t('Name and url of official university unit, such as a department or center, if the Site Name (as set in Basic Site Settings) is not already the name of the unit.'),
     '#weight'       => -999,
     '#open'         => TRUE,
-    );
+  );
 
   // Unit Name
   $form['iastate_unit_settings']['iastate_unit_name'] = array(
-      '#type'   => 'textfield',
-      '#title'  => t('Unit Name'),
-      '#default_value'  => theme_get_setting('iastate_unit_name'),
-    );
+    '#type'   => 'textfield',
+    '#title'  => t('Unit Name'),
+    '#default_value'  => theme_get_setting('iastate_unit_name'),
+  );
 
   // Unit URL
   $form['iastate_unit_settings']['iastate_unit_url'] = array(
-      '#type'   => 'url',
-      '#title'  => t('Unit URL'),
-      '#default_value'  => theme_get_setting('iastate_unit_url'),
-    );
+    '#type'   => 'url',
+    '#title'  => t('Unit URL'),
+    '#default_value'  => theme_get_setting('iastate_unit_url'),
+  );
 
   // Create a section for footer content
   $form['iastate_footer_contact'] = array(
     '#type'         => 'details',
     '#title'        => t('Contact Info'),
     '#description'  => t('Contact information is displayed in the footer'),
-    '#weight'       => -998,
+    '#weight'       => 10,
     '#open'         => TRUE,
-    );
+  );
 
   // Contact Title
   $form['iastate_footer_contact']['iastate_contact_title'] = array(
@@ -103,21 +140,21 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
     '#title'          => t('Contact Title'),
     '#description'    => t('Appears above contact information'),
     '#default_value'  => theme_get_setting('iastate_contact_title'),
-    );
+  );
 
   // Textarea for contact address
   $form['iastate_footer_contact']['iastate_contact_address'] = array(
     '#type'           => 'textarea',
     '#title'          => t('Address'),
     '#default_value'  => theme_get_setting('iastate_contact_address'),
-    );
+  );
 
   // Email
   $form['iastate_footer_contact']['iastate_contact_email'] = array(
     '#type'           => 'email',
     '#title'          => t('Email'),
     '#default_value'  => theme_get_setting('iastate_contact_email'),
-    );
+  );
 
   // Phone
   $form['iastate_footer_contact']['iastate_contact_phone'] = array(
@@ -125,7 +162,7 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
     '#title'          => t('Phone'),
     '#description'    => t('Please use xxx-xxx-xxxx format.'),
     '#default_value'  => theme_get_setting('iastate_contact_phone'),
-    );
+  );
 
   // Fax
   $form['iastate_footer_contact']['iastate_contact_fax'] = array(
@@ -133,14 +170,14 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
     '#title'          => t('Fax'),
     '#description'    => t('Please use xxx-xxx-xxxx format.'),
     '#default_value'  => theme_get_setting('iastate_contact_fax'),
-    );
+  );
 
   // Create a section for associates
   $form['iastate_footer_associates'] = array(
     '#type'         => 'details',
     '#title'        => t('Associates'),
     '#description'  => t('Organization associates are displayed as a list in the footer.'),
-    '#weight' => -800,
+    '#weight' => 11,
     '#open' => TRUE,
   );
   
@@ -226,7 +263,7 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
     '#type'         => 'details',
     '#title'        => t('Social Media Links'),
     '#description'  => t('A list of social media links are displayed in the footer.'),
-    '#weight' => -800,
+    '#weight' => 11,
     '#open' => TRUE,
   );
   
@@ -348,5 +385,28 @@ function iastate_theme_form_system_theme_settings_alter(&$form, &$form_state) {
     '#title'  => t('Footer logo alt text'),
     '#default_value'  => theme_get_setting('iastate_footer_logo_alt'),
     '#description' => t('If left blank the alt text will be Iowa State University logo'),
+  );
+
+  // Footer logo dimensions description
+  $form['iastate_footer_logo']['footer_logo_dimensions'] = array(
+    '#type' => 'details',
+    '#title' => t('Logo dimensions'),
+    '#description' => t('Set an explicit width and height for the footer logo.'),
+  );
+
+  // Footer logo width
+  $form['iastate_footer_logo']['footer_logo_dimensions']['iastate_footer_logo_width'] = array(
+    '#type'   => 'number',
+    '#title'  => t('Footer logo width in pixels'),
+    '#default_value'  => theme_get_setting('iastate_footer_logo_width'),
+    '#description' => t('Default is 180.'),
+  );
+
+  // Footer logo height
+  $form['iastate_footer_logo']['footer_logo_dimensions']['iastate_footer_logo_height'] = array(
+    '#type'   => 'number',
+    '#title'  => t('Footer logo height in pixels'),
+    '#default_value'  => theme_get_setting('iastate_footer_logo_height'),
+    '#description' => t('Default is 58.'),
   );
 }

@@ -65,7 +65,7 @@ $(document).ready(function() {
         // Add class for styling
         dropdownToggle.addClass('has-focus');
         // Open menu
-        dropdownToggle.parents('.isu-navbar_dropdown').attr('aria-expanded', 'true');
+        dropdownToggle.parents('.isu-navbar_dropdown').attr('data-isu-navbar-expanded', 'true');
         // Change focus to first link in the dropdown
         $(':focus').next().find('li:first-of-type a').focus();
       }
@@ -76,7 +76,7 @@ $(document).ready(function() {
     var dropdownMenuItem = $(this);
       if (event.keyCode === 38) { // up
         // Close the dropdown
-        dropdownMenuItem.closest('.isu-navbar_dropdown').attr('aria-expanded', 'false');
+        dropdownMenuItem.closest('.isu-navbar_dropdown').attr('data-isu-navbar-expanded', 'false');
         // Refocus on the parent link
         dropdownMenuItem.closest('.isu-navbar_dropdown').find('a').focus();
       }
@@ -87,7 +87,7 @@ $(document).ready(function() {
     var dropdownMenuItem = $(this);
       if (event.keyCode === 38) { // up
         // Close the dropdown
-        dropdownMenuItem.closest('.isu-navbar_dropdown').attr('aria-expanded', 'false');
+        dropdownMenuItem.closest('.isu-navbar_dropdown').attr('data-isu-navbar-expanded', 'false');
         // Refocus on the parent link.
         dropdownMenuItem.closest('.isu-navbar_dropdown').find('a').focus();
       }
@@ -101,7 +101,7 @@ $(document).ready(function() {
         // If the dropdown nor its children don't not have focus...
         if ( dropdownMenu.siblings('a:focus').length === 0) {
           // Close the menu
-          dropdownMenu.parents('.isu-navbar_dropdown').attr('aria-expanded', 'false');
+          dropdownMenu.parents('.isu-navbar_dropdown').attr('data-isu-navbar-expanded', 'false');
           // And remove styling class
           dropdownMenu.parents('.isu-navbar_dropdown').removeClass('has-focus');
         }
