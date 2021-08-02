@@ -64,8 +64,8 @@ html, body, .dialog-off-canvas-main-canvas, .isu-page-wrap {
 }
 
 /* Red bar social media menu */
-.isu-social-menu {
-	margin-left: -9px;
+.isu-social-menu-footer {
+	margin-left: 13%;
 }
 
 .isu-social-menu-red {
@@ -438,7 +438,9 @@ dl {
 .isu-footer-logo {
 	max-width: 250px;
 	margin-top: -15px;
-	margin-left: -14%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
 }
 
 /* Change footer associates menu link color */
