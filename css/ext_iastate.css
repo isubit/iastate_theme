@@ -172,6 +172,10 @@ a.isu-dropdown-submenu {
 	color: #ffffff;
 }
 
+.isu-block-front h2.isu-block-title.h4 {
+	margin-bottom: .25rem;
+}
+
 ul.county_events {
         list-style-type: none;
         padding-left: 0rem;
@@ -218,6 +222,10 @@ a.event_title:hover, a.county_calendar:hover {
 
 .isu-block-front div.event_date {
 	margin: 0 5px 8px 0;
+}
+
+.isu-block-front ul.program_offering_blocks {
+	padding-bottom: 10px;
 }
 
 a.events_show_more.btn-outline-white {
