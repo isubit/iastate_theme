@@ -220,6 +220,22 @@ a.event_title:hover, a.county_calendar:hover {
 	margin: 0 5px 8px 0;
 }
 
+a.events_show_more.btn-outline-white {
+	color: #ffffff;
+	border: 1px solid #ffffff;
+	font-weight: 700;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: background 0.2s ease;
+	padding: 7px;
+	white-space: break-spaces;
+}
+
+a.events_show_more.btn-outline-white:hover {
+	color: #cc0000;
+	background: #ffffff;
+}
+
 /* Breadcrumb Styling
 .isu-breadcrumb {
 	margin-left: 11px;
