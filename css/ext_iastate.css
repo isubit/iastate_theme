@@ -221,9 +221,6 @@ li article:not(.isu-user):not(.isu-search_collapse) {
 
 .isu-region.isu-region_sidebar-second {
 	margin-top: 2rem;
-	padding: 1rem;
-	border: 1px solid #ddd;
-	border-radius: 3px;
 }
 
 .isu-region_sidebar-second .h3 {
@@ -231,7 +228,7 @@ li article:not(.isu-user):not(.isu-search_collapse) {
 }
 
 .isu-sidebar .isu-block {
-	padding: 1rem;
+	padding: 1.5rem;
 	border: 1px solid #ddd;
 	border-radius: 3px;
 }
