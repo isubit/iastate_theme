@@ -564,17 +564,26 @@ dl {
 	font-size: 12px;
 }
 
-.isu-footer .isu-sign-off_wrapper {
-  background: #333333;
-}
-
-.isu-region.isu-region_sign-off {
-    text-align: center;
-}
-
 /* --------------------------------------  */
 /* ## Signoff
 /* --------------------------------------  */
+
+.isu-footer .isu-sign-off_wrapper {
+  background: #ffffff;
+  color: #333333;
+}
+
+.isu-region_sign-off {
+  font-size:14px;
+}
+
+.isu-sign-off_wrapper a {
+  color:#333333;
+}
+
+.isu-sign-off_wrapper a:hover {
+  color:#000000;
+}
 
 div#block-staff-links div {
   display: inline-block;

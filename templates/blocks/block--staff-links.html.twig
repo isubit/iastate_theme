@@ -33,12 +33,12 @@
   ]
 %}
 
-<div{{ attributes.addClass(block_classes) }}>
+<div {{ attributes.addClass(block_classes) }} >
   {% block content %}
     <span>Staff Resources: </span>
-      {{ content.field_login_link }}
+	  <a href="{{ content.field_login_link.0['#url'] }}" title="Website Editor Login" rel="nofollow">Editor Login</a>
 	<span>|</span>
-	  {{ content.field_myextension_link }}
+	  <a href="{{ content.field_myextension_link.0['#url'] }}" title="MyExtension – Staff Intranet" rel="nofollow">MyExtension</a>
   {% endblock %}
 </div>
 
