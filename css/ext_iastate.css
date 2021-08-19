@@ -576,7 +576,7 @@ dl {
 /* ## Signoff
 /* --------------------------------------  */
 
-div#block-staff-links .quickedit-field {
+div#block-staff-links div {
   display: inline-block;
 }
 
