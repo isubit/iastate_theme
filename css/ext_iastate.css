@@ -477,7 +477,6 @@ dl {
 /* ## Footer
 /* --------------------------------------  */
 
-
 /* Change footer background color and text color */
 .isu-footer {
 	color: #d3d3d3;
@@ -571,6 +570,14 @@ dl {
 
 .isu-region.isu-region_sign-off {
     text-align: center;
+}
+
+/* --------------------------------------  */
+/* ## Signoff
+/* --------------------------------------  */
+
+div#block-staff-links .quickedit-field {
+  display: inline-block;
 }
 
 /* -------------------------------------- */
