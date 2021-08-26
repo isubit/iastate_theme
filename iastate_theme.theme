@@ -142,6 +142,16 @@ function iastate_theme_preprocess(&$variables, $hook) {
     $variables['footer2_file_contents'] = file_get_contents(DRUPAL_ROOT . '/local/footer2.htm');
   }
 
+  // Check if we should include county_iastate.css
+  $counties = ['adair', 'adams', 'allamakee', 'appanoose', 'audubon', 'benton', 'blackhawk', 'boone', 'bremer', 'buchanan', 'buenavista', 'butler', 'calhoun', 'carroll', 'cass', 'cedar', 'cerrogordo', 'cherokee', 'chickasaw', 'clarke', 'clay', 'clayton', 'clinton', 'crawford', 'dallas', 'davis', 'decatur', 'delaware', 'desmoines', 'dickinson', 'dubuque', 'emmet', 'fayette', 'floyd', 'franklin', 'fremont', 'greene', 'grundy', 'guthrie', 'hamilton', 'hancock', 'hardin', 'harrison', 'henry', 'howard', 'humboldt', 'ida', 'iowa', 'jackson', 'jasper', 'jefferson', 'johnson', 'jones', 'keokuk', 'kossuth', 'lee', 'linn', 'louisa', 'lucas', 'lyon', 'madison', 'mahaska', 'marion', 'marshall', 'mills', 'mitchell', 'monona', 'monroe', 'montgomery', 'muscatine', 'obrien', 'osceola', 'page', 'paloalto', 'plymouth', 'pocahontas', 'polk', 'eastpottawattamie', 'westpottawattamie', 'poweshiek', 'ringgold', 'sac', 'scott', 'shelby', 'sioux', 'story', 'tama', 'taylor', 'union', 'vanburen', 'wapello', 'warren', 'washington', 'wayne', 'webster', 'winnebago', 'winneshiek', 'woodbury', 'worth', 'wright'];
+  $site = 'unknown';
+  $folders = explode('/', \Drupal::root());
+  if (count($folders) >= 2) {
+    $site = strtolower($folders[count($folders) -2]);
+  }
+  $variables['is_county'] = in_array($site, $counties);
+  $variables['county_css'] = $base_url . '/themes/custom/iastate_theme/css/county_iastate.css';
+
   // Check to see if it's an edit/add/ or delete node page
   $route_name = \Drupal::routeMatch()->getRouteName();
 
@@ -200,7 +210,6 @@ function iastate_theme_preprocess_page(&$variables) {
 	'#text' => theme_get_setting('copyright_subject')['value'],
 	'#format' => theme_get_setting('copyright_subject')['format'],
 	);
-
 }
 
 /**

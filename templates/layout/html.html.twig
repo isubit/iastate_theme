@@ -37,6 +37,9 @@
 {% if css_file_exists %}
   <link type="text/css" rel="stylesheet" media="all" href="{{ css_file_url }}" />
 {% endif %}
+{% if is_county %}
+  <link type="text/css" rel="stylesheet" media="all" href="{{ county_css }}" />
+{% endif %}
 {% if printcss_file_exists %}
   <link type="text/css" rel="stylesheet" media="print" href="{{ printcss_file_url }}" />
 {% endif %}
