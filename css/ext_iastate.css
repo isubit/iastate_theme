@@ -412,6 +412,12 @@ dl {
 	margin-left: auto;
 }
 
+/* Staff List*/
+img.staff_view_smugmug {
+	max-width: 100px;
+	margin: 10px 0px;
+}
+
 /* --------------------------------------  */
 /* ## Footer
 /* --------------------------------------  */
