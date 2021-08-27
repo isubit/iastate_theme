@@ -162,6 +162,64 @@ a.isu-dropdown-submenu {
 /* --------------------------------------  */
 /* ## Content Area
 /* --------------------------------------  */
+
+/* -------------------------------------- */
+/* ## Homepage
+/* ------------------------------------- */
+
+/* Upcoming Events */
+.program_offering_blocks.isu-block-front h2 {
+	color: #ffffff;
+}
+
+ul.county_events {
+        list-style-type: none;
+        padding-left: 0rem;
+	padding-bottom: 25px;
+}
+
+p.event_longDate {
+        display: none;
+}
+
+li.event {
+        padding: 10px 0px;
+        clear: both;
+}
+
+.isu-block-front li.event {
+	color: #ffffff;
+}
+
+.isu-block-front div.event_title a { 
+	color: #ffffff;
+}
+
+a.county_calendar {
+	border: 1px solid #ffffff;
+	color: #ffffff;
+	border-radius: 3px;
+	transition: background 0.2s ease;
+	padding: 7px;
+	white-space: break-spaces;
+	text-decoration: none;
+}
+
+a.event_title:hover, a.county_calendar:hover {
+        text-decoration: underline;
+}
+.isu-block-front span.event_day {
+	color: #ffffff;
+}
+
+.isu-block-front span.event_month {
+	color: #ffffff;
+}
+
+.isu-block-front div.event_date {
+	margin: 0 5px 8px 0;
+}
+
 /* Breadcrumb Styling
 .isu-breadcrumb {
 	margin-left: 11px;
@@ -422,7 +480,6 @@ td.staff-view-smugmug img {
 /* ## Footer
 /* --------------------------------------  */
 
-
 /* Change footer background color and text color */
 .isu-footer {
 	color: #d3d3d3;
@@ -508,6 +565,31 @@ td.staff-view-smugmug img {
 
 .isu-legal-menu {
 	font-size: 12px;
+}
+
+/* --------------------------------------  */
+/* ## Signoff
+/* --------------------------------------  */
+
+.isu-footer .isu-sign-off_wrapper {
+  background: #ffffff;
+  color: #333333;
+}
+
+.isu-region_sign-off {
+  font-size:14px;
+}
+
+.isu-sign-off_wrapper a {
+  color:#333333;
+}
+
+.isu-sign-off_wrapper a:hover {
+  color:#000000;
+}
+
+div#block-staff-links div {
+  display: inline-block;
 }
 
 /* -------------------------------------- */
