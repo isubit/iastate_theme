@@ -413,7 +413,7 @@ dl {
 }
 
 /* Staff List*/
-img.staff_view_smugmug {
+td.staff-view-smugmug img {
 	max-width: 100px;
 	margin: 10px 0px;
 }
