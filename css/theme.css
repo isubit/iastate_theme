@@ -1479,6 +1479,11 @@ blockquote.isu-pull-quote {
 
 /* --- ## Images --- */
 
+img:not(.isu-wordmark-logo_default):not(.isu-wordmark-logo_custom):not(.isu-footer-logo) {
+  max-width: 100%;
+  height: auto;
+}
+
 .isu-body img.align-left {
   margin: 1rem 1rem 1rem 0;
 }

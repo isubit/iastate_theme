@@ -260,10 +260,6 @@ caption {
 /* ## IMAGES
 /* --------------------------------------  */
 
-img:not(.isu-wordmark-logo_default):not(.isu-wordmark-logo_custom):not(.isu-footer-logo) { /* See theme.css */
-  max-width: 100%;
-  height: auto;
-}
 table img {
   max-width: none; /* Prevents images from shrinking in tables */
 }
