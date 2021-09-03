@@ -260,6 +260,10 @@ caption {
 /* ## IMAGES
 /* --------------------------------------  */
 
+img { 
+  max-width: 100%;
+  height: auto;
+}
 table img {
   max-width: none; /* Prevents images from shrinking in tables */
 }
