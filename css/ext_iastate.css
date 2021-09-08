@@ -718,6 +718,19 @@ div#block-staff-links div {
   .node-type_educational-programs-page .layout--content-container--default .layout-content { max-width: 1140px; }
 }
 
+/* Educational Programs Page
+ * Removes ablitiy to edit the edu_prog_field description block placed layout
+ */
+.layout-builder__section[aria-label="edu_field_body_section"] > a,
+.layout-builder__section[aria-label="edu_field_body_section"] .layout-builder__add-block {
+  display: none;
+}
+
+/* .layout-builder__section[aria-label="edu_field_body_section"] div.layout-builder-block[data-layout-block-uuid="6e84f67a-2edb-4aa8-8df0-e8dbc134d70d"] .layout-builder-block-update,
+.layout-builder__section[aria-label="edu_field_body_section"] div.layout-builder-block[data-layout-block-uuid="6e84f67a-2edb-4aa8-8df0-e8dbc134d70d"] .layout-builder-block-remove {
+  display: none;
+}
+
 /*- Layout Builder Base -*/
 
 /* --------------------------------------  */
