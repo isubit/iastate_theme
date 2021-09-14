@@ -83,7 +83,7 @@ body,
  */
 
 .isu-site-navbar {
-  padding: 0;
+  padding: 0.75rem 0;
   background-color: #cc0000;
   border-bottom: 9px solid #f1be48;
 }
@@ -177,11 +177,9 @@ body,
 .isu-wordmark-logo_default {
   width: 100%;
   max-width: 250px ;
-  margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
 .isu-wordmark-logo_custom {
-  margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
 .isu-wordmark-unit,
@@ -1480,6 +1478,11 @@ blockquote.isu-pull-quote {
 }
 
 /* --- ## Images --- */
+
+img:not(.isu-wordmark-logo_default):not(.isu-wordmark-logo_custom):not(.isu-footer-logo) {
+  max-width: 100%;
+  height: auto;
+}
 
 .isu-body img.align-left {
   margin: 1rem 1rem 1rem 0;
