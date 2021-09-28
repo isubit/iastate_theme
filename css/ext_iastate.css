@@ -543,10 +543,6 @@ div#block-staff-links div {
 	width: 100%;
 }
 
-.layout__region--third .isu-block-title {
-	padding: 18px;
-}
-
 /* Layout Builder Content Type */
 .node-type_layout-ct .row {
 	margin-left: 0;
