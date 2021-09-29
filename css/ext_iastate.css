@@ -202,8 +202,19 @@ li article:not(.isu-user):not(.isu-search_collapse) {
 .caption > figcaption {
 	background-color: #eeeeee;
 	margin-top: -2.5rem;
-	padding: 25px;
-	border-left: .25rem solid #dddddd;
+	padding: 14px;
+	border-left: .15rem solid #f1be48;
+	font-size: 14px;
+	font-style: italic;
+}
+
+/* Image Styles */
+figure.align-left {
+	margin-right: 15px;
+}
+
+figure.align-right {
+	margin-left: 15px;
 }
 
 .views-view-grid .views-col {
