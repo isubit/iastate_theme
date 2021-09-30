@@ -210,11 +210,19 @@ li article:not(.isu-user):not(.isu-search_collapse) {
 
 /* Image Styles */
 figure.align-left {
-	margin-right: 15px;
+	margin-right: 25px;
+}
+
+.align-left {
+	margin-right: 25px;
 }
 
 figure.align-right {
-	margin-left: 15px;
+	margin-left: 25px;
+}
+
+.align-right {
+	margin-left: 25px;
 }
 
 .views-view-grid .views-col {
