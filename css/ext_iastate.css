@@ -456,6 +456,11 @@ td.staff-view-smugmug img {
 .isu-footer a {
 	color: #d3d3d3;
 }
+
+.isu-footer .col-sm-6.col-md-6.col-lg-3 {
+	padding-bottom: 20px;
+}
+
 .isu-footer-logo {
 	max-width: 250px;
 	margin-top: -15px;
