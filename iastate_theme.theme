@@ -207,7 +207,7 @@ function iastate_theme_preprocess_page(&$variables) {
   // Create copyright render array
   $variables['copyright_subject'] = array(
     '#type' => 'processed_text',
-	'#text' => theme_get_setting('copyright_subject')['value'],
+	'#text' => isset(theme_get_setting('copyright_subject')['value']) ? theme_get_setting('copyright_subject')['value'] : '',
 	'#format' => theme_get_setting('copyright_subject')['format'],
 	);
 }
