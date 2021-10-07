@@ -97,3 +97,19 @@ a.events_show_more.btn-outline-white:hover {
 .news-attachment img {
 	padding-bottom: 10px;
 }
+
+#blazy-views-news-articles-attachment-1-3 {
+	width: 50%;
+	display: inline-grid;
+	float: left;
+}
+
+#blazy-views-news-articles-block-1-1 {
+	width: 50%;
+	display: inline-grid;
+}
+
+#blazy-views-news-articles-block-1-1 img {
+	float: left;
+	margin: 10px;
+}
