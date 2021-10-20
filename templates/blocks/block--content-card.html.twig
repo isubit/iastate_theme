@@ -25,18 +25,28 @@
  * @see template_preprocess_block()
  */
 #}
-{% block content %}
+{%
+  set block_classes = [
+    is_front ? 'isu-block-front' : '',
+    'isu-block'
+  ]
+%} 
+
+<div{{ attributes.addClass(block_classes) }}>
   <div class="bean-card">
-	<div class="bean-card_label {{ content.field_content_card_text_size[0] }} {{ content.field_content_card_color_style[0] }}">
-	  {% if content.field_content_card_icon.0 %}
-		{{ content.field_content_card_icon.0 }}	
-	  {% endif %}
-	  <p>{{ content.field_content_card_title[0] }}</p>
-	</div>
-	
-	<div class="bean-card_body {{ content.field_content_card_color_style[0] }}">
-	  {{ content.field_content_card_body.0 }}
-	</div>
+    {{ title_prefix }}
+      <div class="bean-card_label {{ content.field_content_card_text_size[0] }} {{ content.field_content_card_color_style[0] }}">
+    	{% if content.field_content_card_icon.0 %}
+        {{ content.field_content_card_icon.0 }}	
+        {% endif %}
+        <p>{{ content.field_content_card_title[0] }}</p>
+      </div>
+    {{ title_suffix }}
+	{% block content %}
+  	  <div class="bean-card_body {{ content.field_content_card_color_style[0] }}">
+  	    {{ content.field_content_card_body.0 }}
+  	  </div>
+    {% endblock %}
   </div>
-{% endblock %}
+</div>
 

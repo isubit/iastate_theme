@@ -791,9 +791,13 @@ div#block-staff-links div {
   }
   
 
-  /* Fontawesome icons */
+  /* Fontawesome icons - this isn't being used (used declaration on line: 842)
   .fontawesome-icons {
 	font-family: 'FontAwesome';
+  } */
+
+  div.fontawesome-icon i {
+	font-style: normal;
   }
   
   /* Colors */
