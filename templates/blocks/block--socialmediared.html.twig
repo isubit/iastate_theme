@@ -31,53 +31,53 @@
     {% if content.field_facebook_red %}
 	  {% for links in content.field_facebook_red %}
 	    {% if links['#url'] %}
-		  <a href="{{ links['#url'] }}"></a>
+		  <a href="{{ links['#url'] }}" title="{{ links['#title'] | split(' ')[0] }}"></a>
 		{% endif %}
 	  {% endfor %}
     {% endif %}
     {% if content.field_instagram_red %}
 	  {% for links in content.field_instagram_red %}
 	    {% if links['#url'] %}
-		  <a href="{{ links['#url'] }}"></a>
+		  <a href="{{ links['#url'] }}" title="{{ links['#title'] | split(' ')[0] }}"></a>
 		{% endif %}
 	  {% endfor %}
     {% endif %}
     {% if content.field_linked_in_red %}
 	  {% for links in content.field_linked_in_red %}
 	    {% if links['#url'] %}
-		  <a href="{{ links['#url'] }}"></a>
+		  <a href="{{ links['#url'] }}" title="{{ links['#title'] | split(' ')[0] }}"></a>
 		{% endif %}
 	  {% endfor %}
     {% endif %}
     {% if content.field_pinterest_red %}
 	  {% for links in content.field_pinterest_red %}
 	    {% if links['#url'] %}
-		  <a href="{{ links['#url'] }}"></a>
+		  <a href="{{ links['#url'] }}" title="{{ links['#title'] | split(' ')[0] }}"></a>
 		{% endif %}
 	  {% endfor %}
     {% endif %}
     {% if content.field_twitter_red %}
 	  {% for links in content.field_twitter_red %}
 	    {% if links['#url'] %}
-		  <a href="{{ links['#url'] }}"></a>
+		  <a href="{{ links['#url'] }}" title="{{ links['#title'] | split(' ')[0] }}"></a>
 		{% endif %}
 	  {% endfor %}
     {% endif %}
 	{% if content.field_vimeo_red %}
 	  {% for links in content.field_vimeo_red %}
 	    {% if links['#url'] %}
-		  <a href="{{ links['#url'] }}"></a>
+		  <a href="{{ links['#url'] }}" title="{{ links['#title'] | split(' ')[0] }}"></a>
 		{% endif %}
 	  {% endfor %}
 	{% endif %}
     {% if content.field_youtube_red %}
 	  {% for links in content.field_youtube_red %}
 	    {% if links['#url'] %}
-		  <a href="{{ links['#url'] }}"></a>
+		  <a href="{{ links['#url'] }}" title="{{ links['#title'] | split(' ')[0] }}"></a>
 		{% endif %}
 	  {% endfor %}
     {% endif %}
-	{{ content|without('field_facebook_red', 'field_instagram_red', 'field_linked_in_red', 'field_pinterest_red',
+	{{ content | without('field_facebook_red', 'field_instagram_red', 'field_linked_in_red', 'field_pinterest_red',
 	'field_twitter_red', 'field_vimeo_red', 'field_youtube_red') }}
   {% endblock %}
 </div>
