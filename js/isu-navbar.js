@@ -42,21 +42,6 @@ $(document).ready(function() {
       }
   });
   
-  // Traverse Signons menu with up/down arrow keys
-  $('.isu-navbar_signons').on('keydown', function(event) { 
-      if (event.keyCode === 40) { // down
-        event.preventDefault();
-        // Change the focus to the link in the next li
-        $(':focus').parent('li').next('li').children('a').focus();
-      } else if (event.keyCode == 38) { // up
-        if ( $(':focus').is('.isu-navbar_signons li:not(:first-of-type) a') ) {
-          // If the focus is NOT the first item in the list...
-          // Change the focus to the link in the previous li
-          $(':focus').parent('li').prev().children('a').focus();
-        }
-      }
-  })
-  
   // Enter dropdowns with the down arrow
   $('.isu-navbar_dropdown > .isu-navbar_dropdown-toggle').on('keydown', function(event) {
     var dropdownToggle = $(this);
@@ -78,17 +63,6 @@ $(document).ready(function() {
         // Close the dropdown
         dropdownMenuItem.closest('.isu-navbar_dropdown').attr('data-isu-navbar-expanded', 'false');
         // Refocus on the parent link
-        dropdownMenuItem.closest('.isu-navbar_dropdown').find('a').focus();
-      }
-  });
-  
-  // Exit the Sign-Ons menu with up arrow
-  $('.isu-navbar_signons > li:first-of-type a').on('keydown', function(event) {
-    var dropdownMenuItem = $(this);
-      if (event.keyCode === 38) { // up
-        // Close the dropdown
-        dropdownMenuItem.closest('.isu-navbar_dropdown').attr('data-isu-navbar-expanded', 'false');
-        // Refocus on the parent link.
         dropdownMenuItem.closest('.isu-navbar_dropdown').find('a').focus();
       }
   });
