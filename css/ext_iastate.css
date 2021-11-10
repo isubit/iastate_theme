@@ -365,6 +365,38 @@ figure.align-right {
 	border-color: #006BA6;
 }
 
+.btn-success{
+        background-color: #00a15f;
+        border-color: #00a15f;
+        font-weight: 700;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: background 0.2s ease;
+                padding: 7px;
+                white-space: break-spaces;
+}
+
+.btn-success:hover{
+        background-color: #003D4C;
+        border-color: #003D4C;
+}
+
+.btn-outline-success {
+        color: #006BA6;
+        border: 1px solid #006BA6;
+        font-weight: 700;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: background 0.2s ease;
+                padding: 7px;
+                white-space: break-spaces;
+}
+
+.btn-outline-success:hover {
+        background-color: #006BA6;
+        border-color: #006BA6;
+}
+
 .btn-secondary {
 	background-color: #707372;
 	border-color: #707372;
