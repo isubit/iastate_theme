@@ -366,8 +366,8 @@ figure.align-right {
 }
 
 .btn-success{
-        background-color: #00a15f;
-        border-color: #00a15f;
+        background-color: #00854D;
+        border-color: #00854D;
         font-weight: 700;
         border-radius: 3px;
         cursor: pointer;
@@ -377,13 +377,13 @@ figure.align-right {
 }
 
 .btn-success:hover{
-        background-color: #003D4C;
-        border-color: #003D4C;
+        background-color: #3E4827;
+        border-color: #3E4827;
 }
 
 .btn-outline-success {
-        color: #006BA6;
-        border: 1px solid #006BA6;
+        color: #00854D;
+        border: 1px solid #00854D;
         font-weight: 700;
         border-radius: 3px;
         cursor: pointer;
@@ -393,8 +393,8 @@ figure.align-right {
 }
 
 .btn-outline-success:hover {
-        background-color: #006BA6;
-        border-color: #006BA6;
+        background-color: #00854D;
+        border-color: #00854D;
 }
 
 .btn-secondary {
