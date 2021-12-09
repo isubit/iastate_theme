@@ -1,7 +1,7 @@
 /**
  * @file
  * Base CSS styles for the ISU theme, primarily for directly overriding
- * styles from Drupal 8 core or Bootstrap 4, including replacing some
+ * styles from Drupal core or Bootstrap 4, including replacing some
  * Bootstrap 4 colors with ISU brand colors, and tweaking colors to meet
  * WCAG AA color contrast guidelines.
  */
@@ -267,7 +267,7 @@ img {
 table img {
   max-width: none; /* Prevents images from shrinking in tables */
 }
-.caption-img figcaption { /* Class from Drupal 8. */
+.caption-img figcaption { /* Class from Drupal. */
   /* Same as table caption. */
   padding: 0.5rem;
   color: #333333;
