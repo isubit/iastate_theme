@@ -941,11 +941,39 @@ div#block-staff-links div {
 	}
 }
 	
+@media screen and (max-width : 1200px) {
+	
+	.isu-social-menu-footer{
+		margin-left: 10px;
+	}
+}
 
 @media screen and (max-width : 992px) {
  	.isu-wordmark-logo {
  		max-width: 275px;
+		margin-top: 1.5rem;
  	}
+	
+	.isu-search_toggler {
+		margin-top: -23px;
+	}
+
+	 /* Adjust Site Name */
+	 .isu-wordmark-sitename{
+		 margin-left: 0.5rem;
+		 padding-top: 0px;
+	 }
+
+	 /*Get rid of margins for isu site nav bar*/
+	 .isu-row-site-navbar{
+		 margin-top: 0px;
+		 margin-bottom: 0px;
+	 }
+
+	 /* Adjust Socails*/
+	 .isu-social-menu-red{
+		 padding-left: 88px;
+	 }
 
 	/* Change menu-item backgrond color for condensed menu */
 	.navbar-expand-lg .navbar-nav .nav-link {
@@ -973,6 +1001,10 @@ div#block-staff-links div {
 		margin-left: -8%;
 	}
 
+	.isu-social-menu-footer{
+		margin-left: 0px;
+	}
+
 	.isu-footer {
 		padding-left: 2rem;
 		padding-right: 2rem;
@@ -985,23 +1017,45 @@ div#block-staff-links div {
 
 @media screen and (max-width : 768px) {
  	.isu-wordmark-logo {
- 		margin-top: 1.5rem;
-		margin-bottom: 1.5rem;
+ 		margin-top: 0.3rem;
+		margin-bottom: 0rem;
+		max-width: 200px;
  	}
+
+	/* Adjust Socails*/
+	.isu-social-menu-red{
+		padding-left: 84px;
+	}
+
+	 /*Adjust menu tool*/
+	 .navbar-toggler:not(:disabled):not(.disabled){
+		 margin-top: -10px;
+	 }
  	
  	.isu-wordmark-sitename {
- 		padding-left: 6px;
- 		padding-bottom: 20px;
+ 		padding-left: 0px;
+ 		padding-bottom: 0px;
+		margin-left: 0.3rem;
  		font-size: 15px;
  		padding-top: 0px;
+	}
+
+	.isu-social-menu-footer{
+		margin-left: 0px;
+		/*max-width: 100px;*/
 	}
 	
 	.isu-search_toggler-label {
 		font-size: 9px;
 	}
 
+	.isu-footer-logo {
+		margin-top: -7px;
+		padding-bottom: 20px;
+	}
+
 	.isu-search_toggler {
-		margin-top: -26px;
+		margin-top: 0px;
 	}
 		
 	 
@@ -1036,4 +1090,10 @@ a.inline-block-list__item:hover :not(.inline-block-list__item-custom-block-descr
   color: #FFF;
   font-size: 13px;
   margin-left: 10px;
+}
+
+@media screen and (max-width : 575px) {
+.isu-footer-logo{
+	padding-left: 3%;
+}
 }
