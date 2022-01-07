@@ -617,7 +617,7 @@ div#block-staff-links div {
 }
 
 /* -------------------------------------- */
-/* ## Layout Builder Homepage
+/* ## Layout Builder
 /* -------------------------------------- */
 .layout--onecol, .layout--threecol-section {
 	width: 100%;
@@ -627,6 +627,22 @@ div#block-staff-links div {
 	font-weight: 700;
 	font-variant: small-caps;
 	font-size: 1.2em;
+}
+
+/* Settings Tray */
+#drupal-off-canvas button, #drupal-off-canvas .button {
+	border: #006ba6;
+	padding: 7px;
+	background: #006ba6;
+	color: #ffffff;
+	border-radius: 3px;
+	margin: 0 0 3px;
+}
+
+#drupal-off-canvas button:hover, #drupal-off-canvas input[type="reset"]:hover, #drupal-off-canvas input[type="submit"]:hover, #drupal-off-canvas input[type="button"]:hover {
+	background-color: #ffffff;
+	border-color: #006ba6;
+	color: #006ba6;
 }
 
 /* Layout Builder Content Type */
