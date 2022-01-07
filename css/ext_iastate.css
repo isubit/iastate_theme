@@ -948,11 +948,38 @@ div#block-staff-links div {
 	}
 }
 
-@media screen and (max-width : 992px) {
+@media screen and (max-width : 991px) {
  	.isu-wordmark-logo {
- 		max-width: 275px;
-		margin-top: 1.5rem;
+ 		max-width: 320px;
+		margin-top: 0.5rem;
  	}
+	
+	 .isu-navbar_container{
+		 width: inherit;
+	 }
+	
+	/*change navbar width to fit screen*/
+	.isu-site-navbar div {
+		max-width: inherit;
+	}
+	
+	 /*change search logo color*/
+	.isu-search_toggler svg path {
+		fill: white;
+	}
+	/*Change search text*/
+	.isu-search_toggler-label {
+		visibility: hidden;
+		position: relative;
+	}
+	.isu-search_toggler-label::after{
+		visibility: visible;
+		position: absolute;
+		top: 0;
+		left: 33px;
+		content: 'search';
+		text-align: center;
+	}
 	
 	.isu-search_toggler {
 		margin-top: -23px;
@@ -1019,8 +1046,9 @@ div#block-staff-links div {
  	.isu-wordmark-logo {
  		margin-top: 0.3rem;
 		margin-bottom: 0rem;
-		max-width: 200px;
+		max-width: 250px;
  	}
+	
 
 	/* Adjust Socails*/
 	.isu-social-menu-red{
@@ -1035,7 +1063,7 @@ div#block-staff-links div {
  	.isu-wordmark-sitename {
  		padding-left: 0px;
  		padding-bottom: 0px;
-		margin-left: 0.3rem;
+		margin-left: 0.27rem;
  		font-size: 15px;
  		padding-top: 0px;
 	}
@@ -1043,6 +1071,10 @@ div#block-staff-links div {
 	.isu-social-menu-footer{
 		margin-left: 0px;
 		/*max-width: 100px;*/
+	}
+
+	.isu-search_toggler-label::after{
+		left: 25px;
 	}
 	
 	.isu-search_toggler-label {
@@ -1095,5 +1127,19 @@ a.inline-block-list__item:hover :not(.inline-block-list__item-custom-block-descr
 @media screen and (max-width : 575px) {
 .isu-footer-logo{
 	padding-left: 3%;
+	padding-bottom: 0px;
+}
+
+.isu-col-header-first {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.isu-search_toggler{
+	padding-left: 0px;
+}
+
+.isu-social-menu-red{
+	padding-left: 73px;
 }
 }
