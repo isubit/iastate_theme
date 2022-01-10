@@ -1012,6 +1012,18 @@ div#block-staff-links div {
 		top: 0;
 		margin-top: 0;
 	}
+
+	.news-attachment table  {
+		width: 100% !important; 
+	}
+	.views-field-field-teaser{
+		display: table-cell !important;
+	}
+	.views-field-field-teaser a img {
+		width: 100%;
+	}
+
+	/* Responsive 
  	
   /* Old bean-card body css
 	.bean-card_text{
