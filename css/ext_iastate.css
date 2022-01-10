@@ -950,7 +950,7 @@ div#block-staff-links div {
 
 @media screen and (max-width : 991px) {
  	.isu-wordmark-logo {
- 		max-width: 320px;
+ 		max-width: 360px;
 		margin-top: 0.5rem;
  	}
 	
@@ -967,6 +967,7 @@ div#block-staff-links div {
 	.isu-search_toggler svg path {
 		fill: white;
 	}
+
 	/*Change search text*/
 	.isu-search_toggler-label {
 		visibility: hidden;
@@ -989,6 +990,7 @@ div#block-staff-links div {
 	 .isu-wordmark-sitename{
 		 margin-left: 0.5rem;
 		 padding-top: 0px;
+		 padding-bottom: 0px;
 	 }
 
 	 /*Get rid of margins for isu site nav bar*/
@@ -999,8 +1001,15 @@ div#block-staff-links div {
 
 	 /* Adjust Socails*/
 	 .isu-social-menu-red{
-		 padding-left: 88px;
+		 padding-left: 85px;
 	 }
+
+	 .isu-social-menu a{
+		font-size: 10px;
+	}
+
+
+	 
 
 	/* Change menu-item backgrond color for condensed menu */
 	.navbar-expand-lg .navbar-nav .nav-link {
@@ -1058,7 +1067,7 @@ div#block-staff-links div {
  	.isu-wordmark-logo {
  		margin-top: 0.3rem;
 		margin-bottom: 0rem;
-		max-width: 250px;
+		max-width: 300px;
  	}
 	
 
@@ -1075,7 +1084,7 @@ div#block-staff-links div {
  	.isu-wordmark-sitename {
  		padding-left: 0px;
  		padding-bottom: 0px;
-		margin-left: 0.27rem;
+		margin-left: 0.5rem;
  		font-size: 15px;
  		padding-top: 0px;
 	}
