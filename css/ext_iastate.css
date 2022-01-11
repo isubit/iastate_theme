@@ -921,11 +921,75 @@ form#node-layout-ct-layout-builder-form {
 	}
 }
 	
+@media screen and (max-width : 1200px) {
+	
+	.isu-social-menu-footer{
+		margin-left: 10px;
+	}
+}
 
-@media screen and (max-width : 992px) {
+@media screen and (max-width : 991px) {
  	.isu-wordmark-logo {
- 		max-width: 275px;
+ 		max-width: 360px;
+		margin-top: 0.5rem;
  	}
+	
+	 .isu-navbar_container{
+		 width: inherit;
+	 }
+	
+	/*change navbar width to fit screen*/
+	.isu-site-navbar div {
+		max-width: inherit;
+	}
+	
+	 /*change search logo color*/
+	.isu-search_toggler svg path {
+		fill: white;
+	}
+
+	/*Change search text*/
+	.isu-search_toggler-label {
+		visibility: hidden;
+		position: relative;
+	}
+	.isu-search_toggler-label::after{
+		visibility: visible;
+		position: absolute;
+		top: 0;
+		left: 33px;
+		content: 'search';
+		text-align: center;
+	}
+	
+	.isu-search_toggler {
+		margin-top: -23px;
+	}
+
+	 /* Adjust Site Name */
+	 .isu-wordmark-sitename{
+		 margin-left: 0.5rem;
+		 padding-top: 0px;
+		 padding-bottom: 0px;
+	 }
+
+	 /*Get rid of margins for isu site nav bar*/
+	 .isu-row-site-navbar{
+		 margin-top: 0px;
+		 margin-bottom: 0px;
+	 }
+
+	 /* Adjust Socails*/
+	 .isu-social-menu-red{
+		 padding-left: 85px;
+	 }
+
+	 .isu-social-menu a{
+		font-size: 10px;
+	}
+
+
+	 
 
 	/* Change menu-item backgrond color for condensed menu */
 	.navbar-expand-lg .navbar-nav .nav-link {
@@ -937,6 +1001,18 @@ form#node-layout-ct-layout-builder-form {
 		top: 0;
 		margin-top: 0;
 	}
+
+	.news-attachment table  {
+		width: 100% !important; 
+	}
+	.views-field-field-teaser{
+		display: table-cell !important;
+	}
+	.views-field-field-teaser a img {
+		width: 100%;
+	}
+
+	/* Responsive 
  	
   /* Old bean-card body css
 	.bean-card_text{
@@ -953,6 +1029,10 @@ form#node-layout-ct-layout-builder-form {
 		margin-left: -8%;
 	}
 
+	.isu-social-menu-footer{
+		margin-left: 0px;
+	}
+
 	.isu-footer {
 		padding-left: 2rem;
 		padding-right: 2rem;
@@ -965,23 +1045,50 @@ form#node-layout-ct-layout-builder-form {
 
 @media screen and (max-width : 768px) {
  	.isu-wordmark-logo {
- 		margin-top: 1.5rem;
-		margin-bottom: 1.5rem;
+ 		margin-top: 0.3rem;
+		margin-bottom: 0rem;
+		max-width: 300px;
  	}
+	
+
+	/* Adjust Socails*/
+	.isu-social-menu-red{
+		padding-left: 84px;
+	}
+
+	 /*Adjust menu tool*/
+	 .navbar-toggler:not(:disabled):not(.disabled){
+		 margin-top: -10px;
+	 }
  	
  	.isu-wordmark-sitename {
- 		padding-left: 6px;
- 		padding-bottom: 20px;
+ 		padding-left: 0px;
+ 		padding-bottom: 0px;
+		margin-left: 0.5rem;
  		font-size: 15px;
  		padding-top: 0px;
+	}
+
+	.isu-social-menu-footer{
+		margin-left: 0px;
+		/*max-width: 100px;*/
+	}
+
+	.isu-search_toggler-label::after{
+		left: 25px;
 	}
 	
 	.isu-search_toggler-label {
 		font-size: 9px;
 	}
 
+	.isu-footer-logo {
+		margin-top: -7px;
+		padding-bottom: 20px;
+	}
+
 	.isu-search_toggler {
-		margin-top: -26px;
+		margin-top: 0px;
 	}
   /* Old bean-card body css
 	.bean-card_text{
@@ -1014,4 +1121,24 @@ a.inline-block-list__item:hover :not(.inline-block-list__item-custom-block-descr
   color: #FFF;
   font-size: 13px;
   margin-left: 10px;
+}
+
+@media screen and (max-width : 575px) {
+.isu-footer-logo{
+	padding-left: 3%;
+	padding-bottom: 0px;
+}
+
+.isu-col-header-first {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.isu-search_toggler{
+	padding-left: 0px;
+}
+
+.isu-social-menu-red{
+	padding-left: 73px;
+}
 }
