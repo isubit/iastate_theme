@@ -67,9 +67,9 @@ article table::-webkit-scrollbar-track {
     border-bottom: 3px solid #bbbbbb;
   }
   .isu-responsive-table.isu-table-none td {
-      border-bottom: 1px solid #dddddd;
-      border-right: 1px solid #dddddd;
-      display: block;
+    border-bottom: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+    display: block;
   }
   .isu-responsive-table.isu-table-none td:last-of-type {
     border-bottom: none;
@@ -91,6 +91,7 @@ article table::-webkit-scrollbar-track {
   .isu-responsive-table.isu-table-row td {
     display: flex;
     padding: 0;
+    width: 100% !important; /* In case a width is manually set. */
     border-bottom: 1px solid #dddddd;
     border-right: 1px solid #dddddd;
   }
