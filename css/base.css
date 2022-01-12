@@ -265,7 +265,7 @@ img {
   height: auto;
 }
 table img {
-  max-width: none; /* Prevents images from shrinking in tables */
+  max-width: none !important; /* Prevents images from shrinking in tables */
 }
 .caption-img figcaption { /* Class from Drupal. */
   /* Same as table caption. */
