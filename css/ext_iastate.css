@@ -1040,6 +1040,14 @@ form#node-layout-ct-layout-builder-form {
 		max-width: 955px;
 		margin: auto;
 	}
+
+	div#block-iastate-theme-local-tasks {
+		padding-left: 6%;
+		padding-right: 6%;
+		padding-top: 10px;
+		max-width: 955px;
+		margin: auto;
+	}
 	 
 
 	/* Change menu-item backgrond color for condensed menu */
