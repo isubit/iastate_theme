@@ -634,14 +634,28 @@ div#block-staff-links div {
 }
 
 div#block-iastate-theme-local-tasks {
-	padding-left: 6%;
+	padding-left: 0%;
 	padding-right: 6%;
 	padding-top: 10px;
+	max-width: 1135px;
+	margin: auto;
 }
 
 div#block-iastate-theme-page-title--2 {
-	padding-left: 6%;
+	padding-left: 0%;
 	padding-right: 6%;
+	max-width: 1135px;
+	margin: auto;
+}
+
+div#edit-actions {
+	max-width: 1135px;
+	margin: auto;
+}
+
+.js-form-type-vertical-tabs {
+	max-width: 1135px;
+	margin: auto;
 }
 
 form#node-layout-ct-layout-builder-form {
@@ -918,14 +932,47 @@ form#node-layout-ct-layout-builder-form {
 	.isu-col-header-first {
 		text-align: -webkit-match-parent;
 	}
+
+
+
 }
+
 	
-@media screen and (max-width : 1200px) {
+@media screen and (max-width : 1199px) {
 	
 	.isu-social-menu-footer{
 		margin-left: 10px;
 	}
+
+	/* Layout Builder Responsive*/
+	div#block-iastate-theme-local-tasks {
+		padding-left: 0%;
+		padding-right: 6%;
+		padding-top: 10px;
+		max-width: 955px;
+		margin: auto;
+	}
+
+	div#block-iastate-theme-page-title--2 {
+		padding-left: 0%;
+		padding-right: 6%;
+		max-width: 955px;
+		margin: auto;
+	}
+
+	div#edit-actions {
+		max-width: 955px;
+		margin: auto;
+	}
+
+	.js-form-type-vertical-tabs {
+		max-width: 955px;
+		margin: auto;
+	}
+
 }
+
+
 
 @media screen and (max-width : 991px) {
  	.isu-wordmark-logo {
@@ -987,7 +1034,12 @@ form#node-layout-ct-layout-builder-form {
 		font-size: 10px;
 	}
 
-
+	div#block-iastate-theme-page-title--2 {
+		padding-left: 6%;
+		padding-right: 6%;
+		max-width: 955px;
+		margin: auto;
+	}
 	 
 
 	/* Change menu-item backgrond color for condensed menu */
