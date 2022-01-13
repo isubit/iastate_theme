@@ -164,6 +164,10 @@ a.isu-dropdown-submenu {
 /* ## Content Area
 /* --------------------------------------  */
 
+.isu-region_content {
+	margin: auto;
+}
+
 /* Breadcrumb Styling
 .isu-breadcrumb {
 	margin-left: 11px;
