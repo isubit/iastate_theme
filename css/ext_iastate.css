@@ -1203,7 +1203,6 @@ a.inline-block-list__item:hover :not(.inline-block-list__item-custom-block-descr
 }
 
 /* Media Library Theme Reset*/
-/* Media Library Theme Reset*/
 
 .views-live-preview .media-library-view div.views-row + div.views-row {
     margin-top: 0;
@@ -1234,7 +1233,7 @@ a.inline-block-list__item:hover :not(.inline-block-list__item-custom-block-descr
   }
 
   .ui-dialog-titlebar {
-    background: #333 !important ;
+    background: #6b6b6b !important ;
     padding: 15px 49px 15px 15px !important;
   }
 
@@ -1248,6 +1247,12 @@ a.inline-block-list__item:hover :not(.inline-block-list__item-custom-block-descr
   .ui-dialog--narrow.media-library-widget-modal {
     max-width: 75%;
 }	
+
+.fontawesome-icon-dialog {
+	max-width: 500px;
+}
+
+
 
 /* Fix Overscroll Behavior*/
 html {
