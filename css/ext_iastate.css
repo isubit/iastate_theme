@@ -1205,3 +1205,66 @@ a.inline-block-list__item:hover :not(.inline-block-list__item-custom-block-descr
 	padding-left: 73px;
 }
 }
+
+/* Media Library Theme Reset*/
+
+.views-live-preview .media-library-view div.views-row + div.views-row {
+    margin-top: 0;
+  }
+
+  .media-library-wrapper div[role="toolbar"] {
+      max-width: 20%;
+  }
+
+  .media-library-wrapper div[role="toolbar"] ul {
+	max-width: 100%;
+}
+
+  .media-library-menu-image {
+	  width: 100%;
+  }
+  
+  .js-form-item-sort-by select{
+      height: auto !important;
+  }
+
+  .media-library-view--form-actions {
+      margin-bottom: 0px;
+  }
+
+  .media-library-view--form-actions button {
+      margin-bottom: 0px !important;
+  }
+
+  .ui-dialog-titlebar {
+    background: #6b6b6b !important ;
+    padding: 15px 49px 15px 15px !important;
+  }
+
+  .ui-dialog-title {    margin: 0;
+    color: #fff;
+    font-size: 1.231em;
+    font-weight: 600;
+    -webkit-font-smoothing: antialiased;color: white;
+  }
+
+  .ui-dialog--narrow.media-library-widget-modal {
+    max-width: 75%;
+}	
+
+.fontawesome-icon-dialog {
+	max-width: 500px;
+}
+
+
+
+/* Fix Overscroll Behavior*/
+html {
+    overflow: hidden;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    overflow: auto;
+}
