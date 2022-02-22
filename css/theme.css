@@ -951,7 +951,8 @@ details {
 .isu-form-type_url label,
 .isu-form-type_date label,
 .isu-form-type_number label,
-.field--type-datetime label {
+.field--type-datetime label,
+.isu-form-type_webform-multiple label {
   /* .filter-wrapper via Drupal */
   font-weight: 700;
 }
