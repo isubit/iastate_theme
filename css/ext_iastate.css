@@ -185,6 +185,10 @@ a.isu-dropdown-submenu {
 	border: 1px dashed #fff4f4;
 }
 
+article:not(.isu-user):not(.isu-search_collapse) {
+	margin-left: 54px;
+}
+
 /* Page Title */
 .isu-page-title {
 	padding-top: 1.5rem;
