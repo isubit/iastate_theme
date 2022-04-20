@@ -38,6 +38,7 @@
       is_node_edit == 'edit' ? 'node-form node-form_' ~ 'edit',
       is_node_add == 'add' ? 'node-form node-form_' ~ 'add',
       is_node_delete == 'delete' ? 'node-form node-form_' ~ 'delete',
+      is_front ? 'is_front' : 'not_front',
     ]
   %}
   <body{{ attributes.addClass(body_classes) }}>
