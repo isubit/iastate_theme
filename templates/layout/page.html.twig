@@ -79,6 +79,10 @@
 
     {{ page.breadcrumbs }}
 
+  {% if page.hero_top %}
+    {{ page.hero_top }}
+  {% endif %}
+
   <div class="container">
     <div class="row">
 
@@ -116,6 +120,10 @@
 
     </div>
   </div>
+
+  {% if page.hero_bottom %}
+    {{ page.hero_bottom }}
+  {% endif %}
 
 </main>
 
