@@ -1264,12 +1264,6 @@ a.inline-block-list__item:hover :not(.inline-block-list__item-custom-block-descr
 
 
 /* Fix Overscroll Behavior*/
-html {
-    overflow: hidden;
-    height: 100%;
-}
-
-body {
-    height: 100%;
-    overflow: auto;
+body #layout-builder-modal {
+	overscroll-behavior: none;
 }
