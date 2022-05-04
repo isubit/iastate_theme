@@ -6,15 +6,26 @@ use Drupal\Core\Form\FormStateInterface;
 /**
  * Implements template_preprocess_html().
  * 
- * Add node-id_{id} class.
  */
 function iastate_theme_preprocess_html(&$variables) {
+
+  /* Add node-id_ and node-type_ classes to body */
   $node = \Drupal::request()->attributes->get('node');
   if ($node instanceof NodeInterface) {
     $variables['attributes']['class'][] = 'node-id_' . $node->id();
   }
   if (isset($variables['node_type'])) {
     $variables['attributes']['class'][] = 'node-type_' . $variables['node_type'];
+  }
+
+  /* Add views classes to body */
+  $route = \Drupal::routeMatch()->getRouteObject();
+  $view_id = $route->getDefault('view_id');
+  $display_id = $route->getDefault('display_id');
+
+  if ($view_id) {
+    $variables['attributes']['class'][] = 'view_' . $view_id;
+    $variables['attributes']['class'][] = 'view-display_' . $display_id;
   }
 }
 
@@ -160,16 +171,22 @@ function iastate_theme_preprocess(&$variables, $hook) {
 /*
  * Implements theme_preprocess_block().
  *
- * Make theme settings available in block templates
  */
 
 function iastate_theme_preprocess_block(&$variables) {
+  // Make theme settings available in block templates
   $variables['iastate_logo_alt'] = theme_get_setting('iastate_logo_alt');
   $variables['iastate_logo_width'] = theme_get_setting('iastate_logo_width');
   $variables['iastate_logo_height'] = theme_get_setting('iastate_logo_height');
   $variables['iastate_logo_alt'] = theme_get_setting('iastate_logo_alt');
   $variables['is_default_logo'] = \Drupal::config('iastate_theme.settings')->get('logo.use_default');
   $variables['iastate_logo_url'] = theme_get_setting('iastate_logo_url');
+
+  // Make block type available in block templates
+  if ($variables['elements']['#base_plugin_id'] == 'block_content') {
+    $blockType = strtr($variables['content']['#block_content']->bundle(), '_', '-');
+    $variables['attributes']['class'][] = 'block-type_' . $blockType;
+  }
 }
 
 /*
