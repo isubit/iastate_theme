@@ -26,6 +26,14 @@
  */
 #}
 
+{%
+  set block_classes = [
+    is_front ? 'isu-block-front' : '',
+    'isu-block'
+  ]
+%} 
+
+<div{{ attributes.addClass(block_classes) }}>
 {% if label %}
   {% set block_title_classes = ['isu-footer_contact-title', 'h5'] %}
   <h2{{ title_attributes.addClass(block_title_classes) }}>{{ label }}</h2>
