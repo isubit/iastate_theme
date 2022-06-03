@@ -34,32 +34,44 @@
 %}
 
 <div{{ attributes.addClass(block_classes) }}>
-{% if label %}
-  {% set block_title_classes = ['isu-footer_contact-title', 'h5'] %}
-  <h2{{ title_attributes.addClass(block_title_classes) }}>{{ label }}</h2>
-{% endif %}
-<div class="isu-footer_contact-address">
-  {% block content %}
-  {% if content.field_contact_creator_title[0]  %}
-     <div class="isu-footer_contact-address-title">
-       {{ content.field_contact_creator_title[0] }}
-     </div>
-    {% endif %}
-	{% if content.field_contact_creator_address[0] %}
-		{{ content.field_contact_creator_address[0] }}
-	{% endif %}
-	{% if content.field_contact_creator_email[0] %}
-		<a href="mailto:{{ content.field_contact_creator_email[0] }}">
-		  {{ content.field_contact_creator_email[0] }}
-		</a>
-	{% endif %}
-    {% if content.field_contact_creator_phone[0]  %}
-       {{ content.field_contact_creator_phone[0] }}
-    {% endif %}
-    {% if content.field_contact_creator_phone_2[0] %}
-        {{ content.field_contact_creator_phone_2[0] }}
-    {% endif %}
-  {% endblock %}
-</div>
+  {% if label %}
+    {% set block_title_classes = ['isu-footer_contact-title', 'h5'] %}
+    <h2{{ title_attributes.addClass(block_title_classes) }}>{{ label }}</h2>
+  {% endif %}
+  <div class="isu-footer_contact-address">
+    {% block content %}
+      {% if content.field_contact_creator_title[0]  %}
+         <div class="isu-footer_contact-address-title">
+           {{ content.field_contact_creator_title[0] }}
+         </div>
+      {% endif %}
+
+	    {% if content.field_contact_creator_address[0] %}
+        <div>
+		      {{ content.field_contact_creator_address[0] }}
+        </div>
+	    {% endif %}
+
+	    {% if content.field_contact_creator_email[0] %}
+        <div>
+		      <a href="mailto:{{ content.field_contact_creator_email[0] }}">
+		        {{ content.field_contact_creator_email[0] }}
+		      </a>
+        </div>
+	    {% endif %}
+
+      {% if content.field_contact_creator_phone[0]  %}
+        <div>
+           {{ content.field_contact_creator_phone[0] }}
+        </div>
+      {% endif %}
+
+      {% if content.field_contact_creator_phone_2[0] %}
+        <div>
+          {{ content.field_contact_creator_phone_2[0] }}
+        </div>
+      {% endif %}
+    {% endblock %}
+  </div>
 </div>
 
