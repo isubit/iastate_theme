@@ -7,8 +7,8 @@
 
 $(document).ready(function() {
   
-  // Find tables in content
-  var table = $('article table');
+  // Find tables in content or make-responsive tables.
+  var table = $('article table, .make-responsive-table table, table.make-responsive-table');
   
 /* 
  * First, check the table structure and assign classes.
@@ -36,7 +36,6 @@ $(document).ready(function() {
   table.addClass('isu-responsive-table table');
 
   // Colspan or Rowspan
-  
   /* Remove extranneous colspan and rowspan */
 
   $('th[colspan="1"]').removeAttr('colspan');
@@ -75,7 +74,7 @@ $(document).ready(function() {
   // Cycle through each row...
   $('.isu-table-row tr').each(function() {
     // And cycle through each td in that row...
-   $(this).find('td').each(function(i) {
+    $(this).find('td').each(function(i) {
       // Find the content of the closest th...    
       var rowHeader = $(this).closest('.isu-table-row').find('tr th')[i].innerHTML;
       // And add it as a span in the td.

@@ -228,18 +228,45 @@ button.btn {
 /* --------------------------------------  */
 /* ## TABLES
 /* --------------------------------------  */
-/* Overrides bootstrap.min.css */
 
-.table tbody {
+/* Duplicate bootstrap.min.css just in case .table is 
+ * not automatically applied. 
+ * 
+ * See isu-responsivetables.css for more.
+ */
+
+table {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  overflow-x: auto;
+  margin-bottom: 1rem;
+  color: #212529;
+}
+
+tbody {
   border-bottom: 1px solid #cccccc;
 }
-.table thead th,
-.table th {
-  background: #eee;
+
+tr {
+  width: 100%;
 }
-.table thead th {
+
+th {
+  padding: 0.75rem;
+  vertical-align: bottom;
+  background: #eee;
+  border-top: 1px solid #dee2e6;
   border-bottom: 2px solid #cccccc;
 }
+
+td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+
+/* Overrides bootstrap.min.css */
 caption {
   caption-side: top;
   padding: 0.5rem 0;
@@ -255,6 +282,8 @@ caption {
   border-right: 1px solid #dddd;
   border-left: 1px solid #ddd;
 }
+
+.isu-view-table { display: table; }
 
 /* --------------------------------------  */
 /* ## IMAGES
@@ -371,7 +400,7 @@ body.cke_editable figure figcaption {
 }
 
 /*
- * Duplicate Bootstrap 4 styles in the ckeditor so table look as 
+ * Duplicate Bootstrap 4 styles in the ckeditor so tables look as 
  * true-to-live as possible.
  */
 
