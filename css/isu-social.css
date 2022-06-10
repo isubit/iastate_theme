@@ -44,6 +44,7 @@
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   vertical-align: middle;
+  list-style-type: none;
 }
 
 .isu-social-menu a:hover:before {
@@ -93,6 +94,12 @@
 .isu-social-menu a[href*='plus.google.com']:hover:before {
   color: #dd4b39;
 }
+.isu-social-menu a[href*='podcasts.google.com']:before {
+  content: "\f2ce" / "Google Podcasts";
+}
+.isu-social-menu a[href*='podcasts.google.com']:hover:before {
+  color: #dd4b39;
+}
 .isu-social-menu a[href*='linkedin.com']:before {
   content: "\f08c" / "LinkedIn";
 }
@@ -119,6 +126,18 @@
 }
 .isu-social-menu a[href*='snapchat.com']:hover:before {
   color: #fffc00;
+}
+.isu-social-menu a[href*='tiktok.com']:before {
+  content: "\e07b" / "TikTok";
+}
+.isu-social-menu a[href*='tiktok.com']:hover:before {
+  color: #000000;
+}
+.isu-social-menu a[href*='libsyn.com']:before {
+  content: "\f2ce" / "Libsyn";
+}
+.isu-social-menu a[href*='libsyn.com']:hover:before {
+  color: #8BCB1B;
 }
 .isu-social-menu a[href*='vimeo.com']:before {
   content: "\f194" / "Vimeo";

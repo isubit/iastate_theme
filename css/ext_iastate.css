@@ -63,22 +63,7 @@ html, body, .dialog-off-canvas-main-canvas, .isu-page-wrap {
 	text-decoration: none;
 }
 
-/* Red bar social media menu */
-.isu-social-menu-footer {
-	margin-left: 13%;
-}
-
-.isu-social-menu-red {
-	color: #fff;
-	background: transparent;
-	padding-left: 18%;
-	text-align: left;
-}
-
-.isu-col-header-first {
-	text-align: -webkit-match-parent;
-}
-
+ß
 /* --------------------------------------  */
 /* ## Main Menu
 /* --------------------------------------  */
@@ -324,7 +309,7 @@ figure.align-right {
 .btn-danger:hover {
 	background-color: #000000;
 	border-color: #000000;
-}	
+}
 
 .btn-outline-danger {
 	color: #cc0000;
@@ -689,15 +674,15 @@ form#node-layout-ct-layout-builder-form {
 }
 
 /* Layout Builder Content Type */
-.node-type_layout-ct .row, 
-.node-type_educational-programs-page .row, 
+.node-type_layout-ct .row,
+.node-type_educational-programs-page .row,
 .node-type_homepage-ct .row {
 	margin-left: 0;
 	margin-right: 0;
 }
 
-.node-type_layout-ct .isu-region.isu-region_content, 
-.node-type_educational-programs-page .isu.region.isu-region_content, 
+.node-type_layout-ct .isu-region.isu-region_content,
+.node-type_educational-programs-page .isu.region.isu-region_content,
 .node-type_homepage-ct .isu-region.isu-region_content {
   width: 100%;
 }
@@ -763,7 +748,7 @@ form#node-layout-ct-layout-builder-form {
 .flex-active-slide{
         width: 140%;
 }
-	
+
 /* --------------------------------------  */
 /* ## Bean Cards
 /* --------------------------------------  */
@@ -774,7 +759,7 @@ form#node-layout-ct-layout-builder-form {
 	color: #ffffff;
 	margin-bottom: 1rem;
   }
-  
+
   /* Old bean-card body css
   .bean-card_text {
 	position: relative;
@@ -785,18 +770,18 @@ form#node-layout-ct-layout-builder-form {
 	margin-bottom: 25px;
 	margin-right: 25px;
   } */
- 
+
   .bean-card.bean-card_width_full {
 	display: block;
   }
-  
+
   a.bean-card_link {
 	display: block;
 	position: relative;
 	color: #ffffff;
 	text-decoration: none;
 	border-radius: 3px;
-	overflow: hidden; 
+	overflow: hidden;
   }
 
   .bean-card a:hover {
@@ -807,7 +792,7 @@ form#node-layout-ct-layout-builder-form {
   .bean-card_img img {
 	width: 100%;
   }
-  
+
   .bean-card_label {
 	display: flex;
 	padding: 0.75rem 1rem;
@@ -815,7 +800,7 @@ form#node-layout-ct-layout-builder-form {
 	background: #cc0000;
 	font-size: 1.5rem;
   }
-  
+
   .bean-card_label p {
 	margin: 0;
 	line-height: 1.45;
@@ -831,7 +816,7 @@ form#node-layout-ct-layout-builder-form {
 	padding: 0.5rem 0.5rem 0 0.5rem;
 	border: 3px solid #CC0000;
   }
-  
+
 
   /* Fontawesome icons - this isn't being used (used declaration on line: 842)
   .fontawesome-icons {
@@ -841,7 +826,7 @@ form#node-layout-ct-layout-builder-form {
   div.fontawesome-icon i {
 	font-style: normal;
   }
-  
+
   /* Colors */
   .bean-card_label.Blue  { background: #006ba6; }
   .bean-card_label.Green { background: #00854d; }
@@ -859,7 +844,7 @@ form#node-layout-ct-layout-builder-form {
   .bean-card_body.Dark-Green { border-color: #3E4827; }
   .bean-card_body.Brown { border-color: #8b5b29; }
   .bean-card_body.Grey { border-color: #707372; }
-  
+
   /* Overlay */
   /* Overlay needs a minimum height in case there is no image. */
   .bean-card_label.Dark-Overlay_Left,
@@ -867,29 +852,29 @@ form#node-layout-ct-layout-builder-form {
 	min-height: 100px;
 	background: #efefef;
   }
-  
+
   .bean-card_label.Dark-Overlay_Left,
   .bean-card_label.Dark-Overlay_Bottom {
 	position: absolute;
 	text-align: left;
 	background: rgba(0, 0, 0, 0.75);
   }
-  
+
   .bean-card_label.Dark-Overlay_Left {
 	left: 0; bottom: 20%;
 	max-width: 90%;
   }
-  
+
   .bean-card_label.Dark-Overlay_Bottom {
 	left: 0; bottom: 0; right: 0;
 	width: 100%;
   }
-    
+
 /* Text Size */
   .fontawesome-icons {
 	font-family: FontAwesome;
   }
-  
+
   .bean-card_label.Small {
 	font-size: 1rem !important;
   }
@@ -897,21 +882,21 @@ form#node-layout-ct-layout-builder-form {
   .bean-card_label.Medium {
 	font-size: 1.5rem !important;
   }
-  
+
   .bean-card_label.Large {
 	font-size: 2rem !important;
   }
-  
+
   .bean-card_label.Small div.fontawesome-icons {
 	margin-right: 0.5rem;
 	padding-right: 5px;
   }
-  
+
   .bean-card_label.Medium div.fontawesome-icons {
 	margin-right: 1rem;
 	padding-right: 5px;
   }
-  
+
   .bean-card_label.Large div.fontawesome-icons {
 	margin-right: 1.25rem;
 	padding-right: 5px;
@@ -933,11 +918,11 @@ form#node-layout-ct-layout-builder-form {
 		max-width: 365px;
 		margin-left: -6%;
 	}
-	
+
 	.navbar-expand-lg .navbar-nav {
 		margin-left: -19px;
 	}
-	
+
 	.isu-col-header-first {
 		text-align: -webkit-match-parent;
 	}
@@ -946,9 +931,9 @@ form#node-layout-ct-layout-builder-form {
 
 }
 
-	
+
 @media screen and (max-width : 1199px) {
-	
+
 	.isu-social-menu-footer{
 		margin-left: 10px;
 	}
@@ -988,16 +973,16 @@ form#node-layout-ct-layout-builder-form {
  		max-width: 360px;
 		margin-top: 0.5rem;
  	}
-	
+
 	 .isu-navbar_container{
 		 width: inherit;
 	 }
-	
+
 	/*change navbar width to fit screen*/
 	.isu-site-navbar div {
 		max-width: inherit;
 	}
-	
+
 	 /*change search logo color*/
 	.isu-search_toggler svg path {
 		fill: white;
@@ -1016,7 +1001,7 @@ form#node-layout-ct-layout-builder-form {
 		content: 'search';
 		text-align: center;
 	}
-	
+
 	.isu-search_toggler {
 		margin-top: -23px;
 	}
@@ -1057,7 +1042,7 @@ form#node-layout-ct-layout-builder-form {
 		max-width: 955px;
 		margin: auto;
 	}
-	 
+
 
 	/* Change menu-item backgrond color for condensed menu */
 	.navbar-expand-lg .navbar-nav .nav-link {
@@ -1071,7 +1056,7 @@ form#node-layout-ct-layout-builder-form {
 	}
 
 	.news-attachment table  {
-		width: 100% !important; 
+		width: 100% !important;
 	}
 	.views-field-field-teaser{
 		display: table-cell !important;
@@ -1080,8 +1065,8 @@ form#node-layout-ct-layout-builder-form {
 		width: 100%;
 	}
 
-	/* Responsive 
- 	
+	/* Responsive
+
   /* Old bean-card body css
 	.bean-card_text{
 		position: relative;
@@ -1092,7 +1077,7 @@ form#node-layout-ct-layout-builder-form {
 		margin-bottom: 25px;
 		margin-right: 25px;
 	} */
-	
+
 	.isu-footer-logo {
 		margin-left: -8%;
 	}
@@ -1106,7 +1091,7 @@ form#node-layout-ct-layout-builder-form {
 		padding-right: 2rem;
 	}
 
-	.isu-copyright {	
+	.isu-copyright {
 		padding-bottom: 20px;
 	}
  }
@@ -1117,7 +1102,7 @@ form#node-layout-ct-layout-builder-form {
 		margin-bottom: 0rem;
 		max-width: 300px;
  	}
-	
+
 
 	/* Adjust Socails*/
 	.isu-social-menu-red{
@@ -1128,7 +1113,7 @@ form#node-layout-ct-layout-builder-form {
 	 .navbar-toggler:not(:disabled):not(.disabled){
 		 margin-top: -10px;
 	 }
- 	
+
  	.isu-wordmark-sitename {
  		padding-left: 0px;
  		padding-bottom: 0px;
@@ -1145,7 +1130,7 @@ form#node-layout-ct-layout-builder-form {
 	.isu-search_toggler-label::after{
 		left: 25px;
 	}
-	
+
 	.isu-search_toggler-label {
 		font-size: 9px;
 	}
@@ -1168,10 +1153,10 @@ form#node-layout-ct-layout-builder-form {
 		margin-bottom: 25px;
 		margin-right: 25px;
 	} */
-	
+
 	.isu-region_footer-third {
 		margin-bottom: 1rem;
-	} 	
+	}
 
 	.isu-page-column {
 		max-width: 98%;
@@ -1228,7 +1213,7 @@ a.inline-block-list__item:hover :not(.inline-block-list__item-custom-block-descr
   .media-library-menu-image {
 	  width: 100%;
   }
-  
+
   .js-form-item-sort-by select{
       height: auto !important;
   }
@@ -1255,7 +1240,7 @@ a.inline-block-list__item:hover :not(.inline-block-list__item-custom-block-descr
 
   .ui-dialog--narrow.media-library-widget-modal {
     max-width: 75%;
-}	
+}
 
 .fontawesome-icon-dialog {
 	max-width: 500px;
