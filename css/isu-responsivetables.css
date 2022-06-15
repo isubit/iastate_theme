@@ -1,34 +1,38 @@
 /**
  * @file
- * CSS for responsive tables. Table styling comes from the
- * Bootstrap 4 table classes, unless where overriden in base.css.
+ * CSS for responsive tables.
  */
 
 /* --------------------------------------  */
 /* ## If javascript is disabled
 /* --------------------------------------  */
 
-article table {
-  display: block; /* Allows overflow-x to scroll */
-  max-width: 100%;
-  overflow: hidden;
-  overflow-x: auto;
+/* If js is disabled, table styling is applied directly to the 
+ * element from base.css, duplicating Bootstrap 4's table styling. 
+ * Tables in Views get their table class from the views-view-table.html.twig.
+ *
+ * Our responsive solution when javascript is disabled is a contained
+ * horizontally scrolling table.
+ */
+
+table { 
+  display: block; /* Allows overflow-x to scroll */ 
 }
-article table tr {
+table tr {
   width: 100%;
 }
-article table::-webkit-scrollbar {
+table::-webkit-scrollbar {
   -webkit-appearance: none;
 }
-article table::-webkit-scrollbar:horizontal {
+table::-webkit-scrollbar:horizontal {
   height: 11px;
 }
-article table::-webkit-scrollbar-thumb {
+table::-webkit-scrollbar-thumb {
   border-radius: 8px;
   border: 2px solid white;
   background-color: rgba(0, 0, 0, 0.5);
 }
-article table::-webkit-scrollbar-track {
+table::-webkit-scrollbar-track {
   background-color: #fff;
   border-radius: 8px;
 }
@@ -72,6 +76,7 @@ article table::-webkit-scrollbar-track {
   }
   .isu-responsive-table.isu-table-none td {
     border-bottom: 1px solid #dddddd;
+    border-left: 1px solid #dddddd;
     border-right: 1px solid #dddddd;
     display: block;
   }
@@ -89,13 +94,15 @@ article table::-webkit-scrollbar-track {
     display: block;
     border-bottom: 3px solid #bbbbbb;
   }
-  .isu-responsive-table.isu-table-row tr:first-of-type {
+  .isu-responsive-table.isu-table-row thead tr,
+  .isu-responsive-table.isu-table-row tbody tr:last-of-type {
     border-bottom: 0;
   }
   .isu-responsive-table.isu-table-row td {
     display: flex;
     padding: 0;
     border-bottom: 1px solid #dddddd;
+    border-left: 1px solid #dddddd;
     border-right: 1px solid #dddddd;
   }
   .isu-responsive-table.isu-table-row td:last-of-type {
@@ -134,6 +141,7 @@ article table::-webkit-scrollbar-track {
   }
   .isu-responsive-table.isu-table-col td {
     border-bottom: 1px solid #dddddd;
+    border-left: 1px solid #dddddd;
     border-right: 1px solid #dddddd;
     display: block;
   }
@@ -164,6 +172,9 @@ article table::-webkit-scrollbar-track {
   }
   .isu-responsive-table.isu-table-both tr:nth-of-type(2) {
     border-top: 1px solid #dddddd;
+  }
+  .isu-responsive-table.isu-table-both tr:last-of-type {
+    border-bottom: 0;
   }
   .isu-responsive-table.isu-table-both td {
     display: flex;
