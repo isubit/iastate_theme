@@ -59,12 +59,16 @@
 }
 .isu-social-menu a[href*='twitter.com']:before {
   content: "\f081" / "Twitter";
+  list-style-type: none;
+  display: inline-block;
 }
 .isu-social-menu a[href*='twitter.com']:hover:before {
   color: #4099ff;
 }
 .isu-social-menu a[href*='instagram.com']:before {
   content: "\f16d" / "Instagram";
+  list-style-type: none;
+  display: inline-block;
 }
 .isu-social-menu a[href*='instagram.com']:hover:before { /* woof */
   background: -webkit-radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%),-webkit-radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),-webkit-radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),-webkit-radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%),-webkit-radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),-webkit-radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%),-webkit-radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),-webkit-linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
