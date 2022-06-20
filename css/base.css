@@ -228,45 +228,18 @@ button.btn {
 /* --------------------------------------  */
 /* ## TABLES
 /* --------------------------------------  */
+/* Overrides bootstrap.min.css */
 
-/* Duplicate bootstrap.min.css just in case .table is 
- * not automatically applied. 
- * 
- * See isu-responsivetables.css for more.
- */
-
-table {
-  width: 100%;
-  max-width: 100%;
-  overflow: hidden;
-  overflow-x: auto;
-  margin-bottom: 1rem;
-  color: #212529;
-}
-
-tbody {
+.table tbody {
   border-bottom: 1px solid #cccccc;
 }
-
-tr {
-  width: 100%;
-}
-
-th {
-  padding: 0.75rem;
-  vertical-align: bottom;
+.table thead th,
+.table th {
   background: #eee;
-  border-top: 1px solid #dee2e6;
+}
+.table thead th {
   border-bottom: 2px solid #cccccc;
 }
-
-td {
-  padding: 0.75rem;
-  vertical-align: top;
-  border-top: 1px solid #dee2e6;
-}
-
-/* Overrides bootstrap.min.css */
 caption {
   caption-side: top;
   padding: 0.5rem 0;
