@@ -830,42 +830,41 @@ form#node-layout-ct-layout-builder-form {
   /* Colors */
   .bean-card_label.Blue  { background: #006ba6; }
   .bean-card_label.Green { background: #00854d; }
-  .bean-card_label.Dark-Red { background: #7C2529; }
-  .bean-card_label.Dark-Blue { background: #003D4C; }
-  .bean-card_label.Dark-Green { background: #3E4827; }
+  .bean-card_label.Dark.Red { background: #7C2529; }
+  .bean-card_label.Dark.Blue { background: #003D4C; }
+  .bean-card_label.Dark.Green { background: #3E4827; }
   .bean-card_label.Brown { background: #8b5b29; }
   .bean-card_label.Grey { background: #707372; }
-
-  /* Changes color of border depending on selected label color (content cards) */
+  .bean-card_label.Dark.Overlay.Bottom { background: rgba(0,0,0,0.75); }
+  
+/* Changes color of border depending on selected label color (content cards) */
   .bean-card_body.Blue { border-color: #006ba6; }
   .bean-card_body.Green { border-color: #00854d; }
-  .bean-card_body.Dark-Red { border-color: #7C2529; }
-  .bean-card_body.Dark-Blue { border-color: #003D4C; }
-  .bean-card_body.Dark-Green { border-color: #3E4827; }
+  .bean-card_body.Dark.Red { border-color: #7C2529; }
+  .bean-card_body.Dark.Blue { border-color: #003D4C; }
+  .bean-card_body.Dark.Green { border-color: #3E4827; }
   .bean-card_body.Brown { border-color: #8b5b29; }
   .bean-card_body.Grey { border-color: #707372; }
+  .bean-card_body.Dark.Overlay.Bottom { border-color: rgba(0,0,0,0.75); }
 
   /* Overlay */
   /* Overlay needs a minimum height in case there is no image. */
-  .bean-card_label.Dark-Overlay_Left,
-  .bean-card_label.Dark-Overlay_Bottom {
+  .bean-card_label.Dark.Overlay.Left,
+  .bean-card_label.Dark.Overlay.Bottom {
 	min-height: 100px;
 	background: #efefef;
-  }
-
-  .bean-card_label.Dark-Overlay_Left,
-  .bean-card_label.Dark-Overlay_Bottom {
 	position: absolute;
 	text-align: left;
-	background: rgba(0, 0, 0, 0.75);
+	background: rgba(0,0,0,0.75);
   }
 
-  .bean-card_label.Dark-Overlay_Left {
+
+  .bean-card_label.Dark.Overlay.Left {
 	left: 0; bottom: 20%;
 	max-width: 90%;
   }
 
-  .bean-card_label.Dark-Overlay_Bottom {
+  .bean-card_label.Dark.Overlay.Bottom {
 	left: 0; bottom: 0; right: 0;
 	width: 100%;
   }
