@@ -851,7 +851,6 @@ form#node-layout-ct-layout-builder-form {
   /* Overlay needs a minimum height in case there is no image. */
   .bean-card_label.Dark.Overlay.Left,
   .bean-card_label.Dark.Overlay.Bottom {
-	min-height: 100px;
 	background: #efefef;
 	position: absolute;
 	text-align: left;
