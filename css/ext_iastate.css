@@ -63,7 +63,10 @@ html, body, .dialog-off-canvas-main-canvas, .isu-page-wrap {
 	text-decoration: none;
 }
 
-ß
+.isu-social-menu-red {
+	text-align: right;
+}
+
 /* --------------------------------------  */
 /* ## Main Menu
 /* --------------------------------------  */
@@ -548,7 +551,8 @@ td.staff-view-smugmug img {
 
 /* Change font color and size of social media menu text */
 .isu-social-menu a {
-	font-size: 14px;
+	font-size: 22px;
+	margin-right: 5px;
 }
 
 /* Adjust legal menu links */
