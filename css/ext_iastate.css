@@ -551,8 +551,12 @@ td.staff-view-smugmug img {
 
 /* Change font color and size of social media menu text */
 .isu-social-menu a {
-	font-size: 22px;
-	margin-right: 5px;
+	font-size: 20px;
+	margin-right: 0px;
+}
+
+.isu-social-menu-footer {
+	margin-left: 8%;
 }
 
 /* Adjust legal menu links */
@@ -1196,6 +1200,7 @@ a.inline-block-list__item:hover :not(.inline-block-list__item-custom-block-descr
 
 .isu-social-menu-red{
 	padding-left: 73px;
+	font-size: 22px	font-size: 22px;;
 }
 }
 

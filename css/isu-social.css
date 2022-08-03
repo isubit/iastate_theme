@@ -3,7 +3,7 @@
  * Supplemental CSS for the ISU Theme's social icons
  */
  .isu-social-menu a:hover {
-  color: #006BA6;
+  color: #ffffff;
 }
 .isu-social-menu  a:before {
   content: '\f0c1';
