@@ -3,12 +3,12 @@
  * Supplemental CSS for the ISU Theme's social icons
  */
  .isu-social-menu a:hover {
-  color: #ffffff;
+  color: #d3d3d3;
 }
 .isu-social-menu  a:before {
   content: '\f0c1';
   border-radius: 0;
-  color: #f1be48;
+  color: #fff;
   width: 1.5rem;
   margin-right: 0.25em;
   display: inline-block;
@@ -26,7 +26,7 @@
 }
 
 .isu-social-menu-red a:hover {
-  color: #7c2529;
+  color: #fff;
 }
 
 .isu-social-menu-red li{
@@ -36,7 +36,7 @@
 .isu-social-menu-red  a:before {
   content: '\f0c1';
   border-radius: 0;
-  color: #fff;
+  color: #f1be48;
   width: 1.5rem;
   margin-right: 0.25em;
   font-family: FontAwesome;
