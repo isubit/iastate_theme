@@ -474,9 +474,23 @@ td.staff-view-smugmug img {
 	margin: 10px 0px;
 }
 
-/* Layout Builder */
+/* --------------------------------------  */
+/* ## Layout Builder
+/* --------------------------------------  */
 .featured-pubs {
 	clear:  both;
+}
+
+.layout--background--red {
+        background-color: #cc0000;
+}
+
+.layout--background--gray {
+        background-color: #dddddd;
+}
+
+.layout--background--blue {
+        background-color: #003D4C;
 }
 
 /* --------------------------------------  */
