@@ -292,9 +292,26 @@ figure.align-right {
 
 
 
-/* News Styles */
+/* --------------------------------------  */
+/* ## News
+/* --------------------------------------  */
+
 .card-body svg:not(:root).svg-inline--fa {
 	display: inline-block;
+}
+
+.card-title {
+	color: #7C2529;
+	font-weight: 700;
+}
+
+.card {
+	border: none;
+	box-shadow: 0.5625rem 0.5625rem 1.25rem rgb(0 0 0 / 20%);
+}
+
+.card-body {
+	text-align: center;
 }
 
 /* Button Styles */
