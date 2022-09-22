@@ -31,19 +31,3 @@ columns_three:
       label: Column Two
     col_3:
       label: Column Three
-card:
-  label: Card
-  category: IASTATE
-  class: '\Drupal\ds\Plugin\DsLayout'
-  type: partial
-  template: templates/layouts/card/card
-  icon: templates/layouts/card/card-icon.png
-  regions:
-    header:
-	label: Header
-    image:
-	label: Image
-    body:
-	label: Body
-    footer:
-	label: Footer
