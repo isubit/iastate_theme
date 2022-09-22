@@ -309,11 +309,15 @@ figure.align-right {
 	border: none;
 	box-shadow: 0.5625rem 0.5625rem 1.25rem rgb(0 0 0 / 20%);
 	height: 60%;
+	text-align: center;
 }
 
 .card-body {
-	text-align: center;
 	color: #7C2529;
+}
+
+.card-footer {
+	background-color: transparent;
 }
 
 /* Button Styles */
