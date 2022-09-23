@@ -719,6 +719,14 @@ form#node-layout-ct-layout-builder-form {
 	color: #006ba6;
 }
 
+.layout--height--60vh {
+	min-height: 60vh;
+}
+
+.layout--height--40vh {
+	min-height: 40vh;
+}
+
 /* Layout Builder Content Type */
 .node-type_layout-ct .row,
 .node-type_educational-programs-page .row,
