@@ -718,12 +718,19 @@ form#node-layout-ct-layout-builder-form {
 	border-color: #006ba6;
 	color: #006ba6;
 }
+.layout-height-100vh {
+	min-height: 100vh;
+} 
 
-.layout--height--60vh {
+.layout-height-80vh {
+	min-height: 80vh;
+}
+
+.layout-height-60vh {
 	min-height: 60vh;
 }
 
-.layout--height--40vh {
+.layout-height-40vh {
 	min-height: 40vh;
 }
 
