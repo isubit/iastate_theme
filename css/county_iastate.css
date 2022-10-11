@@ -4,11 +4,20 @@
 
 /* Upcoming Events */
 .program_offering_blocks.isu-block-front h2 {
-	color: #ffffff;
+	color: #000000;
+}
+
+.program_offering_blocks.isu-block-front.isu-block {
+	background-color: #ffffff;
+	border: 2px solid #000000;
 }
 
 .isu-block-front h2.isu-block-title.h4 {
 	margin-bottom: .25rem;
+}
+
+div.program_offering_blocks h2.isu-block-title.h4 {
+	border-bottom: 3px solid #f1be48;
 }
 
 ul.county_events {
@@ -27,11 +36,11 @@ li.event {
 }
 
 .isu-block-front li.event {
-	color: #ffffff;
+	color: #000000;
 }
 
 .isu-block-front div.event_title a { 
-	color: #ffffff;
+	color: #000000;
 }
 
 a.county_calendar {
@@ -48,11 +57,11 @@ a.event_title:hover, a.county_calendar:hover {
         text-decoration: underline;
 }
 .isu-block-front span.event_day {
-	color: #ffffff;
+	color: #000000;
 }
 
 .isu-block-front span.event_month {
-	color: #ffffff;
+	color: #000000;
 }
 
 .isu-block-front div.event_date {
