@@ -499,6 +499,18 @@ td.staff-view-smugmug img {
 	margin: 10px 0px;
 }
 
+img.staff_profile_smugmug {
+	max-width: 100px;
+	margin: 11px 22px;
+	float: left;
+}
+
+.views-field.views-field-field-staff-profile-pref-phone {
+	margin: 12px;
+}
+
+
+
 /* --------------------------------------  */
 /* ## Layout Builder
 /* --------------------------------------  */
