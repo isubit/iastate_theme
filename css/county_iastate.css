@@ -8,22 +8,22 @@
 }
 
 /* New Events Styles */
-# .program_offering_blocks.isu-block-front h2 {
-#        color: #ffffff;
-#}
+/* .program_offering_blocks.isu-block-front h2 {
+        color: #ffffff;
+}
 
-#.program_offering_blocks.isu-block-front.isu-block {
-#	background-color: #ffffff;
-#	border: 2px solid #000000;
-#}
+.program_offering_blocks.isu-block-front.isu-block {
+	background-color: #ffffff;
+	border: 2px solid #000000;
+}*/
 
 .isu-block-front h2.isu-block-title.h4 {
 	margin-bottom: .25rem;
 }
 
-#div.program_offering_blocks h2.isu-block-title.h4 {
-#	border-bottom: 3px solid #f1be48;
-#}
+/*div.program_offering_blocks h2.isu-block-title.h4 {
+	border-bottom: 3px solid #f1be48;
+}*/
 
 ul.county_events {
         list-style-type: none;
@@ -44,16 +44,16 @@ li.event {
 	color: #ffffff;
 }
 
-#.isu-block-front li.event {
-#	color: #000000;
-#}
+/*.isu-block-front li.event {
+	color: #000000;
+}*/
 .isu-block-front div.event_title a { 
 	color: #ffffff;
 }
 
-#.isu-block-front div.event_title a {
-#	color: #000000;
-#}
+/*.isu-block-front div.event_title a {
+	color: #000000;
+}*/
 a.county_calendar {
 	border: 1px solid #ffffff;
 	color: #ffffff;
@@ -72,17 +72,17 @@ a.event_title:hover, a.county_calendar:hover {
 	color: #ffffff;
 }
 
-#.isu-block-front span.event_day {
-#	color: #000000;
-#}
+/*.isu-block-front span.event_day {
+	color: #000000;
+}*/
 
 .isu-block-front span.event_month {
 	color: #ffffff;
 }
 
-#.isu-block-front span.event_month {
-#	color: #000000;
-#}
+/*.isu-block-front span.event_month {
+	color: #000000;
+}*/
 
 .isu-block-front div.event_date {
 	margin: 0 5px 8px 0;
