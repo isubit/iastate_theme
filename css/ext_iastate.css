@@ -356,35 +356,36 @@ figure.align-right {
 }
 
 .btn-primary{
-	background-color: #006BA6;
-        border-color: #006BA6;
+	background-color: #003d4c;
+        border-color: #003d4c;
         font-weight: 700;
         border-radius: 3px;
         cursor: pointer;
         transition: background 0.2s ease;
-		padding: 7px;
-		white-space: break-spaces;
+	padding: 7px;
+	white-space: break-spaces;
 }
 
 .btn-primary:hover{
-	background-color: #003D4C;
-	border-color: #003D4C;
+	background-color: #f1be48;
+	border-color: #f1be48;
+	color: #003d4c;
 }
 
 .btn-outline-primary {
-	color: #006BA6;
-	border: 1px solid #006BA6;
+	color: #003d4c;
+	border: 1px solid #003d4c;
         font-weight: 700;
         border-radius: 3px;
         cursor: pointer;
         transition: background 0.2s ease;
-		padding: 7px;
-		white-space: break-spaces;
+	padding: 7px;
+	white-space: break-spaces;
 }
 
 .btn-outline-primary:hover {
-	background-color: #006BA6;
-	border-color: #006BA6;
+	background-color: #003d4c;
+	border-color: #003d4c;
 }
 
 .btn-success{
@@ -394,8 +395,8 @@ figure.align-right {
         border-radius: 3px;
         cursor: pointer;
         transition: background 0.2s ease;
-                padding: 7px;
-                white-space: break-spaces;
+        padding: 7px;
+        white-space: break-spaces;
 }
 
 .btn-success:hover{
@@ -410,8 +411,8 @@ figure.align-right {
         border-radius: 3px;
         cursor: pointer;
         transition: background 0.2s ease;
-                padding: 7px;
-                white-space: break-spaces;
+        padding: 7px;
+        white-space: break-spaces;
 }
 
 .btn-outline-success:hover {
@@ -420,35 +421,36 @@ figure.align-right {
 }
 
 .btn-secondary {
-	background-color: #707372;
-	border-color: #707372;
+	background-color: #7c2529;
+	border-color: #7c2529;
         font-weight: 700;
         border-radius: 3px;
         cursor: pointer;
         transition: background 0.2s ease;
-		padding: 7px;
-		white-space: break-spaces;
+	padding: 7px;
+	white-space: break-spaces;
 }
 
 .btn-secondary:hover {
-	background-color: #6E6259;
-	border-color: #6E6259;
+	background-color: #ebebeb;
+	border-color: #ebebeb;
+	color: #7c2529;
 }
 
 .btn-outline-secondary {
-	color: #707372;
-	border: 1px solid #707372;
+	color: #7c2529;
+	border: 1px solid #7c2529;
         font-weight: 700;
         border-radius: 3px;
         cursor: pointer;
         transition: background 0.2s ease;
-		padding: 7px;
-		white-space: break-spaces;
+	padding: 7px;
+	white-space: break-spaces;
 }
 
 .btn-outline-secondary:hover {
-	background-color: #707372;
-	border-color: #707372;
+	background-color: #7c2529;
+	border-color: #7c2529;
 }
 
 /* Block Title */
