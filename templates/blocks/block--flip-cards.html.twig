@@ -38,14 +38,14 @@
 `<div class="flip-card_img">
 	{{ content.field_flip_card_image }}
   </div>
-  <div class="bean-card_label {{ content.field_flip_card_text_size[0] }} 			   		  {{ content.field_flip_card_color_style[0] }}">
+  <div class="bean-card_label {{ content.field_flip_card_text_size[0] }}  {{ content.field_flip_card_color_style[0] }}">
 <p>{{ content.field_flip_card_title[0] }}</p>
+<p class="flip-card_button"><span class="btn btn-light">View More</span></p>
 	    </div>
-	     <a class="flip-card_button" href="">View More</a>
 
-	     <div class="flip-card_back {{ content.field-flip_card_back[0] }}
-		{{ content.field_flip_card_color_style[0] }}">
-	      </div>
+	     <div class="flip-card_back {{ content.field_flip_card_color_style[0] }}">
+		<p>{{ content.field-flip_card_back.0 }}</p>	      
+	     </div>
   
     {% endblock %}
   </div>
