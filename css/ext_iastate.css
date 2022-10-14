@@ -891,6 +891,20 @@ a.bean-card_link {
 	height: 480px;
 }
 
+.flip-card .bean-card_label {
+	display: grid;
+}
+
+p.flip-card_button {
+	text-align: center;
+	padding-top: 12px;
+}
+
+.flip-card_button {
+	backface-visibility: hidden;
+}
+&.return {
+}
 /* Icons */
 div.fontawesome-icon i {
 	font-style: normal;
