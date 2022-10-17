@@ -534,7 +534,7 @@ img.staff_profile_smugmug {
 }
 
 .layout--background--gray {
-        background-color: #dddddd;
+        background-color: #f5f5f5;
 }
 
 .layout--background--blue {
@@ -913,8 +913,6 @@ p.flip-card_button {
 
 .flip-card_button {
 	backface-visibility: hidden;
-}
-&.return {
 }
 /* Icons */
 div.fontawesome-icon i {
