@@ -496,15 +496,11 @@ dl {
 }
 
 /* Staff List*/
+
+/* This style can be deleted once staff views are all changed to grid */
 td.staff-view-smugmug img {
 	max-width: 100px;
 	margin: 10px 0px;
-}
-
-img.staff_profile_smugmug_list {
-	max-width: 100px;
-	margin: 11px 22px;
-	float: left;
 }
 
 .views-field.views-field-field-staff-profile-pref-phone {
@@ -744,7 +740,7 @@ form#node-layout-ct-layout-builder-form {
 }
 .layout-height-100vh {
 	min-height: 100vh;
-} 
+}
 
 .layout-height-80vh {
 	min-height: 80vh;
@@ -931,8 +927,8 @@ div.fontawesome-icon i {
 	width: 100%;
 }
 
-.bean-card_label.Green { 
-	background: #00854d; 
+.bean-card_label.Green {
+	background: #00854d;
 }
 
 .flip-card .bean-card_label.Green {
@@ -941,8 +937,8 @@ div.fontawesome-icon i {
 	bottom: 0;
 	width: 100%;
 }
-.bean-card_label.Dark.Red { 
-	background: #7C2529; 
+.bean-card_label.Dark.Red {
+	background: #7C2529;
 }
 
 .flip-card .bean-card_label.Dark.Red {
@@ -952,8 +948,8 @@ div.fontawesome-icon i {
 	width: 100%;
 }
 
-.bean-card_label.Dark.Blue { 
-	background: #003D4C; 
+.bean-card_label.Dark.Blue {
+	background: #003D4C;
 }
 
 .flip-card .bean-card_label.Dark.Blue {
@@ -963,22 +959,22 @@ div.fontawesome-icon i {
 	width: 100%;
 }
 
-.bean-card_label.Dark.Green { 
-	background: #3E4827; 
+.bean-card_label.Dark.Green {
+	background: #3E4827;
 }
 
-.bean-card_label.Brown { 
-	background: #8b5b29; 
+.bean-card_label.Brown {
+	background: #8b5b29;
 }
 
-.bean-card_label.Grey { 
-	background: #707372; 
+.bean-card_label.Grey {
+	background: #707372;
 }
 
-.bean-card_label.Dark.Overlay.Bottom { 
-	background: rgba(0,0,0,0.75); 
+.bean-card_label.Dark.Overlay.Bottom {
+	background: rgba(0,0,0,0.75);
 }
-  
+
 /* Changes color of border depending on selected label color (content cards) */
 .bean-card_body.Blue { border-color: #006ba6; }
   .bean-card_body.Green { border-color: #00854d; }
