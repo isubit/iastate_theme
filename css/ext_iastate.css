@@ -908,23 +908,9 @@ a.bean-card_link {
 }
 
 /* Used for flip cards */
-.flip-card article:not(.isu-user):not(.isu-search_collapse) {
-	margin-bottom: 0;
-}
-
-.flip-card_img img {
-	object-fit: cover;
-	width: 100%;
-	height: 480px;
-}
 
 .flip-card .bean-card_label {
 	display: grid;
-}
-
-p.flip-card_button {
-	text-align: center;
-	padding-top: 12px;
 }
 
 .flip-card_button {
