@@ -5,7 +5,7 @@
 /* Upcoming Events */
 div.program_offering_blocks {
 	border-radius: 0px 0px 35px 0px;
-	padding: 10px 10px 30px 10px;
+	padding: 10px 31px 40px 10px !important;
 }
 
 .program_offering_blocks.isu-block-front h2 {
