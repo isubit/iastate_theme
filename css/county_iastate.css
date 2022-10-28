@@ -3,13 +3,24 @@
 /* ------------------------------------- */
 
 /* Upcoming Events */
+div.program_offering_blocks {
+	border-radius: 0px 0px 35px 0px;
+	padding: 10px 10px 30px 10px;
+}
+
 .program_offering_blocks.isu-block-front h2 {
 	color: #ffffff;
 }
 
 .program_offering_blocks.isu-block-front.isu-block {
 	background-color: #ffffff;
-	border: 2px solid #000000;
+	border: 3px solid #003d4c;
+	margin-top: -2.8%;
+	box-shadow: -5px -5px 1px #000000, 
+              -5px -5px 0px #000000, 
+              -5px -5px 1px #000000, 
+              -5px -5px 2px #000000,
+              -5px -5px 3px #000000;
 }
 
 .isu-block-front h2.isu-block-title.h4 {
@@ -42,6 +53,14 @@ li.event {
 
 .isu-block-front div.event_title a {
 	color: #000000;
+}
+
+a.events_show_more {
+	float: right;
+}
+
+.node--type-homepage-ct {
+	border-top: 15px solid #f1be48;
 }
 
 a.county_calendar {
