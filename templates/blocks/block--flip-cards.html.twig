@@ -32,14 +32,10 @@
     'flip-card_box'
   ]
 %}
-{%
-  set toggle_id = random(1000,9999)
-%}{# TODO: This will cause errors, need unique id for checkbox/label #}
 
 <div{{ attributes.addClass(block_classes) }}>
   {{ title_suffix }}
-  <input class="flip-card_toggle" type="checkbox" id="{{ toggle_id ~ '_toggle' }}">
-  <label class="bean-card flip-card" for="{{ toggle_id ~ '_toggle' }}">
+  <div class="bean-card flip-card" onclick="this.classList.toggle('flipped');">
   {% block content %}
     <div class="flip-card_front">
       <div class="flip-card_img">
@@ -56,7 +52,7 @@
 	  </div>
   
   {% endblock %}
-  </label>
+  </div>
 </div>
 
 
