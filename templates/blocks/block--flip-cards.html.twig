@@ -28,27 +28,35 @@
 {%
   set block_classes = [
     is_front ? 'isu-block-front' : '',
-    'isu-block'
+    'isu-block',
+    'flip-card_box'
   ]
 %}
+{%
+  set toggle_id = random(1000,9999)
+%}{# TODO: This will cause errors, need unique id for checkbox/label #}
 
 <div{{ attributes.addClass(block_classes) }}>
-<div class="bean-card flip-card">
-{% block content %}
-`<div class="flip-card_img">
-	{{ content.field_flip_card_image }}
-  </div>
-  <div class="bean-card_label {{ content.field_flip_card_text_size[0] }}  {{ content.field_flip_card_color_style[0] }}">
-<p>{{ content.field_flip_card_title[0] }}</p>
-<p class="flip-card_button"><span class="btn btn-light">View More</span></p>
+  {{ title_suffix }}
+  <input class="flip-card_toggle" type="checkbox" id="{{ toggle_id ~ '_toggle' }}">
+  <label class="bean-card flip-card" for="{{ toggle_id ~ '_toggle' }}">
+  {% block content %}
+    <div class="flip-card_front">
+      <div class="flip-card_img">
+	      {{ content.field_flip_card_image }}
+      </div>
+      <div class="bean-card_label {{ content.field_flip_card_text_size[0] }}  {{ content.field_flip_card_color_style[0] }}">
+        <p>{{ content.field_flip_card_title[0] }}</p>
+        <p class="flip-card_button {{ content.field_flip_card_color_style[0] }}"><span class="btn">View More</span></p>
 	    </div>
-
-	     <div class="flip-card_back {{ content.field_flip_card_color_style[0] }}">
-		<p>{{ content.field-flip_card_back.0 }}</p>	      
-	     </div>
+    </div>
+    
+	  <div class="flip-card_back {{ content.field_flip_card_color_style[0] }}">
+		  {{ content.field_flip_card_back.0 }}    
+	  </div>
   
-    {% endblock %}
-  </div>
+  {% endblock %}
+  </label>
 </div>
 
 
