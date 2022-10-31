@@ -887,29 +887,6 @@ a.bean-card_link {
 	border: 3px solid #CC0000;
 }
 
-/* Used for flip cards */
-.flip-card article:not(.isu-user):not(.isu-search_collapse) {
-	margin-bottom: 0;
-}
-
-.flip-card_img img {
-	object-fit: cover;
-	width: 100%;
-	height: 480px;
-}
-
-.flip-card .bean-card_label {
-	display: grid;
-}
-
-p.flip-card_button {
-	text-align: center;
-	padding-top: 12px;
-}
-
-.flip-card_button {
-	backface-visibility: hidden;
-}
 /* Icons */
 div.fontawesome-icon i {
 	font-style: normal;
@@ -920,43 +897,16 @@ div.fontawesome-icon i {
 	background: #006ba6;
 }
 
-.flip-card .bean-card_label.Red {
-	position: absolute;
-	background: rgba(204,0,0,0.8);
-	bottom: 0;
-	width: 100%;
-}
-
 .bean-card_label.Green {
 	background: #00854d;
 }
 
-.flip-card .bean-card_label.Green {
-	position: absolute;
-	background: rgba(124,37,41,0.8);
-	bottom: 0;
-	width: 100%;
-}
 .bean-card_label.Dark.Red {
 	background: #7C2529;
 }
 
-.flip-card .bean-card_label.Dark.Red {
-	position: absolute;
-	background: rgba(124,37,41,0.8);
-	bottom: 0;
-	width: 100%;
-}
-
 .bean-card_label.Dark.Blue {
 	background: #003D4C;
-}
-
-.flip-card .bean-card_label.Dark.Blue {
-	position: absolute;
-	background: rgba(0,61,76,0.8);
-	bottom: 0;
-	width: 100%;
 }
 
 .bean-card_label.Dark.Green {
