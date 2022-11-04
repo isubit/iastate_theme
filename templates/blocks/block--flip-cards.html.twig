@@ -33,6 +33,15 @@
   ]
 %}
 
+{%
+  set btn_classes = {
+    'Green' : 'btn-success',
+    'Red' : 'btn-outline-danger',
+    'Dark Blue' : 'btn-primary',
+    'Dark Red' : 'btn-secondary'
+  }
+%}
+
 <div{{ attributes.addClass(block_classes) }}>
   {{ title_suffix }}
   <div class="bean-card flip-card" onclick="this.classList.toggle('flipped');">
@@ -42,13 +51,15 @@
 	      {{ content.field_flip_card_image }}
       </div>
       <div class="flip-card_label {{ content.field_flip_card_text_size[0] }}  {{ content.field_flip_card_color_style[0] }}">
-        <p>{{ content.field_flip_card_title[0] }}</p>
-        <p class="flip-card_button {{ content.field_flip_card_color_style[0] }}"><span class="btn">View More</span></p>
+        {{ content.field_flip_card_title[0] }}
+        <p class="flip-card_button {{ content.field_flip_card_color_style[0] }}"><span class="btn {{ btn_classes[content.field_flip_card_color_style[0]['#markup']] }}">View More</span></p>
 	    </div>
     </div>
     
 	  <div class="flip-card_back {{ content.field_flip_card_color_style[0] }}">
-		  {{ content.field_flip_card_back.0 }}    
+      <div>
+		  {{ content.field_flip_card_back.0 }}
+      </div>
 	  </div>
   
   {% endblock %}
