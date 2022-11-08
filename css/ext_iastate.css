@@ -1016,6 +1016,12 @@ div.fontawesome-icon i {
 	margin-top: -23px;
 }
 
+/* News Articles Page */
+.field-content.news-page-thumbnail {
+	float: left;
+	padding-right: 25px;
+}
+
 /* --------------------------------------  */
 /* ## Responsive
 /* --------------------------------------  */
