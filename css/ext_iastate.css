@@ -705,12 +705,11 @@ div#block-staff-links div {
 
 .announcement {
 	font-weight: 700;
-	font-variant: small-caps;
-	font-size: 1.2em;
 	padding-bottom: 20px;
-	max-width: 1115px;
+	color: #003d4c;
 	margin-left: auto;
 	margin-right: auto;
+	background: #f1be48;
 }
 
 div#block-iastate-theme-local-tasks {
