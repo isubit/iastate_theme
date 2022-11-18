@@ -558,6 +558,33 @@ img.staff_profile_smugmug {
 }
 
 /* --------------------------------------  */
+/* ## Layout Builder Styles
+/* --------------------------------------  */
+.upcoming-events-white.program_offering_blocks.isu-block {
+	background-color: #fff;
+	border: 3px solid #003d4c;
+	box-shadown: -5px 5px 19px -5px #003d4c;
+}
+
+div.upcoming-events-white {
+	border-radius: 0px 0px 35px 0px;
+	padding: 10px 31px 40px 10px !important;
+}
+
+div.upcoming-events-white h2.isu-block-title.h4 {
+	border-bottom: 3px solid #f1be48;
+}
+
+.upcoming-events-white div.event_date {
+	margin: 0 5px 8px 0;
+	color: #003d4c;
+}
+
+.upcoming-events-white div.event_title a {
+	color: #000;
+}
+
+/* --------------------------------------  */
 /* ## Footer
 /* --------------------------------------  */
 
