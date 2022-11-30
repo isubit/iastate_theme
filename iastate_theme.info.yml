@@ -12,6 +12,7 @@ libraries:
 ckeditor_stylesheets:
   - css/bootstrap/bootstrap.min.css
   - css/base.css
+  - css/ext_iastate.css
 stylesheets-remove:
   - core/assets/vendor/normalize-css/normalize.normalize
   - core/modules/system/css/system.module.css
