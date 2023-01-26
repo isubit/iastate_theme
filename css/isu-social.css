@@ -89,9 +89,6 @@
 .isu-social-menu a[href*='snapchat.com']:before {
   content: "\f2ad" / "Snapchat";
 }
-.isu-social-menu a[href*='tiktok.com']:before {
-  content: "\e07b" / "TikTok";
-}
 .isu-social-menu a[href*='libsyn.com']:before {
   content: "\f2ce" / "Libsyn";
 }
@@ -140,6 +137,12 @@
 }
 .isu-social-menu a[href*='scholar.google.com']:before {
   content: "\e9d4" / "Google Scholar";
+  font-family: Academicons;
+  position: relative;
+  top: -2px;
+}
+.isu-social-menu a[href*='foundation.iastate.edu']:before {
+  content: "\f06b" / "Iowa State University Foundation";
   font-family: Academicons;
   position: relative;
   top: -2px;
