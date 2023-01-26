@@ -89,9 +89,6 @@
 .isu-social-menu a[href*='snapchat.com']:before {
   content: "\f2ad" / "Snapchat";
 }
-.isu-social-menu a[href*='tiktok.com']:before {
-  content: "\e07b" / "TikTok";
-}
 .isu-social-menu a[href*='libsyn.com']:before {
   content: "\f2ce" / "Libsyn";
 }
@@ -143,4 +140,7 @@
   font-family: Academicons;
   position: relative;
   top: -2px;
+}
+.isu-social-menu a[href*='foundation.iastate.edu']:before {
+  content: "\f06b" / "Donate";
 }
