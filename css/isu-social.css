@@ -142,8 +142,5 @@
   top: -2px;
 }
 .isu-social-menu a[href*='foundation.iastate.edu']:before {
-  content: "\f06b" / "Iowa State University Foundation";
-  font-family: Academicons;
-  position: relative;
-  top: -2px;
+  content: "\f06b" / "Donate";
 }
