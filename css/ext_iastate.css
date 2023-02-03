@@ -557,7 +557,7 @@ img.staff_profile_smugmug {
 	position: relative;
 }
 
-.layout--background-overlay--dark-light a, .layout--background-overlay--dark a, .layout--background-overlay--darker a {
+.layout-builder-block.layout--background-overlay--dark-light a, .layout-builder-block.layout--background-overlay--dark a, .layout-builder-block.layout--background-overlay--darker a {
 	background-color: #cc0000;
 	border-color: #cc0000;
 	font-weight: 700;
@@ -570,12 +570,12 @@ img.staff_profile_smugmug {
 	text-decoration: none;
 }
 
-.layout--background-overlay--dark-light a:hover, .layout--background-overlay--dark a:hover, .layout--background-overlay--darker a:hover {
+.layout-builder-block.layout--background-overlay--dark-light a:hover, .layout-builder-block.layout--background-overlay--dark a:hover, .layout-builder-block.layout--background-overlay--darker a:hover {
 	background-color: #000000;
 	border-color: #000000;
 }
 
-.layout--background-overlay--red a {
+.layout-builder-block.layout--background-overlay--red a {
 	background-color: #003d4c;
 	border-color: #003d4c;
 	font-weight: 700;
@@ -588,7 +588,7 @@ img.staff_profile_smugmug {
 	text-decoration: none;
 }
 
-.layout--background-overlay--red a:hover {
+.layout-builder-block.layout--background-overlay--red a:hover {
 	background-color: #f1be48;
 	border-color: #f1be48;
 	color: #003d4c;
