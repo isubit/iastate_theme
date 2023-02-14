@@ -14,23 +14,43 @@ html, body, .dialog-off-canvas-main-canvas, .isu-page-wrap {
 
 /* Reduce size of h2 */
 .h2, h2 {
-	font-size: 1.5rem;
+	font-family: Merriweather,serif;	
+	font-size: 1.875rem;
+	font-weight: 700;
+	letter-spacing: 0;
+	line-height: 1.4;
+	padding-bottom: 1rem;
+	position: relative;
 }
 
 /*Reduce size of h3 */
 .h3, h3 {
-	font-size: 1.25rem;
+	font-family: Nimbus Sans,sans-serif;
+	font-size: 1.3125rem;
+	font-weight: 700;
+	letter-spacing: 0;
+	line-height: 1.42857;
+	margin: 2rem 0 0.5625rem;
 }
 
 /* Reduce size of h4 */
 .h4, h4 {
-	font-size: 1rem;
+	font-size: 1.125rem;
+	font-family: Nimbus sans,sans-serif;
+	font-weight: 700;
+	letter-spacing: 0;
+	margin: 2rem 0 0.5625rem;
+	line-height: 1.38889;
 }
 
 /* Reduce size of h5 */
 .h5 {
-	font-size: 14px;
-	font-weight: bold;
+	font-size: 1rem;
+	line-height: 1.5625;
+	font-family: Nimbus Sans,sans-serif;
+	font-weight: 700;
+	letter-spacing: 0;
+	margin: 2rem 0 0.5625rem;
 }
 
 /* --------------------------------------  */
@@ -179,8 +199,11 @@ a.isu-dropdown-submenu {
 
 /* Page Title */
 .isu-page-title {
-	padding-top: 1.5rem;
-	padding-left: 5px;
+	font-family: Merriweather,serif;
+	line-height: 1.32857;
+	font-weight: 400;
+	letter-spacing: 0;
+	margin: 1rem 0 1rem;
 }
 
 /* Change Authored on information display */
