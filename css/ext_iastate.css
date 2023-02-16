@@ -550,6 +550,11 @@ img.staff_profile_smugmug {
 	clear:  both;
 }
 
+.hero-heading h2 {
+	font-size: 6.875rem;
+	line-height: 1.07273;
+}
+
 .layout--background--red {
         background-color: #cc0000;
 }
