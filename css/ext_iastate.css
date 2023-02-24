@@ -107,7 +107,7 @@ html, body, .dialog-off-canvas-main-canvas, .isu-page-wrap {
 .isu-dropdown-item a.active,
 .isu-dropdown-item a:active {
 	background: transparent;
-	color: #cc0000;
+	color: #c8102e;
 }
 
 .navbar-nav .dropdown-menu {
@@ -349,8 +349,8 @@ figure.align-right {
 
 /* Button Styles */
 .btn-danger {
-	background-color: #cc0000;
-	border-color: #cc0000;
+	background-color: #c8102e;
+	border-color: #c8102e;
 	font-weight: 700;
 	border-radius: 3px;
 	cursor: pointer;
@@ -365,8 +365,8 @@ figure.align-right {
 }
 
 .btn-outline-danger {
-	color: #cc0000;
-	border: 1px solid #cc0000;
+	color: #c8102e;
+	border: 1px solid #c8102e;
 	font-weight: 700;
 	border-radius: 3px;
 	cursor: pointer;
@@ -376,8 +376,8 @@ figure.align-right {
 }
 
 .btn-outline-danger:hover {
-	background-color: #cc0000;
-	border-color: #cc0000;
+	background-color: #c8102e;
+	border-color: #c8102e;
 }
 
 .btn-primary{
@@ -556,7 +556,7 @@ img.staff_profile_smugmug {
 }
 
 .layout--background--red {
-        background-color: #cc0000;
+        background-color: #c8102e;
 }
 
 .layout--background--gray {
@@ -588,8 +588,8 @@ img.staff_profile_smugmug {
 }
 
 .layout-builder-block.layout--background-overlay--dark-light a, .layout-builder-block.layout--background-overlay--dark a, .layout-builder-block.layout--background-overlay--darker a {
-	background-color: #cc0000;
-	border-color: #cc0000;
+	background-color: #c8102e;
+	border-color: #c8102e;
 	font-weight: 700;
 	border-radius: 3px;
 	cursor: pointer;
@@ -982,7 +982,7 @@ a.bean-card_link {
 	display: flex;
 	padding: 0.75rem 1rem;
 	justify-content: center;
-	background: #cc0000;
+	background: #c8102e;
 	font-size: 1.5rem;
 }
 
