@@ -67,7 +67,7 @@ hr { /* Overrides Bootstrap 4's hr style */
 /* --------------------------------------  */
 
 a { /* Overrides bootstrap.min.css */
-  color: #cc0000; /* ISU brand standard */
+  color: #c8102e; /* ISU brand standard */
   text-decoration: underline; /* WCAG A standard */
   transition: color 300ms ease;
 }

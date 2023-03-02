@@ -84,7 +84,7 @@ body,
 
 .isu-site-navbar {
   padding: 0;
-  background-color: #cc0000;
+  background-color: #c8102e;
   border-bottom: 9px solid #f1be48;
 }
 /* The gold border is optional and can be hidden in theme settings */
@@ -646,8 +646,8 @@ div#edit-search-broadness {margin:0 0 0 15px; }
 }
 /* The Full Pager uses .active for the current page */
 .page-item.active .isu-page-link { /* .page-item via Drupal 8 */
-  background-color: #cc0000;
-  border-color: #cc0000
+  background-color: #c8102e;
+  border-color: #c8102e
 }
 .page-item.active .isu-page-link:hover {
   background-color: #a00606;
@@ -909,7 +909,7 @@ abbr[title].tabledrag-changed { /* Class via Drupal 8 */
 .form-required:after { /* .form-required from Drupal 8 */
   content: "*";
   margin-left: 0.25rem;
-  color: #cc0000;
+  color: #c8102e;
 }
 
 /* If a form-group is in a table */
@@ -928,7 +928,7 @@ details {
   max-width: 100%;
 }
 .isu-form-control.error { /* .error via Drupal 8 */
-  border: 1px solid #cc0000;
+  border: 1px solid #c8102e;
 }
 
 .container-inline.form-radio {
