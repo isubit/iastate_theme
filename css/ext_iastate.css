@@ -226,6 +226,10 @@ span.authored-on {
 }
 
 /* Media Captions */
+body.cke_editable figure figcaption {
+	margin-top: 0;
+}
+
 .caption > figcaption {
 	background-color: #eeeeee;
 	margin-top: -2.5rem;
