@@ -1001,6 +1001,7 @@ a.bean-card_link {
 .bean-card_label.Partial {
 	width: 85%;
 	justify-content: left;
+	display: inline-flex;
 }
 
 .bean-card_label.Partial:hover::after {
@@ -1039,6 +1040,14 @@ div.fontawesome-icon i {
 	position: relative;
 	font-size: .8rem;
 	padding-top: 4%;
+}
+
+span.bean-card_label.Small.Partial::after {
+	margin-top: -3%;
+}
+
+span.bean-card_label.Large.Partial::after {
+	padding-top: 6%;
 }
 
 .bean-card_label.Blue {
