@@ -1049,12 +1049,24 @@ div.fontawesome-icon i {
 	background: #00854d;
 }
 
+.bean-card_label.Partial.Green {
+	background-color: #00854d;
+}
+
 .bean-card_label.Dark.Red {
 	background: #7C2529;
 }
 
+.bean-card_label.Partial.Dk.Red {
+	background-color: #000;
+}
+
 .bean-card_label.Dark.Blue {
 	background: #003D4C;
+}
+
+.bean-card_label.Partial.Dk.Blue {
+	background-color: #003d4c;
 }
 
 .bean-card_label.Dark.Green {
