@@ -992,6 +992,10 @@ a.bean-card_link {
 	justify-content: center;
 	background: #c8102e;
 	font-size: 1.5rem;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
 }
 
 .bean-card_label p {
