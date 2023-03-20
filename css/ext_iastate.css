@@ -1020,6 +1020,16 @@ div.fontawesome-icon i {
 }
 
 /* Colors */
+.bean-card_label.Partial:after {
+	content: "\f054";
+	font-family: FontAwesome;
+	color: #f1be48;
+	right: -0.8rem;
+	position: relative;
+	font-size: .8rem;
+	padding-top: 4%;
+}
+
 .bean-card_label.Blue {
 	background: #006ba6;
 }
