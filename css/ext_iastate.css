@@ -998,6 +998,15 @@ a.bean-card_link {
 	right: 0;
 }
 
+.bean-card_label.Partial {
+	width: 85%;
+	justify-content: left;
+}
+
+.bean-card_label.Partial:hover::after {
+	content: "\f061";
+}
+
 .bean-card_label p {
 	margin: 0;
 	line-height: 1.45;
