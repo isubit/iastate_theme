@@ -1005,6 +1005,8 @@ a.bean-card_link {
 
 .bean-card_label.Partial:hover::after {
 	content: "\f061";
+	transiton: width .2s ease-in-out,right .2s ease-in-out;
+	-webkit-transition: width .2s ease-in-out,right .2s ease-in-out;
 }
 
 .bean-card_label p {
