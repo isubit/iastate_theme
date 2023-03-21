@@ -1001,7 +1001,12 @@ a.bean-card_link {
 .bean-card_label.Partial {
 	width: 85%;
 	justify-content: left;
-	display: inline-flex;
+	display: flex;
+	align-items: center;
+}
+
+.bean-card_label.Partial p {
+	margin-right: 3%;
 }
 
 .bean-card_label p {
