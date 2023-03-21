@@ -998,6 +998,18 @@ a.bean-card_link {
 	right: 0;
 }
 
+.bean-card-content_label {
+	display: flex;
+	padding: 0.75rem 1rem;
+	justify-content: center;
+	background: #c8102e;
+	font-size: 1.5rem;
+	position: relative;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
 .bean-card_label.Partial {
 	width: 85%;
 	justify-content: left;
