@@ -1004,12 +1004,6 @@ a.bean-card_link {
 	display: inline-flex;
 }
 
-.bean-card_label.Partial:hover::after {
-	content: "\f061";
-	transiton: width .2s ease-in-out,right .2s ease-in-out;
-	-webkit-transition: width .2s ease-in-out,right .2s ease-in-out;
-}
-
 .bean-card_label p {
 	margin: 0;
 	line-height: 1.45;
@@ -1033,23 +1027,16 @@ div.fontawesome-icon i {
 
 /* Colors */
 .bean-card_label.Partial:after {
-	content: "\f054";
-	font-family: FontAwesome;
-	color: #f1be48;
+	content: '';
 	right: -0.8rem;
 	position: relative;
-	font-size: .8rem;
-	padding-top: 4%;
+	display: inline-block;
+	border-bottom: 1px solid #f1be48;
+	border-right: 1px solid #f1be48;
+	height: 10px;
+	width: 10px;
+	transform: rotate(-45deg);
 }
-
-span.bean-card_label.Small.Partial::after {
-	margin-top: -3%;
-}
-
-span.bean-card_label.Large.Partial::after {
-	padding-top: 6%;
-}
-
 .bean-card_label.Blue {
 	background: #006ba6;
 }
