@@ -41,19 +41,19 @@
   
 	  <div class="bean-card_img">
 		{{ content.field_image_card_image }}
-	  </div>
   
 	  {% if content.field_image_card_url.0['#url'].toString() is not empty %}
-	    </a>
 	  {% endif %}
 
 	  {{ title_prefix }}
-	    <div class="bean-card_label {{ content.field_image_card_text_size[0] }} {{ content.field_image_card_color_style[0] }}">
+	    <span class="bean-card_label {{ content.field_image_card_text_size[0] }} {{ content.field_image_card_color_style[0] }}">
 	    {% if content.field_image_card_icon.0 %}
 	    {{ content.field_image_card_icon.0 }}	
 	    {% endif %}
 	      <p>{{ content.field_image_card_title[0] }}</p>
-	    </div>
+	</span>
+	</a>    
+	</div>
 	  {{ title_suffix }}
   
     {% endblock %}

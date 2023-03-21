@@ -992,6 +992,29 @@ a.bean-card_link {
 	justify-content: center;
 	background: #c8102e;
 	font-size: 1.5rem;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.bean-card_label.Partial {
+	width: 85%;
+	justify-content: left;
+	display: flex;
+	align-items: center;
+}
+
+.bean-card_label.Partial:before {
+	content: "";
+	position: absolute;
+	display: inline-block;
+	border-bottom: 2px solid #f1be48;
+	border-right: 2px solid #f1be48;
+	height: 10px;
+	width: 10px;
+	transform: rotate(-45deg);
+	right: 9%;
 }
 
 .bean-card_label p {
@@ -1016,6 +1039,17 @@ div.fontawesome-icon i {
 }
 
 /* Colors */
+.bean-card_label.Partial:after {
+	content: '';
+	position: absolute;
+	display: inline-block;
+	border-bottom: 2px solid #f1be48;
+	border-right: 2px solid #f1be48;
+	height: 10px;
+	width: 10px;
+	transform: rotate(-45deg);
+	right: 9%;
+}
 .bean-card_label.Blue {
 	background: #006ba6;
 }
@@ -1024,12 +1058,24 @@ div.fontawesome-icon i {
 	background: #00854d;
 }
 
+.bean-card_label.Partial.Green {
+	background-color: #00854d;
+}
+
 .bean-card_label.Dark.Red {
 	background: #7C2529;
 }
 
+.bean-card_label.Partial.Dk.Red {
+	background-color: #7c2529;
+}
+
 .bean-card_label.Dark.Blue {
 	background: #003D4C;
+}
+
+.bean-card_label.Partial.Dk.Blue {
+	background-color: #003d4c;
 }
 
 .bean-card_label.Dark.Green {
