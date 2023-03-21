@@ -1005,10 +1005,6 @@ a.bean-card_link {
 	align-items: center;
 }
 
-.bean-card_label.Partial p {
-	margin-right: 3%;
-}
-
 .bean-card_label p {
 	margin: 0;
 	line-height: 1.45;
@@ -1033,14 +1029,14 @@ div.fontawesome-icon i {
 /* Colors */
 .bean-card_label.Partial:after {
 	content: '';
-	right: -0.8rem;
 	position: relative;
 	display: inline-block;
-	border-bottom: 1px solid #f1be48;
-	border-right: 1px solid #f1be48;
+	border-bottom: 2px solid #f1be48;
+	border-right: 2px solid #f1be48;
 	height: 10px;
 	width: 10px;
 	transform: rotate(-45deg);
+	right: 9%;
 }
 .bean-card_label.Blue {
 	background: #006ba6;
