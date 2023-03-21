@@ -1029,7 +1029,7 @@ div.fontawesome-icon i {
 /* Colors */
 .bean-card_label.Partial:after {
 	content: '';
-	position: relative;
+	position: absolute;
 	display: inline-block;
 	border-bottom: 2px solid #f1be48;
 	border-right: 2px solid #f1be48;
