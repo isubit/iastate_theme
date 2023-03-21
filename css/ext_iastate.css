@@ -1017,10 +1017,6 @@ a.bean-card_link {
 	right: 9%;
 }
 
-.bean-card a:hover {
-	border: 0.2rem solid #f1be48;
-	transition: opacity .2s ease-in-out;
-}
 .bean-card_label p {
 	margin: 0;
 	line-height: 1.45;
