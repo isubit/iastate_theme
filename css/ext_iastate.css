@@ -1016,6 +1016,10 @@ a.bean-card_link {
 	align-items: center;
 }
 
+.bean-card_label.Partial p {
+	padding-right: 10%;
+} 
+
 .bean-card_label.Partial:before {
 	content: "";
 	position: absolute;
