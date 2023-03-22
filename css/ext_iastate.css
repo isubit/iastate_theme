@@ -1031,6 +1031,7 @@ a.bean-card_link {
 .bean-card_label p {
 	margin: 0;
 	line-height: 1.45;
+	font-family: Merriweather,serif;
 }
 
 .bean-card_label div {
