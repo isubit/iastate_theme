@@ -25,8 +25,9 @@
  * @see template_preprocess_block()
  */
 #}
+
 <div {{ attributes.addClass("isu-social-menu-red", "isu-social-menu") }}>
-  {{ title_suffix }}
+  {{ title_prefix }}
   {% block content %}
     {% if content.field_facebook_red %}
 	  {% for links in content.field_facebook_red %}
@@ -79,6 +80,7 @@
     {% endif %}
 	{{ content | without('field_facebook_red', 'field_instagram_red', 'field_linked_in_red', 'field_pinterest_red',
 	'field_twitter_red', 'field_vimeo_red', 'field_youtube_red') }}
+	{{ title_suffix }}
   {% endblock %}
 </div>
 
