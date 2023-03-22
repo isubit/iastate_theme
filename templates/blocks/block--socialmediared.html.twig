@@ -25,6 +25,14 @@
  * @see template_preprocess_block()
  */
 #}
+
+{%
+  set block_classes = [
+    is_front ? 'isu-block-front' : '',
+    'isu-block'
+  ]
+%}
+
 <div {{ attributes.addClass("isu-social-menu-red", "isu-social-menu") }}>
   {{ title_prefix }}
   {% block content %}
