@@ -1438,6 +1438,42 @@ div.fontawesome-icon i {
 	.isu-page-column {
 		max-width: 98%;
 	}
+
+	/* News Feed */
+	.ext-news-feed ul {
+		display: grid;
+		grid-template-rows: repeat(3, 1fr);
+	}
+
+	.ext-news-feed .item-list {
+		margin-bottom: -40px;
+	}
+
+	.ext-news-feed p {
+		padding-top: 0px;
+		text-align: left !important;
+	}
+
+	.ext-news-feed img {
+		float: left;
+		max-width: 35%;
+		max-height: 90%;
+	}
+
+	.ext-news-feed li.col-md-6.col-lg-4.mb-3 {
+		display: flex;
+		flex-direction: row;
+		max-width: 100%;
+	}
+
+	.ext-news-feed .card {
+		text-align: left;
+		height: 90%;
+	}
+
+	.ext-news-feed .card-title {
+		margin: 0px;
+	}
  }
 
 /* "Add a new custom block" changes */
@@ -1472,6 +1508,27 @@ a.inline-block-list__item:hover :not(.inline-block-list__item-custom-block-descr
 	padding-left: 73px;
 	font-size: 22px	font-size: 22px;;
 }
+	.ext-news-feed img {
+		height: 90%;
+	}
+
+	.ext-news-feed .header {
+		max-width: 60%;
+	}
+}
+
+@media screen and (max-width : 425px) {
+	.ext-news-feed .header {
+		max-width: 95%;
+	}
+	
+	.ext-news-feed img {
+		display: none;
+	}
+
+	.ext-news-feed li.col-md-6.col-lg-4.mb-3 {
+		max-width: 100%;
+	}
 }
 
 /* Media Library Theme Reset*/
