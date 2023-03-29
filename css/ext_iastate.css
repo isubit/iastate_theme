@@ -1043,7 +1043,7 @@ a.bean-card_link {
 }
 
 /* Used for content card */
-.bean-card-content_body {
+.bean-card_body {
 	color: black;
 	padding: 0.5rem 0.5rem 0 0.5rem;
 	border: 3px solid #c8102e;
@@ -1067,7 +1067,7 @@ div.fontawesome-icon i {
 	right: 9%;
 }
 .bean-card_label.Blue, .bean-card-content_label.Blue {
-	background: #006ba6;
+	background: #003D4C;
 }
 
 .bean-card_label.Green, .bean-card-content_label.Green {
