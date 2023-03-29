@@ -555,7 +555,7 @@ img.staff_profile_smugmug {
 }
 
 .strong-iowa {
-	padding-top: 25px;
+	padding-top: 20%;
 }
 
 .hero-heading h2 {
@@ -1032,18 +1032,18 @@ a.bean-card_link {
 	right: 9%;
 }
 
-.bean-card_label p {
+.bean-card_label p, .bean-card-content_label p {
 	margin: 0;
 	line-height: 1.45;
 	font-family: Merriweather,serif;
 }
 
-.bean-card_label div {
+.bean-card_label div, .bean-card-content_label div {
 	margin: 0;
 }
 
 /* Used for content card */
-.bean-card_body {
+.bean-card-content_body {
 	color: black;
 	padding: 0.5rem 0.5rem 0 0.5rem;
 	border: 3px solid #c8102e;
@@ -1066,11 +1066,11 @@ div.fontawesome-icon i {
 	transform: rotate(-45deg);
 	right: 9%;
 }
-.bean-card_label.Blue {
+.bean-card_label.Blue, .bean-card-content_label.Blue {
 	background: #006ba6;
 }
 
-.bean-card_label.Green {
+.bean-card_label.Green, .bean-card-content_label.Green {
 	background: #00854d;
 }
 
@@ -1078,7 +1078,7 @@ div.fontawesome-icon i {
 	background-color: #00854d;
 }
 
-.bean-card_label.Dark.Red {
+.bean-card_label.Dark.Red, .bean-card-content_label.Dark.Red {
 	background: #7C2529;
 }
 
@@ -1086,7 +1086,7 @@ div.fontawesome-icon i {
 	background-color: #7c2529;
 }
 
-.bean-card_label.Dark.Blue {
+.bean-card_label.Dark.Blue, .bean-card-content_label.Dark.Blue {
 	background: #003D4C;
 }
 
@@ -1111,14 +1111,37 @@ div.fontawesome-icon i {
 }
 
 /* Changes color of border depending on selected label color (content cards) */
-.bean-card_body.Blue { border-color: #006ba6; }
-  .bean-card_body.Green { border-color: #00854d; }
-  .bean-card_body.Dark.Red { border-color: #7C2529; }
-  .bean-card_body.Dark.Blue { border-color: #003D4C; }
-  .bean-card_body.Dark.Green { border-color: #3E4827; }
-  .bean-card_body.Brown { border-color: #8b5b29; }
-  .bean-card_body.Grey { border-color: #707372; }
-  .bean-card_body.Dark.Overlay.Bottom { border-color: rgba(0,0,0,0.75); }
+.bean-card_body.Blue, .bean-card-content_body.Blue { 
+	border-color: #006ba6;
+}
+ 
+.bean-card_body.Green, .bean-card-content_body.Green { 
+	border-color: #00854d; 
+}
+
+.bean-card_body.Dark.Red, .bean-card-content_body.Dark.Red { 
+	border-color: #7C2529; 
+}
+
+.bean-card_body.Dark.Blue, .bean-card-content_body.Dark.Blue { 
+	border-color: #003D4C; 
+}
+
+.bean-card_body.Dark.Green { 
+	border-color: #3E4827; 
+}
+
+.bean-card_body.Brown { 
+	border-color: #8b5b29; 
+}
+
+.bean-card_body.Grey { 
+	border-color: #707372; 
+}
+
+.bean-card_body.Dark.Overlay.Bottom { 
+	border-color: rgba(0,0,0,0.75); 
+}
 
   /* Overlay */
   /* Overlay needs a minimum height in case there is no image. */
@@ -1146,29 +1169,29 @@ div.fontawesome-icon i {
 	font-family: FontAwesome;
   }
 
-  .bean-card_label.Small {
+  .bean-card_label.Small, .bean-card-content_label.Small {
 	font-size: 1rem !important;
   }
 
-  .bean-card_label.Medium {
+  .bean-card_label.Medium, .bean-card-content_label.Medium {
 	font-size: 1.5rem !important;
   }
 
-  .bean-card_label.Large {
+  .bean-card_label.Large, .bean-card-content_label.Large {
 	font-size: 2rem !important;
   }
 
-  .bean-card_label.Small div.fontawesome-icons {
+  .bean-card_label.Small div.fontawesome-icons, .bean-card-content_label.Small div.fontawesome-icons {
 	margin-right: 0.5rem;
 	padding-right: 5px;
   }
 
-  .bean-card_label.Medium div.fontawesome-icons {
+  .bean-card_label.Medium div.fontawesome-icons, .bean-card-content_label.Medium div.fontawesome-icons {
 	margin-right: 1rem;
 	padding-right: 5px;
   }
 
-  .bean-card_label.Large div.fontawesome-icons {
+  .bean-card_label.Large div.fontawesome-icons, .bean-card-content_label.Large div.fontawesome-icons {
 	margin-right: 1.25rem;
 	padding-right: 5px;
   }
@@ -1381,6 +1404,9 @@ div.fontawesome-icon i {
 		max-width: 300px;
  	}
 
+	.strong-iowa {
+		padding-top: 10%;
+	}
 
 	/* Adjust Socails*/
 	.isu-social-menu-red{
@@ -1395,9 +1421,7 @@ div.fontawesome-icon i {
  	.isu-wordmark-sitename {
  		padding-left: 0px;
  		padding-bottom: 0px;
-		margin-left: 0.5rem;
- 		font-size: 15px;
- 		padding-top: 0px;
+		margin-left: -33%;
 	}
 
 	.isu-social-menu-footer{
