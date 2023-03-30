@@ -341,6 +341,10 @@ figure.align-right {
 	text-align: center;
 }
 
+.card a {
+	text-decoration: none;
+}
+
 .card-body {
 	color: #7C2529;
 }
