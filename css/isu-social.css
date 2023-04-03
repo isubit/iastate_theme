@@ -56,91 +56,91 @@
   text-decoration: none;
 }
 .isu-social-menu a[href*='facebook.com']:before {
-  content: "\f082" / "Facebook";
+  content: "\f082";
 }
 .isu-social-menu a[href*='twitter.com']:before {
-  content: "\f081" / "Twitter";
+  content: "\f081";
 }
 .isu-social-menu a[href*='instagram.com']:before {
-  content: "\f16d" / "Instagram";
+  content: "\f16d";
 }
 
 .isu-social-menu a[href*='youtube.com']:before {
-  content: "\f166" / "YouTube";
+  content: "\f166";
 }
 .isu-social-menu a[href*='github.com']:before {
-  content: "\f092" / "GitHub";
+  content: "\f092";
 }
 .isu-social-menu a[href*='plus.google.com']:before {
-  content: "\f0d4" / "Google Plus";
+  content: "\f0d4";
 }
 .isu-social-menu a[href*='podcasts.google.com']:before {
-  content: "\f2ce" / "Google Podcasts";
+  content: "\f2ce";
 }
 .isu-social-menu a[href*='linkedin.com']:before {
-  content: "\f08c" / "LinkedIn";
+  content: "\f08c";
 }
 .isu-social-menu a[href*='pinterest.com']:before {
-  content: "\f0d3" / "Pinterest";
+  content: "\f0d3";
 }
 .isu-social-menu a[href*='reddit.com']:before {
-  content: "\f1a2" / "Reddit";
+  content: "\f1a2";
 }
 .isu-social-menu a[href*='snapchat.com']:before {
-  content: "\f2ad" / "Snapchat";
+  content: "\f2ad";
 }
 .isu-social-menu a[href*='libsyn.com']:before {
-  content: "\f2ce" / "Libsyn";
+  content: "\f2ce";
 }
 .isu-social-menu a[href*='vimeo.com']:before {
-  content: "\f194" / "Vimeo";
+  content: "\f194";
 }
 .isu-social-menu a[href*='tumblr.com']:before {
-  content: "\f174" / "Tumblr";
+  content: "\f174";
 }
 .isu-social-menu a[href*='medium.com']:before {
-  content: "\f23a" / "Medium";
+  content: "\f23a";
 }
 .isu-social-menu a[href*='drupal.org']:before {
-  content: "\f1a9" / "Drupal";
+  content: "\f1a9";
 }
 .isu-social-menu a[href*='twitch.tv']:before {
-  content: "\f1e8" / "Twitch";
+  content: "\f1e8";
   font-size: 30px;
 }
 .isu-social-menu a[href*='rss']:before {
-  content: "\f143" / "RSS";
+  content: "\f143";
 }
 .isu-social-menu a[href*='flickr.com']:before {
-  content: "\f16e" / "Flickr";
+  content: "\f16e";
 }
 .isu-social-menu a[href*='steampowered.com']:before {
-  content: "\f1b7" / "Steam Powered";
+  content: "\f1b7";
 }
 .isu-social-menu a[href*='behance.net']:before {
-  content: "\f1b5" / "Behance";
+  content: "\f1b5";
 }
 .isu-social-menu a[href*='xing.com']:before {
-  content: "\f169" / "Xing";
+  content: "\f169";
 }
 .isu-social-menu a[href*='bitbucket.org']:before {
-  content: "\f172" / "Bitbucket";
+  content: "\f172";
 }
 .isu-social-menu a[href*='ycombinator.com']:before {
-  content: "\f1d4" / "Y Combinator";
+  content: "\f1d4";
 }
 .isu-social-menu a[href*='researchgate.net']:before {
-  content: "\e95e" / "Research Gate";
+  content: "\e95e";
   font-family: Academicons;
   position: relative;
   top: -2px;
 }
 .isu-social-menu a[href*='scholar.google.com']:before {
-  content: "\e9d4" / "Google Scholar";
+  content: "\e9d4";
   font-family: Academicons;
   position: relative;
   top: -2px;
 }
 .isu-social-menu a[href*='foundation.iastate.edu']:before {
-  content: "\f06b" / "Donate";
+  content: "\f06b";
 }
