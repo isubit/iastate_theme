@@ -337,6 +337,7 @@ figure.align-right {
 .card {
 	border: none;
 	box-shadow: 0.5625rem 0.5625rem 1.25rem rgb(0 0 0 / 20%);
+	height: 60%;
 	text-align: center;
 }
 
@@ -1496,7 +1497,7 @@ div.fontawesome-icon i {
 
 	.ext-news-feed .card {
 		text-align: left;
-		height: 90%;
+		height: 100%;
 	}
 
 	.ext-news-feed .card-title {
