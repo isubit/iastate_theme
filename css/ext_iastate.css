@@ -337,7 +337,7 @@ figure.align-right {
 .card {
 	border: none;
 	box-shadow: 0.5625rem 0.5625rem 1.25rem rgb(0 0 0 / 20%);
-	height: 60%;
+	height: 100%;
 	text-align: center;
 }
 
