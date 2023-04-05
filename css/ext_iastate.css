@@ -1412,6 +1412,15 @@ div.fontawesome-icon i {
 		padding-top: 10%;
 	}
 
+	.gtranslate {
+		display: none;
+}
+
+	.strong-iowa img {
+		max-width: 90%;
+		padding-left: 5%;
+	}
+
 	/* Adjust Socails*/
 	.isu-social-menu-red{
 		padding-left: 84px;
@@ -1486,6 +1495,8 @@ div.fontawesome-icon i {
 		float: left;
 		max-width: 35%;
 		max-height: 90%;
+		padding-left: 0%;
+		margin-right: 5%;
 		object-fit: cover;
 	}
 
