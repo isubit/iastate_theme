@@ -567,6 +567,12 @@ img.staff_profile_smugmug {
 	line-height: 1.07273;
 }
 
+.vertical-alignment {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
 .layout--background--red {
         background-color: #c8102e;
 }
