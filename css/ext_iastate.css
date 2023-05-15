@@ -540,6 +540,10 @@ td.staff-view-smugmug img {
 	margin: 12px;
 }
 
+.views-field.views-field-field-staff-profile-pref-phone h2 {
+	padding-bottom: 0px;
+}
+
 .views-field.views-field-field-staff-profile-smugmug {
 	border: 1px solid #ebebeb;
 }
