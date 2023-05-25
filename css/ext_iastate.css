@@ -286,11 +286,21 @@ figure.align-right {
 }
 
 .isu-block-title {
-	font-weight: 700;
-	border-bottom: 0.125rem solid #f1be48;
+	font-weight: 700; 
 	padding: 0 0 13px 0;
 	letter-spacing: 0;
 	font-family: Merriweather,serif;
+	border-bottom: #fff;
+}
+
+.isu-block-title:before {
+  	content: "";
+ 	position: absolute;
+  	left: 0;
+  	bottom: 0;
+  	height: 1px;
+  	width: 3.125rem;
+  	border-bottom: 0.125rem solid #f1be48;
 }
 
 /* Accordion Styles */
