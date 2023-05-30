@@ -57,102 +57,197 @@
 
 .isu-social-menu a[href*='facebook.com']:before {
   content: "\f082" / "Facebook";
-  color: #fff;
 }
+
+.isu-social-menu-red a[href*='facebook.com']:before {
+color: #fff;
+}
+
 .isu-social-menu a[href*='twitter.com']:before {
   content: "\f081" / "Twitter";
-  color: #fff;
 }
+
+.isu-social-menu-red a[href*='twitter.com']:before {
+color: #fff;
+}
+
 .isu-social-menu a[href*='instagram.com']:before {
   content: "\f16d" / "Instagram";
-  color: #fff;
+}
+
+.isu-social-menu-red a[href*='instagram.com']:before {
+color: #fff;
 }
 
 .isu-social-menu a[href*='youtube.com']:before {
   content: "\f166" / "YouTube";
-  color: #fff;
 }
+
+.isu-social-menu-red a[href*='youtube.com']:before {
+color: #fff;
+}
+
 .isu-social-menu a[href*='github.com']:before {
   content: "\f092" / "GitHub";
-  color: #fff;
 }
+
+.isu-social-menu-red a[href*='github.com']:before {
+color: #fff;
+}
+
 .isu-social-menu a[href*='plus.google.com']:before {
   content: "\f0d4" / "Google Plus";
-  color: #fff;
 }
+
+.isu-social-menu-red a[href*='plus.google.com']:before {
+color: #fff;
+}
+
 .isu-social-menu a[href*='podcasts.google.com']:before {
   content: "\f2ce" / "Google Podcasts";
-  color: #fff;
 }
+
+.isu-social-menu-red a[href*='podcasts.google.com']:before {
+color: #fff;
+}
+
 .isu-social-menu a[href*='linkedin.com']:before {
   content: "\f08c" / "LinkedIn";
-  color: #fff;
 }
+
+.isu-social-menu-red a[href*='linkedin.com']:before {
+color: #fff;
+}
+
 .isu-social-menu a[href*='pinterest.com']:before {
   content: "\f0d3" / "Pinterest";
-  color: #fff;
 }
+
+.isu-social-menu-red a[href*='pinterest.com']:before {
+color: #fff;
+}
+
 .isu-social-menu a[href*='reddit.com']:before {
   content: "\f1a2" / "Reddit";
-  color: #fff;
 }
+
+.isu-social-menu-red a[href*='reddit.com']:before {
+color: #fff;
+}
+
 .isu-social-menu a[href*='snapchat.com']:before {
   content: "\f2ad" / "Snapchat";
-  color: #fff;
 }
+
+.isu-social-menu-red a[href*='snapchat.com']:before {
+color: #fff;
+}
+
 .isu-social-menu a[href*='libsyn.com']:before {
   content: "\f2ce" / "Libsyn";
-  color: #fff;
 }
+
+.isu-social-menu-red a[href*='libsyn.com']:before {
+color: #fff;
+}
+
 .isu-social-menu a[href*='vimeo.com']:before {
   content: "\f194" / "Vimeo";
-  color: #fff;
 }
+
+.isu-social-menu-red a[href*='vimeo.com']:before {
+color: #fff;
+}
+
 .isu-social-menu a[href*='tumblr.com']:before {
   content: "\f174" / "Tumblr";
-  color: #fff;
 }
+
+.isu-social-menu-red a[href*='tumblr.com']:before {
+color: #fff;
+}
+
 .isu-social-menu a[href*='medium.com']:before {
   content: "\f23a" / "Medium";
-  color: #fff;
 }
+
+.isu-social-menu-red a[href*='medium.com']:before {
+color: #fff;
+}
+
 .isu-social-menu a[href*='drupal.org']:before {
   content: "\f1a9" / "Drupal";
-  color: #fff;
 }
+
+.isu-social-menu-red a[href*='drupal.com']:before {
+color: #fff;
+}
+
 .isu-social-menu a[href*='twitch.tv']:before {
   content: "\f1e8" / "Twitch";
   font-size: 30px;
-  color: #fff;
 }
+
+.isu-social-menu-red a[href*='twitch.tv']:before {
+color: #fff;
+}
+
 .isu-social-menu a[href*='rss']:before {
   content: "\f143" / "RSS";
-  color: #fff;
 }
+
+.isu-social-menu-red a[href*='rss']:before {
+color: #fff;
+}
+
 .isu-social-menu a[href*='flickr.com']:before {
   content: "\f16e" / "Flickr";
-  color: #fff;
 }
+
+.isu-social-menu-red a[href*='flickr.com']:before {
+color: #fff;
+}
+
 .isu-social-menu a[href*='steampowered.com']:before {
   content: "\f1b7" / "Steam Powered";
-  color: #fff;
 }
+
+.isu-social-menu-red a[href*='steampowered.com']:before {
+color: #fff;
+}
+
 .isu-social-menu a[href*='behance.net']:before {
   content: "\f1b5" / "Behance";
-  color: #fff;
 }
+
+.isu-social-menu-red a[href*='behance.net']:before {
+color: #fff;
+}
+
 .isu-social-menu a[href*='xing.com']:before {
   content: "\f169" / "Xing";
-  color: #fff;
 }
+
+.isu-social-menu-red a[href*='xing.com']:before {
+color: #fff;
+}
+
 .isu-social-menu a[href*='bitbucket.org']:before {
   content: "\f172" / "Bitbucket";
-  color: #fff;
 }
+
+.isu-social-menu-red a[href*='bitbucket.org']:before {
+color: #fff;
+}
+
 .isu-social-menu a[href*='ycombinator.com']:before {
   content: "\f1d4" / "Y Combinator";
-  color: #fff;
 }
+
+.isu-social-menu-red a[href*='ycombinator.com']:before {
+color: #fff;
+}
+
 .isu-social-menu a[href*='researchgate.net']:before {
   content: "\e95e" / "Research Gate";
   font-family: Academicons;
@@ -168,7 +263,10 @@
 }
 .isu-social-menu a[href*='foundation.iastate.edu']:before {
   content: "\f06b" / "Donate";
-  color: #fff;
+}
+
+.isu-social-menu-red a[href*='foundation.iastate.edu']:before {
+color: #fff;
 }
 
 .isu-social-menu a:hover:before {
