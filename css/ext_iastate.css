@@ -657,6 +657,59 @@ img.staff_profile_smugmug {
 	color: #003d4c;
 }
 
+
+.layout--background-overlay--green {
+	position: relative;
+}
+
+.layout--background-overlay--green:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: linear-gradient(to right, rgba(82,71,39,0.7), 50%, rgba(82,71,39,1));
+	z-index: 0;
+}
+
+.layout--background-overlay--green>* {
+	z-index: 100;
+	position: relative;
+}
+
+.layout-builder-block.layout--background-overlay--dark-light a, .layout-builder-block.layout--background-overlay--dark a, .layout-builder-block.layout--background-overlay--darker a {
+	background-color: #524727;
+	border-color: #524727;
+	font-weight: 700;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: background 0.2 ease;
+	padding: 7px;
+	white-space: break-spaces;
+	color: #fff;
+	text-decoration: none;
+}
+
+.layout-builder-block.layout--background-overlay--green a {
+	background-color: #f1be48;
+	border-color: #F1BE48;
+	font-weight: 700;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: background 0.2 ease;
+	padding: 7px;
+	white-space: break-spaces;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.layout-builder-block.layout--background-overlay--green a:hover {
+	background-color: #003d4c;
+	border-color: #003d4c;
+	color: #f1be48;
+}
+
 /* --------------------------------------  */
 /* ## Layout Builder Styles
 /* --------------------------------------  */
