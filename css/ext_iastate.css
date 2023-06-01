@@ -378,6 +378,11 @@ figure.align-right {
 	white-space: break-spaces;
 }
 
+span.btn.btn-danger a {
+	color: #fff;
+	text-decoration: none;
+}
+
 .btn-danger:hover {
 	background-color: #000000;
 	border-color: #000000;
