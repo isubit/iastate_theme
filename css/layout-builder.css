@@ -93,6 +93,7 @@
 .layout-builder-block {
   padding: 1.5em;
   cursor: move;
+  overflow: auto;
 }
 
 .layout-builder-block [tabindex="-1"] {
