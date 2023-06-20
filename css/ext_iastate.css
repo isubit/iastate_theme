@@ -303,6 +303,78 @@ figure.align-right {
   	border-bottom: 0.125rem solid #f1be48;
 }
 
+/* Aligns Block Title Border */
+.layout--alignment--left .isu-block-title {
+	font-weight: 700; 
+	padding: 0 0 13px 0;
+	letter-spacing: 0;
+	font-family: Merriweather,serif;
+	border-bottom: #fff;
+}
+
+.layout--alignment--left .isu-block-title:before {
+  	content: "";
+    	border-bottom: .125rem solid #f1be48;
+    	bottom: 0;
+    	left: 0;
+    	width: 3.5rem;
+    	position: absolute;
+}
+
+.layout--alignment--right .isu-block-title {
+	font-weight: 700; 
+	padding: 0 0 13px 0;
+	letter-spacing: 0;
+	font-family: Merriweather,serif;
+	border-bottom: #fff;
+}
+
+.layout--alignment--right .isu-block-title:before {
+  	content: "";
+    	border-bottom: .125rem solid #f1be48;
+    	bottom: 0;
+    	left: 100%;
+    	margin-left: -3.5rem;
+    	width: 3.5rem;
+    	position: absolute;
+}
+
+.layout--alignment--center .isu-block-title {
+	font-weight: 700; 
+	padding: 0 0 13px 0;
+	letter-spacing: 0;
+	font-family: Merriweather,serif;
+	border-bottom: #fff;
+}
+
+.layout--alignment--center .isu-block-title:before {
+  	content: "";
+    	border-bottom: .125rem solid #f1be48;
+    	bottom: 0;
+    	left: 50%;
+    	margin-left: -1.75rem;
+    	width: 3.5rem;
+    	position: absolute;
+}
+
+.layout--alignment--justify .isu-block-title {
+	font-weight: 700; 
+	padding: 0 0 13px 0;
+	letter-spacing: 0;
+	font-family: Merriweather,serif;
+	border-bottom: #fff;
+}
+
+.layout--alignment--justify .isu-block-title:before {
+  	content: "";
+    	border-bottom: .125rem solid #f1be48;
+    	bottom: 0;
+    	left: 50%;
+    	margin-left: -1.75rem;
+    	width: 3.5rem;
+    	position: absolute;
+}
+
 /* Accordion Styles */
 .ckeditor-accordion-container > dl dt.active > a {
 	background-color: #eeeeee;
