@@ -29,7 +29,35 @@
 <div {{ attributes.addClass("isu-social-menu-red", "isu-social-menu") }}>
   {{ title_prefix }}
   {% block content %}
-    {% if content.field_facebook_red %}
+{% for links content.field_social_media_links %}
+	{% if 'facebook.com' in url %}
+		<a href="{{links['#url'] }}" title="{{ Join 'site_name' on Facebook }}" aria-label="{{ Follow us on Facebook }}"></a>
+	{% elseif 'twitter.com' in url %}
+		<a href="{{links['#url'] }}" title="{{ Join 'site_name' on Twitter }}" aria-label="{{ Follow us on Twitter }}"></a>
+	{% elseif 'linkedin.com' in url %}
+		<a href="{{links['#url'] }}" title="{{ Join 'site_name' on LinkedIn }}" aria-label="{{ Connect with us on Linked In }}"></a>
+	{% elseif 'instagram.com' in url %}
+		<a href="{{links['#url'] }}" title="{{ Join 'site_name' on Instagram }}" aria-label="{{ Follow us on Instagram }}"></a>
+	{% elseif 'pinterest.com' in url %}
+		<a href="{{links['#url'] }}" title="{{ Join 'site_name' on Pinterest }}" aria-label="{{ Find us on Pinterest }}"></a>
+	{% elseif 'vimeo.com' in url %}
+		<a href="{{links['#url'] }}" title="{{ Watch 'site_name' on Vimeo }}" aria-label="{{ Watch our videos on Vimeo }}"></a>
+	{% elseif 'youtube.com' in url %}
+		<a href="{{links['#url'] }}" title="{{ Watch 'site_name' on YouTube }}" aria-label="{{ Watch our videos on YouTube }}"></a>
+	{% elseif 'snapchat.com' in url %}
+		<a href="{{links['#url'] }}" title="{{ Join 'site_name' on Snapchat }}" aria-label="{{ Follow us on Snapchat }}"></a>
+	{% elseif 'libsyn.com' in url %}
+		<a href="{{links['#url'] }}" title="{{ Listen to 'site_name' on Libsyn }}" aria-label="{{ Listen to our podcast on Libsyn }}"></a>
+	{% elseif 'podcasts.google.com' in url %}
+		<a href="{{links['#url'] }}" title="{{ Listen to 'site_name' on Google Podcasts }}" aria-label="{{ Listen to our podcast on Google }}"></a>
+	{% elseif 'podcasts.apple.com' in url %}
+		<a href="{{links['#url'] }}" title="{{ Listen to 'site_name' on Apple Podcasts }}" aria-label="{{ Listen to our podcast on Apple }}"></a>
+{% endif %}
+
+
+
+    
+	{#}
 	  {% for links in content.field_facebook_red %}
 	    {% if links['#url'] %}
 		  <a href="{{ links['#url'] }}" title="{{ links['#title'] | split(' ')[0] }}"></a>
@@ -80,6 +108,7 @@
     {% endif %}
 	{{ content | without('field_facebook_red', 'field_instagram_red', 'field_linked_in_red', 'field_pinterest_red',
 	'field_twitter_red', 'field_vimeo_red', 'field_youtube_red') }}
+	#}
 	{{ title_suffix }}
   {% endblock %}
 </div>
